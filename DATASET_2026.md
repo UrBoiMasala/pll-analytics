@@ -30,7 +30,11 @@ played yet (`eventStatus==0`) — that data doesn't exist.
 
 ## Extraction date
 
-2026-09-02 (Phase 3 full ingestion), hardened 2026-09-02 (Phase 3.5).
+2026-09-02 (Phase 3 full ingestion), hardened 2026-09-02 (Phase 3.5),
+live-refreshed 2026-09-07 (Phase 4.25 — schedule and all 51 completed
+games' raw responses re-fetched and compared by content hash / event ID
+against the 2026-09-02 snapshot; 0 changes found in any per-game endpoint,
+so the underlying event data is unchanged. See `PHASE_4_25_REPORT.md`).
 
 ## Scope
 
@@ -81,7 +85,11 @@ AND it isn't a confirmed-invalid goal **that also carries no other usable
 information**. It deliberately does **not** exclude anything merely
 ambiguous — an unpopulated `shotAssistId`, or the unresolved count residuals
 in `FULL_SEASON_ANOMALIES.md`, are left in and flagged elsewhere, not
-silently dropped from this eligibility flag.
+silently dropped from this eligibility flag. 295 of 11,254 events are
+currently ineligible (258 are all-star-game events; the remainder are
+duplicates/invalid-penalty events outside the all-star game — down from
+296 pre-Phase-4.25 now that the one salvageable invalid-goal event counts
+as eligible).
 
 **Metric-specific eligibility (Phase 4.25):** the one known invalid-goal
 case (2026-ev-1, marker `shot-3004600`) is a real saved shot mislabeled
@@ -147,13 +155,31 @@ and every `team_id` referenced in `events.csv` or `games.csv` resolves to
 `teams.csv`. See "Player-ID / team-ID behavior" below for the full raw-
 field-level breakdown.
 
-### `validation_report.csv` (767 rows)
+### `validation_report.csv` (765 rows, Phase 4.25 refresh)
 `game_slug, metric, raw_value, cleaned_value, official_value, raw_difference, cleaned_difference, raw_status, cleaned_status, final_status, notes`
 
 17 metrics × 51 games (a few games contribute an extra diagnostic row, e.g.
-`team_stats_row_count`). See `VALIDATION_METHODOLOGY.md` for exact status
-definitions — summary: **653 PASS (85.1%), 72 KNOWN_DATA_ISSUE (9.4%), 42
-UNRESOLVED (5.5%)**.
+`team_stats_present`). See `VALIDATION_METHODOLOGY.md` for exact status
+definitions — summary: **653 PASS (85.4%), 70 KNOWN_DATA_ISSUE (9.2%), 42
+UNRESOLVED (5.5%)**. (Row count and KNOWN_DATA_ISSUE count both dropped by
+2 vs. the original Phase 3.5 figures of 767/72 — not because anything got
+worse, but because the 2 `team_stats_row_count` diagnostic rows for
+2026-ev-46/2026-ev-47 no longer exist: `team_game_stats.csv` is now
+participant-filtered at build time, so there is nothing left for that
+check to catch. See `team_game_stats_exceptions.csv` for where those rows
+went.)
+
+### `possessions.csv` / `possession_validation_report.csv` / `possession_diagnostics.csv`
+The possession-reconstruction layer built on top of `events.csv` — full
+rules, evidence base, and known limitations in `POSSESSION_METHODOLOGY.md`;
+this is a separate deliverable from the event-level tables above, not a
+re-derivation of them. 4,388 possessions across the 50 regular-season +
+playoff completed games (all-star excluded); 1,589 (36.2%) flagged
+`is_ambiguous=True`, honestly reported rather than suppressed — see
+`FULL_SEASON_ANOMALIES.md` §7 and `PHASE_4_25_REPORT.md` for the Phase
+4.25 ambiguity-reduction investigation. All 17 hard structural checks in
+`possession_validation_report.csv` pass (0 failures each); check #12 is
+diagnostic-only by design.
 
 ## Cleaning rules
 
@@ -169,7 +195,7 @@ under `data/raw/2026/` is never modified, and no row is ever deleted from
 ## Known limitations / PLL data-quality issues
 
 Full detail and every affected game in `FULL_SEASON_ANOMALIES.md`.
-Headline numbers after the Phase 3.5 hardening pass: of 767 validation
+Headline numbers after the Phase 4.25 refresh: of 765 validation
 checks, **42 are genuinely unresolved** — mostly small (±1, rarely ±2)
 `turnovers`/`ground_balls`/`shot_clock_expirations` residuals with no
 duplicate or malformed event found in that specific game, plus one

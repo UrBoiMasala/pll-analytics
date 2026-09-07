@@ -16,11 +16,18 @@ tightened this: a game+metric is only `KNOWN_DATA_ISSUE` if cleaning
 this stricter standard:
 
 - **72** (game, metric) pairs remain genuinely `KNOWN_DATA_ISSUE` (down
-  from a looser 165 in the original Phase 3 pass).
+  from a looser 165 in the original Phase 3 pass) — **70** as of the Phase
+  4.25 refresh, purely because the 2 `team_stats_row_count` diagnostic
+  rows for 2026-ev-46/2026-ev-47 no longer exist once `team_game_stats.csv`
+  is participant-filtered at build time (§4); no game/metric actually
+  changed status.
 - **42** (game, metric) pairs are now honestly `UNRESOLVED` — most of these
   were previously mislabeled as "known" simply because another game shared
-  the same metric name with a real explanation.
-- **653** pairs are exact `PASS`.
+  the same metric name with a real explanation. Still 42 after the Phase
+  4.25 refresh (§7) — the underlying raw event data is unchanged, and the
+  deeper investigation in §7 found real, extra evidence for why several of
+  these remain unresolved rather than closing any of them.
+- **653** pairs are exact `PASS`, unchanged.
 
 Of the original 5 Phase 3 `FAIL` rows specifically: 3 (2026-ev-38 penalties,
 2026-ev-42 penalties, 2026-ev-42 faceoff_wins) have concrete, verified
