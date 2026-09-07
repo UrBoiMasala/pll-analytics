@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5,
+      "awayWinProbability": 0.5
+    },
+    "id": 494,
+    "slugname": "2026-all-star-game",
+    "eventId": "2026_all_star_game",
+    "league": "PLL",
+    "seasonSegment": "allstar",
+    "startTime": "1783274400",
+    "venue": "Navy-Marine Corps Memorial Stadium",
+    "venueLocation": null,
+    "location": "Annapolis, MD",
+    "year": 2026,
+    "week": 7,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/ba8e3d5b-84df-4b9d-82e0-cd8fcb737ed0",
+    "broadcaster": [
+      "ESPN",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 12,
+    "homeScore": 9,
+    "homePeriodScores": [
+      2,
+      4,
+      2,
+      1
+    ],
+    "visitorPeriodScores": [
+      3,
+      0,
+      3,
+      6
+    ],
+    "homeTeam": {
+      "officialId": "ASE",
+      "year": 2026,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2026/06/pll_Asg_26_east.webp",
+      "fullName": "East",
+      "location": "EAST",
+      "locationCode": "EAST",
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#27528E",
+      "backgroundColor": null,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ASW",
+      "year": 2026,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2026/06/pll_Asg_26_west.webp",
+      "fullName": "West",
+      "location": "WEST",
+      "locationCode": "WEST",
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#FEFEFE",
+      "backgroundColor": null,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    },
+    "description": "PLL All-Star Game",
+    "snl": false,
+    "polymarketId": null
+  }
+}

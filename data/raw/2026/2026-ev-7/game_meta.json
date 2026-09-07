@@ -1,0 +1,77 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.4853228173303201,
+      "awayWinProbability": 0.5146771826696799
+    },
+    "id": 472,
+    "slugname": "2026-ev-7",
+    "eventId": "2026_game_7",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1778950800",
+    "venue": "Centreville Bank Stadium",
+    "venueLocation": null,
+    "location": "Rhode Island",
+    "year": 2026,
+    "week": 2,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/7b90b2e0-1f03-4365-b308-02086ac5866d",
+    "broadcaster": [
+      "Disney+",
+      "ESPN+",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 9,
+    "homeScore": 10,
+    "homePeriodScores": [
+      3,
+      4,
+      3,
+      0
+    ],
+    "visitorPeriodScores": [
+      6,
+      0,
+      1,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "OUT",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2026/Logo/outlaws-primary.webp",
+      "fullName": "Outlaws",
+      "location": "Denver",
+      "locationCode": "DEN",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FFD400",
+      "backgroundColor": "#B3B3B3",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "RED",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": "pll-red-out-2026-05-16"
+  }
+}

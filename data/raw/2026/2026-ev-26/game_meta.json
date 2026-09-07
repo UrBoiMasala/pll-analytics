@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5082767914600386,
+      "awayWinProbability": 0.49172320853996143
+    },
+    "id": 497,
+    "slugname": "2026-ev-26",
+    "eventId": "2026_game_26",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1783819800",
+    "venue": "Northwestern Medicine Field at Martin Stadium",
+    "venueLocation": null,
+    "location": "Chicago, IL",
+    "year": 2026,
+    "week": 8,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/868bc066-bbab-4682-ad94-75028b38f31e",
+    "broadcaster": [
+      "ESPN+",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 17,
+    "homeScore": 10,
+    "homePeriodScores": [
+      1,
+      3,
+      3,
+      3
+    ],
+    "visitorPeriodScores": [
+      5,
+      6,
+      4,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "CHA",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_chaos_primary_color.png",
+      "fullName": "Chaos",
+      "location": "Carolina",
+      "locationCode": "CAR",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF0E11",
+      "backgroundColor": "#000",
+      "wins": 5,
+      "losses": 7,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WHP",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2026/Logo/whipsnakes-primary.webp",
+      "fullName": "Whipsnakes",
+      "location": "Maryland",
+      "locationCode": "MDW",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#FF0000",
+      "backgroundColor": "#3DDBC2",
+      "wins": 5,
+      "losses": 7,
+      "ties": 0
+    },
+    "description": null,
+    "snl": true,
+    "polymarketId": "pll-whp-cha-2026-07-11"
+  }
+}

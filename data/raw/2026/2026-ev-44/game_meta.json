@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.4992483000733664,
+      "awayWinProbability": 0.5007516999266336
+    },
+    "id": 517,
+    "slugname": "2026-ev-44",
+    "eventId": "2026_game_44",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1786208400",
+    "venue": "Harvard Stadium",
+    "venueLocation": null,
+    "location": "Boston, MA",
+    "year": 2026,
+    "week": 12,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/a466e7c1-320b-4e05-a59b-2e5afbdf7d65",
+    "broadcaster": [
+      "ABC",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 14,
+    "homeScore": 9,
+    "homePeriodScores": [
+      1,
+      2,
+      3,
+      3
+    ],
+    "visitorPeriodScores": [
+      8,
+      3,
+      2,
+      1
+    ],
+    "homeTeam": {
+      "officialId": "ATL",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_atlas_primary_color.png",
+      "fullName": "Atlas",
+      "location": "New York",
+      "locationCode": "NYA",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#00B1FF",
+      "backgroundColor": "#011E41",
+      "wins": 3,
+      "losses": 9,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "OUT",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2026/Logo/outlaws-primary.webp",
+      "fullName": "Outlaws",
+      "location": "Denver",
+      "locationCode": "DEN",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FFD400",
+      "backgroundColor": "#B3B3B3",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": "pll-out-atl-2026-08-08"
+  }
+}

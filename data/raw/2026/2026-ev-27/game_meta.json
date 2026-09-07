@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5117903662063654,
+      "awayWinProbability": 0.4882096337936346
+    },
+    "id": 498,
+    "slugname": "2026-ev-27",
+    "eventId": "2026_game_27",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1783731600",
+    "venue": "Northwestern Medicine Field at Martin Stadium",
+    "venueLocation": null,
+    "location": "Chicago, IL",
+    "year": 2026,
+    "week": 8,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/dc1a9494-5435-49f3-9808-ccce8fbb987b",
+    "broadcaster": [
+      "ESPN2",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 16,
+    "homeScore": 5,
+    "homePeriodScores": [
+      2,
+      0,
+      2,
+      1
+    ],
+    "visitorPeriodScores": [
+      5,
+      5,
+      3,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "ATL",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_atlas_primary_color.png",
+      "fullName": "Atlas",
+      "location": "New York",
+      "locationCode": "NYA",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#00B1FF",
+      "backgroundColor": "#011E41",
+      "wins": 3,
+      "losses": 9,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ARC",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_archers_primary_color.png",
+      "fullName": "Archers",
+      "location": "Utah",
+      "locationCode": "UTA",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#002244",
+      "wins": 7,
+      "losses": 5,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": "pll-arc-atl-2026-07-10"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.532677159858117,
+      "awayWinProbability": 0.46732284014188297
+    },
+    "id": 510,
+    "slugname": "2026-ev-37",
+    "eventId": "2026_game_37",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1785535200",
+    "venue": "Ohio State Lacrosse Stadium",
+    "venueLocation": null,
+    "location": "Columbus, OH",
+    "year": 2026,
+    "week": 11,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/d8c4918b-fb88-47f5-ba08-b28eef47f70d",
+    "broadcaster": [
+      "ESPN+",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 10,
+    "homeScore": 12,
+    "homePeriodScores": [
+      2,
+      4,
+      5,
+      1
+    ],
+    "visitorPeriodScores": [
+      3,
+      1,
+      3,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "CHA",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_chaos_primary_color.png",
+      "fullName": "Chaos",
+      "location": "Carolina",
+      "locationCode": "CAR",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF0E11",
+      "backgroundColor": "#000",
+      "wins": 5,
+      "losses": 7,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "RED",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": "pll-red-cha-2026-07-31"
+  }
+}

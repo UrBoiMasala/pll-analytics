@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5146717099020525,
+      "awayWinProbability": 0.48532829009794753
+    },
+    "id": 500,
+    "slugname": "2026-ev-28",
+    "eventId": "2026_game_28",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1783792800",
+    "venue": "Northwestern Medicine Field at Martin Stadium",
+    "venueLocation": null,
+    "location": "Chicago, IL",
+    "year": 2026,
+    "week": 8,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/8fd879c3-004a-4da2-b45a-d1cb152c9568",
+    "broadcaster": [
+      "ESPN+",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 13,
+    "homeScore": 15,
+    "homePeriodScores": [
+      5,
+      4,
+      1,
+      5
+    ],
+    "visitorPeriodScores": [
+      2,
+      4,
+      3,
+      4
+    ],
+    "homeTeam": {
+      "officialId": "CAN",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_cannons_primary_color.png",
+      "fullName": "Cannons",
+      "location": "Boston",
+      "locationCode": "BOS",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#B0B6BB",
+      "backgroundColor": "#C52032",
+      "wins": 7,
+      "losses": 5,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "OUT",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2026/Logo/outlaws-primary.webp",
+      "fullName": "Outlaws",
+      "location": "Denver",
+      "locationCode": "DEN",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FFD400",
+      "backgroundColor": "#B3B3B3",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": "pll-out-can-2026-07-11"
+  }
+}

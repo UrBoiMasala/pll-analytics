@@ -1,0 +1,19 @@
+check_id,check_name,status,n_failures,detail
+1,possession_belongs_to_eligible_completed_game,PASS,0,0 possessions reference a game_id not in the eligible completed set
+2,possession_has_one_offense_team,PASS,0,0 possessions have null offense_team_id
+3,offense_defense_distinct,PASS,0,0 possessions have offense==defense
+4,teams_are_game_participants,PASS,0,0 possessions have a team not in that game's home/away pair
+5,possession_number_sequential_per_game,PASS,0,games with non-sequential numbering: []
+6,possession_within_single_period,PASS,0,examples: []
+7,duration_non_negative,PASS,0,0 possessions have negative duration
+8,every_valid_goal_in_exactly_one_possession,PASS,0,"duplicated goal (game,end_event_id) keys: []; valid goals missing from any possession: []"
+9,points_reconcile_with_final_score,PASS,0,[]
+10,no_possession_scored_by_both_teams,PASS,0,0 goal-ending possessions where the goal's team != offense_team_id
+11,duplicates_excluded_from_boundaries,PASS,0,0 possessions reference a duplicate-flagged event as a boundary
+12,consecutive_possessions_alternate_teams_rate,INFO,730,"730/4336 (16.8%) consecutive possessions share the same offense team; expected to be non-zero (transient turnover-evidenced possessions, ambiguous-conflict re-opens) — diagnostic only, not a hard failure"
+13,goal_generates_exactly_one_possession,PASS,0,"duplicated goal (game,end_event_id) keys: []"
+14,turnover_shotclock_redundancy_collapsed,PASS,0,examples: []
+15,offensive_rebound_does_not_end_possession,PASS,0,0 'defensive_ground_ball' ends where the recovering team matches the possession's own offense team
+16,defensive_recovery_starts_new_possession_for_recovering_team,PASS,0,
+17,no_unknown_team_possessions,PASS,0,0 possessions used the 'unknown' start_reason (should be 0 — every opening event type carries a team_id)
+18,no_all_star_possessions,PASS,0,0 possessions belong to an all-star game

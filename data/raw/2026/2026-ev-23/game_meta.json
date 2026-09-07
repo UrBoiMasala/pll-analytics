@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5104994242160665,
+      "awayWinProbability": 0.48950057578393347
+    },
+    "id": 492,
+    "slugname": "2026-ev-23",
+    "eventId": "2026_game_23",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1782676800",
+    "venue": "Torero Stadium",
+    "venueLocation": null,
+    "location": "San Diego, CA",
+    "year": 2026,
+    "week": 6,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/71060ba8-2eb5-461b-a6ac-fe57ac5d85e1",
+    "broadcaster": [
+      "ESPN+",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 11,
+    "homeScore": 10,
+    "homePeriodScores": [
+      2,
+      2,
+      3,
+      3
+    ],
+    "visitorPeriodScores": [
+      2,
+      3,
+      4,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "ARC",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_archers_primary_color.png",
+      "fullName": "Archers",
+      "location": "Utah",
+      "locationCode": "UTA",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#002244",
+      "wins": 7,
+      "losses": 5,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WAT",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_waterdogs_primary_color.png",
+      "fullName": "Waterdogs",
+      "location": "Philadelphia",
+      "locationCode": "PHI",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#6C20C4",
+      "backgroundColor": "#99A4AD",
+      "wins": 9,
+      "losses": 3,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": "pll-wat-arc-2026-06-28"
+  }
+}

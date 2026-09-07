@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5022734410499405,
+      "awayWinProbability": 0.49772655895005946
+    },
+    "id": 488,
+    "slugname": "2026-ev-20",
+    "eventId": "2026_game_20",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1785027600",
+    "venue": "Peter Barton Lacrosse Stadium",
+    "venueLocation": null,
+    "location": "Denver, CO",
+    "year": 2026,
+    "week": 10,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/f13efd09-6c8b-4148-94c6-b507c004dd82",
+    "broadcaster": [
+      "ESPN2",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 18,
+    "homeScore": 8,
+    "homePeriodScores": [
+      2,
+      2,
+      3,
+      1
+    ],
+    "visitorPeriodScores": [
+      7,
+      7,
+      1,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "OUT",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2026/Logo/outlaws-primary.webp",
+      "fullName": "Outlaws",
+      "location": "Denver",
+      "locationCode": "DEN",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FFD400",
+      "backgroundColor": "#B3B3B3",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WAT",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_waterdogs_primary_color.png",
+      "fullName": "Waterdogs",
+      "location": "Philadelphia",
+      "locationCode": "PHI",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#6C20C4",
+      "backgroundColor": "#99A4AD",
+      "wins": 9,
+      "losses": 3,
+      "ties": 0
+    },
+    "description": null,
+    "snl": true,
+    "polymarketId": "pll-wat-out-2026-07-25"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.4731,
+      "awayWinProbability": 0.5269
+    },
+    "id": 466,
+    "slugname": "2026-ev-2",
+    "eventId": "2026_game_2",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1778293800",
+    "venue": "Zions Bank Stadium",
+    "venueLocation": null,
+    "location": "Salt Lake City, UT",
+    "year": 2026,
+    "week": 1,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/e49db491-a19a-49f9-a848-2cd427dc3eda",
+    "broadcaster": [
+      "ESPN+",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 16,
+    "homeScore": 12,
+    "homePeriodScores": [
+      2,
+      2,
+      6,
+      2
+    ],
+    "visitorPeriodScores": [
+      2,
+      7,
+      3,
+      4
+    ],
+    "homeTeam": {
+      "officialId": "CHA",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_chaos_primary_color.png",
+      "fullName": "Chaos",
+      "location": "Carolina",
+      "locationCode": "CAR",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF0E11",
+      "backgroundColor": "#000",
+      "wins": 5,
+      "losses": 7,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ATL",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_atlas_primary_color.png",
+      "fullName": "Atlas",
+      "location": "New York",
+      "locationCode": "NYA",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#00B1FF",
+      "backgroundColor": "#011E41",
+      "wins": 3,
+      "losses": 9,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": "pll-atl-cha-2026-05-08"
+  }
+}

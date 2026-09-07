@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.528395163013183,
+      "awayWinProbability": 0.471604836986817
+    },
+    "id": 516,
+    "slugname": "2026-ev-43",
+    "eventId": "2026_game_43",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1786149000",
+    "venue": "Harvard Stadium",
+    "venueLocation": null,
+    "location": "Boston, MA",
+    "year": 2026,
+    "week": 12,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/3a3c0bab-ba1d-477c-a609-e1668680b74b",
+    "broadcaster": [
+      "ESPN+",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 12,
+    "homeScore": 13,
+    "homePeriodScores": [
+      4,
+      5,
+      2,
+      2
+    ],
+    "visitorPeriodScores": [
+      6,
+      1,
+      2,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "ARC",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_archers_primary_color.png",
+      "fullName": "Archers",
+      "location": "Utah",
+      "locationCode": "UTA",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#002244",
+      "wins": 7,
+      "losses": 5,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CHA",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_chaos_primary_color.png",
+      "fullName": "Chaos",
+      "location": "Carolina",
+      "locationCode": "CAR",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF0E11",
+      "backgroundColor": "#000",
+      "wins": 5,
+      "losses": 7,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": "pll-cha-arc-2026-08-07"
+  }
+}

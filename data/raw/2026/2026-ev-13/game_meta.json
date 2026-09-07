@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5209973262301391,
+      "awayWinProbability": 0.47900267376986094
+    },
+    "id": 479,
+    "slugname": "2026-ev-13",
+    "eventId": "2026_game_13",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1780696800",
+    "venue": "American Legion Memorial Stadium",
+    "venueLocation": null,
+    "location": "Charlotte, NC",
+    "year": 2026,
+    "week": 4,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/678e98f8-12d3-46d6-81b9-d2ca9f513fc2",
+    "broadcaster": [
+      "ESPN+",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 15,
+    "homeScore": 7,
+    "homePeriodScores": [
+      2,
+      1,
+      3,
+      1
+    ],
+    "visitorPeriodScores": [
+      2,
+      5,
+      6,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "CHA",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_chaos_primary_color.png",
+      "fullName": "Chaos",
+      "location": "Carolina",
+      "locationCode": "CAR",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF0E11",
+      "backgroundColor": "#000",
+      "wins": 5,
+      "losses": 7,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ARC",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_archers_primary_color.png",
+      "fullName": "Archers",
+      "location": "Utah",
+      "locationCode": "UTA",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#002244",
+      "wins": 7,
+      "losses": 5,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": "pll-arc-cha-2026-06-05"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.562443610544938,
+      "awayWinProbability": 0.43755638945506203
+    },
+    "id": 525,
+    "slugname": "2026-quarterfinals-2",
+    "eventId": "2026_game_50",
+    "league": "PLL",
+    "seasonSegment": "post",
+    "startTime": "1788049800",
+    "venue": "TCO Stadium",
+    "venueLocation": null,
+    "location": "Minneapolis, MN",
+    "year": 2026,
+    "week": 14,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/d0b979c1-cf0d-4c80-b313-f596964b6cb8",
+    "broadcaster": [
+      "ESPN+",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 7,
+    "homeScore": 9,
+    "homePeriodScores": [
+      4,
+      2,
+      3,
+      0
+    ],
+    "visitorPeriodScores": [
+      1,
+      2,
+      1,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "CAN",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_cannons_primary_color.png",
+      "fullName": "Cannons",
+      "location": "Boston",
+      "locationCode": "BOS",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#B0B6BB",
+      "backgroundColor": "#C52032",
+      "wins": 7,
+      "losses": 5,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WHP",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2026/Logo/whipsnakes-primary.webp",
+      "fullName": "Whipsnakes",
+      "location": "Maryland",
+      "locationCode": "MDW",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#FF0000",
+      "backgroundColor": "#3DDBC2",
+      "wins": 5,
+      "losses": 7,
+      "ties": 0
+    },
+    "description": "Quarterfinal 2",
+    "snl": false,
+    "polymarketId": "pll-whp-can-2026-08-29"
+  }
+}

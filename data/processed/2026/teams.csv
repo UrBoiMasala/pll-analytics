@@ -1,0 +1,11 @@
+team_id,full_name,location,location_code,conference,team_color,background_color,is_all_star_team
+ARC,Archers,Utah,UTA,western,#FF5216,#002244,False
+ASE,East,EAST,EAST,,#27528E,,True
+ASW,West,WEST,WEST,,#FEFEFE,,True
+ATL,Atlas,New York,NYA,eastern,#00B1FF,#011E41,False
+CAN,Cannons,Boston,BOS,eastern,#B0B6BB,#C52032,False
+CHA,Chaos,Carolina,CAR,western,#FF0E11,#000,False
+OUT,Outlaws,Denver,DEN,western,#FFD400,#B3B3B3,False
+RED,Redwoods,California,CAL,western,#004B37,#FFD200,False
+WAT,Waterdogs,Philadelphia,PHI,eastern,#6C20C4,#99A4AD,False
+WHP,Whipsnakes,Maryland,MDW,eastern,#FF0000,#3DDBC2,False

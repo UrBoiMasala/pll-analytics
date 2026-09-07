@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.454165057383009,
+      "awayWinProbability": 0.5458349426169911
+    },
+    "id": 514,
+    "slugname": "2026-ev-41",
+    "eventId": "2026_game_41",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1785697200",
+    "venue": "Ohio State Lacrosse Stadium",
+    "venueLocation": null,
+    "location": "Columbus, OH",
+    "year": 2026,
+    "week": 11,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/bc1ef253-ebeb-4195-a5ff-5f80f1a67d9d",
+    "broadcaster": [
+      "ABC",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 13,
+    "homeScore": 21,
+    "homePeriodScores": [
+      5,
+      4,
+      9,
+      3
+    ],
+    "visitorPeriodScores": [
+      5,
+      3,
+      5,
+      0
+    ],
+    "homeTeam": {
+      "officialId": "RED",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ATL",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_atlas_primary_color.png",
+      "fullName": "Atlas",
+      "location": "New York",
+      "locationCode": "NYA",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#00B1FF",
+      "backgroundColor": "#011E41",
+      "wins": 3,
+      "losses": 9,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": "pll-atl-red-2026-08-02"
+  }
+}

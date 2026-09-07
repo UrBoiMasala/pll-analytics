@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.510185815878237,
+      "awayWinProbability": 0.48981418412176303
+    },
+    "id": 505,
+    "slugname": "2026-ev-32",
+    "eventId": "2026_game_32",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1784487600",
+    "venue": "Rafferty Stadium",
+    "venueLocation": null,
+    "location": "Fairfield, CT",
+    "year": 2026,
+    "week": 9,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/1124beb7-d5b7-4b94-a31b-8b6af4395aef",
+    "broadcaster": [
+      "ABC",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 13,
+    "homeScore": 15,
+    "homePeriodScores": [
+      4,
+      4,
+      4,
+      3
+    ],
+    "visitorPeriodScores": [
+      4,
+      7,
+      0,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "CAN",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_cannons_primary_color.png",
+      "fullName": "Cannons",
+      "location": "Boston",
+      "locationCode": "BOS",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#B0B6BB",
+      "backgroundColor": "#C52032",
+      "wins": 7,
+      "losses": 5,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ATL",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_atlas_primary_color.png",
+      "fullName": "Atlas",
+      "location": "New York",
+      "locationCode": "NYA",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#00B1FF",
+      "backgroundColor": "#011E41",
+      "wins": 3,
+      "losses": 9,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": "pll-atl-can-2026-07-19"
+  }
+}

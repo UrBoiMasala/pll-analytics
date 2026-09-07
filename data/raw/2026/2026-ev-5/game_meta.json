@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.48479478882719895,
+      "awayWinProbability": 0.515205211172801
+    },
+    "id": 470,
+    "slugname": "2026-ev-5",
+    "eventId": "2026_game_5",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1778882400",
+    "venue": "Centreville Bank Stadium",
+    "venueLocation": null,
+    "location": "Rhode Island",
+    "year": 2026,
+    "week": 2,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/bb4fc156-5677-44ad-bfe3-f8125e63b308",
+    "broadcaster": [
+      "ESPN+",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 14,
+    "homeScore": 10,
+    "homePeriodScores": [
+      1,
+      4,
+      3,
+      2
+    ],
+    "visitorPeriodScores": [
+      4,
+      3,
+      2,
+      5
+    ],
+    "homeTeam": {
+      "officialId": "CAN",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_cannons_primary_color.png",
+      "fullName": "Cannons",
+      "location": "Boston",
+      "locationCode": "BOS",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#B0B6BB",
+      "backgroundColor": "#C52032",
+      "wins": 7,
+      "losses": 5,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CHA",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_chaos_primary_color.png",
+      "fullName": "Chaos",
+      "location": "Carolina",
+      "locationCode": "CAR",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF0E11",
+      "backgroundColor": "#000",
+      "wins": 5,
+      "losses": 7,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": "pll-cha-can-2026-05-15"
+  }
+}

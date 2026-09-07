@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.4728845266117473,
+      "awayWinProbability": 0.5271154733882527
+    },
+    "id": 484,
+    "slugname": "2026-ev-17",
+    "eventId": "2026_game_17",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1781906400",
+    "venue": "James M. Shuart Stadium",
+    "venueLocation": null,
+    "location": "Long Island",
+    "year": 2026,
+    "week": 5,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/df098d8c-3ee8-4a65-83e4-f9a27d0e42e0",
+    "broadcaster": [
+      "ESPN+",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 11,
+    "homeScore": 12,
+    "homePeriodScores": [
+      1,
+      4,
+      2,
+      5
+    ],
+    "visitorPeriodScores": [
+      3,
+      2,
+      3,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "ATL",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_atlas_primary_color.png",
+      "fullName": "Atlas",
+      "location": "New York",
+      "locationCode": "NYA",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#00B1FF",
+      "backgroundColor": "#011E41",
+      "wins": 3,
+      "losses": 9,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CAN",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_cannons_primary_color.png",
+      "fullName": "Cannons",
+      "location": "Boston",
+      "locationCode": "BOS",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#B0B6BB",
+      "backgroundColor": "#C52032",
+      "wins": 7,
+      "losses": 5,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": "pll-can-atl-2026-06-19"
+  }
+}

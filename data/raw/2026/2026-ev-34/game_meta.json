@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5134474465204455,
+      "awayWinProbability": 0.4865525534795545
+    },
+    "id": 507,
+    "slugname": "2026-ev-34",
+    "eventId": "2026_game_34",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1784946600",
+    "venue": "Peter Barton Lacrosse Stadium",
+    "venueLocation": null,
+    "location": "Denver, CO",
+    "year": 2026,
+    "week": 10,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/eb302942-c97f-4b62-878a-071a06483f62",
+    "broadcaster": [
+      "ESPN+",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 11,
+    "homeScore": 10,
+    "homePeriodScores": [
+      2,
+      2,
+      4,
+      2
+    ],
+    "visitorPeriodScores": [
+      2,
+      3,
+      3,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "ATL",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_atlas_primary_color.png",
+      "fullName": "Atlas",
+      "location": "New York",
+      "locationCode": "NYA",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#00B1FF",
+      "backgroundColor": "#011E41",
+      "wins": 3,
+      "losses": 9,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WAT",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_waterdogs_primary_color.png",
+      "fullName": "Waterdogs",
+      "location": "Philadelphia",
+      "locationCode": "PHI",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#6C20C4",
+      "backgroundColor": "#99A4AD",
+      "wins": 9,
+      "losses": 3,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": "pll-wat-atl-2026-07-24"
+  }
+}

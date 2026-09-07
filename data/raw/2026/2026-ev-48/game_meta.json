@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.47542685566062365,
+      "awayWinProbability": 0.5245731443393764
+    },
+    "id": 523,
+    "slugname": "2026-ev-48",
+    "eventId": "2026_game_48",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1786908600",
+    "venue": "Subaru Park",
+    "venueLocation": null,
+    "location": "Philadelphia, PA",
+    "year": 2026,
+    "week": 13,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/09865bbc-c28a-42a3-b47c-9e647cbaf528",
+    "broadcaster": [
+      "ESPN+",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 11,
+    "homeScore": 18,
+    "homePeriodScores": [
+      2,
+      6,
+      6,
+      4
+    ],
+    "visitorPeriodScores": [
+      3,
+      2,
+      2,
+      4
+    ],
+    "homeTeam": {
+      "officialId": "RED",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "OUT",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2026/Logo/outlaws-primary.webp",
+      "fullName": "Outlaws",
+      "location": "Denver",
+      "locationCode": "DEN",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FFD400",
+      "backgroundColor": "#B3B3B3",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": "pll-out-red-2026-08-16"
+  }
+}

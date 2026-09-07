@@ -1,0 +1,349 @@
+"""
+Phase 3: build canonical season-level tables from the raw JSON already
+ingested under data/raw/2026/<slug>/ by pll_ingest_season.py.
+
+Produces, under data/processed/2026/:
+    games.csv
+    teams.csv
+    players.csv
+    events.csv
+    player_game_stats.csv
+    team_game_stats.csv
+
+Also prints/report player-ID resolution issues (event-referenced IDs that
+don't appear in any game's players_stats roster).
+"""
+import json
+import sys
+from datetime import datetime, timezone
+from pathlib import Path
+
+import pandas as pd
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from pll_pbp_extractor import normalize_play_by_play  # noqa: E402
+from pll_pbp_clean import clean  # noqa: E402
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
+RAW_DIR = REPO_ROOT / "data" / "raw" / "2026"
+OUT_DIR = REPO_ROOT / "data" / "processed" / "2026"
+
+PLAYER_ID_FIELDS_IN_EVENTS = [
+    "shooterId", "goalieId", "shotAssistId", "faceoffWinnerId", "faceoffLoserId",
+    "gbPlayerId", "commitedPenaltyId", "offenseGoalieId", "assistOpportunityPlayerId",
+    "closestDefenderId", "commitedTurnoverId", "causedTurnoverId",
+]
+
+
+def load_raw(slug: str) -> dict:
+    d = RAW_DIR / slug
+    return {
+        "play_by_play": json.loads((d / "play_by_play.json").read_text()),
+        "game_meta": json.loads((d / "game_meta.json").read_text()),
+        "players_stats": json.loads((d / "players_stats.json").read_text()),
+        "teams_stats": json.loads((d / "teams_stats.json").read_text()),
+    }
+
+
+def load_schedule() -> list[dict]:
+    return json.loads((RAW_DIR / "_schedule" / "games_2026.json").read_text())["data"]["items"]
+
+
+def completed_slugs() -> list[str]:
+    return [g["slugname"] for g in load_schedule() if g.get("eventStatus") == 3]
+
+
+# PLL's own seasonSegment field is the authoritative source for game
+# classification (values observed across the full 2026 schedule: "regular",
+# "post", "allstar" — no others). Mapped directly rather than pattern-
+# matching slugnames, which would be more fragile.
+SEASON_SEGMENT_TO_GAME_TYPE = {"regular": "regular_season", "post": "playoffs", "allstar": "all_star"}
+
+
+def classify_game_type(season_segment: str) -> str:
+    return SEASON_SEGMENT_TO_GAME_TYPE.get(season_segment, "other")
+
+
+def build_games_table() -> pd.DataFrame:
+    """
+    Includes EVERY game in the schedule response (54, as of this run) —
+    completed and not-yet-played alike — so games.csv is always a complete,
+    current picture of the season. Classification fields (game_type,
+    is_playoff, is_all_star, include_in_league_analytics, is_completed) are
+    derived for every row regardless of completion status. Per-game-meta
+    enrichment (period scores, venue, final score) is only available for
+    completed games (raw/<slug>/game_meta.json only exists for those); for
+    not-yet-played games those fields are left null rather than guessed.
+    """
+    rows = []
+    for sched in load_schedule():
+        slug = sched["slugname"]
+        is_completed = sched.get("eventStatus") == 3
+        season_segment = sched.get("seasonSegment")
+        game_type = classify_game_type(season_segment)
+
+        start_time = sched.get("startTime")
+        start_iso = None
+        if start_time:
+            try:
+                start_iso = datetime.fromtimestamp(int(start_time), tz=timezone.utc).isoformat()
+            except (ValueError, OSError):
+                start_iso = None
+
+        row = {
+            "game_id": sched.get("id"),
+            "game_slug": slug,
+            "event_id": sched.get("eventId"),
+            "year": sched.get("year"),
+            "week": sched.get("week"),
+            "season_segment": season_segment,
+            "game_type": game_type,
+            "is_playoff": game_type == "playoffs",
+            "is_all_star": game_type == "all_star",
+            "include_in_league_analytics": game_type in ("regular_season", "playoffs"),
+            "is_completed": is_completed,
+            "event_status": sched.get("eventStatus"),
+            "start_time_unix": start_time,
+            "start_date_utc": start_iso,
+            "venue": sched.get("venue"),
+            "location": sched.get("location"),
+            "home_team_id": (sched.get("homeTeam") or {}).get("officialId"),
+            "away_team_id": (sched.get("awayTeam") or {}).get("officialId"),
+            "home_score": None,
+            "away_score": None,
+            "home_period_scores": None,
+            "away_period_scores": None,
+        }
+
+        if is_completed:
+            raw_meta = load_raw(slug)["game_meta"]["data"]
+            row["home_score"] = raw_meta.get("homeScore")
+            row["away_score"] = raw_meta.get("visitorScore")
+            row["home_period_scores"] = json.dumps(raw_meta.get("homePeriodScores"))
+            row["away_period_scores"] = json.dumps(raw_meta.get("visitorPeriodScores"))
+            # game_meta's venue/location/team ids are authoritative when available
+            row["venue"] = raw_meta.get("venue") or row["venue"]
+            row["location"] = raw_meta.get("location") or row["location"]
+            row["home_team_id"] = raw_meta.get("homeTeam", {}).get("officialId") or row["home_team_id"]
+            row["away_team_id"] = raw_meta.get("awayTeam", {}).get("officialId") or row["away_team_id"]
+
+        rows.append(row)
+    return pd.DataFrame(rows)
+
+
+def build_teams_table(slugs: list[str], games_df: pd.DataFrame) -> pd.DataFrame:
+    all_star_team_ids = set(
+        games_df.loc[games_df["game_type"] == "all_star", "home_team_id"]
+    ) | set(
+        games_df.loc[games_df["game_type"] == "all_star", "away_team_id"]
+    )
+
+    seen = {}
+    for slug in slugs:
+        meta = load_raw(slug)["game_meta"]["data"]
+        for side in ("homeTeam", "awayTeam"):
+            t = meta.get(side)
+            if not t:
+                continue
+            tid = t["officialId"]
+            seen[tid] = {
+                "team_id": tid,
+                "full_name": t.get("fullName"),
+                "location": t.get("location"),
+                "location_code": t.get("locationCode"),
+                "conference": t.get("conference"),
+                "team_color": t.get("teamColor"),
+                "background_color": t.get("backgroundColor"),
+                # A team_id that only ever appears in an all_star-classified
+                # game (per games.csv game_type, itself derived from PLL's
+                # own seasonSegment field) is an all-star squad, not a real
+                # franchise — exclude via this flag when computing team-level
+                # league baselines/ratings.
+                "is_all_star_team": tid in all_star_team_ids,
+            }
+    return pd.DataFrame(sorted(seen.values(), key=lambda r: r["team_id"]))
+
+
+def build_players_table(slugs: list[str]) -> tuple[pd.DataFrame, dict]:
+    players = {}  # officialId -> latest record
+    for slug in slugs:
+        ps = load_raw(slug)["players_stats"]["data"]["items"]
+        for p in ps:
+            pid = p["officialId"]
+            players[pid] = {
+                "player_id": pid,
+                "name": f"{p['firstName']} {p['lastName']}",
+                "first_name": p["firstName"],
+                "last_name": p["lastName"],
+                "team_id": p.get("teamId"),
+                "position": p.get("position"),
+                "position_name": p.get("positionName"),
+                "jersey_num": p.get("jerseyNum"),
+                "slug": p.get("slug"),
+                "profile_url": p.get("profileUrl"),
+            }
+    df = pd.DataFrame(sorted(players.values(), key=lambda r: r["player_id"]))
+    return df, players
+
+
+def build_events_table(slugs: list[str], games_df: pd.DataFrame) -> pd.DataFrame:
+    game_id_by_slug = dict(zip(games_df["game_slug"], games_df["game_id"]))
+    include_by_slug = dict(zip(games_df["game_slug"], games_df["include_in_league_analytics"]))
+    game_type_by_slug = dict(zip(games_df["game_slug"], games_df["game_type"]))
+    all_rows = []
+    empty_pbp_games = []
+    for slug in slugs:
+        raw = load_raw(slug)
+        items = raw["play_by_play"]["data"]["items"]
+        if not items:
+            empty_pbp_games.append(slug)
+            continue
+        df = normalize_play_by_play(slug, raw)
+        df = clean(df)
+        # normalize_play_by_play's own "game_id" column is actually the slug;
+        # replace it with the numeric schedule game_id + an explicit slug column.
+        df = df.drop(columns=["game_id"])
+        df.insert(0, "game_id", game_id_by_slug.get(slug))
+        df.insert(1, "game_slug", slug)
+        df["game_type"] = game_type_by_slug.get(slug)
+        df["include_in_league_analytics"] = include_by_slug.get(slug)
+        # Preserve pre_shot_pass_player_id as an explicitly-named alias of
+        # secondary_player_id (which is already shotAssistId for shot/goal
+        # rows) so downstream consumers don't have to know the mapping.
+        df["pre_shot_pass_player_id"] = df["secondary_player_id"].where(
+            df["event_type"].isin(["shot", "goal"])
+        )
+        # A row is "safe to use in normal analysis" only if: the game itself
+        # counts toward league analytics (not all-star/other), the event is
+        # not a confirmed exact duplicate, and it isn't a confirmed-invalid
+        # goal/penalty. Deliberately does NOT exclude anything merely
+        # ambiguous (e.g. an unpopulated shotAssistId, or the small
+        # unresolved turnover/groundball count residuals) — see
+        # VALIDATION_METHODOLOGY.md.
+        known_invalid = (df["is_valid_goal"] == False) | (df["is_valid_penalty"] == False)  # noqa: E712
+        df["is_analysis_eligible_event"] = (
+            df["include_in_league_analytics"].fillna(False)
+            & ~df["is_duplicate_event"].fillna(False)
+            & ~known_invalid.fillna(False)
+        )
+        all_rows.append(df)
+
+    events = pd.concat(all_rows, ignore_index=True) if all_rows else pd.DataFrame()
+    return events, empty_pbp_games
+
+
+def build_player_game_stats(slugs: list[str], games_df: pd.DataFrame) -> pd.DataFrame:
+    game_id_by_slug = dict(zip(games_df["game_slug"], games_df["game_id"]))
+    rows = []
+    for slug in slugs:
+        items = load_raw(slug)["players_stats"]["data"]["items"]
+        for p in items:
+            row = dict(p)
+            row["game_id"] = game_id_by_slug.get(slug)
+            row["game_slug"] = slug
+            rows.append(row)
+    return pd.DataFrame(rows)
+
+
+def build_team_game_stats(slugs: list[str], games_df: pd.DataFrame) -> pd.DataFrame:
+    game_id_by_slug = dict(zip(games_df["game_slug"], games_df["game_id"]))
+    rows = []
+    for slug in slugs:
+        items = load_raw(slug)["teams_stats"]["data"]["items"]
+        for t in items:
+            row = dict(t)
+            row["game_id"] = game_id_by_slug.get(slug)
+            row["game_slug"] = slug
+            rows.append(row)
+    return pd.DataFrame(rows)
+
+
+def check_player_id_resolution(events: pd.DataFrame, player_lookup: dict) -> pd.DataFrame:
+    unresolved = []
+    id_cols = ["player_id", "secondary_player_id", "goalie_id", "gb_player_id"]
+    for col in id_cols:
+        if col not in events.columns:
+            continue
+        vals = events[col].dropna().unique()
+        for v in vals:
+            if v not in player_lookup:
+                unresolved.append({"field": col, "player_id": v})
+    return pd.DataFrame(unresolved).drop_duplicates() if unresolved else pd.DataFrame(columns=["field", "player_id"])
+
+
+def check_team_id_resolution(events: pd.DataFrame, games_df: pd.DataFrame, teams_df: pd.DataFrame) -> pd.DataFrame:
+    """Every team_id referenced in events.csv or games.csv must resolve to teams.csv."""
+    known = set(teams_df["team_id"])
+    unresolved = []
+    ev_teams = events["team_id"].dropna()
+    ev_teams = ev_teams[ev_teams != ""]
+    for v in ev_teams.unique():
+        if v not in known:
+            unresolved.append({"source": "events.team_id", "team_id": v})
+    for col in ("home_team_id", "away_team_id"):
+        for v in games_df[col].dropna().unique():
+            if v not in known:
+                unresolved.append({"source": f"games.{col}", "team_id": v})
+    return pd.DataFrame(unresolved).drop_duplicates() if unresolved else pd.DataFrame(columns=["source", "team_id"])
+
+
+def main():
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    all_games_df = build_games_table()
+    slugs = all_games_df.loc[all_games_df["is_completed"], "game_slug"].tolist()
+    print(f"Schedule has {len(all_games_df)} games total; building tables for {len(slugs)} completed games ...")
+
+    dup_game_ids = all_games_df["game_id"][all_games_df["game_id"].duplicated()].tolist()
+    if dup_game_ids:
+        print(f"  WARNING: duplicate game_id values: {dup_game_ids}")
+    all_games_df.to_csv(OUT_DIR / "games.csv", index=False)
+    print(f"  saved games.csv ({len(all_games_df)} rows, {len(slugs)} completed)")
+    games_df = all_games_df[all_games_df["is_completed"]].reset_index(drop=True)
+
+    teams_df = build_teams_table(slugs, games_df)
+    teams_df.to_csv(OUT_DIR / "teams.csv", index=False)
+    print(f"  saved teams.csv ({len(teams_df)} rows)")
+
+    players_df, player_lookup_by_id = build_players_table(slugs)
+    players_df.to_csv(OUT_DIR / "players.csv", index=False)
+    print(f"  saved players.csv ({len(players_df)} rows)")
+
+    events_df, empty_pbp_games = build_events_table(slugs, games_df)
+    dup_event_ids = (
+        events_df.groupby("game_slug")["event_id"]
+        .apply(lambda s: s[s.duplicated()].tolist())
+    )
+    dup_event_ids = {k: v for k, v in dup_event_ids.items() if v}
+    if dup_event_ids:
+        print(f"  WARNING: duplicate event_id within a game: {dup_event_ids}")
+    if empty_pbp_games:
+        print(f"  WARNING: empty play-by-play feed for games: {empty_pbp_games}")
+    events_df.to_csv(OUT_DIR / "events.csv", index=False)
+    print(f"  saved events.csv ({len(events_df)} rows)")
+
+    pgs_df = build_player_game_stats(slugs, games_df)
+    pgs_df.to_csv(OUT_DIR / "player_game_stats.csv", index=False)
+    print(f"  saved player_game_stats.csv ({len(pgs_df)} rows)")
+
+    tgs_df = build_team_game_stats(slugs, games_df)
+    tgs_df.to_csv(OUT_DIR / "team_game_stats.csv", index=False)
+    print(f"  saved team_game_stats.csv ({len(tgs_df)} rows)")
+
+    unresolved_df = check_player_id_resolution(events_df, player_lookup_by_id)
+    unresolved_df.to_csv(OUT_DIR / "unresolved_player_ids.csv", index=False)
+    print(f"  unresolved player IDs referenced in events: {len(unresolved_df)}")
+    if len(unresolved_df):
+        print(unresolved_df.to_string(index=False))
+
+    unresolved_teams_df = check_team_id_resolution(events_df, games_df, teams_df)
+    unresolved_teams_df.to_csv(OUT_DIR / "unresolved_team_ids.csv", index=False)
+    print(f"  unresolved team IDs: {len(unresolved_teams_df)}")
+    if len(unresolved_teams_df):
+        print(unresolved_teams_df.to_string(index=False))
+
+    print()
+    print("Done.")
+
+
+if __name__ == "__main__":
+    main()

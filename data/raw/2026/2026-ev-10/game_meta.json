@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.49655369511119796,
+      "awayWinProbability": 0.503446304888802
+    },
+    "id": 476,
+    "slugname": "2026-ev-10",
+    "eventId": "2026_game_10",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1780160400",
+    "venue": "Ridley Athletic Complex",
+    "venueLocation": null,
+    "location": "Baltimore, MD",
+    "year": 2026,
+    "week": 3,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/46fe2cee-1d1f-43cc-a87f-0111d5827438",
+    "broadcaster": [
+      "ABC",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 9,
+    "homeScore": 16,
+    "homePeriodScores": [
+      2,
+      3,
+      7,
+      4
+    ],
+    "visitorPeriodScores": [
+      3,
+      4,
+      0,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "OUT",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2026/Logo/outlaws-primary.webp",
+      "fullName": "Outlaws",
+      "location": "Denver",
+      "locationCode": "DEN",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FFD400",
+      "backgroundColor": "#B3B3B3",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ATL",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_atlas_primary_color.png",
+      "fullName": "Atlas",
+      "location": "New York",
+      "locationCode": "NYA",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#00B1FF",
+      "backgroundColor": "#011E41",
+      "wins": 3,
+      "losses": 9,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": "pll-atl-out-2026-05-30"
+  }
+}

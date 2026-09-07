@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.511505286389152,
+      "awayWinProbability": 0.48849471361084795
+    },
+    "id": 520,
+    "slugname": "2026-ev-46",
+    "eventId": "2026_game_46",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1786899600",
+    "venue": "Subaru Park",
+    "venueLocation": null,
+    "location": "Philadelphia, PA",
+    "year": 2026,
+    "week": 13,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/679383cd-c973-4412-b6b6-9db59a24b333",
+    "broadcaster": [
+      "ABC",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 9,
+    "homeScore": 11,
+    "homePeriodScores": [
+      5,
+      3,
+      0,
+      3
+    ],
+    "visitorPeriodScores": [
+      3,
+      2,
+      2,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "WAT",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_waterdogs_primary_color.png",
+      "fullName": "Waterdogs",
+      "location": "Philadelphia",
+      "locationCode": "PHI",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#6C20C4",
+      "backgroundColor": "#99A4AD",
+      "wins": 9,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WHP",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2026/Logo/whipsnakes-primary.webp",
+      "fullName": "Whipsnakes",
+      "location": "Maryland",
+      "locationCode": "MDW",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#FF0000",
+      "backgroundColor": "#3DDBC2",
+      "wins": 5,
+      "losses": 7,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": "pll-whp-wat-2026-08-15"
+  }
+}

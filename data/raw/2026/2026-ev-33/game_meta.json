@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.4740648121990425,
+      "awayWinProbability": 0.5259351878009575
+    },
+    "id": 506,
+    "slugname": "2026-ev-33",
+    "eventId": "2026_game_33",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1784937600",
+    "venue": "Peter Barton Lacrosse Stadium",
+    "venueLocation": null,
+    "location": "Denver, CO",
+    "year": 2026,
+    "week": 10,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/dbb22d8e-9f5b-4ee3-8f9f-46b75f5e1510",
+    "broadcaster": [
+      "ESPN+",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 16,
+    "homeScore": 11,
+    "homePeriodScores": [
+      3,
+      2,
+      3,
+      3
+    ],
+    "visitorPeriodScores": [
+      5,
+      3,
+      5,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "OUT",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2026/Logo/outlaws-primary.webp",
+      "fullName": "Outlaws",
+      "location": "Denver",
+      "locationCode": "DEN",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FFD400",
+      "backgroundColor": "#B3B3B3",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ARC",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_archers_primary_color.png",
+      "fullName": "Archers",
+      "location": "Utah",
+      "locationCode": "UTA",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#002244",
+      "wins": 7,
+      "losses": 5,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": "pll-arc-out-2026-07-24"
+  }
+}

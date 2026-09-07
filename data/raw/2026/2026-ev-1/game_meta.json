@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.4549,
+      "awayWinProbability": 0.5451
+    },
+    "id": 465,
+    "slugname": "2026-ev-1",
+    "eventId": "2026_game_1",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1778284800",
+    "venue": "Zions Bank Stadium",
+    "venueLocation": null,
+    "location": "Salt Lake City, UT",
+    "year": 2026,
+    "week": 1,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/1c0c4d0f-9bc2-4438-92a3-d729409fff38",
+    "broadcaster": [
+      "ESPN+",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 9,
+    "homeScore": 5,
+    "homePeriodScores": [
+      1,
+      2,
+      1,
+      1
+    ],
+    "visitorPeriodScores": [
+      3,
+      4,
+      2,
+      0
+    ],
+    "homeTeam": {
+      "officialId": "ARC",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_archers_primary_color.png",
+      "fullName": "Archers",
+      "location": "Utah",
+      "locationCode": "UTA",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#002244",
+      "wins": 7,
+      "losses": 5,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "RED",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": "pll-red-arc-2026-05-08"
+  }
+}

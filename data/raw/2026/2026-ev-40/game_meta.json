@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5216028314479324,
+      "awayWinProbability": 0.4783971685520676
+    },
+    "id": 513,
+    "slugname": "2026-ev-40",
+    "eventId": "2026_game_40",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1785610800",
+    "venue": "Ohio State Lacrosse Stadium",
+    "venueLocation": null,
+    "location": "Columbus, OH",
+    "year": 2026,
+    "week": 11,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/3632ca96-0d9c-4e04-a725-c6c672fa830a",
+    "broadcaster": [
+      "ESPN+",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 6,
+    "homeScore": 13,
+    "homePeriodScores": [
+      5,
+      3,
+      2,
+      3
+    ],
+    "visitorPeriodScores": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "WAT",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_waterdogs_primary_color.png",
+      "fullName": "Waterdogs",
+      "location": "Philadelphia",
+      "locationCode": "PHI",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#6C20C4",
+      "backgroundColor": "#99A4AD",
+      "wins": 9,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CHA",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_chaos_primary_color.png",
+      "fullName": "Chaos",
+      "location": "Carolina",
+      "locationCode": "CAR",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF0E11",
+      "backgroundColor": "#000",
+      "wins": 5,
+      "losses": 7,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": "pll-cha-wat-2026-08-01"
+  }
+}

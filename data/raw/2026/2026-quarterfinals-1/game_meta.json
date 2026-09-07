@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.4819330725079739,
+      "awayWinProbability": 0.5180669274920261
+    },
+    "id": 524,
+    "slugname": "2026-quarterfinals-1",
+    "eventId": "2026_game_49",
+    "league": "PLL",
+    "seasonSegment": "post",
+    "startTime": "1788040800",
+    "venue": "TCO Stadium",
+    "venueLocation": null,
+    "location": "Minneapolis, MN",
+    "year": 2026,
+    "week": 14,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/55890da6-ada7-4eb0-98a6-07377ef1c358",
+    "broadcaster": [
+      "ESPN+",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 15,
+    "homeScore": 14,
+    "homePeriodScores": [
+      4,
+      3,
+      2,
+      5
+    ],
+    "visitorPeriodScores": [
+      5,
+      7,
+      1,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "RED",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "OUT",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2026/Logo/outlaws-primary.webp",
+      "fullName": "Outlaws",
+      "location": "Denver",
+      "locationCode": "DEN",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FFD400",
+      "backgroundColor": "#B3B3B3",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": "Quarterfinal 1",
+    "snl": false,
+    "polymarketId": "pll-out-red-2026-08-29"
+  }
+}

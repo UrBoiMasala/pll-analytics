@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5217461355543814,
+      "awayWinProbability": 0.47825386444561857
+    },
+    "id": 511,
+    "slugname": "2026-ev-38",
+    "eventId": "2026_game_38",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1785544200",
+    "venue": "Ohio State Lacrosse Stadium",
+    "venueLocation": null,
+    "location": "Columbus, OH",
+    "year": 2026,
+    "week": 11,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/84346faa-8557-484b-95c2-f89e4f140916",
+    "broadcaster": [
+      "ESPN+",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 11,
+    "homeScore": 7,
+    "homePeriodScores": [
+      1,
+      3,
+      0,
+      3
+    ],
+    "visitorPeriodScores": [
+      3,
+      3,
+      3,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "ARC",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_archers_primary_color.png",
+      "fullName": "Archers",
+      "location": "Utah",
+      "locationCode": "UTA",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#002244",
+      "wins": 7,
+      "losses": 5,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CAN",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_cannons_primary_color.png",
+      "fullName": "Cannons",
+      "location": "Boston",
+      "locationCode": "BOS",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#B0B6BB",
+      "backgroundColor": "#C52032",
+      "wins": 7,
+      "losses": 5,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": "pll-can-arc-2026-07-31"
+  }
+}

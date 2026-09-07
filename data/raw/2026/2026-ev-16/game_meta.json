@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.44862228842515584,
+      "awayWinProbability": 0.5513777115748442
+    },
+    "id": 483,
+    "slugname": "2026-ev-16",
+    "eventId": "2026_game_16",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1780790400",
+    "venue": "American Legion Memorial Stadium",
+    "venueLocation": null,
+    "location": "Charlotte, NC",
+    "year": 2026,
+    "week": 4,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/51edd162-6073-4107-ad08-a2b35391998f",
+    "broadcaster": [
+      "ESPN+",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 10,
+    "homeScore": 17,
+    "homePeriodScores": [
+      4,
+      6,
+      5,
+      2
+    ],
+    "visitorPeriodScores": [
+      2,
+      1,
+      2,
+      5
+    ],
+    "homeTeam": {
+      "officialId": "WAT",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_waterdogs_primary_color.png",
+      "fullName": "Waterdogs",
+      "location": "Philadelphia",
+      "locationCode": "PHI",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#6C20C4",
+      "backgroundColor": "#99A4AD",
+      "wins": 9,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CAN",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_cannons_primary_color.png",
+      "fullName": "Cannons",
+      "location": "Boston",
+      "locationCode": "BOS",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#B0B6BB",
+      "backgroundColor": "#C52032",
+      "wins": 7,
+      "losses": 5,
+      "ties": 0
+    },
+    "description": null,
+    "snl": true,
+    "polymarketId": "pll-can-wat-2026-06-06"
+  }
+}

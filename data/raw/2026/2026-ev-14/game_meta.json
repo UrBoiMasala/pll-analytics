@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5324044582039961,
+      "awayWinProbability": 0.46759554179600393
+    },
+    "id": 481,
+    "slugname": "2026-ev-14",
+    "eventId": "2026_game_14",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1780705800",
+    "venue": "American Legion Memorial Stadium",
+    "venueLocation": null,
+    "location": "Charlotte, NC",
+    "year": 2026,
+    "week": 4,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/4c93d4b0-16df-462f-8754-fc73a976648b",
+    "broadcaster": [
+      "ESPN+",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 12,
+    "homeScore": 11,
+    "homePeriodScores": [
+      4,
+      2,
+      2,
+      3
+    ],
+    "visitorPeriodScores": [
+      8,
+      1,
+      2,
+      1
+    ],
+    "homeTeam": {
+      "officialId": "ATL",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_atlas_primary_color.png",
+      "fullName": "Atlas",
+      "location": "New York",
+      "locationCode": "NYA",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#00B1FF",
+      "backgroundColor": "#011E41",
+      "wins": 3,
+      "losses": 9,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "RED",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": "pll-red-atl-2026-06-05"
+  }
+}

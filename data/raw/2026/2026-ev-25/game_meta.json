@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5129434580934242,
+      "awayWinProbability": 0.48705654190657577
+    },
+    "id": 496,
+    "slugname": "2026-ev-25",
+    "eventId": "2026_game_25",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1783722600",
+    "venue": "Northwestern Medicine Field at Martin Stadium",
+    "venueLocation": null,
+    "location": "Chicago, IL",
+    "year": 2026,
+    "week": 8,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/cc3406d5-c0ca-489d-9254-beedaabfefb3",
+    "broadcaster": [
+      "ESPN+",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 15,
+    "homeScore": 13,
+    "homePeriodScores": [
+      2,
+      3,
+      5,
+      3
+    ],
+    "visitorPeriodScores": [
+      1,
+      3,
+      6,
+      5
+    ],
+    "homeTeam": {
+      "officialId": "RED",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WAT",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_waterdogs_primary_color.png",
+      "fullName": "Waterdogs",
+      "location": "Philadelphia",
+      "locationCode": "PHI",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#6C20C4",
+      "backgroundColor": "#99A4AD",
+      "wins": 9,
+      "losses": 3,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": "pll-wat-red-2026-07-10"
+  }
+}

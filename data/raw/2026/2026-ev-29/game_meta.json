@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.49018863854887507,
+      "awayWinProbability": 0.5098113614511249
+    },
+    "id": 501,
+    "slugname": "2026-ev-29",
+    "eventId": "2026_game_29",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1784325600",
+    "venue": "Rafferty Stadium",
+    "venueLocation": null,
+    "location": "Fairfield, CT",
+    "year": 2026,
+    "week": 9,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/a5ea4e87-ab5c-48db-9602-4277a4ee07c5",
+    "broadcaster": [
+      "ESPN+",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 7,
+    "homeScore": 20,
+    "homePeriodScores": [
+      5,
+      3,
+      7,
+      5
+    ],
+    "visitorPeriodScores": [
+      3,
+      2,
+      1,
+      1
+    ],
+    "homeTeam": {
+      "officialId": "WHP",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2026/Logo/whipsnakes-primary.webp",
+      "fullName": "Whipsnakes",
+      "location": "Maryland",
+      "locationCode": "MDW",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#FF0000",
+      "backgroundColor": "#3DDBC2",
+      "wins": 5,
+      "losses": 7,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "RED",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": "pll-red-whp-2026-07-17"
+  }
+}

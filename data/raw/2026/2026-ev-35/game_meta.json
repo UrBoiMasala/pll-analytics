@@ -1,0 +1,78 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.46499246811422873,
+      "awayWinProbability": 0.5350075318857712
+    },
+    "id": 508,
+    "slugname": "2026-ev-35",
+    "eventId": "2026_game_35",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1785002400",
+    "venue": "Peter Barton Lacrosse Stadium",
+    "venueLocation": null,
+    "location": "Denver, CO",
+    "year": 2026,
+    "week": 10,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/c9e1e76f-7780-45e2-a0d8-871d2efaf302",
+    "broadcaster": [
+      "ESPN+",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 5,
+    "clockMinutes": 11,
+    "clockSeconds": 46,
+    "gameStatus": null,
+    "visitorScore": 12,
+    "homeScore": 13,
+    "homePeriodScores": [
+      4,
+      4,
+      3,
+      1,
+      1
+    ],
+    "visitorPeriodScores": [
+      5,
+      3,
+      1,
+      3,
+      0
+    ],
+    "homeTeam": {
+      "officialId": "CHA",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_chaos_primary_color.png",
+      "fullName": "Chaos",
+      "location": "Carolina",
+      "locationCode": "CAR",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF0E11",
+      "backgroundColor": "#000",
+      "wins": 5,
+      "losses": 7,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CAN",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_cannons_primary_color.png",
+      "fullName": "Cannons",
+      "location": "Boston",
+      "locationCode": "BOS",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#B0B6BB",
+      "backgroundColor": "#C52032",
+      "wins": 7,
+      "losses": 5,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": "pll-can-cha-2026-07-25"
+  }
+}

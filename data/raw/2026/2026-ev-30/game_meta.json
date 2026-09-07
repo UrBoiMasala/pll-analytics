@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5126952010809858,
+      "awayWinProbability": 0.48730479891901424
+    },
+    "id": 503,
+    "slugname": "2026-ev-30",
+    "eventId": "2026_game_30",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1784397600",
+    "venue": "Rafferty Stadium",
+    "venueLocation": null,
+    "location": "Fairfield, CT",
+    "year": 2026,
+    "week": 9,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/a24f1d42-21fc-474e-92b2-7c98f0bb898e",
+    "broadcaster": [
+      "ABC",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 8,
+    "homeScore": 10,
+    "homePeriodScores": [
+      2,
+      4,
+      1,
+      3
+    ],
+    "visitorPeriodScores": [
+      5,
+      0,
+      0,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "OUT",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2026/Logo/outlaws-primary.webp",
+      "fullName": "Outlaws",
+      "location": "Denver",
+      "locationCode": "DEN",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FFD400",
+      "backgroundColor": "#B3B3B3",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CHA",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_chaos_primary_color.png",
+      "fullName": "Chaos",
+      "location": "Carolina",
+      "locationCode": "CAR",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF0E11",
+      "backgroundColor": "#000",
+      "wins": 5,
+      "losses": 7,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": "pll-cha-out-2026-07-18"
+  }
+}

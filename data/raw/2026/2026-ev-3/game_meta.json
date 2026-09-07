@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.4386,
+      "awayWinProbability": 0.5614
+    },
+    "id": 467,
+    "slugname": "2026-ev-3",
+    "eventId": "2026_game_3",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1778367600",
+    "venue": "Zions Bank Stadium",
+    "venueLocation": null,
+    "location": "Salt Lake City, UT",
+    "year": 2026,
+    "week": 1,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/258b10cf-b250-466d-bc34-6eae504a988b",
+    "broadcaster": [
+      "ESPN2",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 7,
+    "homeScore": 10,
+    "homePeriodScores": [
+      4,
+      3,
+      2,
+      1
+    ],
+    "visitorPeriodScores": [
+      3,
+      1,
+      3,
+      0
+    ],
+    "homeTeam": {
+      "officialId": "ARC",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_archers_primary_color.png",
+      "fullName": "Archers",
+      "location": "Utah",
+      "locationCode": "UTA",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#002244",
+      "wins": 7,
+      "losses": 5,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "OUT",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2026/Logo/outlaws-primary.webp",
+      "fullName": "Outlaws",
+      "location": "Denver",
+      "locationCode": "DEN",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FFD400",
+      "backgroundColor": "#B3B3B3",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": null,
+    "snl": true,
+    "polymarketId": "pll-out-arc-2026-05-09"
+  }
+}

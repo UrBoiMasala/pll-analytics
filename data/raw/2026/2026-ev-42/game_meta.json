@@ -1,0 +1,78 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5519587175667857,
+      "awayWinProbability": 0.4480412824332143
+    },
+    "id": 515,
+    "slugname": "2026-ev-42",
+    "eventId": "2026_game_42",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1786140000",
+    "venue": "Harvard Stadium",
+    "venueLocation": null,
+    "location": "Boston, MA",
+    "year": 2026,
+    "week": 12,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/c75e5e6c-fc3b-4176-83b7-ba9d4ee51afd",
+    "broadcaster": [
+      "ESPN+",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 5,
+    "clockMinutes": 11,
+    "clockSeconds": 22,
+    "gameStatus": null,
+    "visitorScore": 12,
+    "homeScore": 14,
+    "homePeriodScores": [
+      5,
+      0,
+      4,
+      3,
+      2
+    ],
+    "visitorPeriodScores": [
+      2,
+      6,
+      3,
+      1,
+      0
+    ],
+    "homeTeam": {
+      "officialId": "CAN",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_cannons_primary_color.png",
+      "fullName": "Cannons",
+      "location": "Boston",
+      "locationCode": "BOS",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#B0B6BB",
+      "backgroundColor": "#C52032",
+      "wins": 7,
+      "losses": 5,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WHP",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2026/Logo/whipsnakes-primary.webp",
+      "fullName": "Whipsnakes",
+      "location": "Maryland",
+      "locationCode": "MDW",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#FF0000",
+      "backgroundColor": "#3DDBC2",
+      "wins": 5,
+      "losses": 7,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": "pll-whp-can-2026-08-07"
+  }
+}

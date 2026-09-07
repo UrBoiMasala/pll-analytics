@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.4999217765153899,
+      "awayWinProbability": 0.5000782234846102
+    },
+    "id": 489,
+    "slugname": "2026-ev-21",
+    "eventId": "2026_game_21",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1782590400",
+    "venue": "Torero Stadium",
+    "venueLocation": null,
+    "location": "San Diego, CA",
+    "year": 2026,
+    "week": 6,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/5bb318d0-eb59-4b46-895a-76c2e29e2a15",
+    "broadcaster": [
+      "ESPN",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 7,
+    "homeScore": 13,
+    "homePeriodScores": [
+      3,
+      3,
+      5,
+      2
+    ],
+    "visitorPeriodScores": [
+      3,
+      1,
+      2,
+      1
+    ],
+    "homeTeam": {
+      "officialId": "OUT",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2026/Logo/outlaws-primary.webp",
+      "fullName": "Outlaws",
+      "location": "Denver",
+      "locationCode": "DEN",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FFD400",
+      "backgroundColor": "#B3B3B3",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WHP",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2026/Logo/whipsnakes-primary.webp",
+      "fullName": "Whipsnakes",
+      "location": "Maryland",
+      "locationCode": "MDW",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#FF0000",
+      "backgroundColor": "#3DDBC2",
+      "wins": 5,
+      "losses": 7,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": "pll-whp-out-2026-06-27"
+  }
+}

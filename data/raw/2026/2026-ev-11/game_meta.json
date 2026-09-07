@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.49962308803021893,
+      "awayWinProbability": 0.5003769119697811
+    },
+    "id": 477,
+    "slugname": "2026-ev-11",
+    "eventId": "2026_game_11",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1780176600",
+    "venue": "Ridley Athletic Complex",
+    "venueLocation": null,
+    "location": "Baltimore, MD",
+    "year": 2026,
+    "week": 3,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/0b9d18e5-7278-45b1-af94-a29b1d8b1e0e",
+    "broadcaster": [
+      "ESPN+",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 5,
+    "homeScore": 8,
+    "homePeriodScores": [
+      3,
+      2,
+      2,
+      1
+    ],
+    "visitorPeriodScores": [
+      0,
+      3,
+      2,
+      0
+    ],
+    "homeTeam": {
+      "officialId": "WHP",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2026/Logo/whipsnakes-primary.webp",
+      "fullName": "Whipsnakes",
+      "location": "Maryland",
+      "locationCode": "MDW",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#FF0000",
+      "backgroundColor": "#3DDBC2",
+      "wins": 5,
+      "losses": 7,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ARC",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_archers_primary_color.png",
+      "fullName": "Archers",
+      "location": "Utah",
+      "locationCode": "UTA",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#002244",
+      "wins": 7,
+      "losses": 5,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": "pll-arc-whp-2026-05-30"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.48577309935490043,
+      "awayWinProbability": 0.5142269006450996
+    },
+    "id": 486,
+    "slugname": "2026-ev-18",
+    "eventId": "2026_game_18",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1781915400",
+    "venue": "James M. Shuart Stadium",
+    "venueLocation": null,
+    "location": "Long Island",
+    "year": 2026,
+    "week": 5,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/1b24cf20-c52f-4ee5-98e8-2d07a9b52d1f",
+    "broadcaster": [
+      "ESPN+",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 14,
+    "homeScore": 16,
+    "homePeriodScores": [
+      3,
+      3,
+      4,
+      6
+    ],
+    "visitorPeriodScores": [
+      4,
+      3,
+      5,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "RED",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ARC",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_archers_primary_color.png",
+      "fullName": "Archers",
+      "location": "Utah",
+      "locationCode": "UTA",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#002244",
+      "wins": 7,
+      "losses": 5,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": "pll-arc-red-2026-06-19"
+  }
+}

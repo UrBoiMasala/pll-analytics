@@ -1,0 +1,77 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.4407262431291281,
+      "awayWinProbability": 0.5592737568708719
+    },
+    "id": 473,
+    "slugname": "2026-ev-8",
+    "eventId": "2026_game_8",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1778976000",
+    "venue": "Centreville Bank Stadium",
+    "venueLocation": null,
+    "location": "Rhode Island",
+    "year": 2026,
+    "week": 2,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/10a5648c-d11e-4b69-a190-4bdc1067e808",
+    "broadcaster": [
+      "Disney+",
+      "ESPN+",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 5,
+    "homeScore": 19,
+    "homePeriodScores": [
+      4,
+      6,
+      3,
+      6
+    ],
+    "visitorPeriodScores": [
+      0,
+      1,
+      3,
+      1
+    ],
+    "homeTeam": {
+      "officialId": "CAN",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_cannons_primary_color.png",
+      "fullName": "Cannons",
+      "location": "Boston",
+      "locationCode": "BOS",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#B0B6BB",
+      "backgroundColor": "#C52032",
+      "wins": 7,
+      "losses": 5,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WAT",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_waterdogs_primary_color.png",
+      "fullName": "Waterdogs",
+      "location": "Philadelphia",
+      "locationCode": "PHI",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#6C20C4",
+      "backgroundColor": "#99A4AD",
+      "wins": 9,
+      "losses": 3,
+      "ties": 0
+    },
+    "description": null,
+    "snl": true,
+    "polymarketId": "pll-wat-can-2026-05-16"
+  }
+}

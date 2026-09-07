@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.46827262038495837,
+      "awayWinProbability": 0.5317273796150417
+    },
+    "id": 490,
+    "slugname": "2026-ev-22",
+    "eventId": "2026_game_22",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1782606600",
+    "venue": "Torero Stadium",
+    "venueLocation": null,
+    "location": "San Diego, CA",
+    "year": 2026,
+    "week": 6,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/8f953851-6cca-43d7-8513-01d9047477e9",
+    "broadcaster": [
+      "ESPN+",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 15,
+    "homeScore": 12,
+    "homePeriodScores": [
+      0,
+      2,
+      5,
+      5
+    ],
+    "visitorPeriodScores": [
+      2,
+      2,
+      6,
+      5
+    ],
+    "homeTeam": {
+      "officialId": "RED",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CAN",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_cannons_primary_color.png",
+      "fullName": "Cannons",
+      "location": "Boston",
+      "locationCode": "BOS",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#B0B6BB",
+      "backgroundColor": "#C52032",
+      "wins": 7,
+      "losses": 5,
+      "ties": 0
+    },
+    "description": null,
+    "snl": true,
+    "polymarketId": "pll-can-red-2026-06-27"
+  }
+}
