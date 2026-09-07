@@ -216,11 +216,35 @@ def build_events_table(slugs: list[str], games_df: pd.DataFrame) -> pd.DataFrame
         # A row is "safe to use in normal analysis" only if: the game itself
         # counts toward league analytics (not all-star/other), the event is
         # not a confirmed exact duplicate, and it isn't a confirmed-invalid
-        # goal/penalty. Deliberately does NOT exclude anything merely
-        # ambiguous (e.g. an unpopulated shotAssistId, or the small
-        # unresolved turnover/groundball count residuals) — see
-        # VALIDATION_METHODOLOGY.md.
-        known_invalid = (df["is_valid_goal"] == False) | (df["is_valid_penalty"] == False)  # noqa: E712
+        # goal/penalty THAT ALSO CARRIES NO OTHER USABLE INFORMATION.
+        #
+        # An invalid penalty (null penaltyLength) has no salvageable content
+        # for any other metric, so it is dropped from this general
+        # eligibility flag entirely, as before.
+        #
+        # An invalid goal is different: the one confirmed case (2026-ev-1,
+        # marker shot-3004600) is a real saved shot that PLL's feed
+        # mislabeled eventType=='goal' instead of 'shot' (shot_saved=True,
+        # shotOnGoal=True, zero score change, empty description — see
+        # pll_pbp_clean._validate_goals / _classify_shots). Its
+        # `shot_outcome` is still correctly derived ("saved"). Blanket-
+        # excluding every invalid goal from is_analysis_eligible_event would
+        # make this row invisible to any possession/shot/save metric built
+        # on top of that flag — silently erasing a legitimate shot/save,
+        # not just an invalid goal. So only an invalid goal with NO
+        # resolvable shot_outcome (i.e. not even salvageable as a shot) is
+        # excluded here; is_valid_goal==False remains the correct, separate
+        # signal for every goal-specific/scoring aggregation (goal counts,
+        # points, goals_with_pre_shot_pass) to filter on directly, so this
+        # event still never counts as a goal anywhere. See DATASET_2026.md.
+        # Deliberately does NOT exclude anything merely ambiguous (e.g. an
+        # unpopulated shotAssistId, or the small unresolved turnover/
+        # groundball count residuals) — see VALIDATION_METHODOLOGY.md.
+        invalid_goal_with_no_shot_data = (
+            (df["event_type"] == "goal") & (df["is_valid_goal"] == False) & df["shot_outcome"].isna()  # noqa: E712
+        )
+        invalid_penalty = df["is_valid_penalty"] == False  # noqa: E712
+        known_invalid = invalid_goal_with_no_shot_data | invalid_penalty
         df["is_analysis_eligible_event"] = (
             df["include_in_league_analytics"].fillna(False)
             & ~df["is_duplicate_event"].fillna(False)
@@ -245,17 +269,74 @@ def build_player_game_stats(slugs: list[str], games_df: pd.DataFrame) -> pd.Data
     return pd.DataFrame(rows)
 
 
-def build_team_game_stats(slugs: list[str], games_df: pd.DataFrame) -> pd.DataFrame:
+def build_team_game_stats(slugs: list[str], games_df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """
+    The raw `teams_stats` endpoint has been observed to return a phantom
+    extra team row that did not play in that game (2026-ev-46, 2026-ev-47 —
+    see FULL_SEASON_ANOMALIES.md §4). The canonical `team_game_stats.csv`
+    must contain only actual game participants: exactly the two team_ids
+    listed as home/away in that game's own `game_meta` (the authoritative
+    source for who played). Every rejected raw row is preserved, not
+    dropped silently, in the returned exceptions frame with a reason —
+    this is a filter with an audit trail, not a deletion.
+    """
     game_id_by_slug = dict(zip(games_df["game_slug"], games_df["game_id"]))
+    home_by_slug = dict(zip(games_df["game_slug"], games_df["home_team_id"]))
+    away_by_slug = dict(zip(games_df["game_slug"], games_df["away_team_id"]))
+
     rows = []
+    exceptions = []
     for slug in slugs:
         items = load_raw(slug)["teams_stats"]["data"]["items"]
+        expected = {home_by_slug.get(slug), away_by_slug.get(slug)}
+        seen_accepted = set()
         for t in items:
+            tid = t.get("officialId")
             row = dict(t)
             row["game_id"] = game_id_by_slug.get(slug)
             row["game_slug"] = slug
+            if tid not in expected:
+                exceptions.append({
+                    **row,
+                    "rejection_reason": f"not a participant in {slug} per game_meta (expected {sorted(e for e in expected if e)})",
+                })
+                continue
+            if tid in seen_accepted:
+                exceptions.append({
+                    **row,
+                    "rejection_reason": f"duplicate team_game row for {slug}/{tid} (participant already has an accepted row)",
+                })
+                continue
+            seen_accepted.add(tid)
             rows.append(row)
-    return pd.DataFrame(rows)
+        missing = expected - seen_accepted
+        for tid in missing:
+            if tid is None:
+                continue
+            exceptions.append({
+                "officialId": tid, "game_id": game_id_by_slug.get(slug), "game_slug": slug,
+                "rejection_reason": f"expected participant {tid} has NO teams_stats row at all in {slug}",
+            })
+
+    return pd.DataFrame(rows), pd.DataFrame(exceptions)
+
+
+def validate_team_game_stats(tgs_df: pd.DataFrame, games_df: pd.DataFrame) -> list[str]:
+    """Hard structural checks on the canonical team_game_stats table:
+    exactly two distinct participant teams per completed game, and a
+    unique (game_id, officialId) key. Returns a list of problem strings
+    (empty if clean)."""
+    problems = []
+    dup_keys = tgs_df[tgs_df.duplicated(subset=["game_id", "officialId"], keep=False)]
+    if len(dup_keys):
+        problems.append(f"duplicate (game_id, officialId) keys in team_game_stats: "
+                         f"{sorted(set(zip(dup_keys['game_slug'], dup_keys['officialId'])))}")
+    per_game_team_counts = tgs_df.groupby("game_slug")["officialId"].nunique()
+    bad_games = per_game_team_counts[per_game_team_counts != 2]
+    if len(bad_games):
+        problems.append(f"games without exactly 2 distinct participant teams in team_game_stats: "
+                         f"{bad_games.to_dict()}")
+    return problems
 
 
 def check_player_id_resolution(events: pd.DataFrame, player_lookup: dict) -> pd.DataFrame:
@@ -325,9 +406,20 @@ def main():
     pgs_df.to_csv(OUT_DIR / "player_game_stats.csv", index=False)
     print(f"  saved player_game_stats.csv ({len(pgs_df)} rows)")
 
-    tgs_df = build_team_game_stats(slugs, games_df)
+    tgs_df, tgs_exceptions_df = build_team_game_stats(slugs, games_df)
     tgs_df.to_csv(OUT_DIR / "team_game_stats.csv", index=False)
-    print(f"  saved team_game_stats.csv ({len(tgs_df)} rows)")
+    print(f"  saved team_game_stats.csv ({len(tgs_df)} rows, participant-filtered)")
+    tgs_exceptions_df.to_csv(OUT_DIR / "team_game_stats_exceptions.csv", index=False)
+    print(f"  saved team_game_stats_exceptions.csv ({len(tgs_exceptions_df)} rejected/missing rows)")
+    if len(tgs_exceptions_df):
+        print(tgs_exceptions_df[["game_slug", "officialId", "rejection_reason"]].to_string(index=False))
+    tgs_problems = validate_team_game_stats(tgs_df, games_df)
+    if tgs_problems:
+        print("  TEAM_GAME_STATS VALIDATION FAILED:")
+        for p in tgs_problems:
+            print(f"    - {p}")
+    else:
+        print("  team_game_stats.csv validated: exactly 2 distinct participant teams per completed game; (game_id, officialId) unique")
 
     unresolved_df = check_player_id_resolution(events_df, player_lookup_by_id)
     unresolved_df.to_csv(OUT_DIR / "unresolved_player_ids.csv", index=False)

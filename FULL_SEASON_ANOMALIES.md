@@ -93,19 +93,68 @@ unexplained** situation — see #1.
 **2026-ev-46** (WAT vs. WHP) and **2026-ev-47** (WAT vs. ATL) — both
 involving the Waterdogs, played the same week — have `teams_stats`
 endpoints that return **3 team rows instead of 2**, including a team that
-did not play in that game. In ev-47, the two real teams' own stat values
-are additionally corrupted (WAT shows 16 goals vs. 18 true per
-`game_meta`). This is a PLL backend bug — `game_meta` and the play-by-play
-itself remain internally consistent for both games. The validation
-pipeline filters `teams_stats` rows to only the two teams listed in
-`game_meta` before summing official totals (`team_stats_row_count` rows,
-`KNOWN_DATA_ISSUE`).
+did not play in that game:
+
+- **2026-ev-46**: real participants are WAT (home, 11 goals) and WHP (away,
+  9 goals), matching `game_meta` (`homeScore=11`, `visitorScore=9`) exactly.
+  The phantom row is **ATL** (2 goals, 7 shots) — a team that did not play
+  in this game at all, and whose stat line is not all-zero (it looks like a
+  stray row from a different ATL game bleeding into this response, not a
+  blank placeholder).
+- **2026-ev-47**: real participants are WAT (home, 16 goals) and ATL (away,
+  9 goals), matching `game_meta` (`homeScore=18`, `visitorScore=10` — see
+  below on the goals/points distinction) exactly. The phantom row is
+  **WHP** with an all-zero stat line (0 goals, 0 shots, 0 everything) — a
+  team that did not play in this game.
+
+**Correction (Phase 4.25): WAT's "16 goals" in ev-47 is not a corrupted
+value and is not inconsistent with the true final score of 18.** A prior
+version of this document read WAT's 16 raw `goals` against `game_meta`'s
+`homeScore` of 18 and called the stat line corrupted. That comparison was
+wrong on its own terms: PLL awards 2-point goals (see `shot_type` in
+`{2_PT, MU_2_PT}`), so **goals** (a count of scoring plays) and **points**
+(the score, weighting each goal by 1 or 2) are two different quantities by
+design, not two measurements of the same thing. WAT's own `teams_stats` row
+for ev-47 carries `onePointGoals=14`, `twoPointGoals=2` — 14+2 = **16
+goals** (matches the `goals` field exactly) and 14×1 + 2×2 = **18 points**
+(matches `homeScore` exactly). ATL's row (`onePointGoals=8`,
+`twoPointGoals=1`) reproduces `visitorScore=10` the same way (8+1=9 goals,
+8+2=10 points). Both teams' `teams_stats` rows in ev-47 are fully internally
+consistent with `game_meta` once one-point vs. two-point goals are
+accounted for — there is no corruption in WAT's or ATL's own stat lines in
+either game, only the unrelated phantom third row.
+
+This is a PLL backend bug (an extra, wrong team folded into the
+`teams_stats` response) — `game_meta` and the play-by-play itself remain
+internally consistent for both games, and so does each real participant's
+own `teams_stats` row. As of Phase 4.25, this is handled one layer earlier
+than before: `pll_build_tables.build_team_game_stats` filters
+`team_game_stats.csv` itself to the two `game_meta` participants for every
+game (not just at validation time), routing every rejected/phantom row into
+`data/processed/2026/team_game_stats_exceptions.csv` with an explicit
+reason, and a hard structural check enforces exactly 2 distinct participant
+teams and a unique `(game_id, officialId)` key for every completed game
+(see `DATASET_2026.md`). `pll_validate_season.py`'s own `teams_stats`
+filtering (`team_stats_row_count`, `KNOWN_DATA_ISSUE`) is now a second,
+redundant check against an already-clean table rather than the only place
+the phantom rows are excluded.
 
 ## 5. Confirmed-generalized issues from Phase 2 (no new behavior)
 
 - **Mislabeled `goal`** (`is_valid_goal`): 1 case across the full season
   (1,139 raw "goal" events → 1,138 valid), same rate as Phase 2's single
-  case (2026-ev-1).
+  case (2026-ev-1, marker `shot-3004600`). This event is a real saved shot
+  (`shot_saved=True`, `shot_on_goal=True`, empty description, zero score
+  change), not a goal — `is_valid_goal=False` and it is correctly excluded
+  from every goal/scoring aggregation. **Phase 4.25 correction:** prior to
+  Phase 4.25, it was also excluded from `is_analysis_eligible_event`
+  entirely (the general "safe to build metrics from" flag), which silently
+  dropped this legitimate shot/save from any shot- or save-denominated
+  metric built on that flag (including possession `shot_attempts`/
+  `shots_on_goal`). It is now kept eligible — its `shot_outcome` ("saved")
+  is preserved and counted normally — while `is_valid_goal=False` still
+  keeps it out of goal/points counts. See `DATASET_2026.md` and
+  `pll_build_tables.build_events_table`.
 - **Placeholder raw scores**: confirmed systemic across all 51 games;
   `home_score_corrected`/`away_score_corrected` reconstructs correctly in
   every game (zero non-monotonic or final-score-mismatched corrections).

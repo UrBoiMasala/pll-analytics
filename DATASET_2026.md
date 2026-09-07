@@ -1,10 +1,14 @@
 # PLL 2026 Season Dataset
 
 Built by ingesting, cleaning, and validating every completed game of the
-2026 Premier Lacrosse League season from PLL's public stats API. This is an
-acquisition/normalization deliverable only — no possession model, advanced
-metrics, or PTI have been built on top of it yet. See
-`VALIDATION_METHODOLOGY.md` for the full cleaning/validation rulebook and
+2026 Premier Lacrosse League season from PLL's public stats API, and
+reconstructing a possession-level layer on top of the cleaned events. No
+advanced/possession-denominated metrics (EGA, player-value ratings, PTI,
+MVP models, dashboards) have been built on top of it yet — see "Phase 5
+recommendation" in `PHASE_4_25_REPORT.md` for what's ready vs. what still
+needs uncertainty analysis. See `VALIDATION_METHODOLOGY.md` for the full
+event-level cleaning/validation rulebook, `POSSESSION_METHODOLOGY.md` for
+the possession-reconstruction rules and evidence base, and
 `FULL_SEASON_ANOMALIES.md` for every known data-quality issue.
 
 ## Source endpoints
@@ -72,13 +76,26 @@ from team-level baselines/ratings without deleting anything.
 No rows are ever deleted — anomalies are flagged, not removed.
 `is_analysis_eligible_event` = the game counts toward league analytics
 (`include_in_league_analytics`) AND the event isn't a confirmed exact
-duplicate (`is_duplicate_event`) AND it isn't a confirmed-invalid goal/
-penalty. It deliberately does **not** exclude anything merely ambiguous —
-an unpopulated `shotAssistId`, or the 42 unresolved count residuals in
-`FULL_SEASON_ANOMALIES.md`, are left in and flagged elsewhere, not silently
-dropped from this eligibility flag. 296 of 11,254 events are currently
-ineligible (258 are all-star-game events; the remainder are duplicates/
-invalid events outside the all-star game).
+duplicate (`is_duplicate_event`) AND it isn't a confirmed-invalid penalty
+AND it isn't a confirmed-invalid goal **that also carries no other usable
+information**. It deliberately does **not** exclude anything merely
+ambiguous — an unpopulated `shotAssistId`, or the unresolved count residuals
+in `FULL_SEASON_ANOMALIES.md`, are left in and flagged elsewhere, not
+silently dropped from this eligibility flag.
+
+**Metric-specific eligibility (Phase 4.25):** the one known invalid-goal
+case (2026-ev-1, marker `shot-3004600`) is a real saved shot mislabeled
+`eventType=='goal'` (see `FULL_SEASON_ANOMALIES.md` §5) — its
+`shot_outcome` is correctly derived as `"saved"`. Prior to Phase 4.25 it
+was excluded from `is_analysis_eligible_event` entirely, which made this
+legitimate shot/save invisible to any shot- or save-denominated metric
+built on that flag (including possession-level `shot_attempts`/
+`shots_on_goal`). It is now kept **eligible** (its `shot_outcome` is
+counted normally) while `is_valid_goal=False` still, correctly, keeps it
+out of every goal/points aggregation — those aggregations filter on
+`is_valid_goal` directly and always have. A future invalid goal with truly
+no salvageable shot data (`shot_outcome` null) would still be excluded from
+`is_analysis_eligible_event`, since there would be nothing left to salvage.
 
 `event_type` is never reinterpreted — there is deliberately no
 "event_type_cleaned" column, since validity concerns live entirely in the
@@ -95,10 +112,32 @@ dataset from this field; `goals_with_pre_shot_pass` in
 `validation_report.csv` is a diagnostic cross-check only (see
 `VALIDATION_METHODOLOGY.md`), not an analytics product.
 
-### `player_game_stats.csv` (1,862 rows) / `team_game_stats.csv` (104 rows)
-Raw per-game box-score rows from `players/stats`/`teams/stats`, unmodified
+### `player_game_stats.csv` / `team_game_stats.csv`
+Per-game box-score rows from `players/stats`/`teams/stats`, unmodified
 except for an added `game_id`/`game_slug`. PLL's own column names
 (`officialId`, `teamId`, camelCase stats) are preserved, not renamed.
+
+**`team_game_stats.csv` is participant-filtered (Phase 4.25).** The raw
+`teams_stats` endpoint has, in 2 known games (2026-ev-46, 2026-ev-47 — see
+`FULL_SEASON_ANOMALIES.md` §4), returned an extra row for a team that did
+not play in that game (a PLL backend bug). `pll_build_tables.py` now keeps
+only rows whose `officialId` matches that game's own `game_meta`
+home/away team — the authoritative source for who actually played — for
+every game, not just the 2 known-affected ones. Every rejected row (a
+non-participant, an exact duplicate participant row, or a participant with
+no row at all) is preserved, with a reason, in the sibling
+`team_game_stats_exceptions.csv` rather than silently dropped. A hard
+structural check (run at build time, and re-verifiable any time) requires
+every completed game to have exactly 2 distinct participant `officialId`
+values in `team_game_stats.csv` and a unique `(game_id, officialId)` key.
+
+### `team_game_stats_exceptions.csv`
+One row per rejected/missing `teams_stats` record, each with a
+`rejection_reason` (e.g. "not a participant in 2026-ev-47 per game_meta",
+"expected participant WHP has NO teams_stats row at all in ..."). Preserves
+the full original raw row (including whatever real-looking-but-wrong stat
+values it carried) for audit — see `FULL_SEASON_ANOMALIES.md` §4 for what's
+been found there so far.
 
 ### `unresolved_player_ids.csv` / `unresolved_team_ids.csv`
 Both empty (0 rows). Every player ID referenced anywhere in `events.csv`

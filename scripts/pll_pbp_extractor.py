@@ -1,16 +1,22 @@
 """
-PLL play-by-play extractor (Phase 1 proof of concept).
+PLL play-by-play extractor (originated as a Phase 1 proof of concept;
+`normalize_play_by_play` is still active, load-bearing code).
 
 Pulls play-by-play, game metadata, and player-stats JSON directly from the
 PLL stats site's public REST API (api/v4), saves the raw responses, and
 normalizes the play-by-play into a flat per-event pandas DataFrame.
 
+`normalize_play_by_play` (and `build_player_lookup`/`build_team_lookup`) are
+imported directly by `pll_build_tables.py` and used for every game in the
+season-wide pipeline — this module is NOT legacy/archived code even though
+its own `main()`/CLI below (fetch one game, write it standalone to
+`data/processed/<slug>_play_by_play.csv`) has been superseded by the
+season builder and is kept only for ad hoc single-game debugging. The
+Phase 1/2 per-game CSVs this `main()` used to produce for 6 sample games
+have been archived; see `archive/legacy_phase1_2/README.md`.
+
 Usage:
     python3 pll_pbp_extractor.py 2026-ev-1
-
-Designed to be reusable across games: swap the game slug and it will fetch,
-save raw JSON under data/raw/<year>/<slug>/, and write a normalized CSV to
-data/processed/<slug>_play_by_play.csv.
 """
 import json
 import sys
