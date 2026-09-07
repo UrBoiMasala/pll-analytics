@@ -10,7 +10,7 @@ check_id,check_name,status,n_failures,detail
 9,points_reconcile_with_final_score,PASS,0,[]
 10,no_possession_scored_by_both_teams,PASS,0,0 goal-ending possessions where the goal's team != offense_team_id
 11,duplicates_excluded_from_boundaries,PASS,0,0 possessions reference a duplicate-flagged event as a boundary
-12,consecutive_possessions_alternate_teams_rate,INFO,730,"730/4336 (16.8%) consecutive possessions share the same offense team; expected to be non-zero (transient turnover-evidenced possessions, ambiguous-conflict re-opens) — diagnostic only, not a hard failure"
+12,consecutive_possessions_alternate_teams_rate,INFO,730,"730/4338 (16.8%) consecutive possessions share the same offense team; expected to be non-zero (transient turnover-evidenced possessions, ambiguous-conflict re-opens) — diagnostic only, not a hard failure"
 13,goal_generates_exactly_one_possession,PASS,0,"duplicated goal (game,end_event_id) keys: []"
 14,turnover_shotclock_redundancy_collapsed,PASS,0,examples: []
 15,offensive_rebound_does_not_end_possession,PASS,0,0 'defensive_ground_ball' ends where the recovering team matches the possession's own offense team

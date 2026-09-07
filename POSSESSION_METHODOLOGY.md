@@ -31,9 +31,14 @@ Possessions are built only for games where `games.include_in_league_analytics
 == True` (regular season + playoffs; the all-star game is excluded — see
 "All-Star exclusion" below), and only from `events.csv` rows where
 `is_analysis_eligible_event == True` (excludes exact-duplicate events and
-the confirmed-invalid goal/penalty already flagged in Phase 3.5). This
-reuses the existing Phase 3.5 eligibility definitions rather than inventing
-a new, conflicting one, per the Phase 4 brief.
+the confirmed-invalid penalty/goal-with-no-salvageable-data flagged in
+Phase 3.5/4.25 — see `DATASET_2026.md` "Metric-specific eligibility"). This
+reuses the existing eligibility definition rather than inventing a new,
+conflicting one, per the Phase 4 brief. As of Phase 4.25, the one
+confirmed invalid-goal event (2026-ev-1) that is actually a real saved
+shot is included here (its `is_valid_goal == False` still prevents it from
+being treated as a scoring goal by `add_shot_or_goal`/the goal-closing
+branch — it only ever contributes `shot_attempts`/`shots_on_goal`).
 
 ## Evidence base
 
@@ -114,6 +119,60 @@ itself, or a separate `groundball` event by the same team right after) does
 not change possession — it's the winning team continuing to hold what they
 just won.
 
+### Faceoff redraw handling (Phase 4.25)
+
+**Rule**: if the possession about to be force-closed by an incoming
+faceoff is itself nothing but its own opening faceoff event
+(`start_reason == faceoff_win` and it has exactly 1 event total — no shot,
+turnover, or groundball was ever added to it) AND this new faceoff arrives
+with **zero other events of any kind in between**, it is closed with
+`end_reason = faceoff_violation_redraw`, `is_ambiguous = False` — instead
+of the general `ambiguous_control_change` path.
+
+**Evidence**: two faceoff events immediately adjacent in the raw stream,
+same period, with literally nothing between them, occur exactly **2 times**
+in the full 2026 season (checked directly, not sampled):
+`2026-ev-28` `faceoff-3018500`→`faceoff-3019000` (period 4, 31s apart) and
+`2026-ev-42` `faceoff-100`→`faceoff-400` (period 1, 14s apart — the very
+first faceoff of that game, already called out in the evidence base above).
+In both cases the first faceoff's own possession has zero recorded plays —
+there is no possession *content* that went unlogged, only an
+administrative redo (an offsides call, a violation, a too-many-men
+infraction — none of which the feed encodes as its own event type) between
+two live-ball draws. Since nothing happened, closing it as
+`ambiguous_control_change` overstates the uncertainty: there is no lost
+evidence about what the team *did* with the ball (they never got to do
+anything), only about *why* a second faceoff was needed, which was never
+knowable from this feed regardless of how the possession is labeled.
+
+**Assumptions / why this is narrow**: this does NOT extend to a
+groundball-started possession immediately followed by a faceoff (5 such
+cases exist this season: `2026-ev-5`, `-23`, `-31`, `-38`, `-40`) — there,
+a team demonstrably recovered the ball first (real evidence a possession
+existed and who had it), so forcing it closed as an unremarkable "redraw"
+would discard genuine information. Those 5 remain `ambiguous_control_change`
+as before, correctly, since something real did happen and its resolution
+is still unconfirmed.
+
+**Before/after** (`2026-ev-42`, period 1):
+
+| | before | after |
+|---|---|---|
+| `faceoff-100` possession | `end_reason=ambiguous_control_change`, `is_ambiguous=True` | `end_reason=faceoff_violation_redraw`, `is_ambiguous=False` |
+| `faceoff-400` possession | `start_reason=faceoff_win`, `is_ambiguous=False` (unchanged) | `start_reason=faceoff_win`, `is_ambiguous=False` (unchanged) |
+
+**Regression test**: `tests/test_build_possessions.py::TestFaceoffRedraw` —
+covers this exact motivating pattern plus two plausible false positives:
+(1) a groundball-started possession immediately followed by a faceoff
+(must stay `ambiguous_control_change`, not be swept into this rule), and
+(2) a faceoff-started possession that saw a real shot before the next
+faceoff (must not be treated as an empty redraw).
+
+**Season-wide impact**: possession count unchanged (4,388); ambiguous
+count drops by exactly 2, from 1,591 to 1,589 (36.3% → 36.2%) — this is a
+narrow, evidence-bounded fix, not a general loosening of the ambiguity
+criteria.
+
 ## Shot handling
 
 **A shot never itself ends a possession**, per the Phase 4 brief. Every
@@ -180,10 +239,18 @@ possession is opened for the opponent at this point** — the brief is
 explicit that this must wait for real subsequent evidence, normally the
 next faceoff.
 
-An **invalid** goal (the one confirmed-mislabeled event from Phase 3.5) is
-excluded entirely from possession construction, because it fails the
-`is_analysis_eligible_event` filter this phase reuses rather than
-special-casing further.
+An **invalid** goal (the one confirmed-mislabeled event, `2026-ev-1`
+`shot-3004600`) is a real saved shot, not a scoring play — as of Phase
+4.25 it is included in possession construction (it passes
+`is_analysis_eligible_event`; see "Scope" above) and contributes normally
+to `shot_attempts`/`shots_on_goal` via `add_shot_or_goal`, but
+`is_valid_goal == False` means the goal-closing branch (`if et == "goal"
+and row["is_valid_goal"] == True: close(...)`) never fires for it — it
+neither closes a possession nor contributes `goals`/`points_scored`.
+Before Phase 4.25 it was excluded entirely from possession construction
+(it failed the then-stricter `is_analysis_eligible_event` filter), which
+silently dropped a real shot/save from that possession's totals — see
+`DATASET_2026.md` and `FULL_SEASON_ANOMALIES.md` §5.
 
 ## Two-point scoring
 
@@ -265,16 +332,18 @@ type that can open a possession always carries a resolved `team_id`.
 
 ## Full start/end reason taxonomy (as actually produced, not the brief's illustrative list)
 
-**Start reasons** (season counts): `faceoff_win` (1,301), `opponent_turnover`
-(1,264), `other_confirmed_control` (920, always `is_ambiguous=True`),
-`defensive_ground_ball` (561), `opponent_shot_clock_expiration` (340).
-`unknown` is defined but unused (0 occurrences).
+**Start reasons** (season counts, Phase 4.25 refresh): `faceoff_win`
+(1,301), `opponent_turnover` (1,264), `other_confirmed_control` (922,
+always `is_ambiguous=True`), `defensive_ground_ball` (561),
+`opponent_shot_clock_expiration` (340). `unknown` is defined but unused (0
+occurrences).
 
-**End reasons** (season counts): `turnover` (1,352), `goal` (1,118),
-`ambiguous_control_change` (838, always `is_ambiguous=True` on that
-possession), `defensive_ground_ball` (561), `shot_clock_expiration` (358),
-`period_end` (123, `is_truncated=True`), `game_end` (36,
-`is_truncated=True`).
+**End reasons** (season counts, Phase 4.25 refresh): `turnover` (1,352),
+`goal` (1,118), `ambiguous_control_change` (838, always
+`is_ambiguous=True` on that possession), `defensive_ground_ball` (561),
+`shot_clock_expiration` (358), `period_end` (123, `is_truncated=True`),
+`game_end` (36, `is_truncated=True`), `faceoff_violation_redraw` (2, always
+`is_ambiguous=False` — see "Faceoff redraw handling" above).
 
 ## Source-data limitations affecting possession reconstruction
 
@@ -300,7 +369,15 @@ report for full results.
 
 ## Known unresolved cases
 
-- 1,588 of 4,386 possessions (36.2%) are flagged `is_ambiguous=True`.
+- **Phase 4.25 refresh**: 1,589 of 4,388 possessions (36.2%) are flagged
+  `is_ambiguous=True` (was 1,591/4,388 before the faceoff-redraw rule; the
+  +2 possessions vs. the original Phase 4 figure of 4,386 come from
+  2026-ev-1's mislabeled-goal-as-real-saved-shot event being restored to
+  `is_analysis_eligible_event` in Phase 4.25 — see `DATASET_2026.md` — which
+  shifted that possession's boundary). See `FULL_SEASON_ANOMALIES.md` §7
+  and `PHASE_4_25_REPORT.md` for the full before/after breakdown by reason,
+  game, and team, and for what was investigated and NOT changed (evidence
+  found insufficient) alongside what was.
   Traced to source: this is dominated by real, evidenced data gaps (missing
   post-goal faceoffs, missing intermediate turnover/groundball events)
   rather than logic errors — every hard structural validation check (1–11,

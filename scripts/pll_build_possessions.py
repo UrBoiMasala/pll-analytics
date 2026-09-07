@@ -220,11 +220,32 @@ def build_possessions_for_game(game_id, game_slug, home_id, away_id, events: pd.
 
             if et == "faceoff":
                 if current is not None:
-                    current.flag_ambiguous(
-                        "faceoff occurred while a previous possession had not been closed by "
-                        "goal/turnover/shot-clock (likely an unlogged transition)"
-                    )
-                    close(row, "ambiguous_control_change", truncated=False)
+                    # Faceoff-violation/redraw special case (Phase 4.25 —
+                    # see POSSESSION_METHODOLOGY.md "Faceoff redraw
+                    # handling"): if the possession about to be closed is
+                    # ITSELF nothing but its own opening faceoff (no shot,
+                    # turnover, or groundball was ever added — start_reason
+                    # is faceoff_win and exactly 1 event total) and this new
+                    # faceoff arrives with zero other events in between,
+                    # there is no real possession content that went
+                    # unlogged — the two faceoffs are back-to-back with
+                    # nothing between them. This is a well-evidenced
+                    # violation/redraw (e.g. an offsides or too-many-men
+                    # call voiding the draw), not an unconfirmed possession
+                    # change, so it is closed cleanly rather than flagged
+                    # ambiguous. Deliberately narrow: this does NOT cover a
+                    # groundball-started possession immediately followed by
+                    # a faceoff (weaker evidence — the ball WAS demonstrably
+                    # recovered first; see POSSESSION_METHODOLOGY.md for why
+                    # that case is left ambiguous).
+                    if current.start_reason == "faceoff_win" and len(current.event_numbers) == 1:
+                        close(row, "faceoff_violation_redraw", truncated=False)
+                    else:
+                        current.flag_ambiguous(
+                            "faceoff occurred while a previous possession had not been closed by "
+                            "goal/turnover/shot-clock (likely an unlogged transition)"
+                        )
+                        close(row, "ambiguous_control_change", truncated=False)
                 offense = row["team_id"]
                 defense = other_team(offense, home_id, away_id)
                 current = open_new(row, offense, defense, "faceoff_win", False, None)
