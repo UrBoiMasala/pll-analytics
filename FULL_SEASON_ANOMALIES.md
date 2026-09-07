@@ -176,3 +176,87 @@ the phantom rows are excluded.
   unresolved player IDs and 0 unresolved team IDs** anywhere in the season
   (verified directly against raw JSON fields, not just normalized columns
   — see `DATASET_2026.md`).
+
+## 7. Phase 4.25 deeper investigation of the 42 unresolved discrepancies
+
+Recomputed from the Phase 4.25 live-refresh data (raw content identical to
+the prior extraction for all 51 games — see `PHASE_4_25_REPORT.md` — so the
+counts below are unchanged: still 42 `UNRESOLVED`, now 70 not 72
+`KNOWN_DATA_ISSUE` purely because the 2 `team_stats_row_count` rows for
+2026-ev-46/2026-ev-47 no longer exist — `team_game_stats.csv` is now
+participant-filtered at build time, see §4).
+
+**Team-level check (no cancellation found).** Every unresolved/known-issue
+`turnovers`/`ground_balls`/`shot_clock_expirations` game-level residual was
+re-derived by summing the two participant teams' own pbp-vs-official
+differences separately, per the Phase 4.25 brief's "opposite errors can
+cancel when summed" instruction. Result: **zero cases** where a whole-game
+`PASS` (diff 0) hides a nonzero per-team split (e.g. +1/-1). Every nonzero
+team-level diff found is a strict subset of an already-flagged whole-game
+residual, and where a residual involves both teams (2026-ev-6/-28/-35/-42/
+-43, 5 cases) both teams' diffs point the **same** direction (adding up to,
+not cancelling into, the game-level total) — so no additional hidden error
+exists beyond what game-level totals already show.
+
+**Turnovers/shot-clock-expirations: description carries no real signal —
+confirmed, not just asserted.** Inspected raw events directly:
+`turnover`/`shotclockexpired` descriptions are always the fixed strings
+`"Turnover by <TEAM_CODE>"` / `"Shot Clock Violation."` — identical for
+every event of that type by the same team, all game, all season (there is
+no player field at all — `commitedTurnoverId` is confirmed always null).
+This means the general dedup rule's "identical description" condition adds
+*zero* discriminating power for these two types beyond team_id — the only
+real evidence is strict full-stream adjacency + the ≤1s clock window. This
+is why these residuals cannot be closed further without risking false
+positives, and it's a materially stronger statement than "no duplicate
+found" — there is no reliable additional signal to look for.
+
+**Ground balls: a wider timing window was tested and REJECTED with
+evidence.** `groundball` descriptions DO carry the recovering player's name
+(e.g. `"Groundball picked up by C. Mackesy."`), which is real
+disambiguating information the other two metrics lack. Widening the
+duplicate-detection window from 1s to 5s (same-player, same-team, strict
+full-stream adjacency, same period — otherwise identical to the existing
+rule) surfaces 17 additional candidate pairs across the season, and one
+of them (2026-ev-42, `groundball-2002500`→`groundball-2002600`, gap 4s,
+same player "C. Mackesy", zero other events between them) looks like
+exactly the kind of duplicate the existing rule already catches at 1s.
+**However, checking all 17 candidates against each game's own official
+`groundBalls` total shows 5 of them (2026-ev-4, -8, -12, -21, -22) are
+currently exact `PASS` (cleaned already equals official) — treating any of
+these as a duplicate would remove a ground ball the official box score
+does count, turning a passing game into a new, previously-nonexistent
+mismatch.** This is decisive: the same-player/short-gap/no-intervening-
+event pattern is not a reliable duplicate signal for ground balls in
+general, even though it looks compelling in isolation for ev-42. **No
+change was made** to the dedup window — this is a tested-and-rejected fix,
+not an untried one; see `tests/test_pbp_clean.py::test_groundball_wider_window_would_introduce_false_positives`
+for the regression test asserting this stays untouched.
+
+**Saves (2026-ev-8, +1): isolated to one team, no duplicate found even
+after exhaustive checking.** Splitting by defending team: WAT's saves
+match official exactly (10=10); the entire +1 residual is on CAN's side
+(17 pbp vs. 16 official). All 17 of CAN's saved-shot pbp events were
+inspected directly — 17 distinct shooters/timestamps/periods, no two
+adjacent, no two within 5 seconds of each other, no repeated
+shooter+goalie+timestamp combination. There is no duplicate-logging
+artifact here; this looks like a genuine PLL scorekeeping/box-score
+compilation gap that cannot be reconstructed from the play-by-play feed.
+Remains `UNRESOLVED`, now with a fully documented negative search rather
+than an unverified claim.
+
+**Penalties (2026-ev-45, +1): isolated to one team, plus a newly-found
+internal inconsistency that doesn't resolve it.** RED's penalty count
+matches official exactly (3=3); the +1 residual is entirely CAN's (6 pbp
+vs. 5 official). Of CAN's 6 raw penalty events, one
+(`penalty-3008900`, period 4, Zach Goodrich) has an internal
+**length/description mismatch**: `penaltyLength=120` but the event's own
+`description` text reads "30 sec penalty for Cross Checking" — the
+duration field and the description's stated duration disagree with each
+other. This is a genuine, newly-documented data-quality defect in that one
+raw event, but it is NOT the same signature as the confirmed null-length
+malformed-penalty rule (`is_valid_penalty`), and there isn't enough
+evidence to say PLL's official count of 5 specifically excludes *this*
+event rather than one of CAN's other 5 (all of which look completely
+well-formed). Recorded here as a documented anomaly; the game's status
+stays honestly `UNRESOLVED` rather than guessing which event to drop.
