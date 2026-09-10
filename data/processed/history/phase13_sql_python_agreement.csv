@@ -1,0 +1,6 @@
+view,csv,n_rows,n_cols,n_cell_mismatches,result
+offensive_value_2026,offensive_value_2026.csv,100,29,0,PASS
+faceoff_value_2026,faceoff_value_2026.csv,13,23,0,PASS
+goalie_value_2026,goalie_value_2026.csv,17,24,0,PASS
+defensive_production_2026,defensive_production_2026.csv,96,12,0,PASS
+player_value_team_accounting,player_value_team_accounting.csv,45,11,0,PASS

@@ -1,0 +1,19 @@
+check_id,check_name,status,n_failures,detail
+1,raw_data_unchanged,PASS,0,"raw_manifest_hash recomputed for ['2022', '2023', '2024', '2025', '2026'] and compared to the frozen Phase 11 manifest. all match"
+2,canonical_manifest_artifacts_unchanged,PASS,0,36 manifest artifacts re-hashed from disk. all match
+3,phase11_canonical_dataset_unchanged,PASS,0,phase11_validation_report.csv re-read (20 checks). all PASS
+4,phase12_research_outputs_unchanged,PASS,0,phase12_validation_report.csv re-read (16 checks); 5 Phase 12 CSVs checked present. all PASS / all present
+5,no_universal_mvp_tewaaraton_war_composite_leaderboard,PASS,0,24 Phase 13 CSVs scanned for forbidden column names; 8 docs scanned for forbidden prose. none found
+6,no_arbitrary_weight_composite_exists,PASS,0,7 Phase 13 scripts scanned for a literal weighted-sum pattern. clean
+7,no_positional_zscore_percentile_mislabeled_as_value,PASS,0,all Phase 13 CSV schemas scanned for a z-score/percentile column named as a value. clean
+8,no_individual_defensive_value_fabricated,PASS,0,"defensive_production_2026.csv checked for ROLE_ONLY status, data_coverage disclosure, and fabricated exposure/value columns. clean"
+9,no_two_point_conversion_ability_estimate_created,PASS,0,offensive_value_2026.csv schema and career_ability_reliability.csv re-checked. clean
+10,offensive_decomposition_sums_exactly,PASS,0,100 rows checked: shooting_value_raw + turnover_value_raw == offensive_value. max residual 0.00e+00
+11,faceoff_decomposition_sums_exactly,PASS,0,13 rows checked: faceoff_rate_value + faceoff_volume_value == faceoff_value_total. max residual 0.00e+00
+12,goalie_decomposition_sums_exactly,PASS,0,17 rows checked: goalie_rate_value + goalie_workload_value == goalie_value_total. max residual 2.89e-15
+13,team_accounting_reconciles_within_tolerance,PASS,0,45 team-season/league rows checked for the unconditional 5-component identity. 0 FAIL rows. Tolerance 1e-06.
+14,ranking_is_deterministic,PASS,0,7 2026 leaderboard/component files re-generated and compared by SHA-256. byte-identical
+15,minimum_sample_flags_reproducible,PASS,0,"qualification_state value counts compared before/after the deterministic rebuild (check 14): {'DESCRIPTIVE_ONLY': 86, 'QUALIFIED': 13, 'INSUFFICIENT_EVIDENCE': 1} vs {'DESCRIPTIVE_ONLY': 86, 'QUALIFIED': 13, 'INSUFFICIENT_EVIDENCE': 1}"
+16,historical_rebuild_uses_identical_model_definitions,PASS,0,"453 historical offensive rows (2022-2026) checked: offensive_value == offensive_EPA_points_raw (the same identity checked for 2026 alone), confirming one model definition applies to every season. 0 mismatches."
+17,sql_outputs_agree_with_python_outputs,PASS,0,5 SQL views diffed against their source CSVs (numeric tolerance 1e-9). all PASS
+18,no_prior_test_was_weakened,PASS,0,pytest --collect-only re-run; every pre-Phase-13 test file checked to still collect at least its known minimum test count. all at or above minimum. 414 tests collected in 0.30s

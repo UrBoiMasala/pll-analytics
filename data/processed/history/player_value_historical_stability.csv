@@ -1,0 +1,13 @@
+season_pair,value_col,min_opportunity,n_pairs,spearman_rho
+2022-2023,offensive_value,20,44,0.22325581395348837
+2023-2024,offensive_value,20,45,0.21014492753623185
+2024-2025,offensive_value,20,41,0.2757839721254356
+2025-2026,offensive_value,20,44,0.08766737138830162
+2022-2023,faceoff_value_total,20,5,
+2023-2024,faceoff_value_total,20,6,
+2024-2025,faceoff_value_total,20,8,
+2025-2026,faceoff_value_total,20,8,
+2022-2023,goalie_value_total,40,8,
+2023-2024,goalie_value_total,40,7,
+2024-2025,goalie_value_total,40,8,
+2025-2026,goalie_value_total,40,9,

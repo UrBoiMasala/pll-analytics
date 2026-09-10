@@ -1,0 +1,4 @@
+value_col,2026_mean,2022_2025_mean_of_means,2022_2025_sd_of_means,z_score_of_2026_vs_2022_2025,verdict
+offensive_value,0.268,0.036,0.085,2.74,NOTABLE_BUT_NOT_DISQUALIFYING
+faceoff_value_total,2.455,2.631,1.56,-0.11,WITHIN_HISTORICAL_RANGE
+goalie_value_total,0.0,-0.125,0.25,0.5,WITHIN_HISTORICAL_RANGE
