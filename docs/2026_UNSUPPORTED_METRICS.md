@@ -1,3 +1,5 @@
+> Historical research/reference document. Final publication scope and corrected interpretations are defined in [PROJECT_REFOCUS](PROJECT_REFOCUS.md) and [METRIC_LIMITATIONS](METRIC_LIMITATIONS.md). Old production/qualification labels do not apply to the final product.
+
 # Unsupported and Deferred Metrics — 2026
 
 Fourteen metrics that a reader might reasonably expect, and that this project

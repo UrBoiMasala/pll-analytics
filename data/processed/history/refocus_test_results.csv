@@ -1,0 +1,2 @@
+suite,passed,failed,deselected,status,command
+full pytest tests/,424,0,0,PASS,python3 -B -m pytest tests/ -q -p no:cacheprovider --capture=sys

@@ -1,3 +1,5 @@
+> Historical research/reference document. Final publication scope and corrected interpretations are defined in [PROJECT_REFOCUS](PROJECT_REFOCUS.md) and [METRIC_LIMITATIONS](METRIC_LIMITATIONS.md). Old production/qualification labels do not apply to the final product.
+
 # Raw vs Shrunk — Project Policy (Phase 7 §§12–15)
 
 Phase 6 found that shrinkage moves 219 of 228 shooting ranks and left the choice

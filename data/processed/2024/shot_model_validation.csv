@@ -1,4 +1,4 @@
-model,n_features,features,n_shots,brier_in_sample,brier_cross_validated,log_loss_cross_validated,cv_folds,brier_improvement_vs_shot_class,relative_improvement,selected_model
-intercept_only,0,(intercept only),3765,0.19266741797749315,0.19269971904589392,0.5737233611842274,5,-0.0018777681630208765,-0.00984042011064783,False
-shot_class,1,is_two_point,3765,0.19065998715653423,0.19082195088287304,0.568511638532446,5,0.0,0.0,False
-shot_class_plus_game_state,4,"is_two_point,score_margin,period_late,game_progress",3765,0.18725472991508682,0.18792931089550313,0.5606781017785599,5,0.0028926399873699105,0.015158842963226069,True
+model,n_features,features,n_shots,brier_in_sample,brier_cross_validated,log_loss_cross_validated,cv_folds,brier_improvement_vs_shot_class,relative_improvement,selected_model,status
+intercept_only,0,(intercept only),3765,0.19266741797749315,0.19269971904589392,0.5737233611842274,5,-0.0018777681630208765,-0.00984042011064783,False,EXPERIMENTAL; fixed retrospective diagnostic; not predictive validation
+shot_class,1,is_two_point,3765,0.19065998715653423,0.19082195088287304,0.568511638532446,5,0.0,0.0,True,EXPERIMENTAL; fixed retrospective diagnostic; not predictive validation
+shot_class_plus_game_state,4,"is_two_point,score_margin,period_late,game_progress",3765,0.19055432008379358,0.19116920438202853,0.5693524597491976,5,-0.00034725349915548653,-0.0018197775337106346,False,EXPERIMENTAL; fixed retrospective diagnostic; not predictive validation

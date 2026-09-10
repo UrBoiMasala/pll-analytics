@@ -1,4 +1,7 @@
 """
+ARCHIVED RESEARCH: excluded from the final product. Known audit defects are
+retired with these features, not corrected here. See docs/AUDIT_REMEDIATION.md.
+
 Phase 13 Section M: team-level accounting reconciliation.
 
 Two DIFFERENT questions, kept separate on purpose (an early version of this

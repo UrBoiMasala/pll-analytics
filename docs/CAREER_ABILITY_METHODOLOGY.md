@@ -1,3 +1,5 @@
+> Historical research/reference document. Final publication scope and corrected interpretations are defined in [PROJECT_REFOCUS](PROJECT_REFOCUS.md) and [METRIC_LIMITATIONS](METRIC_LIMITATIONS.md). Old production/qualification labels do not apply to the final product.
+
 # Career-Level Player Ability, 2022–2026 (Phase 10 §§C–E)
 
 Phase 9 established the finding this layer rests on: pooling player-**seasons**

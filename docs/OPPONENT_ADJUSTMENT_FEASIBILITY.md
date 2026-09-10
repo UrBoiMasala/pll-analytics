@@ -1,3 +1,5 @@
+> Historical research/reference document. Final publication scope and corrected interpretations are defined in [PROJECT_REFOCUS](PROJECT_REFOCUS.md) and [METRIC_LIMITATIONS](METRIC_LIMITATIONS.md). Old production/qualification labels do not apply to the final product.
+
 # Opponent Adjustment Feasibility (2022–2026)
 
 Phase 8 deferred opponent adjustment with the reason "50 games and 8 teams is

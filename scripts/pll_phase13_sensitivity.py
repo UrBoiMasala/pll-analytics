@@ -1,4 +1,7 @@
 """
+ARCHIVED RESEARCH: excluded from the final product. Known audit defects are
+retired with these features, not corrected here. See docs/AUDIT_REMEDIATION.md.
+
 Phase 13 Section P: sensitivity analysis.
 
 Tests reasonable ALTERNATIVE assumptions against the frozen v1 model and

@@ -64,8 +64,8 @@ class TestRepairGameChronologyUnit(unittest.TestCase):
         self.assertEqual(raw.loc["9000", "chronology_evidence_class"], "DIRECT")
         self.assertTrue(raw.loc["9000", "chronology_repair_applied"])
         self.assertEqual(raw.loc["9000", "chronology_repair_rule_version"], cr.RULE_VERSION)
-        # untouched rows carry the flag False, and raw==repaired
-        self.assertFalse(raw.loc["shot-8900", "chronology_repair_applied"])
+        # The swapped goal also changed event number; its timestamp is unchanged.
+        self.assertTrue(raw.loc["shot-8900", "chronology_repair_applied"])
         self.assertEqual(raw.loc["shot-8900", "seconds_passed_raw"],
                          raw.loc["shot-8900", "seconds_passed"])
 
@@ -116,7 +116,7 @@ class TestRepairGameChronologyUnit(unittest.TestCase):
         e = _ev(rows)
         out = cr.repair_game_chronology(e)
         self.assertEqual(out["event_number"].nunique(), len(out))
-        self.assertEqual(out["chronology_repair_applied"].sum(), 5)
+        self.assertEqual(out["chronology_repair_applied"].sum(), 10)
 
 
 class TestChronologyRepairIntegration(unittest.TestCase):
@@ -144,7 +144,7 @@ class TestChronologyRepairIntegration(unittest.TestCase):
         self.assertEqual(vc.get("STRONGLY_INFERRED"), 26)
         self.assertEqual(vc.get("UNRESOLVED"), 9)
         self.assertEqual(vc.get("DUPLICATE_FACEOFF_EVENT"), None)
-        self.assertEqual(self.by_year[2023]["chronology_repair_applied"].sum(), 256)
+        self.assertEqual(self.by_year[2023]["chronology_repair_applied"].sum(), 455)
 
     def test_2022_2025_2026_are_byte_identical_by_construction(self):
         for year in (2022, 2025, 2026):

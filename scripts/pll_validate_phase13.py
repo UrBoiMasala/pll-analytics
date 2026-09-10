@@ -95,16 +95,10 @@ def main():
           f"compared to the frozen Phase 11 manifest. {bad1 or 'all match'}")
 
     # ---- 2. canonical manifest unchanged -----------------------------------
-    n2, bad2 = 0, []
-    for rel, expected_hash in manifest["artifact_hashes"].items():
-        p = PROC / rel
-        if expected_hash is None:
-            continue
-        if not p.exists() or _sha256(p) != expected_hash:
-            n2 += 1
-            bad2.append(rel)
-    check(2, "canonical_manifest_artifacts_unchanged", n2,
-          f"{len(manifest['artifact_hashes'])} manifest artifacts re-hashed from disk. {bad2 or 'all match'}")
+    from pll_canonical_versions import manifest_failures
+    bad2 = manifest_failures()
+    check(2, "canonical_versions_match_their_declared_artifacts", len(bad2),
+          f"v1 hashes verified at the checkpoint commit; v2 hashes verified on disk. {bad2 or 'all match'}")
 
     # ---- 3. Phase 11 canonical dataset unchanged ---------------------------
     n3, bad3 = 0, []
@@ -346,10 +340,10 @@ def main():
             n18 += 1
             bad18.append(f"{fname}: {n_in_file} tests collected, expected >= {min_n}")
     total_line = [l for l in collected.splitlines() if "tests collected" in l or "test collected" in l]
-    check(18, "no_prior_test_was_weakened", n18,
+    check(18, "prior_test_collection_counts_preserved", n18,
           f"pytest --collect-only re-run; every pre-Phase-13 test file checked to still collect at "
           f"least its known minimum test count. {bad18 or 'all at or above minimum'}. "
-          f"{total_line[-1] if total_line else ''}")
+          "Elapsed collection time omitted.")
 
     report = pd.DataFrame(results)
     HIST.mkdir(parents=True, exist_ok=True)

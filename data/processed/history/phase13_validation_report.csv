@@ -1,6 +1,6 @@
 check_id,check_name,status,n_failures,detail
 1,raw_data_unchanged,PASS,0,"raw_manifest_hash recomputed for ['2022', '2023', '2024', '2025', '2026'] and compared to the frozen Phase 11 manifest. all match"
-2,canonical_manifest_artifacts_unchanged,PASS,0,36 manifest artifacts re-hashed from disk. all match
+2,canonical_versions_match_their_declared_artifacts,PASS,0,v1 hashes verified at the checkpoint commit; v2 hashes verified on disk. all match
 3,phase11_canonical_dataset_unchanged,PASS,0,phase11_validation_report.csv re-read (20 checks). all PASS
 4,phase12_research_outputs_unchanged,PASS,0,phase12_validation_report.csv re-read (16 checks); 5 Phase 12 CSVs checked present. all PASS / all present
 5,no_universal_mvp_tewaaraton_war_composite_leaderboard,PASS,0,24 Phase 13 CSVs scanned for forbidden column names; 8 docs scanned for forbidden prose. none found
@@ -16,4 +16,4 @@ check_id,check_name,status,n_failures,detail
 15,minimum_sample_flags_reproducible,PASS,0,"qualification_state value counts compared before/after the deterministic rebuild (check 14): {'DESCRIPTIVE_ONLY': 86, 'QUALIFIED': 13, 'INSUFFICIENT_EVIDENCE': 1} vs {'DESCRIPTIVE_ONLY': 86, 'QUALIFIED': 13, 'INSUFFICIENT_EVIDENCE': 1}"
 16,historical_rebuild_uses_identical_model_definitions,PASS,0,"453 historical offensive rows (2022-2026) checked: offensive_value == offensive_EPA_points_raw (the same identity checked for 2026 alone), confirming one model definition applies to every season. 0 mismatches."
 17,sql_outputs_agree_with_python_outputs,PASS,0,5 SQL views diffed against their source CSVs (numeric tolerance 1e-9). all PASS
-18,no_prior_test_was_weakened,PASS,0,pytest --collect-only re-run; every pre-Phase-13 test file checked to still collect at least its known minimum test count. all at or above minimum. 414 tests collected in 0.30s
+18,prior_test_collection_counts_preserved,PASS,0,pytest --collect-only re-run; every pre-Phase-13 test file checked to still collect at least its known minimum test count. all at or above minimum. Elapsed collection time omitted.

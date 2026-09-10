@@ -1,4 +1,7 @@
 """
+ARCHIVED RESEARCH: excluded from the final product. Known audit defects are
+retired with these features, not corrected here. See docs/AUDIT_REMEDIATION.md.
+
 Phase 12: Player Value Model Specification + Award Methodology Research.
 
 This module is a STATISTICAL RESEARCH phase, not an award-building phase. It

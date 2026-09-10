@@ -93,13 +93,14 @@ class Possession:
         self.goals = 0
         self.points_scored = 0
         self.turnovers = 0
-        self.ground_balls = 0
+        self.ground_balls = int(start_event["event_type"] == "groundball")
         self.has_two_point_attempt = False
         self.has_man_up_shot = False
         self.last_event = start_event
 
     def add(self, row):
-        self.event_numbers.append(row["event_number"])
+        if row["event_number"] not in self.event_numbers:
+            self.event_numbers.append(row["event_number"])
         self.last_event = row
 
     def add_shot_or_goal(self, row):
@@ -125,6 +126,8 @@ class Possession:
         self.ambiguous_reasons.append(reason)
 
     def finalize(self, end_event, end_reason, is_truncated=False):
+        # Boundary events count once, even when shared with the next possession.
+        self.add(end_event)
         start_ev = self.start_event
         duration = end_event["seconds_passed"] - start_ev["seconds_passed"]
         return {

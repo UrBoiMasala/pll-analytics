@@ -131,9 +131,8 @@ def main(data_dir: Path = None):
         event_values = models.estimate_event_values(ev)
         event_values.to_csv(scratch / "event_value_coefficients.csv", index=False)
 
-        cv, shot_baseline = models.fit_shot_models(ev)
-        cv["selected_model"] = cv["model"] == (
-            "shot_class_plus_game_state" if cv.attrs["richer_model_helps"] else "shot_class")
+        cv, shot_baseline = models.fit_shot_models(ev, data_dir=data_dir)
+        cv["selected_model"] = cv["model"] == "shot_class"  # actual SQL baseline
         cv.to_csv(data_dir / "shot_model_validation.csv", index=False)
 
         possessions = pd.read_csv(data_dir / "possessions.csv")

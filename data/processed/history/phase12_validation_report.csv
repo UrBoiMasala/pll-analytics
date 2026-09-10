@@ -1,5 +1,5 @@
 check_id,check_name,status,n_failures,detail
-1,canonical_dataset_artifacts_unchanged,PASS,0,36 artifacts in CANONICAL_MANIFEST_V1.json re-hashed from disk and compared against the frozen manifest hash. all match
+1,canonical_versions_match_their_declared_artifacts,PASS,0,v1 hashes verified at the checkpoint commit; v2 hashes verified on disk. all match
 2,raw_source_data_unchanged,PASS,0,"raw_manifest_hash recomputed from data/raw/<year>/*/_meta.json content_hash records for ['2022', '2023', '2024', '2025', '2026'] and compared to the frozen Phase 11 manifest. all match"
 3,phase11_manifest_and_report_still_validate,PASS,0,phase11_validation_report.csv re-read (20 checks) and CANONICAL_MANIFEST_V1.json's validation_status block re-checked for phases 8-11. all PASS
 4,no_mvp_tewaaraton_award_or_composite_artifact_introduced,PASS,0,70 column names scanned across 5 new Phase 12 surfaces for 8 forbidden patterns; none of the 5 new CSVs is keyed by player; 9 docs scanned for forbidden prose. none found

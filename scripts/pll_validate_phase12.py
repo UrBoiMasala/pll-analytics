@@ -81,18 +81,10 @@ def main():
     manifest_path = HIST / "CANONICAL_MANIFEST_V1.json"
     import json
     manifest = json.loads(manifest_path.read_text())
-    n1, bad1 = 0, []
-    for rel, expected_hash in manifest["artifact_hashes"].items():
-        p = PROC / rel
-        if expected_hash is None:
-            continue
-        if not p.exists() or _sha256(p) != expected_hash:
-            n1 += 1
-            bad1.append(rel)
-    check(1, "canonical_dataset_artifacts_unchanged", n1,
-          f"{len(manifest['artifact_hashes'])} artifacts in "
-          f"CANONICAL_MANIFEST_V1.json re-hashed from disk and compared "
-          f"against the frozen manifest hash. {bad1 or 'all match'}")
+    from pll_canonical_versions import manifest_failures
+    bad1 = manifest_failures()
+    check(1, "canonical_versions_match_their_declared_artifacts", len(bad1),
+          f"v1 hashes verified at the checkpoint commit; v2 hashes verified on disk. {bad1 or 'all match'}")
 
     # ---- 2. raw source data unchanged --------------------------------------
     n2, bad2 = 0, []

@@ -112,7 +112,7 @@ SELECT p.*,
        NOT p.is_ambiguous                                     AS is_unambiguous,
        (NOT p.is_ambiguous AND NOT p.is_truncated)             AS is_high_confidence,
        (NOT p.is_ambiguous AND NOT p.is_truncated
-            AND p.event_count > 1)                            AS is_measurable_span,
+            AND p.start_event_id <> p.end_event_id)                            AS is_measurable_span,
        CASE WHEN p.end_reason = 'turnover' THEN 1 ELSE 0 END   AS ended_in_turnover,
        CASE WHEN p.end_reason = 'goal'     THEN 1 ELSE 0 END   AS ended_in_goal,
        CASE WHEN p.start_reason = 'faceoff_win' THEN 1 ELSE 0 END AS started_on_faceoff

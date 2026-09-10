@@ -1,0 +1,10 @@
+issue,severity,type,decision,detail
+I1,HIGH,IMPLEMENTATION_BUG,RETIRED_WITH_FEATURE,Pairwise rank probabilities
+I2,HIGH,IMPLEMENTATION_BUG,RETIRED_WITH_FEATURE,Faceoff point/bootstrap machinery
+I3,HIGH,IMPLEMENTATION_BUG,FIXED,Explicit season metadata and actual baseline selection
+I4,MEDIUM,IMPLEMENTATION_BUG,FIXED,Unique boundary counts and distinct-ID span eligibility
+I5,HIGH,IMPLEMENTATION_BUG,FIXED,Actual-team stint foundation; legacy team-value accounting retired
+I6,MEDIUM,IMPLEMENTATION_BUG,RETIRED_WITH_FEATURE,Goalie simulated ranks
+I7,MEDIUM,IMPLEMENTATION_BUG,RETIRED_WITH_FEATURE,Shrinkage sensitivity
+I8,MEDIUM,IMPLEMENTATION_BUG,FIXED,Both transposed rows flagged
+I9,MEDIUM,IMPLEMENTATION_BUG,FIXED,Opening ground balls counted

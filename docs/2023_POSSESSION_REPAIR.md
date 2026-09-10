@@ -1,3 +1,5 @@
+> Historical research/reference document. Final publication scope and corrected interpretations are defined in [PROJECT_REFOCUS](PROJECT_REFOCUS.md) and [METRIC_LIMITATIONS](METRIC_LIMITATIONS.md). Old production/qualification labels do not apply to the final product.
+
 # The 2023 Possession Anomaly — Diagnosis and Repair (Phase 10 §B)
 
 Phase 9 found that 2023 carried **97.0 possessions per game** against a

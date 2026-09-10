@@ -52,6 +52,7 @@ def run_sql_file(con, path: Path, data_dir: Path):
     """Execute a .sql file, substituting the {data_dir} placeholder. DuckDB
     executes a multi-statement script in one call, so no statement splitting
     (and no fragile semicolon parsing) is needed here."""
+    con.execute("SET TimeZone = 'UTC'")
     con.execute(path.read_text().replace("{data_dir}", str(data_dir)))
 
 

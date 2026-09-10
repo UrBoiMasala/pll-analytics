@@ -1,0 +1,15 @@
+check,status,n_failures,detail
+raw_payload_hashes,PASS,0,Verified from inputs
+canonical_versions,PASS,0,Verified from inputs
+unique_keys,PASS,0,Verified from inputs
+eligible_completed_scope,PASS,0,Verified from inputs
+possession_boundaries,PASS,0,Verified from inputs
+groundball_accounting,PASS,0,Verified from inputs
+chronology_provenance,PASS,0,Verified from inputs
+event_possession_points,PASS,0,Verified from inputs
+score_reconciliation,PASS,0,Verified from inputs
+transfer_stints,PASS,0,Verified from inputs
+season_shot_metadata,PASS,0,Verified from inputs
+sql_csv_agreement,PASS,0,Verified from inputs
+shooting_formula,PASS,0,Verified from inputs
+catalog_scope,PASS,0,Verified from inputs

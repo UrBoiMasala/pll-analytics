@@ -302,7 +302,7 @@ def _brier(y: np.ndarray, p: np.ndarray) -> float:
     return float(np.mean((p - y) ** 2))
 
 
-def _shot_feature_frame(ev: pd.DataFrame) -> pd.DataFrame:
+def _shot_feature_frame(ev: pd.DataFrame, data_dir: Path = DATA_DIR) -> pd.DataFrame:
     """Attempt-level features. Deliberately short: the 2026 feed carries NO
     shot location, distance or defender information (verified across all 51 raw
     games -- the only populated shot `details` keys are shotOnGoal/shotSaved/
@@ -310,7 +310,11 @@ def _shot_feature_frame(ev: pd.DataFrame) -> pd.DataFrame:
     state is not observable at attempt time. What is left is the shot's point
     value and the game state around it."""
     shots = ev[ev["event_type"].isin(["shot", "goal"]) & ev["shot_outcome"].notna()].copy()
-    games = pd.read_csv(DATA_DIR / "games.csv")
+    games = pd.read_csv(data_dir / "games.csv")
+    if games["game_id"].duplicated().any():
+        raise ValueError("Duplicate game metadata")
+    if not shots["game_id"].isin(games["game_id"]).all():
+        raise ValueError("Shot events do not match season game metadata")
     home = games.set_index("game_id")["home_team_id"].to_dict()
     is_home = np.array([home.get(g) == t for g, t in zip(shots["game_id"], shots["team_id"])])
     home_sc = shots["home_score_corrected"].fillna(0).to_numpy(dtype=float)
@@ -333,12 +337,12 @@ def _shot_feature_frame(ev: pd.DataFrame) -> pd.DataFrame:
 
 
 def fit_shot_models(ev: pd.DataFrame | None = None, folds: int = CV_FOLDS,
-                    seed: int = SEED) -> tuple[pd.DataFrame, pd.DataFrame]:
+                    seed: int = SEED, data_dir: Path = DATA_DIR) -> tuple[pd.DataFrame, pd.DataFrame]:
     """Compare candidate expected-points-per-shot models by cross-validated
     Brier score. Returns (comparison table, per-class empirical baseline)."""
     if ev is None:
-        ev = load_eligible_events()
-    shots = _shot_feature_frame(ev)
+        ev = load_eligible_events(data_dir)
+    shots = _shot_feature_frame(ev, data_dir=data_dir)
     y = shots["y"].to_numpy(dtype=float)
     n = len(shots)
     rng = np.random.default_rng(seed)

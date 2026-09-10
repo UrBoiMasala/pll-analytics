@@ -1,0 +1,9 @@
+view,unique_key,source,category,status,id_type,zero_exposure,tie_break
+team_advanced_stats,"season,team_id,season_scope",team_game_advanced + canonical possessions,TEAM,PROPOSED_NOT_IMPLEMENTED,VARCHAR,NULL; no rank,player_id or team_id ascending
+player_offensive_advanced,"season,player_id,season_scope",actual-team player-game counts,OFFENSE,PROPOSED_NOT_IMPLEMENTED,VARCHAR,NULL; no rank,player_id or team_id ascending
+player_shooting_advanced,"season,player_id,season_scope",eligible shot events + season class baselines,OFFENSE,PROPOSED_NOT_IMPLEMENTED,VARCHAR,NULL; no rank,player_id or team_id ascending
+player_two_point_stats,"season,player_id,season_scope",eligible shot events + actual-team participation,PLL_2PT,PROPOSED_NOT_IMPLEMENTED,VARCHAR,NULL; no rank,player_id or team_id ascending
+faceoff_advanced,"season,player_id,season_scope",player-game draws + season league baseline,FACEOFF,PROPOSED_NOT_IMPLEMENTED,VARCHAR,NULL; no rank,player_id or team_id ascending
+goalie_advanced,"season,player_id,season_scope",box scores + attributed resolved shot events,GOALIE,PROPOSED_NOT_IMPLEMENTED,VARCHAR,NULL; no rank,player_id or team_id ascending
+defensive_production,"season,player_id,season_scope",player-game counts,DEFENSE,PROPOSED_NOT_IMPLEMENTED,VARCHAR,NULL; no rank,player_id or team_id ascending
+player_season_summary,"season,player_id,season_scope",unique one-to-one role joins,CONTEXT,PROPOSED_NOT_IMPLEMENTED,VARCHAR,NULL; no rank,player_id or team_id ascending

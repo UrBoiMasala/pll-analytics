@@ -1,3 +1,5 @@
+> Historical research/reference document. Final publication scope and corrected interpretations are defined in [PROJECT_REFOCUS](PROJECT_REFOCUS.md) and [METRIC_LIMITATIONS](METRIC_LIMITATIONS.md). Old production/qualification labels do not apply to the final product.
+
 # Canonical Historical Dataset — v1.0.0-phase11
 
 Machine-readable companion: `data/processed/history/CANONICAL_MANIFEST_V1.json`

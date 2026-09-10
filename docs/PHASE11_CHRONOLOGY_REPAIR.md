@@ -1,3 +1,5 @@
+> Historical research/reference document. Final publication scope and corrected interpretations are defined in [PROJECT_REFOCUS](PROJECT_REFOCUS.md) and [METRIC_LIMITATIONS](METRIC_LIMITATIONS.md). Old production/qualification labels do not apply to the final product.
+
 # Phase 11 — Canonicalizing the 2023/2024 Faceoff-Chronology Repair
 
 Phase 10 (`docs/2023_POSSESSION_REPAIR.md`) diagnosed and repaired a feed

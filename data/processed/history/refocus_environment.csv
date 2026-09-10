@@ -1,0 +1,6 @@
+package,version
+pandas,2.3.3
+numpy,2.0.2
+duckdb,1.4.5
+pytest,8.4.2
+requests,2.32.5

@@ -1,3 +1,5 @@
+> Historical research/reference document. Final publication scope and corrected interpretations are defined in [PROJECT_REFOCUS](PROJECT_REFOCUS.md) and [METRIC_LIMITATIONS](METRIC_LIMITATIONS.md). Old production/qualification labels do not apply to the final product.
+
 # Lacrosse Reference EGA — Reference Research (Phase 6 §1)
 
 Research pass over Lacrosse Reference's **publicly documented** methodology,

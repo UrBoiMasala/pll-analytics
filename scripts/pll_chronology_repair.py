@@ -119,6 +119,7 @@ def repair_game_chronology(df: pd.DataFrame) -> pd.DataFrame:
         if r.repair_action in ("transpose_and_retime", "transpose_only"):
             j = int(r.goal_array_index)
             numbers[i], numbers[j] = numbers[j], numbers[i]
+            df.at[j, "chronology_repair_applied"] = True
         if r.repair_action in ("transpose_and_retime", "retime_only"):
             secs[i] = float(r.companion_gb_seconds_passed)
         df.at[i, "chronology_repair_applied"] = True
