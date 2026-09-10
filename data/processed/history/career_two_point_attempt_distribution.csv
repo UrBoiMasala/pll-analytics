@@ -1,0 +1,2 @@
+scope,n_shooters,total_attempts,attempts_p0,attempts_p10,attempts_p25,attempts_p50,attempts_p75,attempts_p90,attempts_p95,attempts_p99,attempts_p100,n_players_with_at_least_5_attempts,n_players_with_at_least_10_attempts,n_players_with_at_least_20_attempts,n_players_with_at_least_30_attempts,n_players_with_at_least_50_attempts
+pooled_player_career,271,2465.0,1.0,1.0,2.0,3.0,10.5,22.0,36.5,76.20000000000016,110.0,121,74,33,20,6

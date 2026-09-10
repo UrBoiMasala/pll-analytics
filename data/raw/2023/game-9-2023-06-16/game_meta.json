@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.518737029761321,
+      "awayWinProbability": 0.48126297023867903
+    },
+    "id": 189,
+    "slugname": "game-9-2023-06-16",
+    "eventId": "2023_ev9",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1686952800",
+    "venue": "OSU Lacrosse Stadium",
+    "venueLocation": null,
+    "location": "Columbus, OH",
+    "year": 2023,
+    "week": 3,
+    "urlStreaming": "http://es.pn/45GS0tW",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 19,
+    "homeScore": 18,
+    "homePeriodScores": [
+      5,
+      4,
+      6,
+      3
+    ],
+    "visitorPeriodScores": [
+      0,
+      5,
+      6,
+      8
+    ],
+    "homeTeam": {
+      "officialId": "ATL",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Atlas.png",
+      "fullName": "Atlas",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#3ba9f6",
+      "backgroundColor": "#3BA9F6",
+      "wins": 2,
+      "losses": 8,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WAT",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Waterdogs.png",
+      "fullName": "Waterdogs",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#907fe2",
+      "backgroundColor": "#000000",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.47572615923476647,
+      "awayWinProbability": 0.5242738407652335
+    },
+    "id": 219,
+    "slugname": "game-39-2023-08-25",
+    "eventId": "2023_ev39",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1693008000",
+    "venue": "Zions Bank Stadium",
+    "venueLocation": null,
+    "location": "Salt Lake City, UT",
+    "year": 2023,
+    "week": 11,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/707822b5-c679-4f05-967a-c9f56b921377",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 13,
+    "homeScore": 14,
+    "homePeriodScores": [
+      4,
+      2,
+      1,
+      7
+    ],
+    "visitorPeriodScores": [
+      3,
+      1,
+      3,
+      6
+    ],
+    "homeTeam": {
+      "officialId": "WAT",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Waterdogs.png",
+      "fullName": "Waterdogs",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#907fe2",
+      "backgroundColor": "#000000",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ARC",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Archers.png",
+      "fullName": "Archers",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#f2694c",
+      "backgroundColor": "#23427A",
+      "wins": 8,
+      "losses": 2,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

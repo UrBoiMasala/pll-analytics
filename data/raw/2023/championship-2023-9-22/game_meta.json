@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5239178398824393,
+      "awayWinProbability": 0.47608216011756066
+    },
+    "id": 228,
+    "slugname": "championship-2023-9-22",
+    "eventId": "2023_ev48",
+    "league": "PLL",
+    "seasonSegment": "post",
+    "startTime": "1695582000",
+    "venue": "Subaru Park",
+    "venueLocation": null,
+    "location": "Philadelphia, PA",
+    "year": 2023,
+    "week": 14,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/112434c2-d520-4fd2-8b35-2a254232c1ea",
+    "broadcaster": [
+      "ABC",
+      "ESPN+"
+    ],
+    "eventStatus": 2,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 14,
+    "homeScore": 15,
+    "homePeriodScores": [
+      5,
+      5,
+      2,
+      3
+    ],
+    "visitorPeriodScores": [
+      2,
+      5,
+      4,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "ARC",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Archers.png",
+      "fullName": "Archers",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#f2694c",
+      "backgroundColor": "#23427A",
+      "wins": 8,
+      "losses": 2,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WAT",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Waterdogs.png",
+      "fullName": "Waterdogs",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#907fe2",
+      "backgroundColor": "#000000",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "description": "Cash App Championship",
+    "snl": false,
+    "polymarketId": null
+  }
+}

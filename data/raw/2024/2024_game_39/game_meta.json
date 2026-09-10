@@ -1,0 +1,77 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.45665505411543117,
+      "awayWinProbability": 0.5433449458845688
+    },
+    "id": 281,
+    "slugname": "2024_game_39",
+    "eventId": "2024_ev39",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1723861800",
+    "venue": "Zions Bank Stadium",
+    "venueLocation": null,
+    "location": "Salt Lake City, UT",
+    "year": 2024,
+    "week": 11,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/cad60c4b-5c45-40d8-bca8-097a3398a9e4",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 5,
+    "clockMinutes": 9,
+    "clockSeconds": 18,
+    "gameStatus": null,
+    "visitorScore": 11,
+    "homeScore": 10,
+    "homePeriodScores": [
+      3,
+      1,
+      2,
+      4,
+      0
+    ],
+    "visitorPeriodScores": [
+      2,
+      3,
+      3,
+      2,
+      1
+    ],
+    "homeTeam": {
+      "officialId": "CHA",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_chaos_primary_color.png",
+      "fullName": "Chaos",
+      "location": "Carolina",
+      "locationCode": "CAR",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF0E11",
+      "backgroundColor": "#000",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CAN",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_cannons_primary_color.png",
+      "fullName": "Cannons",
+      "location": "Boston",
+      "locationCode": "BOS",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#B0B6BB",
+      "backgroundColor": "#C52032",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "description": "Utah Archers Homecoming Weekend",
+    "snl": false,
+    "polymarketId": null
+  }
+}

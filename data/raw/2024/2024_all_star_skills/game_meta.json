@@ -1,0 +1,62 @@
+{
+  "data": {
+    "pregameWinProbability": null,
+    "id": 284,
+    "slugname": "2024_all_star_skills",
+    "eventId": "2024_all_star_skills",
+    "league": "PLL",
+    "seasonSegment": "allstar",
+    "startTime": "1720890900",
+    "venue": "Dr. Mark & Cindy Lynn Stadium",
+    "venueLocation": null,
+    "location": "Louisville, KY",
+    "year": 2024,
+    "week": 6,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/62a69e73-1b0f-4d35-8573-238b7ee84dac#bucketId=43871",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 0,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 0,
+    "homeScore": 0,
+    "homePeriodScores": [],
+    "visitorPeriodScores": [],
+    "homeTeam": {
+      "officialId": "ASH",
+      "year": 2024,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2024/06/24ASG_WIcon_FullColor.webp",
+      "fullName": "West",
+      "location": null,
+      "locationCode": "WEST",
+      "league": "PLL",
+      "conference": null,
+      "teamColor": null,
+      "backgroundColor": null,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ASA",
+      "year": 2024,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2024/06/24ASG_EIcon_FullColor.webp",
+      "fullName": "East",
+      "location": null,
+      "locationCode": "EAST",
+      "league": "PLL",
+      "conference": null,
+      "teamColor": null,
+      "backgroundColor": null,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    },
+    "description": "All-Star Skills",
+    "snl": false,
+    "polymarketId": null
+  }
+}

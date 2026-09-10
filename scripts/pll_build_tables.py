@@ -23,10 +23,24 @@ import pandas as pd
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from pll_pbp_extractor import normalize_play_by_play  # noqa: E402
 from pll_pbp_clean import clean  # noqa: E402
+from pll_chronology_repair import repair_game_chronology  # noqa: E402
+from pll_duplicate_faceoff import flag_duplicate_faceoffs  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
+
+# Phase 9: season is module state defaulting to 2026, so every existing caller
+# and test keeps the exact behaviour it had while the same builder can process
+# 2022-2025. No 2026 code path changes.
+SEASON = 2026
 RAW_DIR = REPO_ROOT / "data" / "raw" / "2026"
 OUT_DIR = REPO_ROOT / "data" / "processed" / "2026"
+
+
+def set_season(year: int) -> None:
+    global SEASON, RAW_DIR, OUT_DIR
+    SEASON = int(year)
+    RAW_DIR = REPO_ROOT / "data" / "raw" / str(SEASON)
+    OUT_DIR = REPO_ROOT / "data" / "processed" / str(SEASON)
 
 PLAYER_ID_FIELDS_IN_EVENTS = [
     "shooterId", "goalieId", "shotAssistId", "faceoffWinnerId", "faceoffLoserId",
@@ -35,29 +49,59 @@ PLAYER_ID_FIELDS_IN_EVENTS = [
 ]
 
 
+def load_raw_endpoint(slug: str, name: str):
+    """One raw endpoint, or None if it was never written.
+
+    The ingester declines to write an endpoint whose feed came back empty, so a
+    completed non-competitive event (the all-star SKILLS competitions in
+    2022-2025) legitimately has play-by-play and game meta but no box score.
+    Callers that need a specific endpoint ask for that endpoint.
+    """
+    p = RAW_DIR / slug / f"{name}.json"
+    if not p.exists():
+        return None
+    return json.loads(p.read_text())
+
+
 def load_raw(slug: str) -> dict:
-    d = RAW_DIR / slug
-    return {
-        "play_by_play": json.loads((d / "play_by_play.json").read_text()),
-        "game_meta": json.loads((d / "game_meta.json").read_text()),
-        "players_stats": json.loads((d / "players_stats.json").read_text()),
-        "teams_stats": json.loads((d / "teams_stats.json").read_text()),
-    }
+    return {name: load_raw_endpoint(slug, name)
+            for name in ("play_by_play", "game_meta", "players_stats", "teams_stats")}
 
 
 def load_schedule() -> list[dict]:
-    return json.loads((RAW_DIR / "_schedule" / "games_2026.json").read_text())["data"]["items"]
+    return json.loads(
+        (RAW_DIR / "_schedule" / f"games_{SEASON}.json").read_text())["data"]["items"]
+
+
+def is_completed(g: dict) -> bool:
+    """A game is completed if the league says so (eventStatus 3) OR it carries
+    real final scores under eventStatus 2.
+
+    2026 uses eventStatus 3 exclusively, so this is a no-op there. The 2023 feed
+    marks four PLAYED games -- two regular season, a quarterfinal, and the
+    CHAMPIONSHIP -- with eventStatus 2 while still reporting final scores.
+    Gating on status 3 alone would silently drop them from the season.
+    """
+    if g.get("eventStatus") == 3:
+        return True
+    return (g.get("eventStatus") == 2
+            and g.get("homeScore") is not None
+            and g.get("visitorScore") is not None)
 
 
 def completed_slugs() -> list[str]:
-    return [g["slugname"] for g in load_schedule() if g.get("eventStatus") == 3]
+    return [g["slugname"] for g in load_schedule() if is_completed(g)]
 
 
 # PLL's own seasonSegment field is the authoritative source for game
 # classification (values observed across the full 2026 schedule: "regular",
 # "post", "allstar" — no others). Mapped directly rather than pattern-
 # matching slugnames, which would be more fragile.
-SEASON_SEGMENT_TO_GAME_TYPE = {"regular": "regular_season", "post": "playoffs", "allstar": "all_star"}
+# "preseason" appears only in 2022 (4 scrimmages on 2022-05-31). It is mapped
+# explicitly rather than falling through to "other" by accident, so its
+# exclusion from league analytics is a decision on the record.
+SEASON_SEGMENT_TO_GAME_TYPE = {"regular": "regular_season", "post": "playoffs",
+                               "allstar": "all_star", "preseason": "preseason"}
 
 
 def classify_game_type(season_segment: str) -> str:
@@ -78,7 +122,7 @@ def build_games_table() -> pd.DataFrame:
     rows = []
     for sched in load_schedule():
         slug = sched["slugname"]
-        is_completed = sched.get("eventStatus") == 3
+        is_completed_game = is_completed(sched)
         season_segment = sched.get("seasonSegment")
         game_type = classify_game_type(season_segment)
 
@@ -101,7 +145,7 @@ def build_games_table() -> pd.DataFrame:
             "is_playoff": game_type == "playoffs",
             "is_all_star": game_type == "all_star",
             "include_in_league_analytics": game_type in ("regular_season", "playoffs"),
-            "is_completed": is_completed,
+            "is_completed": is_completed_game,
             "event_status": sched.get("eventStatus"),
             "start_time_unix": start_time,
             "start_date_utc": start_iso,
@@ -115,8 +159,9 @@ def build_games_table() -> pd.DataFrame:
             "away_period_scores": None,
         }
 
-        if is_completed:
-            raw_meta = load_raw(slug)["game_meta"]["data"]
+        raw_game_meta = load_raw_endpoint(slug, "game_meta") if is_completed_game else None
+        if raw_game_meta is not None:
+            raw_meta = raw_game_meta["data"]
             row["home_score"] = raw_meta.get("homeScore")
             row["away_score"] = raw_meta.get("visitorScore")
             row["home_period_scores"] = json.dumps(raw_meta.get("homePeriodScores"))
@@ -207,6 +252,25 @@ def build_events_table(slugs: list[str], games_df: pd.DataFrame) -> pd.DataFrame
         df.insert(1, "game_slug", slug)
         df["game_type"] = game_type_by_slug.get(slug)
         df["include_in_league_analytics"] = include_by_slug.get(slug)
+        # Phase 11: flag confirmed duplicate faceoffs BEFORE the chronology
+        # reorder repair runs, since the duplicate rule keys on the raw
+        # array position immediately after a goal -- a position the reorder
+        # repair may itself change for a DIFFERENT (non-duplicate) faceoff.
+        # Scoped to the same games Phase 10's own classification was
+        # validated against (include_in_league_analytics) -- an all-star
+        # game's event order is never consumed by any possession/stat layer,
+        # so it is left exactly as the feed sent it rather than repaired on
+        # spec.
+        if df["include_in_league_analytics"].iloc[0]:
+            df = flag_duplicate_faceoffs(df)
+            df = repair_game_chronology(df)
+        else:
+            df["duplicate_faceoff_pair_id"] = pd.array([None] * len(df), dtype="object")
+            df["event_number_raw"] = df["event_number"]
+            df["seconds_passed_raw"] = df["seconds_passed"]
+            df["chronology_evidence_class"] = pd.array([None] * len(df), dtype="object")
+            df["chronology_repair_applied"] = False
+            df["chronology_repair_rule_version"] = None
         # Preserve pre_shot_pass_player_id as an explicitly-named alias of
         # secondary_player_id (which is already shotAssistId for shot/goal
         # rows) so downstream consumers don't have to know the mapping.
@@ -368,18 +432,58 @@ def check_team_id_resolution(events: pd.DataFrame, games_df: pd.DataFrame, teams
     return pd.DataFrame(unresolved).drop_duplicates() if unresolved else pd.DataFrame(columns=["source", "team_id"])
 
 
+RAW_ENDPOINTS = ("play_by_play", "game_meta", "players_stats", "teams_stats")
+
+
+def missing_raw_endpoints(slug: str) -> list:
+    return [n for n in RAW_ENDPOINTS if not (RAW_DIR / slug / f"{n}.json").exists()]
+
+
 def main():
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     all_games_df = build_games_table()
-    slugs = all_games_df.loc[all_games_df["is_completed"], "game_slug"].tolist()
-    print(f"Schedule has {len(all_games_df)} games total; building tables for {len(slugs)} completed games ...")
+    completed = all_games_df.loc[all_games_df["is_completed"]]
+
+    # Some completed non-competitive events have no box score at all. The
+    # all-star SKILLS competitions in 2022-2025 are marked completed and carry
+    # play-by-play, but the players/teams stats endpoints return an empty feed,
+    # so the ingester correctly declines to write those files. Such a game is
+    # skipped and recorded rather than crashing the build.
+    #
+    # A COMPETITIVE game may never be skipped this way. If one ever lacks a raw
+    # endpoint the build raises, because silently dropping a league game is the
+    # exact failure this phase exists to prevent.
+    skipped = []
+    usable = []
+    for slug in completed["game_slug"].tolist():
+        miss = missing_raw_endpoints(slug)
+        if not miss:
+            usable.append(slug)
+            continue
+        row = completed.loc[completed["game_slug"] == slug].iloc[0]
+        if row["include_in_league_analytics"]:
+            raise RuntimeError(
+                f"{slug} is a competitive game ({row['game_type']}) but is missing "
+                f"raw endpoints {miss}. Refusing to build a season with a silently "
+                f"missing league game.")
+        skipped.append({"game_slug": slug, "game_type": row["game_type"],
+                        "season_segment": row["season_segment"],
+                        "missing_endpoints": ",".join(miss),
+                        "reason": "completed non-competitive game with no box-score feed"})
+    slugs = usable
+    skipped_df = pd.DataFrame(skipped, columns=["game_slug", "game_type",
+                                                "season_segment",
+                                                "missing_endpoints", "reason"])
+    skipped_df.to_csv(OUT_DIR / "skipped_games.csv", index=False)
+    print(f"Schedule has {len(all_games_df)} games total; building tables for {len(slugs)} completed games "
+          f"({len(skipped)} completed non-competitive game(s) skipped for missing box-score feeds) ...")
 
     dup_game_ids = all_games_df["game_id"][all_games_df["game_id"].duplicated()].tolist()
     if dup_game_ids:
         print(f"  WARNING: duplicate game_id values: {dup_game_ids}")
     all_games_df.to_csv(OUT_DIR / "games.csv", index=False)
     print(f"  saved games.csv ({len(all_games_df)} rows, {len(slugs)} completed)")
-    games_df = all_games_df[all_games_df["is_completed"]].reset_index(drop=True)
+    games_df = all_games_df[all_games_df["game_slug"].isin(slugs)].reset_index(drop=True)
 
     teams_df = build_teams_table(slugs, games_df)
     teams_df.to_csv(OUT_DIR / "teams.csv", index=False)

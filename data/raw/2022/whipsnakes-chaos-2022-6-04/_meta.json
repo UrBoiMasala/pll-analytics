@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "retrieved_at": "2026-09-08T20-26-22Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/whipsnakes-chaos-2022-6-04/play-by-plays",
+    "content_hash": "64f25de619620d37fb9df2ab048e2f21153ac15838721cda9c5e9446045e37c8"
+  },
+  "game_meta": {
+    "retrieved_at": "2026-09-08T20-26-23Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/whipsnakes-chaos-2022-6-04",
+    "content_hash": "19bdb5350dc1859679a827fc89e65b3e714ff22f32cfaeba0613112402f9c1c4"
+  },
+  "players_stats": {
+    "retrieved_at": "2026-09-08T20-26-23Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/whipsnakes-chaos-2022-6-04/players/stats",
+    "content_hash": "69aa09d9b57d8f5e8baa424a4c5f7149fb14f5805aa79c7b1dee6aacee89528a"
+  },
+  "teams_stats": {
+    "retrieved_at": "2026-09-08T20-26-24Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/whipsnakes-chaos-2022-6-04/teams/stats",
+    "content_hash": "29a604b3472bec60aa8656d55d3c1baba44f9bf47b4361a01c387b879b887138"
+  }
+}

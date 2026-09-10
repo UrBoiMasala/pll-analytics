@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5552023981021299,
+      "awayWinProbability": 0.4447976018978701
+    },
+    "id": 368,
+    "slugname": "2025_game_36",
+    "eventId": "2025_ev_36",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1754101800",
+    "venue": "Peter Barton Stadium",
+    "venueLocation": null,
+    "location": "Denver, CO",
+    "year": 2025,
+    "week": 10,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/8bf8234a-22b2-4336-ade1-28b9354b909c#bucketId=2",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 10,
+    "homeScore": 13,
+    "homePeriodScores": [
+      5,
+      5,
+      3,
+      0
+    ],
+    "visitorPeriodScores": [
+      2,
+      2,
+      2,
+      4
+    ],
+    "homeTeam": {
+      "officialId": "CAN",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_cannons_primary_color.png",
+      "fullName": "Cannons",
+      "location": "Boston",
+      "locationCode": "BOS",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#B0B6BB",
+      "backgroundColor": "#C52032",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WAT",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_waterdogs_primary_color.png",
+      "fullName": "Waterdogs",
+      "location": "Philadelphia",
+      "locationCode": "PHI",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#6C20C4",
+      "backgroundColor": "#99A4AD",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

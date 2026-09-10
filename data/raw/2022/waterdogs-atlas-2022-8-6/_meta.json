@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "retrieved_at": "2026-09-08T20-27-48Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/waterdogs-atlas-2022-8-6/play-by-plays",
+    "content_hash": "aafe35b48bcd1de68408bf5450c260e0aee63013648915638ac47ae8f65eec7e"
+  },
+  "game_meta": {
+    "retrieved_at": "2026-09-08T20-27-48Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/waterdogs-atlas-2022-8-6",
+    "content_hash": "92594736f2202b9a8149f6a53e5fac33201f3a0f119524c86860f9b952210239"
+  },
+  "players_stats": {
+    "retrieved_at": "2026-09-08T20-27-49Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/waterdogs-atlas-2022-8-6/players/stats",
+    "content_hash": "3f43c473e08110ef6001822b288c2d97be56d68cf641ff17f90b50c0f92a9c58"
+  },
+  "teams_stats": {
+    "retrieved_at": "2026-09-08T20-27-50Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/waterdogs-atlas-2022-8-6/teams/stats",
+    "content_hash": "0574340282f87a95b33248abbe171e7586153b0a1ebf3130a0f04a6a346b65ba"
+  }
+}

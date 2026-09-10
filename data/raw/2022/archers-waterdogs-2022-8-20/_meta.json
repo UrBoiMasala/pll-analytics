@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "retrieved_at": "2026-09-08T20-28-07Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/archers-waterdogs-2022-8-20/play-by-plays",
+    "content_hash": "66cd4ad6b3b00597b61ec49cf2a1091a739a5f61c7eb0618249388ad27866768"
+  },
+  "game_meta": {
+    "retrieved_at": "2026-09-08T20-28-08Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/archers-waterdogs-2022-8-20",
+    "content_hash": "e26ef8c653d37880abc05e7ee4d9f06272d2be270fdd4bf44f57de3563c5b4fb"
+  },
+  "players_stats": {
+    "retrieved_at": "2026-09-08T20-28-08Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/archers-waterdogs-2022-8-20/players/stats",
+    "content_hash": "53de047c32804e00f009b18d570c75b11ebb1593cdb5616cfe50659da77d3b09"
+  },
+  "teams_stats": {
+    "retrieved_at": "2026-09-08T20-28-09Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/archers-waterdogs-2022-8-20/teams/stats",
+    "content_hash": "1afc696086539c3b147c76583cb55877f937656701bfca66862c3e577b053896"
+  }
+}

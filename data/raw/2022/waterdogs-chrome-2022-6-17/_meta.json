@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "retrieved_at": "2026-09-08T20-26-44Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/waterdogs-chrome-2022-6-17/play-by-plays",
+    "content_hash": "997b7779988be86e4e830eca56a55a1df183d29a34815b65699c7f80ba238d14"
+  },
+  "game_meta": {
+    "retrieved_at": "2026-09-08T20-26-44Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/waterdogs-chrome-2022-6-17",
+    "content_hash": "0c85409731c0bf1a6986d3c6ada4592fb3178cabda8265a784ea4b8a879f32f6"
+  },
+  "players_stats": {
+    "retrieved_at": "2026-09-08T20-26-45Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/waterdogs-chrome-2022-6-17/players/stats",
+    "content_hash": "6dedc506eedc62258235311fda30cbd2dfca815191fc1e50a75ebbc1976c36e4"
+  },
+  "teams_stats": {
+    "retrieved_at": "2026-09-08T20-26-45Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/waterdogs-chrome-2022-6-17/teams/stats",
+    "content_hash": "58c8790ecda653dca2ae78a74a30109edca6cd25bba65b02ff07e213102bb561"
+  }
+}

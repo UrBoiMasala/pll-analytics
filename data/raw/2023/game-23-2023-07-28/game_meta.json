@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.4649772322774595,
+      "awayWinProbability": 0.5350227677225405
+    },
+    "id": 203,
+    "slugname": "game-23-2023-07-28",
+    "eventId": "2023_ev23",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1690668000",
+    "venue": "The Star",
+    "venueLocation": null,
+    "location": "Dallas, TX",
+    "year": 2023,
+    "week": 7,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/7d0edece-061e-4f03-98da-6d2cacbe9df8",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 11,
+    "homeScore": 9,
+    "homePeriodScores": [
+      1,
+      2,
+      1,
+      5
+    ],
+    "visitorPeriodScores": [
+      5,
+      2,
+      2,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "CHR",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Chrome.png",
+      "fullName": "Chrome",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#ea5f9a",
+      "backgroundColor": "#95D6DB",
+      "wins": 1,
+      "losses": 9,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ATL",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Atlas.png",
+      "fullName": "Atlas",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#3ba9f6",
+      "backgroundColor": "#3BA9F6",
+      "wins": 2,
+      "losses": 8,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

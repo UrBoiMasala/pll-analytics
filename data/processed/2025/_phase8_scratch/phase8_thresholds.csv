@@ -1,0 +1,2 @@
+rate_name,turnover_rate_prior_alpha,turnover_rate_prior_beta,turnover_rate_prior_mean,turnover_rate_kappa,turnover_rate_min_touches,n_players_with_touches,n_players_clearing_gate,estimator
+turnovers_per_touch,10.201510387358363,179.6039407072353,0.053747193921602494,189.80545109459365,189.80545109459365,195,45,pll_player_value_models.beta_prior_by_moments (Phase 6)

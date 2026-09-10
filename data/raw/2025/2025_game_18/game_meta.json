@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5163082994941064,
+      "awayWinProbability": 0.4836917005058936
+    },
+    "id": 350,
+    "slugname": "2025_game_18",
+    "eventId": "2025_ev_18",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1751081400",
+    "venue": "Torero Stadium",
+    "venueLocation": null,
+    "location": "San Diego, CA",
+    "year": 2025,
+    "week": 5,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/95f2df84-0fa1-47f6-a081-553e5b0cf86c#bucketId=2",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 8,
+    "homeScore": 10,
+    "homePeriodScores": [
+      3,
+      3,
+      2,
+      2
+    ],
+    "visitorPeriodScores": [
+      5,
+      1,
+      2,
+      0
+    ],
+    "homeTeam": {
+      "officialId": "ATL",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_atlas_primary_color.png",
+      "fullName": "Atlas",
+      "location": "New York",
+      "locationCode": "NYA",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#00B1FF",
+      "backgroundColor": "#011E41",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ARC",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_archers_primary_color.png",
+      "fullName": "Archers",
+      "location": "Utah",
+      "locationCode": "UTA",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#002244",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

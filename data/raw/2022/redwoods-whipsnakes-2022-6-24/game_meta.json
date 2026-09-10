@@ -1,0 +1,73 @@
+{
+  "data": {
+    "pregameWinProbability": null,
+    "id": 111,
+    "slugname": "redwoods-whipsnakes-2022-6-24",
+    "eventId": "2022_ev13",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1656109800",
+    "venue": "Homewood Field",
+    "venueLocation": null,
+    "location": "Baltimore, MD",
+    "year": 2022,
+    "week": 4,
+    "urlStreaming": "https://es.pn/3xIJ0Et",
+    "broadcaster": [
+      "ESPN2",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 11,
+    "homeScore": 12,
+    "homePeriodScores": [
+      3,
+      2,
+      6,
+      1
+    ],
+    "visitorPeriodScores": [
+      2,
+      4,
+      3,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "WHP",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Whipsnakes.png",
+      "fullName": "Whipsnakes",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#59c2b1",
+      "backgroundColor": "#E71C3F",
+      "wins": 9,
+      "losses": 1,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "RED",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Redwoods.png",
+      "fullName": "Redwoods",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#006F55",
+      "backgroundColor": "#006F55",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

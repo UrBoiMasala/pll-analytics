@@ -1,0 +1,64 @@
+family,target,test,statistic,n,detail
+cross_position_method,M01_raw_value_above_role_baseline,year_to_year_spearman,0.23810156230377016,576,"player-seasons paired at t and t+1, all roles"
+cross_position_method,M02_per_opportunity_above_role_baseline,year_to_year_spearman,0.1731847354667791,570,"player-seasons paired at t and t+1, all roles"
+cross_position_method,M03_within_position_percentile,year_to_year_spearman,0.21495405319476057,576,"player-seasons paired at t and t+1, all roles"
+cross_position_method,M04_within_position_z,year_to_year_spearman,0.21432842287694978,576,"player-seasons paired at t and t+1, all roles"
+cross_position_method,M05_reliability_shrunk_value,year_to_year_spearman,0.1593563576434977,576,"player-seasons paired at t and t+1, all roles"
+cross_position_method,M06_opportunity_weighted_value,year_to_year_spearman,0.23538621962031603,570,"player-seasons paired at t and t+1, all roles"
+cross_position_method,M07_value_above_marginal_roster_player,year_to_year_spearman,0.21082303518951095,576,"player-seasons paired at t and t+1, all roles"
+cross_position_method,M08_season_normalized_value,year_to_year_spearman,0.21483070856252984,576,"player-seasons paired at t and t+1, all roles"
+cross_position_method,M09_distribution_standardized_across_roles,year_to_year_spearman,0.2148754654289172,576,"player-seasons paired at t and t+1, all roles"
+cross_position_method,M10_null_standardized_value,year_to_year_spearman,0.25287776605631324,576,"player-seasons paired at t and t+1, all roles"
+career_rate,shooting_pct,year_to_year_pearson_min_trials_10,0.31343462827030577,239,sensitivity of the persistence estimate to the minimum-opportunity choice
+career_rate,shooting_pct,year_to_year_pearson_min_trials_20,0.35049083271158205,177,sensitivity of the persistence estimate to the minimum-opportunity choice
+career_rate,shooting_pct,year_to_year_pearson_min_trials_40,0.36324236437076846,94,sensitivity of the persistence estimate to the minimum-opportunity choice
+career_rate,shooting_pct,split_half_odd_vs_even_seasons,0.47435776474976327,97,Spearman-Brown full-career estimate 0.643; both halves >= 20 trials
+career_rate,shooting_pct,spearman_raw_vs_shrunk_career_rate,0.7171314151191983,370,how much of the ability ordering survives the shrinkage choice
+career_rate,shooting_pct,n_players_at_reliability_gate_0.3,115.0,370,sensitivity of the qualifying population to the reliability gate
+career_rate,shooting_pct,n_players_at_reliability_gate_0.5,66.0,370,sensitivity of the qualifying population to the reliability gate
+career_rate,shooting_pct,n_players_at_reliability_gate_0.7,14.0,370,sensitivity of the qualifying population to the reliability gate
+career_rate,one_point_pct,year_to_year_pearson_min_trials_10,0.2908279285632444,213,sensitivity of the persistence estimate to the minimum-opportunity choice
+career_rate,one_point_pct,year_to_year_pearson_min_trials_20,0.29257944674256947,161,sensitivity of the persistence estimate to the minimum-opportunity choice
+career_rate,one_point_pct,year_to_year_pearson_min_trials_40,0.26129121482279133,76,sensitivity of the persistence estimate to the minimum-opportunity choice
+career_rate,one_point_pct,split_half_odd_vs_even_seasons,0.4703606293615684,92,Spearman-Brown full-career estimate 0.640; both halves >= 20 trials
+career_rate,one_point_pct,spearman_raw_vs_shrunk_career_rate,0.7413337373452112,340,how much of the ability ordering survives the shrinkage choice
+career_rate,one_point_pct,n_players_at_reliability_gate_0.3,99.0,340,sensitivity of the qualifying population to the reliability gate
+career_rate,one_point_pct,n_players_at_reliability_gate_0.5,47.0,340,sensitivity of the qualifying population to the reliability gate
+career_rate,one_point_pct,n_players_at_reliability_gate_0.7,6.0,340,sensitivity of the qualifying population to the reliability gate
+career_rate,faceoff_win_pct,year_to_year_pearson_min_trials_10,0.6635051962725582,45,sensitivity of the persistence estimate to the minimum-opportunity choice
+career_rate,faceoff_win_pct,year_to_year_pearson_min_trials_20,0.28933472444338065,30,sensitivity of the persistence estimate to the minimum-opportunity choice
+career_rate,faceoff_win_pct,year_to_year_pearson_min_trials_40,0.3792247159924126,24,sensitivity of the persistence estimate to the minimum-opportunity choice
+career_rate,faceoff_win_pct,split_half_odd_vs_even_seasons,0.39840303070279454,16,Spearman-Brown full-career estimate 0.570; both halves >= 20 trials
+career_rate,faceoff_win_pct,spearman_raw_vs_shrunk_career_rate,0.4080126237108007,103,how much of the ability ordering survives the shrinkage choice
+career_rate,faceoff_win_pct,n_players_at_reliability_gate_0.3,69.0,103,sensitivity of the qualifying population to the reliability gate
+career_rate,faceoff_win_pct,n_players_at_reliability_gate_0.5,56.0,103,sensitivity of the qualifying population to the reliability gate
+career_rate,faceoff_win_pct,n_players_at_reliability_gate_0.7,43.0,103,sensitivity of the qualifying population to the reliability gate
+career_rate,save_pct,year_to_year_pearson_min_trials_10,0.1486588145973986,38,sensitivity of the persistence estimate to the minimum-opportunity choice
+career_rate,save_pct,year_to_year_pearson_min_trials_20,0.1615777087757716,36,sensitivity of the persistence estimate to the minimum-opportunity choice
+career_rate,save_pct,year_to_year_pearson_min_trials_40,0.18242819266827395,32,sensitivity of the persistence estimate to the minimum-opportunity choice
+career_rate,save_pct,split_half_odd_vs_even_seasons,0.10196029963585511,17,Spearman-Brown full-career estimate 0.185; both halves >= 20 trials
+career_rate,save_pct,spearman_raw_vs_shrunk_career_rate,0.8687423687423688,27,how much of the ability ordering survives the shrinkage choice
+career_rate,save_pct,n_players_at_reliability_gate_0.3,17.0,27,sensitivity of the qualifying population to the reliability gate
+career_rate,save_pct,n_players_at_reliability_gate_0.5,8.0,27,sensitivity of the qualifying population to the reliability gate
+career_rate,save_pct,n_players_at_reliability_gate_0.7,1.0,27,sensitivity of the qualifying population to the reliability gate
+career_rate,turnovers_per_touch,year_to_year_pearson_min_trials_10,0.390848195063526,525,sensitivity of the persistence estimate to the minimum-opportunity choice
+career_rate,turnovers_per_touch,year_to_year_pearson_min_trials_20,0.36790419085510495,481,sensitivity of the persistence estimate to the minimum-opportunity choice
+career_rate,turnovers_per_touch,year_to_year_pearson_min_trials_40,0.4327582047603235,418,sensitivity of the persistence estimate to the minimum-opportunity choice
+career_rate,turnovers_per_touch,split_half_odd_vs_even_seasons,0.5822965268019948,230,Spearman-Brown full-career estimate 0.736; both halves >= 20 trials
+career_rate,turnovers_per_touch,spearman_raw_vs_shrunk_career_rate,0.86065246691435,419,how much of the ability ordering survives the shrinkage choice
+career_rate,turnovers_per_touch,n_players_at_reliability_gate_0.3,289.0,419,sensitivity of the qualifying population to the reliability gate
+career_rate,turnovers_per_touch,n_players_at_reliability_gate_0.5,218.0,419,sensitivity of the qualifying population to the reliability gate
+career_rate,turnovers_per_touch,n_players_at_reliability_gate_0.7,122.0,419,sensitivity of the qualifying population to the reliability gate
+career_rate,two_point_pct,year_to_year_pearson_min_trials_10,0.04513899402743368,30,sensitivity of the persistence estimate to the minimum-opportunity choice
+career_rate,two_point_pct,year_to_year_pearson_min_trials_20,,4,sensitivity of the persistence estimate to the minimum-opportunity choice
+career_rate,two_point_pct,year_to_year_pearson_min_trials_40,,0,sensitivity of the persistence estimate to the minimum-opportunity choice
+career_rate,two_point_pct,split_half_odd_vs_even_seasons,-0.09735757297266517,9,Spearman-Brown full-career estimate -0.216; both halves >= 20 trials
+career_rate,two_point_pct,spearman_raw_vs_shrunk_career_rate,0.6555012121289147,271,how much of the ability ordering survives the shrinkage choice
+career_rate,two_point_pct,n_players_at_reliability_gate_0.3,0.0,271,sensitivity of the qualifying population to the reliability gate
+career_rate,two_point_pct,n_players_at_reliability_gate_0.5,0.0,271,sensitivity of the qualifying population to the reliability gate
+career_rate,two_point_pct,n_players_at_reliability_gate_0.7,0.0,271,sensitivity of the qualifying population to the reliability gate
+positional_baseline,attack,max_abs_move_of_role_mean_leave_one_season_out,0.16837423106258442,178,role mean 0.434; role sd 4.004
+positional_baseline,midfield,max_abs_move_of_role_mean_leave_one_season_out,0.08300224332587201,275,role mean -0.202; role sd 3.173
+positional_baseline,defensive_field,max_abs_move_of_role_mean_leave_one_season_out,0.08566249716960084,424,role mean -0.265; role sd 1.742
+positional_baseline,faceoff,max_abs_move_of_role_mean_leave_one_season_out,0.4765129286164569,57,role mean 2.016; role sd 6.281
+positional_baseline,goalie,max_abs_move_of_role_mean_leave_one_season_out,0.09127444517456557,78,role mean -0.302; role sd 7.979

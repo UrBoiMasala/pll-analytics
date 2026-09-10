@@ -1,0 +1,77 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.4066724297531836,
+      "awayWinProbability": 0.5933275702468164
+    },
+    "id": 214,
+    "slugname": "game-34-2023-08-11",
+    "eventId": "2023_ev34",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1691890200",
+    "venue": "Barton Stadium",
+    "venueLocation": null,
+    "location": "Denver, CO",
+    "year": 2023,
+    "week": 9,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/7b7a24c9-9aa2-4fba-bea7-d1676273cdae",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 5,
+    "clockMinutes": 6,
+    "clockSeconds": 19,
+    "gameStatus": null,
+    "visitorScore": 15,
+    "homeScore": 16,
+    "homePeriodScores": [
+      3,
+      5,
+      5,
+      2,
+      1
+    ],
+    "visitorPeriodScores": [
+      3,
+      4,
+      5,
+      3,
+      0
+    ],
+    "homeTeam": {
+      "officialId": "RED",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Redwoods.png",
+      "fullName": "Redwoods",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#006F55",
+      "backgroundColor": "#006F55",
+      "wins": 6,
+      "losses": 4,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CAN",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Cannons.png",
+      "fullName": "Cannons",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#002244",
+      "backgroundColor": "#B0B7BC",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

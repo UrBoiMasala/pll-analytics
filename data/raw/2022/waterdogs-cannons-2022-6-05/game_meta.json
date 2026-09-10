@@ -1,0 +1,72 @@
+{
+  "data": {
+    "pregameWinProbability": null,
+    "id": 121,
+    "slugname": "waterdogs-cannons-2022-6-05",
+    "eventId": "2022_ev3",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1654448400",
+    "venue": "Tom & Mary Casey Stadium",
+    "venueLocation": null,
+    "location": "Albany, NY",
+    "year": 2022,
+    "week": 1,
+    "urlStreaming": "https://es.pn/3aqL1Nx",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 10,
+    "homeScore": 16,
+    "homePeriodScores": [
+      7,
+      5,
+      3,
+      1
+    ],
+    "visitorPeriodScores": [
+      2,
+      1,
+      5,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "CAN",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Cannons.png",
+      "fullName": "Cannons",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#002244",
+      "backgroundColor": "#B0B7BC",
+      "wins": 1,
+      "losses": 9,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WAT",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Waterdogs.png",
+      "fullName": "Waterdogs",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#907fe2",
+      "backgroundColor": "#000000",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

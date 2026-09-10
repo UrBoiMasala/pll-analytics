@@ -1,0 +1,21 @@
+check_id,check_name,status,n_failures,detail
+1,two_team_rows_per_eligible_game,PASS,0,"50 eligible games; 0 with a row count != 2, 0 with no rows at all"
+2,team_and_opponent_are_game_participants,PASS,0,"0 non-participant teams, 0 bad opponents, 0 rows where team == opponent"
+3,offensive_possessions_mirror_opponent_defensive,PASS,0,0 of 100 team-game rows where this team's offensive possession count does not equal the opponent's defensive possession count
+4,team_points_equal_official_final_score,PASS,0,0 of 100 rows where possession-derived points_scored or event-derived points differs from games.csv final score
+5,points_reconcile_to_possession_table,PASS,0,0 points_scored and 0 points_allowed rows disagree with a direct groupby over possessions.csv
+6,season_totals_equal_sum_of_team_games,PASS,0,34 count columns x 8 teams compared; 0 cells differ. Mismatched columns: []
+7,no_impossible_percentages,PASS,0,16 proportion-typed columns checked for <0 or >1. Offenders: none
+8,no_negative_counts_or_rates,PASS,0,Signed residual (*_minus_official) and net-efficiency columns excluded by design. Offenders: none
+9,no_infinite_values,PASS,0,"every rate in the SQL layer wraps its denominator in NULLIF, so a zero denominator yields NULL rather than inf"
+10,every_metric_has_a_documented_denominator,PASS,0,0 emitted columns absent from metric_definitions.csv ([]); 0 definition rows with an empty denominator ([])
+11,two_point_goal_counts_one_goal_and_two_points,PASS,0,0 rows violate points == goals + two_point_goals; 0 goal-count and 0 point-total disagreements vs an independent event-level recount
+12,net_efficiency_arithmetic_and_aliases,PASS,0,"net_efficiency == offensive_efficiency - defensive_efficiency, the per-100 columns are exactly 100x, and offensive_efficiency is identical to points_per_possession"
+13,rankings_reproducible_and_correctly_directed,PASS,0,23 ranked metrics recomputed with an independent competition-rank implementation. all agree
+14,all_star_excluded_from_league_tables,PASS,0,"all-star game_ids [494] and teams ['ASE', 'ASW'] must not appear in any Phase 5 table"
+15,truncated_possessions_never_treated_as_exact,PASS,0,complete + truncated == offensive possessions on every row; possession_length_splits covers 2096 possessions and an independent recount of (unambiguous AND not truncated AND event_count>1) gives 2096
+16,validation_issues_propagated_to_team_game_rows,PASS,0,"turnovers: 29 affected games, 0 unflagged, 0 over-flagged; ground_balls: 20 affected games, 0 unflagged, 0 over-flagged; shot_clock_expirations: 5 affected games, 0 unflagged, 0 over-flagged; saves: 1 affected games, 0 unflagged, 0 over-flagged; penalties: 3 affected games, 0 unflagged, 0 over-flagged"
+17,sql_metrics_match_independent_python_recomputation,PASS,0,23 SQL-produced columns recomputed with independent pandas groupbys over events.csv/possessions.csv. Disagreements: none
+18,season_rates_recomputed_from_season_totals,PASS,0,12 season rates verified as sum(numerator)/sum(denominator). all agree
+19,sensitivity_table_internally_consistent,PASS,0,absolute/relative differences and rank_change recomputed from the value and rank columns. all agree
+20,rerun_produces_identical_output,PASS,0,rebuilt all 6 outputs into a scratch directory and compared SHA-256 against the committed files; changed: none

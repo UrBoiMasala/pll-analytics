@@ -1,0 +1,62 @@
+{
+  "data": {
+    "pregameWinProbability": null,
+    "id": 202,
+    "slugname": "all-star-skills-2023-07-21",
+    "eventId": "2023_ev22",
+    "league": "PLL",
+    "seasonSegment": "allstar",
+    "startTime": "1690063200",
+    "venue": "University of Louisville (Dr. Mark and Cindy Lynn Stadium)",
+    "venueLocation": null,
+    "location": "Louisville, KY",
+    "year": 2023,
+    "week": 6,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/de803d7f-5552-446d-aa85-28897255b0aa#bucketId=17657",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 0,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 0,
+    "homeScore": 0,
+    "homePeriodScores": [],
+    "visitorPeriodScores": [],
+    "homeTeam": {
+      "officialId": "ASH",
+      "year": 2023,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2023/Logo/2023_ASG_veterans.webp",
+      "fullName": "Veterans",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": null,
+      "backgroundColor": null,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ASA",
+      "year": 2023,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2023/Logo/2023_ASG_rising_stars.webp",
+      "fullName": "Rising Stars",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": null,
+      "backgroundColor": null,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    },
+    "description": "All-Star Skills Competition",
+    "snl": false,
+    "polymarketId": null
+  }
+}

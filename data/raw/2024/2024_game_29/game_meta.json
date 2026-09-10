@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.558608156319975,
+      "awayWinProbability": 0.44139184368002504
+    },
+    "id": 271,
+    "slugname": "2024_game_29",
+    "eventId": "2024_ev29",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1722202200",
+    "venue": "Torero Stadium",
+    "venueLocation": null,
+    "location": "San Diego, CA",
+    "year": 2024,
+    "week": 8,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/32d7d7c6-f5d6-4451-a4a4-1db8c4e5c7a4",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 18,
+    "homeScore": 13,
+    "homePeriodScores": [
+      5,
+      0,
+      4,
+      4
+    ],
+    "visitorPeriodScores": [
+      4,
+      6,
+      3,
+      5
+    ],
+    "homeTeam": {
+      "officialId": "RED",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 3,
+      "losses": 7,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WHP",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_whipsnakes_primary_color.png",
+      "fullName": "Whipsnakes",
+      "location": "Maryland",
+      "locationCode": "MDW",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#FF0000",
+      "backgroundColor": "#FFCE00",
+      "wins": 6,
+      "losses": 4,
+      "ties": 0
+    },
+    "description": "California Redwoods Homecoming Weekend",
+    "snl": false,
+    "polymarketId": null
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.3623,
+      "awayWinProbability": 0.6377
+    },
+    "id": 255,
+    "slugname": "2024_game_13",
+    "eventId": "2024_ev13",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1719615600",
+    "venue": "TCO Stadium",
+    "venueLocation": null,
+    "location": "Minneapolis, MN",
+    "year": 2024,
+    "week": 4,
+    "urlStreaming": null,
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 12,
+    "homeScore": 16,
+    "homePeriodScores": [
+      3,
+      5,
+      4,
+      4
+    ],
+    "visitorPeriodScores": [
+      5,
+      1,
+      3,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "WHP",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_whipsnakes_primary_color.png",
+      "fullName": "Whipsnakes",
+      "location": "Maryland",
+      "locationCode": "MDW",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#FF0000",
+      "backgroundColor": "#FFCE00",
+      "wins": 6,
+      "losses": 4,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ATL",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_atlas_primary_color.png",
+      "fullName": "Atlas",
+      "location": "New York",
+      "locationCode": "NYA",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#00B1FF",
+      "backgroundColor": "#011E41",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

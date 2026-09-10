@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "retrieved_at": "2026-09-08T20-26-38Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/atlas-cannons-2022-6-11/play-by-plays",
+    "content_hash": "945d8e543f816c5112d2b37596962bc0f7828d53afea9643a509f5b0a9285a3e"
+  },
+  "game_meta": {
+    "retrieved_at": "2026-09-08T20-26-39Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/atlas-cannons-2022-6-11",
+    "content_hash": "366b73c487d36962918b5ea88df4da984f427995121b9ba7703d56bc7098102f"
+  },
+  "players_stats": {
+    "retrieved_at": "2026-09-08T20-26-40Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/atlas-cannons-2022-6-11/players/stats",
+    "content_hash": "1d1d98c00300d89a2d2d440628b6e18b392fbedf06e954468a016e3463b3f6c7"
+  },
+  "teams_stats": {
+    "retrieved_at": "2026-09-08T20-26-40Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/atlas-cannons-2022-6-11/teams/stats",
+    "content_hash": "9892e9ee0ac1ad9c0e13befb5624f5ff4eabbdfbdce8287922c8d6a573f09634"
+  }
+}

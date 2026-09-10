@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.46768949494111645,
+      "awayWinProbability": 0.5323105050588836
+    },
+    "id": 337,
+    "slugname": "2025_game_5",
+    "eventId": "2025_ev_5",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1749247200",
+    "venue": "American Legion Memorial Stadium",
+    "venueLocation": null,
+    "location": "Charlotte, NC",
+    "year": 2025,
+    "week": 2,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/102bd9c9-b104-4c25-83fc-99276f8bbfa3#bucketId=2",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 9,
+    "homeScore": 12,
+    "homePeriodScores": [
+      2,
+      3,
+      2,
+      5
+    ],
+    "visitorPeriodScores": [
+      3,
+      3,
+      1,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "CHA",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_chaos_primary_color.png",
+      "fullName": "Chaos",
+      "location": "Carolina",
+      "locationCode": "CAR",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF0E11",
+      "backgroundColor": "#000",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "OUT",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_outlaws_primary_color.png",
+      "fullName": "Outlaws",
+      "location": "Denver",
+      "locationCode": "DEN",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#2E2E4D",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

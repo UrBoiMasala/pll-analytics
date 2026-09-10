@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5313573225959468,
+      "awayWinProbability": 0.4686426774040532
+    },
+    "id": 185,
+    "slugname": "game-5-2023-06-09",
+    "eventId": "2023_ev5",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1686348000",
+    "venue": "American Legion Memorial Stadium",
+    "venueLocation": null,
+    "location": "Charlotte, NC",
+    "year": 2023,
+    "week": 2,
+    "urlStreaming": "http://es.pn/3oC19TV",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 7,
+    "homeScore": 12,
+    "homePeriodScores": [
+      2,
+      3,
+      2,
+      5
+    ],
+    "visitorPeriodScores": [
+      1,
+      0,
+      2,
+      4
+    ],
+    "homeTeam": {
+      "officialId": "ARC",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Archers.png",
+      "fullName": "Archers",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#f2694c",
+      "backgroundColor": "#23427A",
+      "wins": 8,
+      "losses": 2,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CHR",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Chrome.png",
+      "fullName": "Chrome",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#ea5f9a",
+      "backgroundColor": "#95D6DB",
+      "wins": 1,
+      "losses": 9,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

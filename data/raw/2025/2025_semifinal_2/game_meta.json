@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5704354042549008,
+      "awayWinProbability": 0.4295645957450992
+    },
+    "id": 380,
+    "slugname": "2025_semifinal_2",
+    "eventId": "2025_ev_48",
+    "league": "PLL",
+    "seasonSegment": "post",
+    "startTime": "1756742400",
+    "venue": "Subaru Park",
+    "venueLocation": null,
+    "location": "Philadelphia, PA",
+    "year": 2025,
+    "week": 13,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/105eca32-274f-4a4c-8d60-3bb77e5bedae#bucketId=8571",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 11,
+    "homeScore": 13,
+    "homePeriodScores": [
+      6,
+      2,
+      4,
+      1
+    ],
+    "visitorPeriodScores": [
+      2,
+      4,
+      1,
+      4
+    ],
+    "homeTeam": {
+      "officialId": "ATL",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_atlas_primary_color.png",
+      "fullName": "Atlas",
+      "location": "New York",
+      "locationCode": "NYA",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#00B1FF",
+      "backgroundColor": "#011E41",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WAT",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_waterdogs_primary_color.png",
+      "fullName": "Waterdogs",
+      "location": "Philadelphia",
+      "locationCode": "PHI",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#6C20C4",
+      "backgroundColor": "#99A4AD",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": "Semifinal 2",
+    "snl": false,
+    "polymarketId": null
+  }
+}

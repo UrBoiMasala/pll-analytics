@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5490161675772746,
+      "awayWinProbability": 0.45098383242272544
+    },
+    "id": 226,
+    "slugname": "playoffs-semifinal-1-2023-9-8",
+    "eventId": "2023_ev46",
+    "league": "PLL",
+    "seasonSegment": "post",
+    "startTime": "1694381400",
+    "venue": "Shuart Stadium",
+    "venueLocation": null,
+    "location": "Long Island, NY",
+    "year": 2023,
+    "week": 13,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/fd6cefb8-fb7d-4f40-8274-077c91f20a4b",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 17,
+    "homeScore": 6,
+    "homePeriodScores": [
+      1,
+      2,
+      1,
+      2
+    ],
+    "visitorPeriodScores": [
+      3,
+      6,
+      7,
+      1
+    ],
+    "homeTeam": {
+      "officialId": "CAN",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Cannons.png",
+      "fullName": "Cannons",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#002244",
+      "backgroundColor": "#B0B7BC",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WAT",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Waterdogs.png",
+      "fullName": "Waterdogs",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#907fe2",
+      "backgroundColor": "#000000",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "description": "Semifinal",
+    "snl": false,
+    "polymarketId": null
+  }
+}

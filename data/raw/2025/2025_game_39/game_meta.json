@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5290012932820821,
+      "awayWinProbability": 0.4709987067179179
+    },
+    "id": 371,
+    "slugname": "2025_game_39",
+    "eventId": "2025_ev_39",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1754692200",
+    "venue": "Harvard Stadium",
+    "venueLocation": null,
+    "location": "Boston, MA",
+    "year": 2025,
+    "week": 11,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/2d7fa7da-81d9-4a29-9a20-b8e0194a2087#bucketId=8571",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 18,
+    "homeScore": 17,
+    "homePeriodScores": [
+      6,
+      3,
+      3,
+      5
+    ],
+    "visitorPeriodScores": [
+      4,
+      5,
+      7,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "CAN",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_cannons_primary_color.png",
+      "fullName": "Cannons",
+      "location": "Boston",
+      "locationCode": "BOS",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#B0B6BB",
+      "backgroundColor": "#C52032",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "RED",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

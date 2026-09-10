@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.553953345879677,
+      "awayWinProbability": 0.44604665412032296
+    },
+    "id": 190,
+    "slugname": "game-10-2023-06-16",
+    "eventId": "2023_ev10",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1686961800",
+    "venue": "OSU Lacrosse Stadium",
+    "venueLocation": null,
+    "location": "Columbus, OH",
+    "year": 2023,
+    "week": 3,
+    "urlStreaming": "http://es.pn/42l09kK",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 13,
+    "homeScore": 14,
+    "homePeriodScores": [
+      5,
+      3,
+      4,
+      2
+    ],
+    "visitorPeriodScores": [
+      4,
+      3,
+      4,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "CAN",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Cannons.png",
+      "fullName": "Cannons",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#002244",
+      "backgroundColor": "#B0B7BC",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CHR",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Chrome.png",
+      "fullName": "Chrome",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#ea5f9a",
+      "backgroundColor": "#95D6DB",
+      "wins": 1,
+      "losses": 9,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

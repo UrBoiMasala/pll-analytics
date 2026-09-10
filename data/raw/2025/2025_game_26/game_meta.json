@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.44821564896892935,
+      "awayWinProbability": 0.5517843510310707
+    },
+    "id": 358,
+    "slugname": "2025_game_26",
+    "eventId": "2025_ev_26",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1752370200",
+    "venue": "Northwestern Medicine Field at Martin Stadium",
+    "venueLocation": null,
+    "location": "Chicago, IL",
+    "year": 2025,
+    "week": 7,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/758505b5-65e2-4776-a776-ac587c8ffdca#bucketId=2",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 13,
+    "homeScore": 6,
+    "homePeriodScores": [
+      0,
+      2,
+      2,
+      2
+    ],
+    "visitorPeriodScores": [
+      1,
+      4,
+      4,
+      4
+    ],
+    "homeTeam": {
+      "officialId": "WHP",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_whipsnakes_primary_color.png",
+      "fullName": "Whipsnakes",
+      "location": "Maryland",
+      "locationCode": "MDW",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#FF0000",
+      "backgroundColor": "#FFCE00",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "OUT",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_outlaws_primary_color.png",
+      "fullName": "Outlaws",
+      "location": "Denver",
+      "locationCode": "DEN",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#2E2E4D",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "description": "Throwback Weekend",
+    "snl": false,
+    "polymarketId": null
+  }
+}

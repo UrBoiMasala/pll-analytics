@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.4035187175317329,
+      "awayWinProbability": 0.596481282468267
+    },
+    "id": 221,
+    "slugname": "game-41-2023-08-25",
+    "eventId": "2023_ev41",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1693090800",
+    "venue": "Zions Bank Stadium",
+    "venueLocation": null,
+    "location": "Salt Lake City, UT",
+    "year": 2023,
+    "week": 11,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/25fd692c-4edb-4f12-9b1c-cccead26f1b6",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 15,
+    "homeScore": 11,
+    "homePeriodScores": [
+      2,
+      3,
+      2,
+      4
+    ],
+    "visitorPeriodScores": [
+      1,
+      3,
+      4,
+      7
+    ],
+    "homeTeam": {
+      "officialId": "WHP",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Whipsnakes.png",
+      "fullName": "Whipsnakes",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#59c2b1",
+      "backgroundColor": "#E71C3F",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CAN",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Cannons.png",
+      "fullName": "Cannons",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#002244",
+      "backgroundColor": "#B0B7BC",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

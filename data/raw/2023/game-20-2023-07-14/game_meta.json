@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5224293151633937,
+      "awayWinProbability": 0.47757068483660625
+    },
+    "id": 200,
+    "slugname": "game-20-2023-07-14",
+    "eventId": "2023_ev20",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1689467400",
+    "venue": "Rafferty Stadium",
+    "venueLocation": null,
+    "location": "Fairfield, CT",
+    "year": 2023,
+    "week": 5,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/154723fb-fe76-42dc-9784-cc34bb2686e0",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 11,
+    "homeScore": 15,
+    "homePeriodScores": [
+      3,
+      3,
+      7,
+      2
+    ],
+    "visitorPeriodScores": [
+      2,
+      5,
+      1,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "CHA",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Chaos.png",
+      "fullName": "Chaos",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#000000",
+      "backgroundColor": "#EF484B",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ATL",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Atlas.png",
+      "fullName": "Atlas",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#3ba9f6",
+      "backgroundColor": "#3BA9F6",
+      "wins": 2,
+      "losses": 8,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "retrieved_at": "2026-09-08T20-26-41Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/whipsnakes-waterdogs-2022-6-11/play-by-plays",
+    "content_hash": "a9e052474155dc3b3ee06a981fa96a507e272ac756cd9a725befabb1ee3a3e6f"
+  },
+  "game_meta": {
+    "retrieved_at": "2026-09-08T20-26-41Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/whipsnakes-waterdogs-2022-6-11",
+    "content_hash": "0c8b0a74e05696dab25306a85676e07321a9aba8f5bb36f92fb3331db44b63ea"
+  },
+  "players_stats": {
+    "retrieved_at": "2026-09-08T20-26-42Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/whipsnakes-waterdogs-2022-6-11/players/stats",
+    "content_hash": "4cf4c36d228e0c5e436e6a34b309674791b8e316ec22dad946913b75bdcb1fca"
+  },
+  "teams_stats": {
+    "retrieved_at": "2026-09-08T20-26-43Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/whipsnakes-waterdogs-2022-6-11/teams/stats",
+    "content_hash": "6269a1be1add0394c22b24dc271c6ab32355c86bdfcb56e1e178e1e93b080596"
+  }
+}

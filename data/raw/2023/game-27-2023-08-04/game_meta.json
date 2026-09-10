@@ -1,0 +1,78 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.45519204510122596,
+      "awayWinProbability": 0.5448079548987741
+    },
+    "id": 207,
+    "slugname": "game-27-2023-08-04",
+    "eventId": "2023_ev27",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1691262000",
+    "venue": "Homewood Field",
+    "venueLocation": null,
+    "location": "Baltimore, MD",
+    "year": 2023,
+    "week": 8,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/72668569-5f15-45e0-813c-79f280619799",
+    "broadcaster": [
+      "ABC",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 5,
+    "clockMinutes": 11,
+    "clockSeconds": 12,
+    "gameStatus": null,
+    "visitorScore": 14,
+    "homeScore": 13,
+    "homePeriodScores": [
+      2,
+      5,
+      2,
+      4,
+      0
+    ],
+    "visitorPeriodScores": [
+      4,
+      2,
+      2,
+      5,
+      1
+    ],
+    "homeTeam": {
+      "officialId": "ATL",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Atlas.png",
+      "fullName": "Atlas",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#3ba9f6",
+      "backgroundColor": "#3BA9F6",
+      "wins": 2,
+      "losses": 8,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ARC",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Archers.png",
+      "fullName": "Archers",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#f2694c",
+      "backgroundColor": "#23427A",
+      "wins": 8,
+      "losses": 2,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

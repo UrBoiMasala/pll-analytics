@@ -1,0 +1,72 @@
+{
+  "data": {
+    "pregameWinProbability": null,
+    "id": 123,
+    "slugname": "whipsnakes-chaos-2022-6-04",
+    "eventId": "2022_ev1",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1654366500",
+    "venue": "Tom & Mary Casey Stadium",
+    "venueLocation": null,
+    "location": "Albany, NY",
+    "year": 2022,
+    "week": 1,
+    "urlStreaming": "https://es.pn/3m4R64Z",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 9,
+    "homeScore": 8,
+    "homePeriodScores": [
+      3,
+      3,
+      0,
+      2
+    ],
+    "visitorPeriodScores": [
+      2,
+      2,
+      3,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "CHA",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Chaos.png",
+      "fullName": "Chaos",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#000000",
+      "backgroundColor": "#EF484B",
+      "wins": 2,
+      "losses": 8,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WHP",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Whipsnakes.png",
+      "fullName": "Whipsnakes",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#59c2b1",
+      "backgroundColor": "#E71C3F",
+      "wins": 9,
+      "losses": 1,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

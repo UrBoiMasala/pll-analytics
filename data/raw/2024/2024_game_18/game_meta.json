@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5930454425265979,
+      "awayWinProbability": 0.40695455747340215
+    },
+    "id": 260,
+    "slugname": "2024_game_18",
+    "eventId": "2024_ev18",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1720225800",
+    "venue": "Harvard Stadium",
+    "venueLocation": null,
+    "location": "Boston, MA",
+    "year": 2024,
+    "week": 5,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/19874802-7791-4859-b65c-e6de0e94b32c#bucketId=1",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 4,
+    "homeScore": 17,
+    "homePeriodScores": [
+      6,
+      3,
+      5,
+      3
+    ],
+    "visitorPeriodScores": [
+      1,
+      1,
+      0,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "ATL",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_atlas_primary_color.png",
+      "fullName": "Atlas",
+      "location": "New York",
+      "locationCode": "NYA",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#00B1FF",
+      "backgroundColor": "#011E41",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "OUT",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_outlaws_primary_color.png",
+      "fullName": "Outlaws",
+      "location": "Denver",
+      "locationCode": "DEN",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#2E2E4D",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "description": "Boston Cannons Homecoming Weekend",
+    "snl": false,
+    "polymarketId": null
+  }
+}

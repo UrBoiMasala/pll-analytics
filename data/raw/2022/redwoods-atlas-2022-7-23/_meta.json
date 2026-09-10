@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "retrieved_at": "2026-09-08T20-27-21Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/redwoods-atlas-2022-7-23/play-by-plays",
+    "content_hash": "c104bfdd0d884f781c6c7da0d253ef18e5ffdb547854bd124f58f2db333b93ff"
+  },
+  "game_meta": {
+    "retrieved_at": "2026-09-08T20-27-22Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/redwoods-atlas-2022-7-23",
+    "content_hash": "0c118e55e7db8d31b0f023a0853c1a5922f950a08597537eab9f75cca99d5dd2"
+  },
+  "players_stats": {
+    "retrieved_at": "2026-09-08T20-27-23Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/redwoods-atlas-2022-7-23/players/stats",
+    "content_hash": "42b9c5061fc50192078a3b93d78b9219a4aadc97572410a6595b8f18412cc96b"
+  },
+  "teams_stats": {
+    "retrieved_at": "2026-09-08T20-27-23Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/redwoods-atlas-2022-7-23/teams/stats",
+    "content_hash": "01e5e87e67b981de3f76c2d4068d3aa0d5e94c5445553874706f0aa047db82d8"
+  }
+}

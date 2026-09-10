@@ -1,0 +1,13 @@
+comparison_set,metric_name,observed_rank_churn,observed_max_rank_change,null_rank_churn_mean,null_rank_churn_p50,null_rank_churn_p95,p_rank_churn,rank_churn_exceeds_sampling_noise,observed_level_shift,null_level_shift_p95_abs,p_level_shift,level_shift_exceeds_sampling_noise,n_draws
+non_ambiguous,defensive_efficiency,10,3,7.971,8.0,14.0,0.366,False,0.053658,0.010785,0.0,True,2000
+non_ambiguous,net_efficiency,14,4,9.271,10.0,16.0,0.135,False,0.000636,0.01541,0.9445,False,2000
+non_ambiguous,offensive_efficiency,12,4,11.269,11.5,18.0,0.5,False,0.054294,0.010676,0.0,True,2000
+non_ambiguous,possession_ending_turnover_rate,4,1,6.508,6.0,12.0,0.893,False,0.063896,0.010356,0.0,True,2000
+non_ambiguous,shots_per_possession,12,4,10.283,10.0,18.0,0.396,False,-0.040132,0.018774,0.0,True,2000
+non_ambiguous,two_point_possession_rate,8,2,7.843,8.0,14.0,0.5845,False,-0.017967,0.007296,0.0,True,2000
+non_ambiguous_non_truncated,defensive_efficiency,8,3,8.192,8.0,14.0,0.6085,False,0.069004,0.011021,0.0,True,2000
+non_ambiguous_non_truncated,net_efficiency,14,4,9.707,10.0,16.0,0.1855,False,0.00069,0.016383,0.9355,False,2000
+non_ambiguous_non_truncated,offensive_efficiency,8,3,11.676,12.0,18.0,0.8745,False,0.069693,0.011188,0.0,True,2000
+non_ambiguous_non_truncated,possession_ending_turnover_rate,4,1,7.019,6.0,12.0,0.922,False,0.081634,0.011207,0.0,True,2000
+non_ambiguous_non_truncated,shots_per_possession,12,4,10.684,10.0,18.0,0.4505,False,-0.030775,0.019722,0.0025,True,2000
+non_ambiguous_non_truncated,two_point_possession_rate,6,2,8.33,8.0,14.0,0.8415,False,-0.029005,0.007713,0.0,True,2000

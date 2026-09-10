@@ -1,0 +1,78 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5,
+      "awayWinProbability": 0.5
+    },
+    "id": 183,
+    "slugname": "game-3-2023-06-02",
+    "eventId": "2023_ev3",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1685898000",
+    "venue": "Tom & Mary Casey Stadium",
+    "venueLocation": null,
+    "location": "Albany, NY",
+    "year": 2023,
+    "week": 1,
+    "urlStreaming": "http://es.pn/3C128A9",
+    "broadcaster": [
+      "ABC",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 5,
+    "clockMinutes": 9,
+    "clockSeconds": 23,
+    "gameStatus": null,
+    "visitorScore": 7,
+    "homeScore": 8,
+    "homePeriodScores": [
+      3,
+      0,
+      2,
+      2,
+      1
+    ],
+    "visitorPeriodScores": [
+      1,
+      3,
+      0,
+      3,
+      0
+    ],
+    "homeTeam": {
+      "officialId": "WAT",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Waterdogs.png",
+      "fullName": "Waterdogs",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#907fe2",
+      "backgroundColor": "#000000",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CHA",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Chaos.png",
+      "fullName": "Chaos",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#000000",
+      "backgroundColor": "#EF484B",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

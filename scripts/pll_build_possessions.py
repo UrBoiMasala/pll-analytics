@@ -54,7 +54,18 @@ from pathlib import Path
 import pandas as pd
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
+
+# Phase 9: season is module state defaulting to 2026. The possession RULES are
+# untouched -- they are deliberately not tuned per season, so that historical
+# possession distributions are comparable evidence rather than a fitted result.
+SEASON = 2026
 DATA_DIR = REPO_ROOT / "data" / "processed" / "2026"
+
+
+def set_season(year: int) -> None:
+    global SEASON, DATA_DIR
+    SEASON = int(year)
+    DATA_DIR = REPO_ROOT / "data" / "processed" / str(SEASON)
 
 SHOT_TYPE_POINTS = {"1_PT": 1, "MU": 1, "2_PT": 2, "MU_2_PT": 2}
 

@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.516975430613879,
+      "awayWinProbability": 0.48302456938612104
+    },
+    "id": 357,
+    "slugname": "2025_game_25",
+    "eventId": "2025_ev_25",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1752361200",
+    "venue": "Northwestern Medicine Field at Martin Stadium",
+    "venueLocation": null,
+    "location": "Chicago, IL",
+    "year": 2025,
+    "week": 7,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/d6e949da-7db1-4272-947f-8aae9fb3193d#bucketId=2",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 12,
+    "homeScore": 10,
+    "homePeriodScores": [
+      5,
+      2,
+      1,
+      2
+    ],
+    "visitorPeriodScores": [
+      2,
+      3,
+      2,
+      5
+    ],
+    "homeTeam": {
+      "officialId": "RED",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CHA",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_chaos_primary_color.png",
+      "fullName": "Chaos",
+      "location": "Carolina",
+      "locationCode": "CAR",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF0E11",
+      "backgroundColor": "#000",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "description": "Throwback Weekend",
+    "snl": true,
+    "polymarketId": null
+  }
+}

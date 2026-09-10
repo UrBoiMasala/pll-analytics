@@ -1,0 +1,73 @@
+{
+  "data": {
+    "pregameWinProbability": null,
+    "id": 103,
+    "slugname": "all-star-game-2022-7-1",
+    "eventId": "2022_ev21",
+    "league": "PLL",
+    "seasonSegment": "allstar",
+    "startTime": "1657999800",
+    "venue": "Gillette Stadium",
+    "venueLocation": null,
+    "location": "Boston, MA",
+    "year": 2022,
+    "week": 6,
+    "urlStreaming": "https://es.pn/3uaiOBz",
+    "broadcaster": [
+      "ESPN",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 13,
+    "homeScore": 33,
+    "homePeriodScores": [
+      10,
+      9,
+      7,
+      7
+    ],
+    "visitorPeriodScores": [
+      2,
+      4,
+      5,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "ASH",
+      "year": 2022,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2022/Logo/team-baptiste.png",
+      "fullName": "Baptiste",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": null,
+      "backgroundColor": null,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ASA",
+      "year": 2022,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2022/Logo/team-farrell.png",
+      "fullName": "Farrell",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": null,
+      "backgroundColor": null,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    },
+    "description": "All-Star Game",
+    "snl": false,
+    "polymarketId": null
+  }
+}

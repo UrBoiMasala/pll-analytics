@@ -1,0 +1,72 @@
+{
+  "data": {
+    "pregameWinProbability": null,
+    "id": 132,
+    "slugname": "archers-waterdogs-2022-8-20",
+    "eventId": "2022_ev40",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1661045400",
+    "venue": "Tacoma Dome",
+    "venueLocation": null,
+    "location": "Seattle, WA",
+    "year": 2022,
+    "week": 11,
+    "urlStreaming": "http://es.pn/3zVP7ri",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 16,
+    "homeScore": 12,
+    "homePeriodScores": [
+      3,
+      2,
+      4,
+      3
+    ],
+    "visitorPeriodScores": [
+      1,
+      5,
+      7,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "WAT",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Waterdogs.png",
+      "fullName": "Waterdogs",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#907fe2",
+      "backgroundColor": "#000000",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ARC",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Archers.png",
+      "fullName": "Archers",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#f2694c",
+      "backgroundColor": "#23427A",
+      "wins": 6,
+      "losses": 4,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

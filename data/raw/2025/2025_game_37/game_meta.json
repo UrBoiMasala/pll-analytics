@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5519005260725687,
+      "awayWinProbability": 0.4480994739274313
+    },
+    "id": 369,
+    "slugname": "2025_game_37",
+    "eventId": "2025_ev_37",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1754179200",
+    "venue": "Peter Barton Stadium",
+    "venueLocation": null,
+    "location": "Denver, CO",
+    "year": 2025,
+    "week": 10,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/bb85c329-c53e-4c3e-b954-f110f93cebb3#bucketId=2",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 13,
+    "homeScore": 14,
+    "homePeriodScores": [
+      2,
+      4,
+      4,
+      4
+    ],
+    "visitorPeriodScores": [
+      6,
+      2,
+      5,
+      0
+    ],
+    "homeTeam": {
+      "officialId": "RED",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WHP",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_whipsnakes_primary_color.png",
+      "fullName": "Whipsnakes",
+      "location": "Maryland",
+      "locationCode": "MDW",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#FF0000",
+      "backgroundColor": "#FFCE00",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

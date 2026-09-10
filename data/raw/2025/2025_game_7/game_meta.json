@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5556758340120418,
+      "awayWinProbability": 0.4443241659879582
+    },
+    "id": 339,
+    "slugname": "2025_game_7",
+    "eventId": "2025_ev_7",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1749315600",
+    "venue": "American Legion Memorial Stadium",
+    "venueLocation": null,
+    "location": "Charlotte, NC",
+    "year": 2025,
+    "week": 2,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/071dfc7d-7611-42e0-b9d0-fc4c626f6a38#bucketId=2",
+    "broadcaster": [
+      "ABC",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 8,
+    "homeScore": 9,
+    "homePeriodScores": [
+      3,
+      2,
+      2,
+      2
+    ],
+    "visitorPeriodScores": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "CAN",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_cannons_primary_color.png",
+      "fullName": "Cannons",
+      "location": "Boston",
+      "locationCode": "BOS",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#B0B6BB",
+      "backgroundColor": "#C52032",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ARC",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_archers_primary_color.png",
+      "fullName": "Archers",
+      "location": "Utah",
+      "locationCode": "UTA",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#002244",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

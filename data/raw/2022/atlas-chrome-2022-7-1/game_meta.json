@@ -1,0 +1,72 @@
+{
+  "data": {
+    "pregameWinProbability": null,
+    "id": 106,
+    "slugname": "atlas-chrome-2022-7-1",
+    "eventId": "2022_ev18",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1656726300",
+    "venue": "TCO Stadium",
+    "venueLocation": null,
+    "location": "Minneapolis, MN",
+    "year": 2022,
+    "week": 5,
+    "urlStreaming": "https://es.pn/3y3l8LK",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 14,
+    "homeScore": 13,
+    "homePeriodScores": [
+      2,
+      4,
+      6,
+      1
+    ],
+    "visitorPeriodScores": [
+      4,
+      7,
+      1,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "CHR",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Chrome.png",
+      "fullName": "Chrome",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#ea5f9a",
+      "backgroundColor": "#95D6DB",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ATL",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Atlas.png",
+      "fullName": "Atlas",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#3ba9f6",
+      "backgroundColor": "#3BA9F6",
+      "wins": 6,
+      "losses": 4,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "retrieved_at": "2026-09-08T20-27-34Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/chrome-whipsnakes-2022-7-30/play-by-plays",
+    "content_hash": "ba7d607ea44cb3dca2f5055c3636c7946d67eb5ce74a7c60396e52ff31b6f143"
+  },
+  "game_meta": {
+    "retrieved_at": "2026-09-08T20-27-35Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/chrome-whipsnakes-2022-7-30",
+    "content_hash": "fb4ce68d45ac00b71382b3a99d6d3b9129841af51ec3e8b957912609be988d85"
+  },
+  "players_stats": {
+    "retrieved_at": "2026-09-08T20-27-36Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/chrome-whipsnakes-2022-7-30/players/stats",
+    "content_hash": "7bfa0fe7ccf9f6ba115e1e703df60de31f10c98c15fad3bba8320ca6d8abc256"
+  },
+  "teams_stats": {
+    "retrieved_at": "2026-09-08T20-27-36Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/chrome-whipsnakes-2022-7-30/teams/stats",
+    "content_hash": "31fb6cf3359418ec968ff6003479baecb21ac019c897c6dbda95b0b5ec97a7eb"
+  }
+}

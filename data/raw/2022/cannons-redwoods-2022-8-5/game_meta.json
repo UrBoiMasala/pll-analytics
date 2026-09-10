@@ -1,0 +1,73 @@
+{
+  "data": {
+    "pregameWinProbability": null,
+    "id": 141,
+    "slugname": "cannons-redwoods-2022-8-5",
+    "eventId": "2022_ev31",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1659747600",
+    "venue": "Barton Stadium",
+    "venueLocation": null,
+    "location": "Denver, CO",
+    "year": 2022,
+    "week": 9,
+    "urlStreaming": "http://es.pn/3oWJId4",
+    "broadcaster": [
+      "ESPN",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 12,
+    "homeScore": 15,
+    "homePeriodScores": [
+      3,
+      5,
+      3,
+      4
+    ],
+    "visitorPeriodScores": [
+      1,
+      5,
+      5,
+      1
+    ],
+    "homeTeam": {
+      "officialId": "RED",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Redwoods.png",
+      "fullName": "Redwoods",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#006F55",
+      "backgroundColor": "#006F55",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CAN",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Cannons.png",
+      "fullName": "Cannons",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#002244",
+      "backgroundColor": "#B0B7BC",
+      "wins": 1,
+      "losses": 9,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

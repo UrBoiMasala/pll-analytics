@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.4784,
+      "awayWinProbability": 0.5216
+    },
+    "id": 252,
+    "slugname": "2024_game_10",
+    "eventId": "2024_ev10",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1718492400",
+    "venue": "Villanova Stadium",
+    "venueLocation": null,
+    "location": "Philadelphia, PA",
+    "year": 2024,
+    "week": 3,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/e7daaf8f-ca5e-4f32-a1e7-93b3ffe44bfa#bucketId=1",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 9,
+    "homeScore": 7,
+    "homePeriodScores": [
+      3,
+      2,
+      2,
+      0
+    ],
+    "visitorPeriodScores": [
+      2,
+      3,
+      2,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "CHA",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_chaos_primary_color.png",
+      "fullName": "Chaos",
+      "location": "Carolina",
+      "locationCode": "CAR",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF0E11",
+      "backgroundColor": "#000",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ARC",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_archers_primary_color.png",
+      "fullName": "Archers",
+      "location": "Utah",
+      "locationCode": "UTA",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#002244",
+      "wins": 6,
+      "losses": 4,
+      "ties": 0
+    },
+    "description": "Philadelphia Waterdogs Homecoming Weekend",
+    "snl": false,
+    "polymarketId": null
+  }
+}

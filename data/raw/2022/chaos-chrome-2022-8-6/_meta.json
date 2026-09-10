@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "retrieved_at": "2026-09-08T20-27-45Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/chaos-chrome-2022-8-6/play-by-plays",
+    "content_hash": "e8c051b22af6f8c451e74f1a0990affeaef62c9cddc962347108477e7bcc6c76"
+  },
+  "game_meta": {
+    "retrieved_at": "2026-09-08T20-27-46Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/chaos-chrome-2022-8-6",
+    "content_hash": "04f9577b1c3dcae1f96404e12b6afccbee0c565ba0d4fcbb250654af7588441f"
+  },
+  "players_stats": {
+    "retrieved_at": "2026-09-08T20-27-47Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/chaos-chrome-2022-8-6/players/stats",
+    "content_hash": "1d58e03c9e53360973b79fdbf77dc6dd59c37fce87991cff68ab90face690943"
+  },
+  "teams_stats": {
+    "retrieved_at": "2026-09-08T20-27-47Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/chaos-chrome-2022-8-6/teams/stats",
+    "content_hash": "0441593cb821e734f158da88219d0e4d76e5aeb9e93673ed9f9d4abf9267f166"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5491384685927466,
+      "awayWinProbability": 0.4508615314072534
+    },
+    "id": 365,
+    "slugname": "2025_game_33",
+    "eventId": "2025_ev_33",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1753569000",
+    "venue": "Zions Bank Stadium",
+    "venueLocation": null,
+    "location": "Salt Lake City, UT",
+    "year": 2025,
+    "week": 9,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/e55b6f86-f75a-4611-a443-20e8838b2390#bucketId=2",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 5,
+    "clockMinutes": 9,
+    "clockSeconds": 39,
+    "gameStatus": null,
+    "visitorScore": 14,
+    "homeScore": 15,
+    "homePeriodScores": [
+      6,
+      2,
+      3,
+      3,
+      1
+    ],
+    "visitorPeriodScores": [
+      4,
+      2,
+      2,
+      6,
+      0
+    ],
+    "homeTeam": {
+      "officialId": "CHA",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_chaos_primary_color.png",
+      "fullName": "Chaos",
+      "location": "Carolina",
+      "locationCode": "CAR",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF0E11",
+      "backgroundColor": "#000",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WAT",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_waterdogs_primary_color.png",
+      "fullName": "Waterdogs",
+      "location": "Philadelphia",
+      "locationCode": "PHI",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#6C20C4",
+      "backgroundColor": "#99A4AD",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": null,
+    "snl": true,
+    "polymarketId": null
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.49571992476337867,
+      "awayWinProbability": 0.5042800752366213
+    },
+    "id": 381,
+    "slugname": "2025_championship_game",
+    "eventId": "2025_ev_49",
+    "league": "PLL",
+    "seasonSegment": "post",
+    "startTime": "1757867400",
+    "venue": "Sports Illustrated Stadium",
+    "venueLocation": null,
+    "location": "Harrison, NJ",
+    "year": 2025,
+    "week": 14,
+    "urlStreaming": "https://www.espn.com/watch/player/_/eventCalendarId/401819953#bucketId=8571",
+    "broadcaster": [
+      "ABC",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 14,
+    "homeScore": 13,
+    "homePeriodScores": [
+      5,
+      2,
+      5,
+      1
+    ],
+    "visitorPeriodScores": [
+      3,
+      6,
+      2,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "OUT",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_outlaws_primary_color.png",
+      "fullName": "Outlaws",
+      "location": "Denver",
+      "locationCode": "DEN",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#2E2E4D",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ATL",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_atlas_primary_color.png",
+      "fullName": "Atlas",
+      "location": "New York",
+      "locationCode": "NYA",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#00B1FF",
+      "backgroundColor": "#011E41",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "description": "U.S. Bank Championship",
+    "snl": false,
+    "polymarketId": null
+  }
+}

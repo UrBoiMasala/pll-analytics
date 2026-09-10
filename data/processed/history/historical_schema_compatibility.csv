@@ -1,0 +1,93 @@
+season,aspect,status,detail,reference_2026_value,season_value
+2022,clock_field_minutes,IDENTICAL,populated on 10433 events,11254,10433
+2022,clock_field_seconds,IDENTICAL,populated on 10433 events,11254,10433
+2022,clock_field_secondsPassed,IDENTICAL,populated on 10433 events,11254,10433
+2022,eventStatus_encoding,IDENTICAL,"every played game carries eventStatus==3, as in 2026",{3: all completed},{3: 52}
+2022,event_types,IDENTICAL,identical to 2026,"['faceoff', 'gameEnd', 'goal', 'groundball', 'penalty', 'pregame', 'shot', 'shotclockexpired', 'turnover']","['faceoff', 'gameEnd', 'goal', 'groundball', 'penalty', 'pregame', 'shot', 'shotclockexpired', 'turnover']"
+2022,faceoff_representation,IDENTICAL,"'faceoff' event type present, same field encoding",1326,1302
+2022,ground_ball_representation,IDENTICAL,"'groundball' event type present, same field encoding",3176,3038
+2022,man_up_representation,IDENTICAL,same man-up shot tags as 2026,"['MU', 'MU_2_PT']","['MU', 'MU_2_PT']"
+2022,official_player_stat_keys,IDENTICAL,identical to 2026,43,43
+2022,official_team_stat_keys,IDENTICAL,identical to 2026,49,49
+2022,one_and_two_point_representation,IDENTICAL,"1_PT and 2_PT shot tags both present, same encoding as 2026",1_PT/2_PT,"{'1_PT': 3383, '2_PT': 423, 'MU_2_PT': 4}"
+2022,pbp_field_types,IDENTICAL,every shared key carries the same JSON types as 2026,,0
+2022,pbp_json_keys,IDENTICAL,identical to 2026,28,28
+2022,penalty_representation,IDENTICAL,"'penalty' event type present, same field encoding",285,236
+2022,period_and_overtime_representation,COMPATIBLE_TRANSFORMATION,present but not in 2026: [0] (period is an integer; >4 denotes overtime in every season),"[1, 2, 3, 4, 5]","[0, 1, 2, 3, 4, 5]"
+2022,player_officialId_stability,COMPATIBLE_TRANSFORMATION,209 distinct officialIds; 73 also appear in 2026. officialId is an integer that persists across seasons and is the join key; see the identity audit for the exceptions.,228,209
+2022,position_labels,IDENTICAL,identical to 2026,"['A', 'D', 'FO', 'G', 'LSM', 'M', 'SSDM']","['A', 'D', 'FO', 'G', 'LSM', 'M', 'SSDM']"
+2022,season_segments,SEASON_SPECIFIC,present but not in 2026: ['preseason'],"{'regular': 48, 'allstar': 1, 'post': 5}","{'preseason': 4, 'regular': 40, 'allstar': 2, 'post': 6}"
+2022,shotAssistId_behaviour,SEASON_SPECIFIC,populated on 65.0% of shot/goal events vs 44.1% in 2026. It is a pre-shot pass indicator in every season and is used nowhere in the value framework.,0.441,0.650
+2022,shot_clock_expiration_representation,IDENTICAL,"'shotclockexpired' event type present, same field encoding",367,211
+2022,shot_type_labels,SEASON_SPECIFIC,present but not in 2026: ['BONUS'],"{'1_PT': 3582, '2_PT': 539, 'MU': 77, 'MU_2_PT': 13}","{'1_PT': 3383, '2_PT': 423, 'BONUS': 4, 'MU': 72, 'MU_2_PT': 4}"
+2022,team_identifiers,SEASON_SPECIFIC,"absent vs 2026: ['ASE', 'ASW', 'OUT']; present but not in 2026: ['ASA', 'ASH', 'CHR'] (team codes are 3-letter officialIds; franchises change between seasons, which is league history, not a schema problem)","['ARC', 'ASE', 'ASW', 'ATL', 'CAN', 'CHA', 'OUT', 'RED', 'WAT', 'WHP']","['ARC', 'ASA', 'ASH', 'ATL', 'CAN', 'CHA', 'CHR', 'RED', 'WAT', 'WHP']"
+2022,turnover_representation,IDENTICAL,"'turnover' event type present, same field encoding",1787,1656
+2023,clock_field_minutes,IDENTICAL,populated on 10490 events,11254,10490
+2023,clock_field_seconds,IDENTICAL,populated on 10490 events,11254,10490
+2023,clock_field_secondsPassed,IDENTICAL,populated on 10490 events,11254,10490
+2023,eventStatus_encoding,SEASON_SPECIFIC,"4 PLAYED games carry eventStatus==2 rather than 3 while still reporting final scores: ['game-17-2023-07-14', 'game-42-2023-08-25', 'playoffs-quarterfinal-2-2023-9-1', 'championship-2023-9-22']. Treating status 3 as the sole completion signal would silently drop them.",{3: all completed},"{3: 44, 2: 4}"
+2023,event_types,IDENTICAL,identical to 2026,"['faceoff', 'gameEnd', 'goal', 'groundball', 'penalty', 'pregame', 'shot', 'shotclockexpired', 'turnover']","['faceoff', 'gameEnd', 'goal', 'groundball', 'penalty', 'pregame', 'shot', 'shotclockexpired', 'turnover']"
+2023,faceoff_representation,IDENTICAL,"'faceoff' event type present, same field encoding",1326,1209
+2023,ground_ball_representation,IDENTICAL,"'groundball' event type present, same field encoding",3176,3136
+2023,man_up_representation,IDENTICAL,same man-up shot tags as 2026,"['MU', 'MU_2_PT']","['MU', 'MU_2_PT']"
+2023,official_player_stat_keys,IDENTICAL,identical to 2026,43,43
+2023,official_team_stat_keys,IDENTICAL,identical to 2026,49,49
+2023,one_and_two_point_representation,IDENTICAL,"1_PT and 2_PT shot tags both present, same encoding as 2026",1_PT/2_PT,"{'2_PT': 509, '1_PT': 3252, 'MU_2_PT': 11}"
+2023,pbp_field_types,IDENTICAL,every shared key carries the same JSON types as 2026,,0
+2023,pbp_json_keys,IDENTICAL,identical to 2026,28,28
+2023,penalty_representation,IDENTICAL,"'penalty' event type present, same field encoding",285,224
+2023,period_and_overtime_representation,COMPATIBLE_TRANSFORMATION,present but not in 2026: [0] (period is an integer; >4 denotes overtime in every season),"[1, 2, 3, 4, 5]","[0, 1, 2, 3, 4, 5]"
+2023,player_officialId_stability,COMPATIBLE_TRANSFORMATION,200 distinct officialIds; 92 also appear in 2026. officialId is an integer that persists across seasons and is the join key; see the identity audit for the exceptions.,228,200
+2023,position_labels,IDENTICAL,identical to 2026,"['A', 'D', 'FO', 'G', 'LSM', 'M', 'SSDM']","['A', 'D', 'FO', 'G', 'LSM', 'M', 'SSDM']"
+2023,season_segments,IDENTICAL,identical to 2026,"{'regular': 48, 'allstar': 1, 'post': 5}","{'regular': 40, 'allstar': 2, 'post': 6}"
+2023,shotAssistId_behaviour,SEASON_SPECIFIC,populated on 67.5% of shot/goal events vs 44.1% in 2026. It is a pre-shot pass indicator in every season and is used nowhere in the value framework.,0.441,0.675
+2023,shot_clock_expiration_representation,IDENTICAL,"'shotclockexpired' event type present, same field encoding",367,320
+2023,shot_type_labels,IDENTICAL,identical to 2026,"{'1_PT': 3582, '2_PT': 539, 'MU': 77, 'MU_2_PT': 13}","{'2_PT': 509, '1_PT': 3252, 'MU': 73, 'MU_2_PT': 11}"
+2023,team_identifiers,SEASON_SPECIFIC,"absent vs 2026: ['ASE', 'ASW', 'OUT']; present but not in 2026: ['CHR'] (team codes are 3-letter officialIds; franchises change between seasons, which is league history, not a schema problem)","['ARC', 'ASE', 'ASW', 'ATL', 'CAN', 'CHA', 'OUT', 'RED', 'WAT', 'WHP']","['ARC', 'ATL', 'CAN', 'CHA', 'CHR', 'RED', 'WAT', 'WHP']"
+2023,turnover_representation,IDENTICAL,"'turnover' event type present, same field encoding",1787,1664
+2024,clock_field_minutes,IDENTICAL,populated on 10133 events,11254,10133
+2024,clock_field_seconds,IDENTICAL,populated on 10133 events,11254,10133
+2024,clock_field_secondsPassed,IDENTICAL,populated on 10133 events,11254,10133
+2024,eventStatus_encoding,IDENTICAL,"every played game carries eventStatus==3, as in 2026",{3: all completed},{3: 47}
+2024,event_types,IDENTICAL,identical to 2026,"['faceoff', 'gameEnd', 'goal', 'groundball', 'penalty', 'pregame', 'shot', 'shotclockexpired', 'turnover']","['faceoff', 'gameEnd', 'goal', 'groundball', 'penalty', 'pregame', 'shot', 'shotclockexpired', 'turnover']"
+2024,faceoff_representation,IDENTICAL,"'faceoff' event type present, same field encoding",1326,1200
+2024,ground_ball_representation,IDENTICAL,"'groundball' event type present, same field encoding",3176,2886
+2024,man_up_representation,IDENTICAL,same man-up shot tags as 2026,"['MU', 'MU_2_PT']","['MU', 'MU_2_PT']"
+2024,official_player_stat_keys,IDENTICAL,identical to 2026,43,43
+2024,official_team_stat_keys,IDENTICAL,identical to 2026,49,49
+2024,one_and_two_point_representation,IDENTICAL,"1_PT and 2_PT shot tags both present, same encoding as 2026",1_PT/2_PT,"{'1_PT': 3174, '2_PT': 520, 'MU_2_PT': 8}"
+2024,pbp_field_types,IDENTICAL,every shared key carries the same JSON types as 2026,,0
+2024,pbp_json_keys,IDENTICAL,identical to 2026,28,28
+2024,penalty_representation,IDENTICAL,"'penalty' event type present, same field encoding",285,186
+2024,period_and_overtime_representation,COMPATIBLE_TRANSFORMATION,present but not in 2026: [0] (period is an integer; >4 denotes overtime in every season),"[1, 2, 3, 4, 5]","[0, 1, 2, 3, 4, 5]"
+2024,player_officialId_stability,COMPATIBLE_TRANSFORMATION,199 distinct officialIds; 114 also appear in 2026. officialId is an integer that persists across seasons and is the join key; see the identity audit for the exceptions.,228,199
+2024,position_labels,IDENTICAL,identical to 2026,"['A', 'D', 'FO', 'G', 'LSM', 'M', 'SSDM']","['A', 'D', 'FO', 'G', 'LSM', 'M', 'SSDM']"
+2024,season_segments,IDENTICAL,identical to 2026,"{'regular': 48, 'allstar': 1, 'post': 5}","{'regular': 40, 'allstar': 2, 'post': 5}"
+2024,shotAssistId_behaviour,IDENTICAL,populated on 43.9% of shot/goal events vs 44.1% in 2026. It is a pre-shot pass indicator in every season and is used nowhere in the value framework.,0.441,0.439
+2024,shot_clock_expiration_representation,IDENTICAL,"'shotclockexpired' event type present, same field encoding",367,336
+2024,shot_type_labels,IDENTICAL,identical to 2026,"{'1_PT': 3582, '2_PT': 539, 'MU': 77, 'MU_2_PT': 13}","{'1_PT': 3174, '2_PT': 520, 'MU': 63, 'MU_2_PT': 8}"
+2024,team_identifiers,SEASON_SPECIFIC,"absent vs 2026: ['ASE', 'ASW'] (team codes are 3-letter officialIds; franchises change between seasons, which is league history, not a schema problem)","['ARC', 'ASE', 'ASW', 'ATL', 'CAN', 'CHA', 'OUT', 'RED', 'WAT', 'WHP']","['ARC', 'ATL', 'CAN', 'CHA', 'OUT', 'RED', 'WAT', 'WHP']"
+2024,turnover_representation,IDENTICAL,"'turnover' event type present, same field encoding",1787,1666
+2025,clock_field_minutes,IDENTICAL,populated on 10323 events,11254,10323
+2025,clock_field_seconds,IDENTICAL,populated on 10323 events,11254,10323
+2025,clock_field_secondsPassed,IDENTICAL,populated on 10323 events,11254,10323
+2025,eventStatus_encoding,IDENTICAL,"every played game carries eventStatus==3, as in 2026",{3: all completed},{3: 47}
+2025,event_types,IDENTICAL,identical to 2026,"['faceoff', 'gameEnd', 'goal', 'groundball', 'penalty', 'pregame', 'shot', 'shotclockexpired', 'turnover']","['faceoff', 'gameEnd', 'goal', 'groundball', 'penalty', 'pregame', 'shot', 'shotclockexpired', 'turnover']"
+2025,faceoff_representation,IDENTICAL,"'faceoff' event type present, same field encoding",1326,1209
+2025,ground_ball_representation,IDENTICAL,"'groundball' event type present, same field encoding",3176,2871
+2025,man_up_representation,IDENTICAL,same man-up shot tags as 2026,"['MU', 'MU_2_PT']","['MU', 'MU_2_PT']"
+2025,official_player_stat_keys,IDENTICAL,identical to 2026,43,43
+2025,official_team_stat_keys,IDENTICAL,identical to 2026,49,49
+2025,one_and_two_point_representation,IDENTICAL,"1_PT and 2_PT shot tags both present, same encoding as 2026",1_PT/2_PT,"{'1_PT': 3269, '2_PT': 526, 'MU_2_PT': 7}"
+2025,pbp_field_types,IDENTICAL,every shared key carries the same JSON types as 2026,,0
+2025,pbp_json_keys,IDENTICAL,identical to 2026,28,28
+2025,penalty_representation,IDENTICAL,"'penalty' event type present, same field encoding",285,240
+2025,period_and_overtime_representation,COMPATIBLE_TRANSFORMATION,present but not in 2026: [0] (period is an integer; >4 denotes overtime in every season),"[1, 2, 3, 4, 5]","[0, 1, 2, 3, 4, 5]"
+2025,player_officialId_stability,COMPATIBLE_TRANSFORMATION,196 distinct officialIds; 151 also appear in 2026. officialId is an integer that persists across seasons and is the join key; see the identity audit for the exceptions.,228,196
+2025,position_labels,IDENTICAL,identical to 2026,"['A', 'D', 'FO', 'G', 'LSM', 'M', 'SSDM']","['A', 'D', 'FO', 'G', 'LSM', 'M', 'SSDM']"
+2025,season_segments,IDENTICAL,identical to 2026,"{'regular': 48, 'allstar': 1, 'post': 5}","{'regular': 40, 'allstar': 2, 'post': 5}"
+2025,shotAssistId_behaviour,IDENTICAL,populated on 41.4% of shot/goal events vs 44.1% in 2026. It is a pre-shot pass indicator in every season and is used nowhere in the value framework.,0.441,0.414
+2025,shot_clock_expiration_representation,IDENTICAL,"'shotclockexpired' event type present, same field encoding",367,383
+2025,shot_type_labels,IDENTICAL,identical to 2026,"{'1_PT': 3582, '2_PT': 539, 'MU': 77, 'MU_2_PT': 13}","{'1_PT': 3269, '2_PT': 526, 'MU': 63, 'MU_2_PT': 7}"
+2025,team_identifiers,IDENTICAL,"identical to 2026 (team codes are 3-letter officialIds; franchises change between seasons, which is league history, not a schema problem)","['ARC', 'ASE', 'ASW', 'ATL', 'CAN', 'CHA', 'OUT', 'RED', 'WAT', 'WHP']","['ARC', 'ASE', 'ASW', 'ATL', 'CAN', 'CHA', 'OUT', 'RED', 'WAT', 'WHP']"
+2025,turnover_representation,IDENTICAL,"'turnover' event type present, same field encoding",1787,1661

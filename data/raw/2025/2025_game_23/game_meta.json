@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5279361547741981,
+      "awayWinProbability": 0.4720638452258019
+    },
+    "id": 355,
+    "slugname": "2025_game_23",
+    "eventId": "2025_ev_23",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1752274800",
+    "venue": "Northwestern Medicine Field at Martin Stadium",
+    "venueLocation": null,
+    "location": "Chicago, IL",
+    "year": 2025,
+    "week": 7,
+    "urlStreaming": "https://www.espn.com/watch/player/_/eventCalendarId/401756766#bucketId=2",
+    "broadcaster": [
+      "ESPN2",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 17,
+    "homeScore": 11,
+    "homePeriodScores": [
+      2,
+      1,
+      4,
+      4
+    ],
+    "visitorPeriodScores": [
+      6,
+      5,
+      3,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "CAN",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_cannons_primary_color.png",
+      "fullName": "Cannons",
+      "location": "Boston",
+      "locationCode": "BOS",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#B0B6BB",
+      "backgroundColor": "#C52032",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ATL",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_atlas_primary_color.png",
+      "fullName": "Atlas",
+      "location": "New York",
+      "locationCode": "NYA",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#00B1FF",
+      "backgroundColor": "#011E41",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "description": "Throwback Weekend",
+    "snl": false,
+    "polymarketId": null
+  }
+}

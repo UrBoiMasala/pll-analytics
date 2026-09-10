@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.48225981493873893,
+      "awayWinProbability": 0.5177401850612611
+    },
+    "id": 361,
+    "slugname": "2025_game_29",
+    "eventId": "2025_ev_29",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1752951600",
+    "venue": "Rafferty Stadium",
+    "venueLocation": null,
+    "location": "Fairfield, CT",
+    "year": 2025,
+    "week": 8,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/d923a03e-525e-46ae-9d8f-1e83af97cd21#bucketId=2",
+    "broadcaster": [
+      "ABC",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 17,
+    "homeScore": 18,
+    "homePeriodScores": [
+      6,
+      5,
+      3,
+      4
+    ],
+    "visitorPeriodScores": [
+      6,
+      3,
+      6,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "OUT",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_outlaws_primary_color.png",
+      "fullName": "Outlaws",
+      "location": "Denver",
+      "locationCode": "DEN",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#2E2E4D",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CAN",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_cannons_primary_color.png",
+      "fullName": "Cannons",
+      "location": "Boston",
+      "locationCode": "BOS",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#B0B6BB",
+      "backgroundColor": "#C52032",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": "Indigenous Heritage Weekend",
+    "snl": false,
+    "polymarketId": null
+  }
+}

@@ -169,6 +169,76 @@ participant-filtered at build time, so there is nothing left for that
 check to catch. See `team_game_stats_exceptions.csv` for where those rows
 went.)
 
+### Phase 5 team advanced-metrics layer
+`team_game_advanced.csv` (100 rows), `team_season_advanced.csv` (8),
+`team_rankings.csv` (184), `possession_length_splits.csv` (63),
+`team_metric_sensitivity.csv` (96),
+`team_metric_sensitivity_null_model.csv` (12),
+`metric_definitions.csv` (119), `team_metrics_validation_report.csv` (20).
+
+Built by `scripts/pll_build_team_metrics.py` from the DuckDB SQL layer in
+`sql/`, validated by `scripts/pll_validate_team_metrics.py` (20/20 checks
+pass). These are derived tables — they read the canonical tables above and
+never modify them. Full metric definitions, source choices and limitations in
+`TEAM_ADVANCED_METRICS.md`; `metric_definitions.csv` is the machine-readable
+version of the same. Team-level metrics only: no player-value, EGA, PTI, Elo,
+opponent-adjusted or MVP work exists in this repo yet.
+
+Two Phase 5 findings materially affect how the possession layer should be
+used and are documented in full in `TEAM_ADVANCED_METRICS.md`:
+
+- **`possessions.duration_seconds` must not be summed into a time-of-possession
+  figure.** The span from a possession's first to last *logged* event recovers
+  a median 75% of PLL's official `timeInPossesion` (range 0.54–1.00, r=0.58).
+  The clock itself is sound — possessions that start on a change of possession
+  and end in a shot-clock violation have a median span of 51.5–53s against
+  PLL's 52-second shot clock, and faceoff-started ones a modal 34s against the
+  32-second post-faceoff clock — but the span excludes transition/dead-ball
+  time. Use official `timeInPossesion` for time of possession.
+- **`events.is_man_up_shot` is a goal tag, not a shot tag.** All 90 `MU`/
+  `MU_2_PT` events in the season are valid goals; official `powerPlayShots`
+  exceeds the tagged count in 70 of 100 team-games. Man-up shot volume must
+  come from `team_game_stats.powerPlayShots`, and `possessions.has_man_up_shot`
+  cannot support a man-up possession metric.
+
+### Phase 6 player-value layer
+`player_opportunities.csv` (228 players), `player_value_components.csv` (228),
+`player_value_baselines.csv` (28), `player_value_shrinkage.csv` (228),
+`player_value_sensitivity.csv` (1,596), `player_value_diagnostics.csv`,
+`player_value_metric_definitions.csv` (19), `shot_model_validation.csv`,
+`ground_ball_context_values.csv`, `player_value_validation_report.csv` (24).
+
+Built by `scripts/pll_build_player_value.py` (Python estimation +
+DuckDB SQL in `sql/player_*.sql`), validated by
+`scripts/pll_validate_player_value.py` (24/24 checks pass). Unit is
+`EPA_points` — PLL points above league-average expected opportunity outcome,
+**not** replacement level and **not** Lacrosse Reference's EGA (different
+estimand — see `docs/EGA_REFERENCE_RESEARCH.md`). Methodology in
+`PLAYER_VALUE_METHODOLOGY.md`; the double-counting audit in
+`docs/PLAYER_VALUE_ACCOUNTING.md`. No Statistical Tewaaraton, MVP model or
+cross-position composite exists in this repo.
+
+Phase 6 findings that affect how the canonical tables should be used:
+
+- **`player_game_stats.points` is NOT PLL scoring points.** It is
+  `onePointGoals + 2*twoPointGoals + assists` (verified on all 1,824 rows).
+  Use `onePointGoals + 2*twoPointGoals` for PLL points; that sums to the
+  official final score exactly.
+- **Player-level `turnovers` do not reconcile to team totals.** Player sums
+  give 1,369 against an official team total of 1,699 — about 19% of league
+  turnovers are credited to no player, because the feed's turnover
+  descriptions name only a team. Every other player statistic checked
+  (goals, 1pt/2pt goals, assists, shots, shots on goal, two-point shots,
+  saves, caused turnovers, faceoffs won/lost, goals against, penalties)
+  reconciles exactly in 100/100 team-games.
+- **The score columns on a goal event already include that goal.** Any model
+  using `home_score_corrected`/`away_score_corrected` as pre-event game state
+  must subtract the row's own points first, or it leaks the outcome it is
+  predicting.
+- **Shot events carry no location, distance or defender data** in any of the
+  51 raw games — the only populated `details` keys are `shotOnGoal`,
+  `shotSaved`, `saveType`. No shot-quality model is possible from this feed.
+
 ### `possessions.csv` / `possession_validation_report.csv` / `possession_diagnostics.csv`
 The possession-reconstruction layer built on top of `events.csv` — full
 rules, evidence base, and known limitations in `POSSESSION_METHODOLOGY.md`;

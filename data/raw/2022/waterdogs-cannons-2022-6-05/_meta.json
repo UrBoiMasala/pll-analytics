@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "retrieved_at": "2026-09-08T20-26-27Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/waterdogs-cannons-2022-6-05/play-by-plays",
+    "content_hash": "e449d56acb3f9a6009a821df67246db9f52bc2737b6251f03617e81155bf0540"
+  },
+  "game_meta": {
+    "retrieved_at": "2026-09-08T20-26-28Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/waterdogs-cannons-2022-6-05",
+    "content_hash": "3643f7192f6e6457a11245d22bc45555dd0162d678c9c631948ef996a3284390"
+  },
+  "players_stats": {
+    "retrieved_at": "2026-09-08T20-26-29Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/waterdogs-cannons-2022-6-05/players/stats",
+    "content_hash": "da6c3de3d509435f4ad8c1433c8712645088ff7738cfff8ccb6c6474d4708e18"
+  },
+  "teams_stats": {
+    "retrieved_at": "2026-09-08T20-26-29Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/waterdogs-cannons-2022-6-05/teams/stats",
+    "content_hash": "b11c83ed59ba45be69989af4af5480f917c016bef0a7e274e694e9597fa5c1f7"
+  }
+}

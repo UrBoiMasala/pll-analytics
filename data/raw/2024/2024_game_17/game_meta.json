@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.6068829903253181,
+      "awayWinProbability": 0.3931170096746819
+    },
+    "id": 259,
+    "slugname": "2024_game_17",
+    "eventId": "2024_ev17",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1720216800",
+    "venue": "Harvard Stadium",
+    "venueLocation": null,
+    "location": "Boston, MA",
+    "year": 2024,
+    "week": 5,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/8eca4412-b7d9-4cb5-9375-e90f50ceed7a#bucketId=1",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 9,
+    "homeScore": 7,
+    "homePeriodScores": [
+      2,
+      2,
+      3,
+      0
+    ],
+    "visitorPeriodScores": [
+      2,
+      2,
+      1,
+      4
+    ],
+    "homeTeam": {
+      "officialId": "CAN",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_cannons_primary_color.png",
+      "fullName": "Cannons",
+      "location": "Boston",
+      "locationCode": "BOS",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#B0B6BB",
+      "backgroundColor": "#C52032",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "RED",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 3,
+      "losses": 7,
+      "ties": 0
+    },
+    "description": "Boston Cannons Homecoming Weekend",
+    "snl": false,
+    "polymarketId": null
+  }
+}

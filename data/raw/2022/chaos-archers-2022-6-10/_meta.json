@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "retrieved_at": "2026-09-08T20-26-35Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/chaos-archers-2022-6-10/play-by-plays",
+    "content_hash": "38b57cd589a81676c90606d54424e7af4740c5d68e7f2c3471777d94d3840cbb"
+  },
+  "game_meta": {
+    "retrieved_at": "2026-09-08T20-26-36Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/chaos-archers-2022-6-10",
+    "content_hash": "12db00e61ca8e19f3a3f1def57aaad089e341f2bf0423f39d86c3d1ea793b5e4"
+  },
+  "players_stats": {
+    "retrieved_at": "2026-09-08T20-26-37Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/chaos-archers-2022-6-10/players/stats",
+    "content_hash": "80e33bc437bc7ec83559dd53b159ae5e9a3d572cc79b6c915b0afffb0577a27a"
+  },
+  "teams_stats": {
+    "retrieved_at": "2026-09-08T20-26-37Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/chaos-archers-2022-6-10/teams/stats",
+    "content_hash": "f8f69d552cdf3f3567b005940853acdb72626b5279b664e9e359fe7a0d2a3a1c"
+  }
+}

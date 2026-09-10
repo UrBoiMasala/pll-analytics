@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5409081561569785,
+      "awayWinProbability": 0.4590918438430215
+    },
+    "id": 210,
+    "slugname": "game-30-2023-08-04",
+    "eventId": "2023_ev30",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1691350200",
+    "venue": "Homewood Field",
+    "venueLocation": null,
+    "location": "Baltimore, MD",
+    "year": 2023,
+    "week": 8,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/2ce854e5-b095-49f7-bb44-649a64bcb896",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 8,
+    "homeScore": 12,
+    "homePeriodScores": [
+      2,
+      2,
+      2,
+      6
+    ],
+    "visitorPeriodScores": [
+      2,
+      1,
+      4,
+      1
+    ],
+    "homeTeam": {
+      "officialId": "CAN",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Cannons.png",
+      "fullName": "Cannons",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#002244",
+      "backgroundColor": "#B0B7BC",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WAT",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Waterdogs.png",
+      "fullName": "Waterdogs",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#907fe2",
+      "backgroundColor": "#000000",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5109,
+      "awayWinProbability": 0.4892
+    },
+    "id": 247,
+    "slugname": "2024_game_5",
+    "eventId": "2024_ev5",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1717797600",
+    "venue": "American Legion Memorial Stadium",
+    "venueLocation": null,
+    "location": "Charlotte, NC",
+    "year": 2024,
+    "week": 2,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/fc5ad5a9-eb39-43e2-b298-0e16ee30c34a",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 11,
+    "homeScore": 12,
+    "homePeriodScores": [
+      2,
+      3,
+      6,
+      1
+    ],
+    "visitorPeriodScores": [
+      4,
+      1,
+      6,
+      0
+    ],
+    "homeTeam": {
+      "officialId": "CHA",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_chaos_primary_color.png",
+      "fullName": "Chaos",
+      "location": "Carolina",
+      "locationCode": "CAR",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF0E11",
+      "backgroundColor": "#000",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "RED",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 3,
+      "losses": 7,
+      "ties": 0
+    },
+    "description": "Carolina Chaos Homecoming Weekend",
+    "snl": false,
+    "polymarketId": null
+  }
+}

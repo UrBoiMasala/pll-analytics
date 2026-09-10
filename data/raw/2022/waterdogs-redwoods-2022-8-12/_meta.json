@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "retrieved_at": "2026-09-08T20-27-56Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/waterdogs-redwoods-2022-8-12/play-by-plays",
+    "content_hash": "3132b979efbffb75e6d623355bfcc19e9d98ecf10452e3d2f9299b9d12400666"
+  },
+  "game_meta": {
+    "retrieved_at": "2026-09-08T20-27-57Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/waterdogs-redwoods-2022-8-12",
+    "content_hash": "4a8db17fd707fff37120371236f19f4402c1c23a155725845d1b00f7a5a6f2e3"
+  },
+  "players_stats": {
+    "retrieved_at": "2026-09-08T20-27-58Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/waterdogs-redwoods-2022-8-12/players/stats",
+    "content_hash": "7d99ac0e0b4babe2e323f8278208019e8675f0caa85f15ede1098c3ae517fd95"
+  },
+  "teams_stats": {
+    "retrieved_at": "2026-09-08T20-27-58Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/waterdogs-redwoods-2022-8-12/teams/stats",
+    "content_hash": "b841c7573267d6e221b9a5d9c5100e75fac87fded7f4f6b522d31df12b784e65"
+  }
+}

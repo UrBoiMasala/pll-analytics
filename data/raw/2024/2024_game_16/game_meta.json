@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5706,
+      "awayWinProbability": 0.4294
+    },
+    "id": 258,
+    "slugname": "2024_game_16",
+    "eventId": "2024_ev16",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1719707400",
+    "venue": "TCO Stadium",
+    "venueLocation": null,
+    "location": "Minneapolis, MN",
+    "year": 2024,
+    "week": 4,
+    "urlStreaming": null,
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 10,
+    "homeScore": 6,
+    "homePeriodScores": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "visitorPeriodScores": [
+      1,
+      2,
+      4,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "CHA",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_chaos_primary_color.png",
+      "fullName": "Chaos",
+      "location": "Carolina",
+      "locationCode": "CAR",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF0E11",
+      "backgroundColor": "#000",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WAT",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_waterdogs_primary_color.png",
+      "fullName": "Waterdogs",
+      "location": "Philadelphia",
+      "locationCode": "PHI",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#6C20C4",
+      "backgroundColor": "#99A4AD",
+      "wins": 2,
+      "losses": 8,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

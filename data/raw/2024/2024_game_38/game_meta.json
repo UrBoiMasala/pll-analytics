@@ -1,0 +1,77 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5174894911362767,
+      "awayWinProbability": 0.48251050886372326
+    },
+    "id": 280,
+    "slugname": "2024_game_38",
+    "eventId": "2024_ev38",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1723852800",
+    "venue": "Zions Bank Stadium",
+    "venueLocation": null,
+    "location": "Salt Lake City, UT",
+    "year": 2024,
+    "week": 11,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/adc9f3fe-57e0-4639-85b0-886ac021b64b",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 5,
+    "clockMinutes": 10,
+    "clockSeconds": 16,
+    "gameStatus": null,
+    "visitorScore": 12,
+    "homeScore": 13,
+    "homePeriodScores": [
+      4,
+      1,
+      5,
+      2,
+      1
+    ],
+    "visitorPeriodScores": [
+      3,
+      3,
+      1,
+      5,
+      0
+    ],
+    "homeTeam": {
+      "officialId": "ARC",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_archers_primary_color.png",
+      "fullName": "Archers",
+      "location": "Utah",
+      "locationCode": "UTA",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#002244",
+      "wins": 6,
+      "losses": 4,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "RED",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 3,
+      "losses": 7,
+      "ties": 0
+    },
+    "description": "Utah Archers Homecoming Weekend",
+    "snl": false,
+    "polymarketId": null
+  }
+}

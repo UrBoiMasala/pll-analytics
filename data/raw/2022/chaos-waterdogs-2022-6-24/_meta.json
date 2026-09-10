@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "retrieved_at": "2026-09-08T20-26-57Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/chaos-waterdogs-2022-6-24/play-by-plays",
+    "content_hash": "a9818a720d2a4cb406c205e426210dbf638af31088d70198ac7a81e7e9b86d95"
+  },
+  "game_meta": {
+    "retrieved_at": "2026-09-08T20-26-58Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/chaos-waterdogs-2022-6-24",
+    "content_hash": "db383954eec370c19671ee33037c651c844582a1eb668469aeae9877102fd436"
+  },
+  "players_stats": {
+    "retrieved_at": "2026-09-08T20-26-58Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/chaos-waterdogs-2022-6-24/players/stats",
+    "content_hash": "2a149e6b2752724949fb245edfd1363069857811596d34038cb3f0b95e921696"
+  },
+  "teams_stats": {
+    "retrieved_at": "2026-09-08T20-26-59Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/chaos-waterdogs-2022-6-24/teams/stats",
+    "content_hash": "714c787297ab0a9dd4c5d061bf78c416067bda2871596887ee366549ee8e31d9"
+  }
+}

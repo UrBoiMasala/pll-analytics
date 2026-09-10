@@ -1,0 +1,73 @@
+{
+  "data": {
+    "pregameWinProbability": null,
+    "id": 113,
+    "slugname": "archers-cannons-2022-6-18",
+    "eventId": "2022_ev11",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1655571600",
+    "venue": "Shuart Stadium",
+    "venueLocation": null,
+    "location": "Long Island, NY",
+    "year": 2022,
+    "week": 3,
+    "urlStreaming": "https://es.pn/39kW6ja",
+    "broadcaster": [
+      "ABC",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 9,
+    "homeScore": 20,
+    "homePeriodScores": [
+      5,
+      4,
+      6,
+      5
+    ],
+    "visitorPeriodScores": [
+      3,
+      3,
+      3,
+      0
+    ],
+    "homeTeam": {
+      "officialId": "ARC",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Archers.png",
+      "fullName": "Archers",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#f2694c",
+      "backgroundColor": "#23427A",
+      "wins": 6,
+      "losses": 4,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CAN",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Cannons.png",
+      "fullName": "Cannons",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#002244",
+      "backgroundColor": "#B0B7BC",
+      "wins": 1,
+      "losses": 9,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

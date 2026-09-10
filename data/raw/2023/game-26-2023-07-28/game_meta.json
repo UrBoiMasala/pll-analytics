@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5612667787809988,
+      "awayWinProbability": 0.43873322121900116
+    },
+    "id": 206,
+    "slugname": "game-26-2023-07-28",
+    "eventId": "2023_ev26",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1690752600",
+    "venue": "The Star",
+    "venueLocation": null,
+    "location": "Dallas, TX",
+    "year": 2023,
+    "week": 7,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/f3e4c504-7178-47dc-bdd9-46c2e5af273a",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 17,
+    "homeScore": 16,
+    "homePeriodScores": [
+      4,
+      2,
+      6,
+      4
+    ],
+    "visitorPeriodScores": [
+      3,
+      3,
+      8,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "CHA",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Chaos.png",
+      "fullName": "Chaos",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#000000",
+      "backgroundColor": "#EF484B",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WHP",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Whipsnakes.png",
+      "fullName": "Whipsnakes",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#59c2b1",
+      "backgroundColor": "#E71C3F",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

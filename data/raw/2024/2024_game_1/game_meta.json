@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.52,
+      "awayWinProbability": 0.48
+    },
+    "id": 243,
+    "slugname": "2024_game_1",
+    "eventId": "2024_ev1",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1717261200",
+    "venue": "Casey Stadium at UAlbany",
+    "venueLocation": null,
+    "location": "Albany, NY",
+    "year": 2024,
+    "week": 1,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/159fa121-ad92-4a70-a967-9192661c64b4",
+    "broadcaster": [
+      "ABC",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 12,
+    "homeScore": 11,
+    "homePeriodScores": [
+      1,
+      3,
+      4,
+      3
+    ],
+    "visitorPeriodScores": [
+      5,
+      4,
+      3,
+      0
+    ],
+    "homeTeam": {
+      "officialId": "WAT",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_waterdogs_primary_color.png",
+      "fullName": "Waterdogs",
+      "location": "Philadelphia",
+      "locationCode": "PHI",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#6C20C4",
+      "backgroundColor": "#99A4AD",
+      "wins": 2,
+      "losses": 8,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ARC",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_archers_primary_color.png",
+      "fullName": "Archers",
+      "location": "Utah",
+      "locationCode": "UTA",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#002244",
+      "wins": 6,
+      "losses": 4,
+      "ties": 0
+    },
+    "description": "New York Atlas Homecoming Weekend",
+    "snl": false,
+    "polymarketId": null
+  }
+}

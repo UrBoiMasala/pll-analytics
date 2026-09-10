@@ -1,0 +1,2 @@
+season,game_slug,exclusion_rule,reason
+2022,archers-cannons-2022-6-18,score_does_not_reconcile,"the game's goal events do not reproduce its official final score; the feed's score columns move on missed-shot events and decrease, so every points-denominated quantity in the game is unreliable"

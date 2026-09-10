@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.521479297441899,
+      "awayWinProbability": 0.478520702558101
+    },
+    "id": 351,
+    "slugname": "2025_game_19",
+    "eventId": "2025_ev_19",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1751148000",
+    "venue": "Torero Stadium",
+    "venueLocation": null,
+    "location": "San Diego, CA",
+    "year": 2025,
+    "week": 5,
+    "urlStreaming": "https://www.espn.com/watch/player/_/eventCalendarId/401756767#bucketId=2",
+    "broadcaster": [
+      "ESPN",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 12,
+    "homeScore": 9,
+    "homePeriodScores": [
+      3,
+      4,
+      2,
+      0
+    ],
+    "visitorPeriodScores": [
+      2,
+      3,
+      4,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "RED",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WAT",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_waterdogs_primary_color.png",
+      "fullName": "Waterdogs",
+      "location": "Philadelphia",
+      "locationCode": "PHI",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#6C20C4",
+      "backgroundColor": "#99A4AD",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": null,
+    "snl": true,
+    "polymarketId": null
+  }
+}

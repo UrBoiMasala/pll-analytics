@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "retrieved_at": "2026-09-08T20-26-54Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/redwoods-whipsnakes-2022-6-24/play-by-plays",
+    "content_hash": "b824648ce1bf1f400916c8603fd0a5a544d3bffd30060982d5bc6365d696a912"
+  },
+  "game_meta": {
+    "retrieved_at": "2026-09-08T20-26-55Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/redwoods-whipsnakes-2022-6-24",
+    "content_hash": "b0022b488181f6ba7df7f98069dee1fd52295eb974d80f60d353d339f89c1566"
+  },
+  "players_stats": {
+    "retrieved_at": "2026-09-08T20-26-56Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/redwoods-whipsnakes-2022-6-24/players/stats",
+    "content_hash": "e66cadb19c8d4e83466ae2eddd4c04cdd7a08b17165f81e16d2174e91915d597"
+  },
+  "teams_stats": {
+    "retrieved_at": "2026-09-08T20-26-56Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/redwoods-whipsnakes-2022-6-24/teams/stats",
+    "content_hash": "bbb32c696494ddd4e330dc0b8dee38cf3ac3e5f39a8405f904057edc9f87570d"
+  }
+}

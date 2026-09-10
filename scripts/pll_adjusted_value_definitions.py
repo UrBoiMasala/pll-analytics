@@ -1,0 +1,409 @@
+"""
+Phase 7: machine-readable provenance for every usage / normalization metric.
+
+Single source of truth for
+data/processed/2026/player_adjusted_metric_definitions.csv. A reader who has
+never seen this repository should be able to reconstruct exactly what any
+published Phase 7 number means, what it is baselined against, how it was
+shrunk, how reliable it is and who is eligible to appear in it -- from this
+table alone.
+
+Phase 6's own metrics stay documented in player_value_metric_definitions.csv
+and are NOT restated here; this file documents what Phase 7 adds.
+"""
+
+ADJUSTED_DEFINITION_COLUMNS = [
+    "metric_name", "definition", "interpretation", "unit", "numerator", "denominator",
+    "baseline", "position_adjustment", "shrinkage_method", "reliability_method",
+    "eligibility", "source_table", "source_columns", "known_limitations", "status",
+]
+
+ELIG_ALL = ("all 228 players in the 50 league-analytics-eligible completed games; "
+            "all-star game and ASE/ASW squads excluded; no player is dropped for sample size")
+CORE = "player_adjusted_value.csv"
+NA = "not_applicable"
+NONE_ = "none"
+
+
+def _d(name, definition, interpretation, unit, num, den, baseline, posadj, shrink,
+       rel, elig, src, cols, lim, status):
+    return dict(zip(ADJUSTED_DEFINITION_COLUMNS, [
+        name, definition, interpretation, unit, num, den, baseline, posadj, shrink,
+        rel, elig, src, cols, lim, status,
+    ]))
+
+
+ADJUSTED_DEFINITIONS = [
+
+    # =================================================================== USAGE
+    _d("recorded_offensive_opportunities",
+       "Shots attempted plus turnovers committed, from the official player box score, "
+       "summed over the player's eligible games.",
+       "How many offensive opportunities this player personally consumed. A VOLUME "
+       "measure: it says nothing about whether the opportunities were used well.",
+       "count", "shots + turnovers", NA, NA, NONE_, NONE_, NONE_, ELIG_ALL,
+       "player_game_stats.csv", "shots, turnovers",
+       "Shots reconcile exactly to team totals (4,106 in 100/100 team-games) but player-"
+       "attributed turnovers total 1,369 against an official team total of 1,699 -- about 19% "
+       "of league turnovers name only a team, so every player's count is understated. Assists "
+       "and ground balls are deliberately excluded (an assist attaches to a goal already "
+       "counted as the shooter's shot; 1,095 of 3,091 ground balls follow a faceoff). This is "
+       "an INDIVIDUAL RECORDED opportunity count, not possessions played.",
+       "production"),
+
+    _d("offensive_play_share",
+       "recorded_offensive_opportunities divided by the same quantity summed over the "
+       "player's team in the games he actually played.",
+       "The share of his team's measurable offensive workload the player took on while he was "
+       "available. The primary Phase 7 usage measure.",
+       "share (0-1)", "player shots + turnovers",
+       "team shots + turnovers over the same games", "team total in games played",
+       "none -- this is the quantity that positional baselines are computed FOR", NONE_, NONE_,
+       ELIG_ALL, "player_game_stats.csv via sql/player_play_shares.sql",
+       "shots, turnovers, teamId, game_id",
+       "NOT the share of team possessions the player was on the field for -- the PLL feed has "
+       "no lineup, substitution or minutes data of any kind, so on-field participation is not "
+       "computable. Because the denominator is games played, these do not sum to 1 within a "
+       "team; offensive_play_share_season does. Inherits the ~19% turnover attribution gap.",
+       "production"),
+
+    _d("offensive_play_share_season",
+       "recorded_offensive_opportunities divided by the team's full-season total, summed over "
+       "each team a mid-season mover played for.",
+       "The same usage concept on a denominator that makes the shares add up: summing this "
+       "over a team's players gives exactly 1.000.",
+       "share (0-1)", "player shots + turnovers", "team season shots + turnovers",
+       "team season total", NONE_, NONE_, NONE_, ELIG_ALL,
+       "player_game_stats.csv", "shots, turnovers, teamId",
+       "Penalises missed games by construction: a player who played 8 of 13 games looks "
+       "low-usage even if he dominated the ball while available. Use offensive_play_share for "
+       "the usage question and this one for the accounting check.",
+       "production"),
+
+    _d("event_log_play_shares",
+       "The number of times the player appears anywhere in the eligible play-by-play log, in "
+       "any role (shooter, faceoff winner or loser, ground-ball recoverer, penalty committer, "
+       "pre-shot passer, or goalie of record on a shot).",
+       "A faithful reproduction of the one usage definition Lacrosse Reference publishes. "
+       "Reproduced for comparison; NOT this project's usage measure.",
+       "count", "appearances in the event log", NA, NA, NONE_, NONE_, NONE_, ELIG_ALL,
+       "events.csv", "player_id, secondary_player_id, gb_player_id, goalie_id",
+       "Identical to Phase 6's play_shares column (validation check 5 asserts equality). NOT "
+       "comparable across positions: per game it is 38.0 for faceoff specialists, 27.4 for "
+       "goalies, 8.8 for attack and 2.5 for defense, because a goalie earns one appearance per "
+       "shot he faces and a faceoff generates up to three (winner, loser, scrum recovery). It "
+       "also contains the feed's unreliable shotAssistId pre-shot-pass indicator (1,791 "
+       "appearances), which every Phase 6 value component deliberately excludes. Turnovers "
+       "contribute ZERO appearances because the feed's turnover events name only a team.",
+       "reference_reproduction"),
+
+    _d("touch_share",
+       "Official box-score touches divided by team touches over the games played.",
+       "A broader involvement measure than offensive_play_share, including defensive and "
+       "clearing touches.",
+       "share (0-1)", "player touches", "team touches in games played",
+       "team total in games played", NONE_, NONE_, NONE_, ELIG_ALL,
+       "player_game_stats.csv", "touches",
+       "Player touch sums reconcile to team totals within 1.2% but match exactly in only "
+       "4 of 100 team-games. Counts a defenseman's clear and an attackman's dodge as the same "
+       "unit, which is why it is a cross-check rather than the primary measure.",
+       "diagnostic"),
+
+    # ============================================================== EFFICIENCY
+    _d("EPA_per_recorded_opportunity",
+       "offensive_EPA_points_raw (shooting_value + turnover_value) divided by "
+       "recorded_offensive_opportunities.",
+       "Value produced per offensive opportunity consumed. Pure efficiency, blind to volume.",
+       "EPA_points per opportunity", "shooting_value + turnover_value",
+       "shots + turnovers", "0 = a league-average outcome on those opportunities",
+       "standardized within position_group as efficiency_position_z / _percentile",
+       NONE_, "null standard error = offensive_EPA_null_sd / opportunities", ELIG_ALL,
+       CORE, "shooting_value, turnover_value, shots, turnovers",
+       "Dominated by sampling noise at low volume: at 13 opportunities the null standard error "
+       "is roughly 0.13 EPA_points per opportunity, which is larger than almost any real "
+       "between-player difference. Always read with the opportunity count beside it.",
+       "production"),
+
+    _d("uaEPA_per_event_log_play_share",
+       "EPA_points_raw divided by event_log_play_shares -- Lacrosse Reference's published "
+       "usage adjustment ('you just divide total EGA by play shares') applied to this "
+       "project's estimand.",
+       "Reference reproduction only. Production per event-log appearance.",
+       "EPA_points per appearance", "EPA_points_raw", "event_log_play_shares",
+       "0 = league-average outcomes on the player's own opportunities", NONE_, NONE_, NONE_,
+       "Lacrosse Reference applies a 1% team play-share minimum; reproduced here as "
+       "future_award_input_eligible",
+       CORE, "total_player_value, event_log_play_shares",
+       "The denominator is not comparable across positions (see event_log_play_shares), so "
+       "this ratio is not a cross-position ranking. Identical to Phase 6's "
+       "total_player_value_per_play_share. Lacrosse Reference's EGA is a different estimand "
+       "from EPA_points, so this reproduces their OPERATION, not their METRIC.",
+       "reference_reproduction"),
+
+    # ========================================================= USAGE ADJUSTMENT
+    _d("expected_EPA_given_usage",
+       "Fitted E[offensive_EPA_points_raw | offensive_play_share], from a mean function chosen "
+       "among {constant, linear, quadratic} by 5-fold cross-validated MSE, fitted on field "
+       "players with at least one recorded offensive opportunity.",
+       "What a typical player at this usage level produced in 2026.",
+       "EPA_points", "fitted value", NA,
+       "league fit over the field-player population",
+       "the fit is a league fit, not a positional one; positional context is supplied "
+       "separately by the *_position_* columns",
+       NONE_, "5-fold cross-validated MSE against a constant null",
+       "NULL for goalies and faceoff specialists: they are outside the fitted population and "
+       "no offensive-usage expectation is defined for them",
+       "player_usage_adjusted_value.csv", "offensive_play_share, shooting_value, turnover_value",
+       "The selected model in 2026 is the CONSTANT: usage has essentially no cross-validated "
+       "predictive power for total offensive EPA (Pearson r = +0.03 among offensive field "
+       "players). Subtracting this expectation therefore does very little, which is itself the "
+       "finding -- what usage changes is the VARIANCE of value, not its mean. Fitted on a "
+       "single season of 228 players and not validated on held-out seasons.",
+       "production"),
+
+    _d("EPA_vs_usage_expectation",
+       "offensive_EPA_points_raw minus expected_EPA_given_usage.",
+       "How much more or less value the player produced than a typical player at his share of "
+       "team offensive opportunities.",
+       "EPA_points", "observed minus fitted", NA, "the fitted usage expectation",
+       "none directly; positional versions are the *_position_* columns", NONE_,
+       "null standard error = offensive_EPA_null_sd", "field players with opportunities",
+       "player_usage_adjusted_value.csv", "offensive_EPA_points_raw, expected_EPA_given_usage",
+       "Because the selected mean function is a constant, this residual is offensive EPA minus "
+       "a single league number and carries all the same limitations. It is NOT a per-"
+       "opportunity measure and a high-volume player can post a large residual on ordinary "
+       "efficiency.",
+       "production"),
+
+    _d("EPA_vs_usage_expectation_z",
+       "EPA_vs_usage_expectation divided by offensive_EPA_null_sd -- the residual expressed in "
+       "units of the sampling spread at the player's own opportunity volume.",
+       "How unusual the player's production is given how many chances he actually had. A value "
+       "of +2 means his season is about two chance-standard-deviations above the usage "
+       "expectation.",
+       "standard deviations of the chance distribution", "EPA_vs_usage_expectation",
+       "offensive_EPA_null_sd", "the usage expectation, scaled by chance variation",
+       "volume-adjusted, not position-adjusted; the two are separate columns", NONE_,
+       "closed-form binomial/Poisson sampling variance of the component",
+       "field players with opportunities", CORE,
+       "EPA_vs_usage_expectation, offensive_EPA_null_sd",
+       "Not a p-value and not a skill estimate. It measures distance from chance, so a player "
+       "who genuinely is better than average SHOULD score above zero; it does not shrink toward "
+       "the mean and must not be read as an estimate of underlying ability. The normal "
+       "approximation implied by reading it as a z-score degrades below roughly 20 "
+       "opportunities.",
+       "production"),
+
+    # ================================================================= NULL SD
+    _d("EPA_points_null_sd",
+       "The standard deviation EPA_points_raw would have under chance alone at the player's own "
+       "opportunity counts: sqrt of the sum of the closed-form sampling variances of every "
+       "component that applies to him.",
+       "The size of the swing this player's season could show through luck alone. The scale "
+       "against which any claim of unusual performance has to be judged.",
+       "EPA_points", "sqrt of summed component variances", NA,
+       "league-average conversion on the player's own opportunities",
+       "none -- this is a per-player, volume-driven quantity, not a positional one",
+       NONE_,
+       "closed form: one-point attempts p(1-p); two-point attempts 4p(1-p); turnovers and "
+       "faceoffs binomial scaled by their coefficients; caused turnovers Poisson",
+       ELIG_ALL, CORE,
+       "one_point_attempts, two_point_attempts, touches, faceoffs, shots_on_goal_faced, "
+       "games_played",
+       "Assumes opportunity outcomes are independent, which shots within a game are not "
+       "exactly. Uses the league conversion rate rather than the player's own, so it is the "
+       "null spread, not the spread around the player's true ability. The caused-turnover term "
+       "is a Poisson approximation because the feed provides no caused-turnover denominator.",
+       "production"),
+
+    # ============================================================ POSITION MAP
+    _d("canonical_position",
+       "The player's rostered position, resolved once per player as the modal non-null "
+       "box-score label (ties broken alphabetically) and mapped to a spelled-out name.",
+       "What the player is listed as. Not what he measurably did -- that is value_role.",
+       "category", NA, NA, NA, NA, NONE_, NONE_, ELIG_ALL,
+       "player_game_stats.csv", "position",
+       "Two of 228 players carry no label in any game and are mapped 'unknown' rather than "
+       "guessed. PLL labels are role-specific and map one-to-one; no NCAA convention is "
+       "assumed. Resolution is deterministic and reproduces exactly on a rerun.",
+       "production"),
+
+    _d("value_role",
+       "Analytical role derived from measured opportunity: goalie if the player faced any shot "
+       "on goal as goalie of record; faceoff if he took at least 50% of his team's faceoffs in "
+       "the games he played; otherwise offensive_field or defensive_field BY ROSTER POSITION.",
+       "What the player measurably did, where the data can tell -- used to choose which "
+       "baseline, which reliability rate and which caveat applies to him.",
+       "category", NA, NA, NA, NA, NONE_, NONE_, ELIG_ALL,
+       "sql/player_position_mapping.sql",
+       "shots_on_goal_faced, faceoffs, team faceoffs, position",
+       "The offensive/defensive split is NOT measured -- it falls back to the roster label, "
+       "because the feed attributes exactly one defensive act (caused turnovers, 741 "
+       "league-wide against 4,106 shots), and an opportunity-share rule put 24 of 96 rostered "
+       "defenders in the offensive class. Lacrosse Reference's documented classifier uses "
+       "shares of VALUE; that cannot be applied to EPA_points, which is a signed residual, so "
+       "opportunity shares are used and the divergence is documented.",
+       "production_partial"),
+
+    # ========================================================== STANDARDIZATION
+    _d("EPA_position_percentile",
+       "The player's mid-rank empirical-CDF percentile of EPA_points_raw within his "
+       "position_group, on 0-100.",
+       "How unusual the player's season was among players with the same roster role. The "
+       "recommended positional comparison, because it assumes nothing about the distribution.",
+       "percentile (0-100)", "mid-rank within group", "group size",
+       "the group's own empirical distribution", "partitioned by position_group",
+       NONE_, "none -- a rank carries no interval", ELIG_ALL, CORE,
+       "EPA_points_raw, position_group",
+       "Coarse in a small group: 13 faceoff specialists means 7.7 percentile points between "
+       "adjacent players. Compares totals, so it rewards opportunity volume within the group as "
+       "well as quality. A percentile is NOT comparable across position groups -- the 90th "
+       "percentile goalie and the 90th percentile attackman are not equally valuable.",
+       "production"),
+
+    _d("EPA_position_z",
+       "(EPA_points_raw - position_group mean) / position_group standard deviation.",
+       "The same comparison as the percentile, on a standard-deviation scale.",
+       "standard deviations", "player value minus group mean", "group sd",
+       "group mean", "partitioned by position_group", NONE_,
+       "the group sd's own relative standard error is published as relative_se_of_sd in "
+       "player_positional_baselines.csv",
+       "NULL where the group has fewer than 9 players with the metric", CORE,
+       "EPA_points_raw, position_group",
+       "Assumes an approximately symmetric group distribution, which is only partly true here: "
+       "offensive_field EPA_points is right-skewed (+0.75) and defensive_field shooting value "
+       "has excess kurtosis +3.4. Prefer the percentile or the robust z. Suppressed for the "
+       "2-player 'unknown' group.",
+       "diagnostic"),
+
+    _d("EPA_position_robust_z",
+       "(EPA_points_raw - position_group median) / (1.4826 x position_group median absolute "
+       "deviation).",
+       "A standard-deviation-scaled positional comparison whose denominator a single outlier "
+       "cannot set.",
+       "robust standard deviations", "player value minus group median",
+       "1.4826 x group MAD", "group median", "partitioned by position_group", NONE_,
+       "none", "NULL where the group has fewer than 9 players with the metric", CORE,
+       "EPA_points_raw, position_group",
+       "The 1.4826 factor matches a normal sd, so this and the ordinary z coincide under "
+       "normality and diverge exactly where the ordinary z should not be trusted. Still a "
+       "within-group comparison and still not cross-position comparable.",
+       "production"),
+
+    # ============================================================= RELIABILITY
+    _d("shooting_reliability",
+       "n / (n + kappa) where n is the player's shot attempts and kappa is the empirical-Bayes "
+       "beta prior strength estimated from the league by method of moments.",
+       "The weight the posterior places on the player's own record rather than the league "
+       "prior. 0.5 means his own shooting is exactly as informative as the assumption that he "
+       "is league-average.",
+       "proportion (0-1)", "shots", "shots + prior strength",
+       "the league's estimated prior strength (70.8 attempts in 2026)",
+       "none -- reliability is a property of the player's sample, not his position",
+       "empirical-Bayes beta-binomial (Phase 6's estimator, imported not re-derived)",
+       "posterior weight; exact 95% beta-posterior interval published alongside",
+       "NULL for players with no shot attempts", CORE, "goals, shots",
+       "In 2026 only 13 of 192 shooters reach reliability 0.5, i.e. 71 attempts. Shooting "
+       "ability is weakly identified in a 13-game season and rate leaderboards should be read "
+       "with that in mind.",
+       "production"),
+
+    _d("faceoff_reliability",
+       "n / (n + kappa) for faceoff win percentage; kappa = 15.9 draws in 2026.",
+       "The best-identified rate in the framework. 18 of 47 players who took a draw reach 0.5.",
+       "proportion (0-1)", "faceoffs", "faceoffs + prior strength",
+       "the league's estimated prior strength (15.9 draws)", NONE_,
+       "empirical-Bayes beta-binomial", "posterior weight + exact beta interval",
+       "NULL for players who took no faceoffs", CORE, "faceoffsWon, faceoffs",
+       "A weak prior means real between-player differences exist and are detectable, not that "
+       "any individual estimate is precise. No opponent adjustment: a specialist who happened "
+       "to face weaker opposing specialists is not discounted.",
+       "production"),
+
+    _d("save_reliability",
+       "n / (n + kappa) for save percentage; kappa = 300.3 shots on goal in 2026.",
+       "How much of a goalie's save percentage is his own record rather than the league prior.",
+       "proportion (0-1)", "shots on goal faced", "shots on goal faced + prior strength",
+       "the league's estimated prior strength (300.3 shots on goal)", NONE_,
+       "empirical-Bayes beta-binomial", "posterior weight + exact beta interval",
+       "NULL for players who faced no shots on goal", CORE, "saves, goalsAgainst",
+       "Only 1 of 16 goalies reaches reliability 0.5 in 2026 -- the busiest goalie faced 309 "
+       "shots on goal against a prior strength of 300. Save percentage is barely identified in "
+       "a single PLL season. Compounded by the absence of any shot-quality adjustment.",
+       "production"),
+
+    _d("two_point_reliability",
+       "n / (n + kappa) for two-point conversion; kappa is capped at 1,000,000 because the "
+       "observed between-player spread is SMALLER than binomial noise alone predicts.",
+       "Effectively zero for every player. There is no measurable two-point shooting skill in "
+       "the 2026 season.",
+       "proportion (0-1)", "two-point attempts", "two-point attempts + prior strength",
+       "a prior so strong that every player's shrunk rate is the league mean", NONE_,
+       "empirical-Bayes beta-binomial", "posterior weight",
+       "NULL for players with no two-point attempts", CORE, "twoPointGoals, twoPointShots",
+       "THE DATA CONTAIN NO EVIDENCE THAT PLAYERS DIFFER IN TWO-POINT SHOOTING ABILITY. The "
+       "median player took 2 two-point attempts and the maximum was 29. No two-point rate "
+       "leaderboard should be published from this season, and a test enforces that no such "
+       "estimate is presented as reliable.",
+       "unsupported"),
+
+    # ============================================================== ELIGIBILITY
+    _d("rate_ranking_eligible",
+       "TRUE when the player's reliability on the rate that drives his role's leaderboard "
+       "(shooting for field players, faceoff win % for specialists, save % for goalies) is at "
+       "least 0.5.",
+       "Whether there is enough of the player's own record to rank him on a RATE. Players who "
+       "fail it stay in the table with their observed production intact.",
+       "boolean", NA, NA, "reliability 0.5", NONE_, NONE_,
+       "empirical-Bayes posterior weight", ELIG_ALL, CORE,
+       "shooting_reliability, faceoff_reliability, save_reliability",
+       "0.5 is the point at which a player's own record outweighs the league prior in the "
+       "posterior -- a property of the estimator, not a round number. The trial count it "
+       "implies differs per rate (16 draws, 71 shots, 300 shots on goal) because each prior is "
+       "estimated separately. It is deliberately strict: 13 of 192 shooters and 1 of 16 "
+       "goalies clear it in 2026.",
+       "production"),
+
+    _d("future_award_input_eligible",
+       "TRUE when the player accounts for at least 1% of his team's event-log play shares.",
+       "Lacrosse Reference's own published minimum-usage cutoff, reproduced. An INPUT to a "
+       "later phase's eligibility decision, not an award qualification.",
+       "boolean", "event_log_play_shares", "team event_log_play_shares", "1% of team",
+       NONE_, NONE_, NONE_, ELIG_ALL, CORE, "event_log_play_shares",
+       "Adopted because it is documented rather than invented, but it inherits every defect of "
+       "the event-log play-share measure: it is far easier for a goalie or a faceoff specialist "
+       "to clear than for a rotational defenseman. It is NOT a statement that the player "
+       "deserves award consideration; Phase 7 builds no award model.",
+       "production"),
+
+    # ==================================================== LIMITATION FLAGS
+    _d("defense_partial",
+       "Always TRUE. Defensive value in this framework is caused turnovers above a positional "
+       "per-game average, and nothing else.",
+       "A permanent warning carried on every row so a defensive number can never be read as "
+       "comprehensive.",
+       "boolean", NA, NA, NA, NA, NONE_, NONE_, ELIG_ALL, CORE, "defensive_value_partial_raw",
+       "Positioning, matchup difficulty, forcing a bad shot instead of a turnover, sliding, "
+       "communication and shot suppression leave no trace in this feed and are absent from the "
+       "number. The denominator is games played, with no minutes or shifts available. A "
+       "defensive value of 0 does NOT mean 'an average defender' -- it means 'caused turnovers "
+       "at the positional per-game rate, with everything else unmeasured'.",
+       "production"),
+
+    _d("usage_proxy_only",
+       "Always TRUE. Every usage measure here counts individually recorded actions.",
+       "A permanent warning that no column in this phase is possession participation.",
+       "boolean", NA, NA, NA, NA, NONE_, NONE_, ELIG_ALL, CORE, "offensive_play_share",
+       "Team possessions while a player was on the field cannot be computed from this feed: it "
+       "carries no lineup, substitution, shift or minutes data. Nothing in Phase 7 is "
+       "denominated in possessions or in time, and validation checks 21 and 22 enforce it.",
+       "production"),
+
+    _d("possession_participation_share", "NOT SUPPORTED. Never computed.",
+       "Named here so its absence is explicit rather than an omission a reader has to notice.",
+       NA, NA, NA, NA, NA, NONE_, NONE_, NA, NA, NA,
+       "The PLL feed has no lineup or on-field data of any kind. Any metric of the form "
+       "'share of team possessions while on the field' is unsupported and is not published "
+       "under any name.",
+       "unsupported"),
+]

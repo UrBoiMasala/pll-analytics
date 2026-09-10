@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5153071596322686,
+      "awayWinProbability": 0.4846928403677314
+    },
+    "id": 273,
+    "slugname": "2024_game_31",
+    "eventId": "2024_ev31",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1722713400",
+    "venue": "Homewood Field",
+    "venueLocation": null,
+    "location": "Baltimore, MD",
+    "year": 2024,
+    "week": 9,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/6ef977a6-399d-46eb-ac78-194704359fd8",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 18,
+    "homeScore": 5,
+    "homePeriodScores": [
+      2,
+      1,
+      2,
+      0
+    ],
+    "visitorPeriodScores": [
+      8,
+      7,
+      3,
+      0
+    ],
+    "homeTeam": {
+      "officialId": "RED",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 3,
+      "losses": 7,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "OUT",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_outlaws_primary_color.png",
+      "fullName": "Outlaws",
+      "location": "Denver",
+      "locationCode": "DEN",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#2E2E4D",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "description": "Maryland Whipsnakes Homecoming Weekend",
+    "snl": false,
+    "polymarketId": null
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "data": {
+    "pregameWinProbability": null,
+    "id": 109,
+    "slugname": "cannons-chrome-2022-6-25",
+    "eventId": "2022_ev15",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1656194400",
+    "venue": "Homewood Field",
+    "venueLocation": null,
+    "location": "Baltimore, MD",
+    "year": 2022,
+    "week": 4,
+    "urlStreaming": "https://es.pn/3n5H3wW",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 5,
+    "clockMinutes": 9,
+    "clockSeconds": 53,
+    "gameStatus": null,
+    "visitorScore": 11,
+    "homeScore": 12,
+    "homePeriodScores": [
+      3,
+      1,
+      0,
+      7,
+      1
+    ],
+    "visitorPeriodScores": [
+      3,
+      4,
+      2,
+      2,
+      0
+    ],
+    "homeTeam": {
+      "officialId": "CHR",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Chrome.png",
+      "fullName": "Chrome",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#ea5f9a",
+      "backgroundColor": "#95D6DB",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CAN",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Cannons.png",
+      "fullName": "Cannons",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#002244",
+      "backgroundColor": "#B0B7BC",
+      "wins": 1,
+      "losses": 9,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

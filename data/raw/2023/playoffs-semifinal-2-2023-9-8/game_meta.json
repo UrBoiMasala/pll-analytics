@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5406121115554481,
+      "awayWinProbability": 0.4593878884445519
+    },
+    "id": 227,
+    "slugname": "playoffs-semifinal-2-2023-9-8",
+    "eventId": "2023_ev47",
+    "league": "PLL",
+    "seasonSegment": "post",
+    "startTime": "1694372400",
+    "venue": "Shuart Stadium",
+    "venueLocation": null,
+    "location": "Long Island, NY",
+    "year": 2023,
+    "week": 13,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/a83d2429-567c-43ef-8803-67b8d785f678",
+    "broadcaster": [
+      "ABC",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 6,
+    "homeScore": 14,
+    "homePeriodScores": [
+      4,
+      3,
+      4,
+      3
+    ],
+    "visitorPeriodScores": [
+      0,
+      3,
+      0,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "ARC",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Archers.png",
+      "fullName": "Archers",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#f2694c",
+      "backgroundColor": "#23427A",
+      "wins": 8,
+      "losses": 2,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "RED",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Redwoods.png",
+      "fullName": "Redwoods",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#006F55",
+      "backgroundColor": "#006F55",
+      "wins": 6,
+      "losses": 4,
+      "ties": 0
+    },
+    "description": "Semifinal",
+    "snl": false,
+    "polymarketId": null
+  }
+}

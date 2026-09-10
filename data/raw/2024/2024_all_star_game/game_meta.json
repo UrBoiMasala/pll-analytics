@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5,
+      "awayWinProbability": 0.5
+    },
+    "id": 263,
+    "slugname": "2024_all_star_game",
+    "eventId": "2024_all_star_game",
+    "league": "PLL",
+    "seasonSegment": "allstar",
+    "startTime": "1720897200",
+    "venue": "Dr. Mark & Cindy Lynn Stadium",
+    "venueLocation": null,
+    "location": "Louisville, KY",
+    "year": 2024,
+    "week": 6,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/ad46f6cf-c785-4838-9ec4-67733137cf2d#bucketId=43871",
+    "broadcaster": [
+      "ESPN",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 15,
+    "homeScore": 12,
+    "homePeriodScores": [
+      1,
+      6,
+      3,
+      2
+    ],
+    "visitorPeriodScores": [
+      4,
+      2,
+      2,
+      7
+    ],
+    "homeTeam": {
+      "officialId": "ASH",
+      "year": 2024,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2024/06/24ASG_WIcon_FullColor.webp",
+      "fullName": "West",
+      "location": null,
+      "locationCode": "WEST",
+      "league": "PLL",
+      "conference": null,
+      "teamColor": null,
+      "backgroundColor": null,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ASA",
+      "year": 2024,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2024/06/24ASG_EIcon_FullColor.webp",
+      "fullName": "East",
+      "location": null,
+      "locationCode": "EAST",
+      "league": "PLL",
+      "conference": null,
+      "teamColor": null,
+      "backgroundColor": null,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    },
+    "description": "All-Star Game",
+    "snl": false,
+    "polymarketId": null
+  }
+}

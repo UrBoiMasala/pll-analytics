@@ -1,0 +1,73 @@
+{
+  "data": {
+    "pregameWinProbability": null,
+    "id": 122,
+    "slugname": "redwoods-atlas-2022-6-04",
+    "eventId": "2022_ev2",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1654376400",
+    "venue": "Tom & Mary Casey Stadium",
+    "venueLocation": null,
+    "location": "Albany, NY",
+    "year": 2022,
+    "week": 1,
+    "urlStreaming": "https://es.pn/3PM1tbe",
+    "broadcaster": [
+      "ESPN",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 11,
+    "homeScore": 17,
+    "homePeriodScores": [
+      4,
+      2,
+      9,
+      2
+    ],
+    "visitorPeriodScores": [
+      3,
+      1,
+      3,
+      4
+    ],
+    "homeTeam": {
+      "officialId": "ATL",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Atlas.png",
+      "fullName": "Atlas",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#3ba9f6",
+      "backgroundColor": "#3BA9F6",
+      "wins": 6,
+      "losses": 4,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "RED",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Redwoods.png",
+      "fullName": "Redwoods",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#006F55",
+      "backgroundColor": "#006F55",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

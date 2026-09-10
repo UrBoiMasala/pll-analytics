@@ -1,0 +1,73 @@
+{
+  "data": {
+    "pregameWinProbability": null,
+    "id": 124,
+    "slugname": "championship-2022-9-18",
+    "eventId": "2022_ev48",
+    "league": "PLL",
+    "seasonSegment": "post",
+    "startTime": "1663527600",
+    "venue": "Subaru Park",
+    "venueLocation": null,
+    "location": "Philadelphia, PA",
+    "year": 2022,
+    "week": 14,
+    "urlStreaming": "https://www.espn.com/watch/player?id=cb223bc5-d81e-4b22-9ff9-238ab09551b0",
+    "broadcaster": [
+      "ABC",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 9,
+    "homeScore": 11,
+    "homePeriodScores": [
+      2,
+      3,
+      4,
+      2
+    ],
+    "visitorPeriodScores": [
+      4,
+      1,
+      3,
+      1
+    ],
+    "homeTeam": {
+      "officialId": "WAT",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Waterdogs.png",
+      "fullName": "Waterdogs",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#907fe2",
+      "backgroundColor": "#000000",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CHA",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Chaos.png",
+      "fullName": "Chaos",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#000000",
+      "backgroundColor": "#EF484B",
+      "wins": 2,
+      "losses": 8,
+      "ties": 0
+    },
+    "description": "Championship Game",
+    "snl": false,
+    "polymarketId": null
+  }
+}

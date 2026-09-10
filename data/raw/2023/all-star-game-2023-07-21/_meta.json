@@ -1,0 +1,17 @@
+{
+  "play_by_play": {
+    "retrieved_at": "2026-09-08T20-29-31Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/all-star-game-2023-07-21/play-by-plays",
+    "content_hash": "2b5c7ad8cdac5b0956113e36d76edba92c22e390633ad0160cac6bf33b481444"
+  },
+  "game_meta": {
+    "retrieved_at": "2026-09-08T20-29-31Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/all-star-game-2023-07-21",
+    "content_hash": "d0493b09f2ed41e2c126e3d70edc86879f800b3af77ffaabcdcb4b2913a27f47"
+  },
+  "teams_stats": {
+    "retrieved_at": "2026-09-08T20-29-32Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/all-star-game-2023-07-21/teams/stats",
+    "content_hash": "7d4a91be9312c6f1da229a8cdf7993b41b7a8b726dbb41626f49123bc6d278e1"
+  }
+}

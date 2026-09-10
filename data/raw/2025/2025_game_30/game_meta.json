@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5278764949326222,
+      "awayWinProbability": 0.47212350506737777
+    },
+    "id": 362,
+    "slugname": "2025_game_30",
+    "eventId": "2025_ev_30",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1752969600",
+    "venue": "Rafferty Stadium",
+    "venueLocation": null,
+    "location": "Fairfield, CT",
+    "year": 2025,
+    "week": 8,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/aa388c40-e2a2-4b43-8210-0f803f6bd79f#bucketId=2",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 10,
+    "homeScore": 7,
+    "homePeriodScores": [
+      3,
+      2,
+      1,
+      1
+    ],
+    "visitorPeriodScores": [
+      0,
+      2,
+      4,
+      4
+    ],
+    "homeTeam": {
+      "officialId": "WAT",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_waterdogs_primary_color.png",
+      "fullName": "Waterdogs",
+      "location": "Philadelphia",
+      "locationCode": "PHI",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#6C20C4",
+      "backgroundColor": "#99A4AD",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WHP",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_whipsnakes_primary_color.png",
+      "fullName": "Whipsnakes",
+      "location": "Maryland",
+      "locationCode": "MDW",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#FF0000",
+      "backgroundColor": "#FFCE00",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": "Indigenous Heritage Weekend",
+    "snl": true,
+    "polymarketId": null
+  }
+}

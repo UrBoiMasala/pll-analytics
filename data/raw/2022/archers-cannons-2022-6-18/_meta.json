@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "retrieved_at": "2026-09-08T20-26-49Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/archers-cannons-2022-6-18/play-by-plays",
+    "content_hash": "e8903640f73f246fc1ef4454512ce14bb4e1edc86555a6be24ecd0c4c3bfc2ac"
+  },
+  "game_meta": {
+    "retrieved_at": "2026-09-08T20-26-50Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/archers-cannons-2022-6-18",
+    "content_hash": "60a892b30694d983612f80a57a4fdf3e2d4736f6e5b65d91cd6c6af610873601"
+  },
+  "players_stats": {
+    "retrieved_at": "2026-09-08T20-26-50Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/archers-cannons-2022-6-18/players/stats",
+    "content_hash": "e8f66752b9b6e6c452a10a6e0a42a02cb6e67841434a80b13e9758b887c740ae"
+  },
+  "teams_stats": {
+    "retrieved_at": "2026-09-08T20-26-51Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/archers-cannons-2022-6-18/teams/stats",
+    "content_hash": "1f5dafebb436f6a8aea2f01b2fcd56381552cbc8187ab6683ef75be87d70064d"
+  }
+}

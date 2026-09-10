@@ -1,0 +1,72 @@
+{
+  "data": {
+    "pregameWinProbability": null,
+    "id": 112,
+    "slugname": "redwoods-chaos-2022-6-18-1",
+    "eventId": "2022_ev12",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1655582400",
+    "venue": "Shuart Stadium",
+    "venueLocation": null,
+    "location": "Long Island, NY",
+    "year": 2022,
+    "week": 3,
+    "urlStreaming": "https://es.pn/3tyo1CX",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 11,
+    "homeScore": 7,
+    "homePeriodScores": [
+      1,
+      2,
+      2,
+      2
+    ],
+    "visitorPeriodScores": [
+      2,
+      0,
+      7,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "CHA",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Chaos.png",
+      "fullName": "Chaos",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#000000",
+      "backgroundColor": "#EF484B",
+      "wins": 2,
+      "losses": 8,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "RED",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Redwoods.png",
+      "fullName": "Redwoods",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#006F55",
+      "backgroundColor": "#006F55",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

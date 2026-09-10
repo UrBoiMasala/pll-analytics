@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5624485377956188,
+      "awayWinProbability": 0.43755146220438124
+    },
+    "id": 223,
+    "slugname": "playoffs-quarterfinal-1-2023-9-1",
+    "eventId": "2023_ev43",
+    "league": "PLL",
+    "seasonSegment": "post",
+    "startTime": "1693861200",
+    "venue": "Gillette Stadium",
+    "venueLocation": null,
+    "location": "Boston, MA",
+    "year": 2023,
+    "week": 12,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/e4acc111-94ba-43a3-a9d7-8779d16fa770",
+    "broadcaster": [
+      "ESPN2",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 11,
+    "homeScore": 20,
+    "homePeriodScores": [
+      5,
+      7,
+      4,
+      4
+    ],
+    "visitorPeriodScores": [
+      3,
+      5,
+      1,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "CAN",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Cannons.png",
+      "fullName": "Cannons",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#002244",
+      "backgroundColor": "#B0B7BC",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ATL",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Atlas.png",
+      "fullName": "Atlas",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#3ba9f6",
+      "backgroundColor": "#3BA9F6",
+      "wins": 2,
+      "losses": 8,
+      "ties": 0
+    },
+    "description": "Quarterfinal",
+    "snl": false,
+    "polymarketId": null
+  }
+}

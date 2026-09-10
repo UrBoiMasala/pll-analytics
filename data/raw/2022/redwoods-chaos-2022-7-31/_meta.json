@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "retrieved_at": "2026-09-08T20-27-40Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/redwoods-chaos-2022-7-31/play-by-plays",
+    "content_hash": "678f8f56ce410fccbef6ed0750e88d2dc3a67f13a019b71191aa5803374235b2"
+  },
+  "game_meta": {
+    "retrieved_at": "2026-09-08T20-27-40Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/redwoods-chaos-2022-7-31",
+    "content_hash": "28954ed2d3abb0fea5d4f18f2ea335e7c0026474fcc7e92216fca584baf210fe"
+  },
+  "players_stats": {
+    "retrieved_at": "2026-09-08T20-27-41Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/redwoods-chaos-2022-7-31/players/stats",
+    "content_hash": "2f8ecfa997b5f6b2aefa7f150b4b6c12e22c4d96cb72636e78a0f89522d203a9"
+  },
+  "teams_stats": {
+    "retrieved_at": "2026-09-08T20-27-42Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/redwoods-chaos-2022-7-31/teams/stats",
+    "content_hash": "5b11b013309ba25700dd61c6705c590cf5e3ef4b49701da5a152f36c390b06a8"
+  }
+}

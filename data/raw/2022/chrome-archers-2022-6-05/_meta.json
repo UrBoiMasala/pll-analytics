@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "retrieved_at": "2026-09-08T20-26-30Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/chrome-archers-2022-6-05/play-by-plays",
+    "content_hash": "0b1a7a441ef1f68cf8ad2a9758d44ce7f6d0170b6a3204d1dd8a23de50941522"
+  },
+  "game_meta": {
+    "retrieved_at": "2026-09-08T20-26-31Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/chrome-archers-2022-6-05",
+    "content_hash": "8e06ad0ad4a1c26edb109d5bfa1f19a3bb5f82744dc4d7542d97f8859064096b"
+  },
+  "players_stats": {
+    "retrieved_at": "2026-09-08T20-26-31Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/chrome-archers-2022-6-05/players/stats",
+    "content_hash": "0cf618e2c5f80489331224d12aede73f0e4e1a25ae3da63043350a2543426fa2"
+  },
+  "teams_stats": {
+    "retrieved_at": "2026-09-08T20-26-32Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/chrome-archers-2022-6-05/teams/stats",
+    "content_hash": "43c05938c81867ecc59543ff8d67643500f11a469d51d287239f496b948bcec8"
+  }
+}

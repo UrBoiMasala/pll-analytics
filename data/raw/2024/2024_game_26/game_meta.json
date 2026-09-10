@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.4484680105635801,
+      "awayWinProbability": 0.5515319894364199
+    },
+    "id": 268,
+    "slugname": "2024_game_26",
+    "eventId": "2024_ev26",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1722115800",
+    "venue": "Torero Stadium",
+    "venueLocation": null,
+    "location": "San Diego, CA",
+    "year": 2024,
+    "week": 8,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/9f202b86-2750-4b06-ad44-a0b89db8d7d4",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 8,
+    "homeScore": 10,
+    "homePeriodScores": [
+      3,
+      3,
+      4,
+      0
+    ],
+    "visitorPeriodScores": [
+      1,
+      2,
+      3,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "RED",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 3,
+      "losses": 7,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CHA",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_chaos_primary_color.png",
+      "fullName": "Chaos",
+      "location": "Carolina",
+      "locationCode": "CAR",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF0E11",
+      "backgroundColor": "#000",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": "California Redwoods Homecoming Weekend",
+    "snl": false,
+    "polymarketId": null
+  }
+}

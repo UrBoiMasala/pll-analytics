@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5171124941627738,
+      "awayWinProbability": 0.48288750583722617
+    },
+    "id": 274,
+    "slugname": "2024_game_32",
+    "eventId": "2024_ev32",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1722789000",
+    "venue": "Homewood Field",
+    "venueLocation": null,
+    "location": "Baltimore, MD",
+    "year": 2024,
+    "week": 9,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/52812351-0926-4599-8667-4fc5e8f0a909",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 15,
+    "homeScore": 14,
+    "homePeriodScores": [
+      4,
+      4,
+      3,
+      3
+    ],
+    "visitorPeriodScores": [
+      6,
+      3,
+      3,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "ARC",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_archers_primary_color.png",
+      "fullName": "Archers",
+      "location": "Utah",
+      "locationCode": "UTA",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#002244",
+      "wins": 6,
+      "losses": 4,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CHA",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_chaos_primary_color.png",
+      "fullName": "Chaos",
+      "location": "Carolina",
+      "locationCode": "CAR",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF0E11",
+      "backgroundColor": "#000",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": "Maryland Whipsnakes Homecoming Weekend",
+    "snl": false,
+    "polymarketId": null
+  }
+}

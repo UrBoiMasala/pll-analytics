@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5797392688266004,
+      "awayWinProbability": 0.42026073117339957
+    },
+    "id": 212,
+    "slugname": "game-32-2023-08-11",
+    "eventId": "2023_ev32",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1691807400",
+    "venue": "Barton Stadium",
+    "venueLocation": null,
+    "location": "Denver, CO",
+    "year": 2023,
+    "week": 9,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/70ec09af-ef57-49c2-93e8-c20230638e33",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 5,
+    "homeScore": 13,
+    "homePeriodScores": [
+      1,
+      5,
+      4,
+      3
+    ],
+    "visitorPeriodScores": [
+      0,
+      1,
+      2,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "ARC",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Archers.png",
+      "fullName": "Archers",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#f2694c",
+      "backgroundColor": "#23427A",
+      "wins": 8,
+      "losses": 2,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CHR",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Chrome.png",
+      "fullName": "Chrome",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#ea5f9a",
+      "backgroundColor": "#95D6DB",
+      "wins": 1,
+      "losses": 9,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

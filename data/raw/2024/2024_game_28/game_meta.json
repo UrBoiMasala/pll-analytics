@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5719465925093786,
+      "awayWinProbability": 0.4280534074906214
+    },
+    "id": 270,
+    "slugname": "2024_game_28",
+    "eventId": "2024_ev28",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1722193200",
+    "venue": "Torero Stadium",
+    "venueLocation": null,
+    "location": "San Diego, CA",
+    "year": 2024,
+    "week": 8,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/dbef38bf-ba24-4dbe-a118-a0a9aefaad24",
+    "broadcaster": [
+      "ABC",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 11,
+    "homeScore": 12,
+    "homePeriodScores": [
+      6,
+      0,
+      3,
+      3
+    ],
+    "visitorPeriodScores": [
+      4,
+      5,
+      0,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "ATL",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_atlas_primary_color.png",
+      "fullName": "Atlas",
+      "location": "New York",
+      "locationCode": "NYA",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#00B1FF",
+      "backgroundColor": "#011E41",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WAT",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_waterdogs_primary_color.png",
+      "fullName": "Waterdogs",
+      "location": "Philadelphia",
+      "locationCode": "PHI",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#6C20C4",
+      "backgroundColor": "#99A4AD",
+      "wins": 2,
+      "losses": 8,
+      "ties": 0
+    },
+    "description": "California Redwoods Homecoming Weekend",
+    "snl": false,
+    "polymarketId": null
+  }
+}

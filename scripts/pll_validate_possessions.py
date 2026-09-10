@@ -18,6 +18,12 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_ROOT / "data" / "processed" / "2026"
 
 
+def set_season(year: int) -> None:
+    """Phase 9: point this validator at a season. Default stays 2026."""
+    global DATA_DIR
+    DATA_DIR = REPO_ROOT / "data" / "processed" / str(year)
+
+
 def main():
     poss = pd.read_csv(DATA_DIR / "possessions.csv")
     events = pd.read_csv(

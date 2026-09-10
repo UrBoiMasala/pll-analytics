@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.36307265031538827,
+      "awayWinProbability": 0.6369273496846117
+    },
+    "id": 341,
+    "slugname": "2025_game_9",
+    "eventId": "2025_ev_9",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1749852000",
+    "venue": "Villanova Stadium",
+    "venueLocation": null,
+    "location": "Philadelphia, PA",
+    "year": 2025,
+    "week": 3,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/a24d122b-434d-4d0a-a89e-45b0f36d98ba#bucketId=2",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 11,
+    "homeScore": 14,
+    "homePeriodScores": [
+      5,
+      3,
+      5,
+      1
+    ],
+    "visitorPeriodScores": [
+      2,
+      5,
+      1,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "WAT",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_waterdogs_primary_color.png",
+      "fullName": "Waterdogs",
+      "location": "Philadelphia",
+      "locationCode": "PHI",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#6C20C4",
+      "backgroundColor": "#99A4AD",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CAN",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_cannons_primary_color.png",
+      "fullName": "Cannons",
+      "location": "Boston",
+      "locationCode": "BOS",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#B0B6BB",
+      "backgroundColor": "#C52032",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.597173110119394,
+      "awayWinProbability": 0.402826889880606
+    },
+    "id": 269,
+    "slugname": "2024_game_27",
+    "eventId": "2024_ev27",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1722106800",
+    "venue": "Torero Stadium",
+    "venueLocation": null,
+    "location": "San Diego, CA",
+    "year": 2024,
+    "week": 8,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/366e262c-918c-4102-9134-cbe318ff482e",
+    "broadcaster": [
+      "ESPN",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 10,
+    "homeScore": 12,
+    "homePeriodScores": [
+      4,
+      1,
+      6,
+      1
+    ],
+    "visitorPeriodScores": [
+      5,
+      4,
+      0,
+      1
+    ],
+    "homeTeam": {
+      "officialId": "CAN",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_cannons_primary_color.png",
+      "fullName": "Cannons",
+      "location": "Boston",
+      "locationCode": "BOS",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#B0B6BB",
+      "backgroundColor": "#C52032",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "OUT",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_outlaws_primary_color.png",
+      "fullName": "Outlaws",
+      "location": "Denver",
+      "locationCode": "DEN",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#2E2E4D",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "description": "California Redwoods Homecoming Weekend",
+    "snl": false,
+    "polymarketId": null
+  }
+}

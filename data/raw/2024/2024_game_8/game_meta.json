@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.4367,
+      "awayWinProbability": 0.5634
+    },
+    "id": 250,
+    "slugname": "2024_game_8",
+    "eventId": "2024_ev8",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1717880400",
+    "venue": "American Legion Memorial Stadium",
+    "venueLocation": null,
+    "location": "Charlotte, NC",
+    "year": 2024,
+    "week": 2,
+    "urlStreaming": "https://www.espn.com/watch/player/_/eventCalendarId/401656184",
+    "broadcaster": [
+      "ESPN2",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 15,
+    "homeScore": 12,
+    "homePeriodScores": [
+      3,
+      2,
+      3,
+      4
+    ],
+    "visitorPeriodScores": [
+      7,
+      1,
+      4,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "CHA",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_chaos_primary_color.png",
+      "fullName": "Chaos",
+      "location": "Carolina",
+      "locationCode": "CAR",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF0E11",
+      "backgroundColor": "#000",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ATL",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_atlas_primary_color.png",
+      "fullName": "Atlas",
+      "location": "New York",
+      "locationCode": "NYA",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#00B1FF",
+      "backgroundColor": "#011E41",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "description": "Carolina Chaos Homecoming Weekend",
+    "snl": false,
+    "polymarketId": null
+  }
+}

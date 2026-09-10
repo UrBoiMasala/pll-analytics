@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.45995941098703813,
+      "awayWinProbability": 0.5400405890129618
+    },
+    "id": 211,
+    "slugname": "game-31-2023-08-11",
+    "eventId": "2023_ev31",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1691800200",
+    "venue": "Barton Stadium",
+    "venueLocation": null,
+    "location": "Denver, CO",
+    "year": 2023,
+    "week": 9,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/d9a631eb-e2cf-48e6-a7f3-c9714a2ddbc8",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 10,
+    "homeScore": 12,
+    "homePeriodScores": [
+      2,
+      2,
+      4,
+      4
+    ],
+    "visitorPeriodScores": [
+      2,
+      4,
+      2,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "WHP",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Whipsnakes.png",
+      "fullName": "Whipsnakes",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#59c2b1",
+      "backgroundColor": "#E71C3F",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CHA",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Chaos.png",
+      "fullName": "Chaos",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#000000",
+      "backgroundColor": "#EF484B",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

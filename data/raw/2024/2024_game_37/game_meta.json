@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.4763933677791583,
+      "awayWinProbability": 0.5236066322208417
+    },
+    "id": 279,
+    "slugname": "2024_game_37",
+    "eventId": "2024_ev37",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1723330800",
+    "venue": "Peter Barton Stadium",
+    "venueLocation": null,
+    "location": "Denver, CO",
+    "year": 2024,
+    "week": 10,
+    "urlStreaming": null,
+    "broadcaster": [
+      "ESPN2",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 4,
+    "homeScore": 10,
+    "homePeriodScores": [
+      2,
+      0,
+      6,
+      2
+    ],
+    "visitorPeriodScores": [
+      0,
+      2,
+      2,
+      0
+    ],
+    "homeTeam": {
+      "officialId": "OUT",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_outlaws_primary_color.png",
+      "fullName": "Outlaws",
+      "location": "Denver",
+      "locationCode": "DEN",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#2E2E4D",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CHA",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_chaos_primary_color.png",
+      "fullName": "Chaos",
+      "location": "Carolina",
+      "locationCode": "CAR",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF0E11",
+      "backgroundColor": "#000",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": "Denver Outlaws Homecoming Weekend",
+    "snl": false,
+    "polymarketId": null
+  }
+}

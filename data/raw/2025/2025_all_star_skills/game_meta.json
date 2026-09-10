@@ -1,0 +1,62 @@
+{
+  "data": {
+    "pregameWinProbability": null,
+    "id": 353,
+    "slugname": "2025_all_star_skills",
+    "eventId": "2025_all_star_skills",
+    "league": "PLL",
+    "seasonSegment": "allstar",
+    "startTime": "1751667300",
+    "venue": "CPKC Stadium",
+    "venueLocation": null,
+    "location": "Kansas City, MO",
+    "year": 2025,
+    "week": 6,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/09906fb4-5f0f-4d31-8786-e4813d223ed8#bucketId=2",
+    "broadcaster": [
+      ""
+    ],
+    "eventStatus": 3,
+    "period": 0,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 0,
+    "homeScore": 0,
+    "homePeriodScores": [],
+    "visitorPeriodScores": [],
+    "homeTeam": {
+      "officialId": "ASW",
+      "year": 2025,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2025/06/pll_asg_west.png",
+      "fullName": "West",
+      "location": "WEST",
+      "locationCode": "WEST",
+      "league": "PLL",
+      "conference": null,
+      "teamColor": null,
+      "backgroundColor": null,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ASE",
+      "year": 2025,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2025/06/pll_asg_east.png",
+      "fullName": "East",
+      "location": "EAST",
+      "locationCode": "EAST",
+      "league": "PLL",
+      "conference": null,
+      "teamColor": null,
+      "backgroundColor": null,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    },
+    "description": "Lexus PLL & WLL Skills Competition",
+    "snl": false,
+    "polymarketId": null
+  }
+}

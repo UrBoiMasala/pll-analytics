@@ -1,0 +1,72 @@
+{
+  "data": {
+    "pregameWinProbability": null,
+    "id": 114,
+    "slugname": "atlas-whipsnakes-2022-6-17",
+    "eventId": "2022_ev10",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1655513100",
+    "venue": "Shuart Stadium",
+    "venueLocation": null,
+    "location": "Long Island, NY",
+    "year": 2022,
+    "week": 3,
+    "urlStreaming": "https://es.pn/3MMds68",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 9,
+    "homeScore": 12,
+    "homePeriodScores": [
+      2,
+      1,
+      7,
+      2
+    ],
+    "visitorPeriodScores": [
+      3,
+      1,
+      2,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "WHP",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Whipsnakes.png",
+      "fullName": "Whipsnakes",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#59c2b1",
+      "backgroundColor": "#E71C3F",
+      "wins": 9,
+      "losses": 1,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ATL",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Atlas.png",
+      "fullName": "Atlas",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#3ba9f6",
+      "backgroundColor": "#3BA9F6",
+      "wins": 6,
+      "losses": 4,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

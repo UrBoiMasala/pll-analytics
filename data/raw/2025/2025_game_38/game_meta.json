@@ -1,0 +1,78 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5078062412704567,
+      "awayWinProbability": 0.4921937587295433
+    },
+    "id": 370,
+    "slugname": "2025_game_38",
+    "eventId": "2025_ev_38",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1754154000",
+    "venue": "Peter Barton Stadium",
+    "venueLocation": null,
+    "location": "Denver, CO",
+    "year": 2025,
+    "week": 10,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/1bd1a0ff-eebc-4c0b-a42a-7c9a620e5f22#bucketId=2",
+    "broadcaster": [
+      "ABC",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 5,
+    "clockMinutes": 5,
+    "clockSeconds": 17,
+    "gameStatus": null,
+    "visitorScore": 12,
+    "homeScore": 13,
+    "homePeriodScores": [
+      3,
+      1,
+      4,
+      4,
+      1
+    ],
+    "visitorPeriodScores": [
+      4,
+      5,
+      1,
+      2,
+      0
+    ],
+    "homeTeam": {
+      "officialId": "OUT",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_outlaws_primary_color.png",
+      "fullName": "Outlaws",
+      "location": "Denver",
+      "locationCode": "DEN",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#2E2E4D",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ATL",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_atlas_primary_color.png",
+      "fullName": "Atlas",
+      "location": "New York",
+      "locationCode": "NYA",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#00B1FF",
+      "backgroundColor": "#011E41",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "description": null,
+    "snl": true,
+    "polymarketId": null
+  }
+}

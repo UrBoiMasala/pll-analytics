@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5072218012108467,
+      "awayWinProbability": 0.4927781987891533
+    },
+    "id": 375,
+    "slugname": "2025_quarterfinal_1",
+    "eventId": "2025_ev_43",
+    "league": "PLL",
+    "seasonSegment": "post",
+    "startTime": "1755986400",
+    "venue": "TCO Stadium",
+    "venueLocation": null,
+    "location": "Minneapolis, MN",
+    "year": 2025,
+    "week": 12,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/e032fe97-8a4e-4bca-9c5f-9c9a3e97b1a7#bucketId=30601",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 14,
+    "homeScore": 12,
+    "homePeriodScores": [
+      3,
+      3,
+      3,
+      3
+    ],
+    "visitorPeriodScores": [
+      5,
+      4,
+      3,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "WHP",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_whipsnakes_primary_color.png",
+      "fullName": "Whipsnakes",
+      "location": "Maryland",
+      "locationCode": "MDW",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#FF0000",
+      "backgroundColor": "#FFCE00",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WAT",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_waterdogs_primary_color.png",
+      "fullName": "Waterdogs",
+      "location": "Philadelphia",
+      "locationCode": "PHI",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#6C20C4",
+      "backgroundColor": "#99A4AD",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": "Quarterfinal 1",
+    "snl": true,
+    "polymarketId": null
+  }
+}

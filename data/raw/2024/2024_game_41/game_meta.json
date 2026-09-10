@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.4950724080417009,
+      "awayWinProbability": 0.5049275919582992
+    },
+    "id": 283,
+    "slugname": "2024_game_41",
+    "eventId": "2024_ev41",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1723942800",
+    "venue": "Zions Bank Stadium",
+    "venueLocation": null,
+    "location": "Salt Lake City, UT",
+    "year": 2024,
+    "week": 11,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/72ba5d33-46a8-483f-af81-7af51fb7cb6d",
+    "broadcaster": [
+      "ESPN2",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 9,
+    "homeScore": 13,
+    "homePeriodScores": [
+      3,
+      1,
+      7,
+      2
+    ],
+    "visitorPeriodScores": [
+      2,
+      4,
+      1,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "ARC",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_archers_primary_color.png",
+      "fullName": "Archers",
+      "location": "Utah",
+      "locationCode": "UTA",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#002244",
+      "wins": 6,
+      "losses": 4,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "OUT",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_outlaws_primary_color.png",
+      "fullName": "Outlaws",
+      "location": "Denver",
+      "locationCode": "DEN",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#2E2E4D",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "description": "Utah Archers Homecoming Weekend",
+    "snl": false,
+    "polymarketId": null
+  }
+}

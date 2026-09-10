@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5748032553030731,
+      "awayWinProbability": 0.4251967446969269
+    },
+    "id": 335,
+    "slugname": "2025_game_3",
+    "eventId": "2025_ev_3",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1748710800",
+    "venue": "Casey Stadium at UAlbany",
+    "venueLocation": null,
+    "location": "Albany, NY",
+    "year": 2025,
+    "week": 1,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/b2a43b31-66d8-487c-a25d-fb5838a194fe#bucketId=2",
+    "broadcaster": [
+      "ABC",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 7,
+    "homeScore": 8,
+    "homePeriodScores": [
+      1,
+      3,
+      1,
+      3
+    ],
+    "visitorPeriodScores": [
+      1,
+      2,
+      2,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "ARC",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_archers_primary_color.png",
+      "fullName": "Archers",
+      "location": "Utah",
+      "locationCode": "UTA",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#002244",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WHP",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_whipsnakes_primary_color.png",
+      "fullName": "Whipsnakes",
+      "location": "Maryland",
+      "locationCode": "MDW",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#FF0000",
+      "backgroundColor": "#FFCE00",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

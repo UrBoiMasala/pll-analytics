@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.4465,
+      "awayWinProbability": 0.5536
+    },
+    "id": 246,
+    "slugname": "2024_game_4",
+    "eventId": "2024_ev4",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1717356600",
+    "venue": "Casey Stadium at UAlbany",
+    "venueLocation": null,
+    "location": "Albany, NY",
+    "year": 2024,
+    "week": 1,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/07414e21-15fb-4f46-a998-a3c4974a1e79",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 13,
+    "homeScore": 17,
+    "homePeriodScores": [
+      7,
+      3,
+      5,
+      2
+    ],
+    "visitorPeriodScores": [
+      1,
+      4,
+      6,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "ATL",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_atlas_primary_color.png",
+      "fullName": "Atlas",
+      "location": "New York",
+      "locationCode": "NYA",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#00B1FF",
+      "backgroundColor": "#011E41",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WHP",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_whipsnakes_primary_color.png",
+      "fullName": "Whipsnakes",
+      "location": "Maryland",
+      "locationCode": "MDW",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#FF0000",
+      "backgroundColor": "#FFCE00",
+      "wins": 6,
+      "losses": 4,
+      "ties": 0
+    },
+    "description": "New York Atlas Homecoming Weekend",
+    "snl": false,
+    "polymarketId": null
+  }
+}

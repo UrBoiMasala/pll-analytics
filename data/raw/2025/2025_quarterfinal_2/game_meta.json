@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5068883252222196,
+      "awayWinProbability": 0.4931116747777804
+    },
+    "id": 376,
+    "slugname": "2025_quarterfinal_2",
+    "eventId": "2025_ev_44",
+    "league": "PLL",
+    "seasonSegment": "post",
+    "startTime": "1755995400",
+    "venue": "TCO Stadium",
+    "venueLocation": null,
+    "location": "Minneapolis, MN",
+    "year": 2025,
+    "week": 12,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/38f1cd8b-fb35-4812-9826-53749ad00a79#bucketId=30601",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 12,
+    "homeScore": 14,
+    "homePeriodScores": [
+      1,
+      4,
+      6,
+      3
+    ],
+    "visitorPeriodScores": [
+      2,
+      6,
+      3,
+      1
+    ],
+    "homeTeam": {
+      "officialId": "RED",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CHA",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_chaos_primary_color.png",
+      "fullName": "Chaos",
+      "location": "Carolina",
+      "locationCode": "CAR",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF0E11",
+      "backgroundColor": "#000",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "description": "Quarterfinal 2",
+    "snl": false,
+    "polymarketId": null
+  }
+}

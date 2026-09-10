@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5055219005462839,
+      "awayWinProbability": 0.4944780994537161
+    },
+    "id": 205,
+    "slugname": "game-25-2023-07-28",
+    "eventId": "2023_ev25",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1690743600",
+    "venue": "The Star",
+    "venueLocation": null,
+    "location": "Dallas, TX",
+    "year": 2023,
+    "week": 7,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/19e834c9-6f2a-4bb5-9bf5-685066ee6f9b",
+    "broadcaster": [
+      "ABC",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 18,
+    "homeScore": 19,
+    "homePeriodScores": [
+      7,
+      4,
+      4,
+      4
+    ],
+    "visitorPeriodScores": [
+      8,
+      5,
+      2,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "ARC",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Archers.png",
+      "fullName": "Archers",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#f2694c",
+      "backgroundColor": "#23427A",
+      "wins": 8,
+      "losses": 2,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WAT",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Waterdogs.png",
+      "fullName": "Waterdogs",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#907fe2",
+      "backgroundColor": "#000000",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

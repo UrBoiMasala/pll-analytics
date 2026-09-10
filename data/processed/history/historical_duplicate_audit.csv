@@ -1,0 +1,36 @@
+season,duplicate_class,scope,n_found,is_defect,detail
+2022,LOCAL_DUPLICATE_FILE,data/raw,0,False,no two raw files share a payload hash
+2023,LOCAL_DUPLICATE_FILE,data/raw,0,False,no two raw files share a payload hash
+2024,LOCAL_DUPLICATE_FILE,data/raw,0,False,no two raw files share a payload hash
+2025,LOCAL_DUPLICATE_FILE,data/raw,0,False,no two raw files share a payload hash
+2026,LOCAL_DUPLICATE_FILE,data/raw,0,False,no two raw files share a payload hash
+2022,SOURCE_DUPLICATE_EVENT,events.csv,8,False,"8 of 10431 events (0.08%) flagged by the EXISTING Phase 2 duplicate rules, unchanged: {'is_duplicate_event': 8, 'is_duplicate_groundball': 0, 'is_duplicate_turnover': 7, 'is_duplicate_faceoff': 0, 'is_duplicate_penalty': 0}. These are repetitions in the feed, not pipeline errors, and they are flagged rather than deleted."
+2022,PIPELINE_DUPLICATION,"events.csv (game_id,event_id)",0,False,each source event appears exactly once
+2022,PIPELINE_DUPLICATION,games.csv (game_id / game_slug),0,False,every game appears once
+2022,PIPELINE_DUPLICATION,"player_game_stats.csv (game_id,officialId)",0,False,one row per player per game
+2022,PIPELINE_DUPLICATION,possessions.csv (possession_id),0,False,possession ids unique
+2022,SOURCE_VERSION_CONFLICT,raw snapshots,0,False,no endpoint was ever re-fetched with different content
+2023,SOURCE_DUPLICATE_EVENT,events.csv,18,False,"18 of 10486 events (0.17%) flagged by the EXISTING Phase 2 duplicate rules, unchanged: {'is_duplicate_event': 18, 'is_duplicate_groundball': 4, 'is_duplicate_turnover': 14, 'is_duplicate_faceoff': 0, 'is_duplicate_penalty': 0}. These are repetitions in the feed, not pipeline errors, and they are flagged rather than deleted."
+2023,PIPELINE_DUPLICATION,"events.csv (game_id,event_id)",0,False,each source event appears exactly once
+2023,PIPELINE_DUPLICATION,games.csv (game_id / game_slug),0,False,every game appears once
+2023,PIPELINE_DUPLICATION,"player_game_stats.csv (game_id,officialId)",0,False,one row per player per game
+2023,PIPELINE_DUPLICATION,possessions.csv (possession_id),0,False,possession ids unique
+2023,SOURCE_VERSION_CONFLICT,raw snapshots,0,False,no endpoint was ever re-fetched with different content
+2024,SOURCE_DUPLICATE_EVENT,events.csv,35,False,"35 of 10129 events (0.35%) flagged by the EXISTING Phase 2 duplicate rules, unchanged: {'is_duplicate_event': 35, 'is_duplicate_groundball': 4, 'is_duplicate_turnover': 23, 'is_duplicate_faceoff': 7, 'is_duplicate_penalty': 1}. These are repetitions in the feed, not pipeline errors, and they are flagged rather than deleted."
+2024,PIPELINE_DUPLICATION,"events.csv (game_id,event_id)",0,False,each source event appears exactly once
+2024,PIPELINE_DUPLICATION,games.csv (game_id / game_slug),0,False,every game appears once
+2024,PIPELINE_DUPLICATION,"player_game_stats.csv (game_id,officialId)",0,False,one row per player per game
+2024,PIPELINE_DUPLICATION,possessions.csv (possession_id),0,False,possession ids unique
+2024,SOURCE_VERSION_CONFLICT,raw snapshots,0,False,no endpoint was ever re-fetched with different content
+2025,SOURCE_DUPLICATE_EVENT,events.csv,50,False,"50 of 10321 events (0.48%) flagged by the EXISTING Phase 2 duplicate rules, unchanged: {'is_duplicate_event': 50, 'is_duplicate_groundball': 30, 'is_duplicate_turnover': 19, 'is_duplicate_faceoff': 0, 'is_duplicate_penalty': 1}. These are repetitions in the feed, not pipeline errors, and they are flagged rather than deleted."
+2025,PIPELINE_DUPLICATION,"events.csv (game_id,event_id)",0,False,each source event appears exactly once
+2025,PIPELINE_DUPLICATION,games.csv (game_id / game_slug),0,False,every game appears once
+2025,PIPELINE_DUPLICATION,"player_game_stats.csv (game_id,officialId)",0,False,one row per player per game
+2025,PIPELINE_DUPLICATION,possessions.csv (possession_id),0,False,possession ids unique
+2025,SOURCE_VERSION_CONFLICT,raw snapshots,0,False,no endpoint was ever re-fetched with different content
+2026,SOURCE_DUPLICATE_EVENT,events.csv,36,False,"36 of 11254 events (0.32%) flagged by the EXISTING Phase 2 duplicate rules, unchanged: {'is_duplicate_event': 36, 'is_duplicate_groundball': 10, 'is_duplicate_turnover': 22, 'is_duplicate_faceoff': 1, 'is_duplicate_penalty': 3}. These are repetitions in the feed, not pipeline errors, and they are flagged rather than deleted."
+2026,PIPELINE_DUPLICATION,"events.csv (game_id,event_id)",0,False,each source event appears exactly once
+2026,PIPELINE_DUPLICATION,games.csv (game_id / game_slug),0,False,every game appears once
+2026,PIPELINE_DUPLICATION,"player_game_stats.csv (game_id,officialId)",0,False,one row per player per game
+2026,PIPELINE_DUPLICATION,possessions.csv (possession_id),0,False,possession ids unique
+2026,SOURCE_VERSION_CONFLICT,raw snapshots,0,False,no endpoint was ever re-fetched with different content

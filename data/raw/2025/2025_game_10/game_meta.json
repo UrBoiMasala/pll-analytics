@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.46722229838253065,
+      "awayWinProbability": 0.5327777016174693
+    },
+    "id": 342,
+    "slugname": "2025_game_10",
+    "eventId": "2025_ev_10",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1749861000",
+    "venue": "Villanova Stadium",
+    "venueLocation": null,
+    "location": "Philadelphia, PA",
+    "year": 2025,
+    "week": 3,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/cfd0212c-e742-49b0-bf7d-bd4e68f34f30#bucketId=2",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 11,
+    "homeScore": 12,
+    "homePeriodScores": [
+      5,
+      1,
+      2,
+      4
+    ],
+    "visitorPeriodScores": [
+      2,
+      4,
+      1,
+      4
+    ],
+    "homeTeam": {
+      "officialId": "ARC",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_archers_primary_color.png",
+      "fullName": "Archers",
+      "location": "Utah",
+      "locationCode": "UTA",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#002244",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "RED",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

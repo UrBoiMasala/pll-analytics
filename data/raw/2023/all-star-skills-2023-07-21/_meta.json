@@ -1,0 +1,12 @@
+{
+  "play_by_play": {
+    "retrieved_at": "2026-09-08T20-29-28Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/all-star-skills-2023-07-21/play-by-plays",
+    "content_hash": "5ff634c3bf8b3ffe3f1b2973168b13e8d19f8c11e052e70d082f6f89113ff399"
+  },
+  "game_meta": {
+    "retrieved_at": "2026-09-08T20-29-29Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/all-star-skills-2023-07-21",
+    "content_hash": "97a1d0bc7662e5a7141ae0d8d0d7ed46691a182baf993782e1a4e9156b54c96f"
+  }
+}

@@ -71,6 +71,22 @@ HEADERS = {
 }
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
+
+# Phase 9: the season is module state with a 2026 default, so every existing
+# caller, test and cached path keeps working untouched while the same client
+# can retrieve 2022-2025. Nothing about the 2026 code path changes.
+SEASON = 2026
+
+
+def set_season(year: int) -> None:
+    """Point the ingester at a season. Affects the schedule path, the raw
+    directory and the Referer, which are the only season-dependent things."""
+    global SEASON, SCHEDULE_PATH
+    SEASON = int(year)
+    SCHEDULE_PATH = (REPO_ROOT / "data" / "raw" / str(SEASON) / "_schedule"
+                     / f"games_{SEASON}.json")
+
+
 SCHEDULE_PATH = REPO_ROOT / "data" / "raw" / "2026" / "_schedule" / "games_2026.json"
 
 ENDPOINTS = {
@@ -82,7 +98,17 @@ ENDPOINTS = {
 
 
 def referer_for(slug: str) -> str:
-    return f"https://stats.premierlacrosseleague.com/games/2026/{slug}?tab=plays"
+    """The stats site's own game URL.
+
+    The public API rejects a request that carries neither an Origin nor a
+    Referer with `403 {"error":"Origin not allowed"}`. This client has always
+    sent the ordinary Referer a browser sends when viewing that game's page on
+    the league's own stats site, which is why 2026 ingestion worked; Phase 9
+    only makes the season in that URL follow the season being fetched. No
+    access control is bypassed and no header is forged beyond identifying the
+    page the request is made from.
+    """
+    return f"https://stats.premierlacrosseleague.com/games/{SEASON}/{slug}?tab=plays"
 
 
 def fetch_json(url: str, slug: str) -> dict:
@@ -177,7 +203,7 @@ def fetch_schedule(offline: bool = False) -> dict:
     """
     if offline:
         return json.loads(SCHEDULE_PATH.read_text())
-    data = fetch_json(f"{BASE_URL}/games?year=2026", "schedule")
+    data = fetch_json(f"{BASE_URL}/games?year={SEASON}", "schedule")
     status, detail = validate_payload("schedule", data)
     if status != "ok":
         raise RuntimeError(f"Schedule response failed structural validation: {detail}")
@@ -185,7 +211,22 @@ def fetch_schedule(offline: bool = False) -> dict:
     return data
 
 
+def has_final_scores(it: dict) -> bool:
+    return it.get("homeScore") is not None and it.get("visitorScore") is not None
+
+
 def classify_games(schedule: dict):
+    """Split the schedule into completed / upcoming / other.
+
+    eventStatus==3 is the league's normal "final" marker and is the only status
+    2026 ever uses. Phase 9 found that the 2023 feed marks FOUR played games
+    with eventStatus==2 while still carrying real final scores -- two regular
+    season games, a quarterfinal, and the 2023 CHAMPIONSHIP. Treating status 3
+    as the sole completion signal would silently drop them, so a status-2 row
+    that carries both final scores is admitted as completed and is separately
+    reported so the anomaly stays visible rather than being normalized away.
+    Rows with any other status, or status 2 with no scores, stay in `other`.
+    """
     items = schedule["data"]["items"]
     completed, upcoming, other = [], [], []
     for it in items:
@@ -194,13 +235,15 @@ def classify_games(schedule: dict):
             completed.append(it)
         elif status == 0:
             upcoming.append(it)
+        elif status == 2 and has_final_scores(it):
+            completed.append(it)
         else:
             other.append(it)
     return completed, upcoming, other
 
 
 def raw_dir_for(slug: str) -> Path:
-    return REPO_ROOT / "data" / "raw" / "2026" / slug
+    return REPO_ROOT / "data" / "raw" / str(SEASON) / slug
 
 
 def meta_path_for(slug: str) -> Path:
@@ -353,7 +396,10 @@ def main():
     parser.add_argument("--offline", action="store_true", help="reuse the last-saved schedule instead of re-fetching")
     parser.add_argument("--sleep", type=float, default=0.4, help="seconds between requests")
     parser.add_argument("--games", type=str, default=None, help="comma-separated slug allowlist, for targeted re-ingestion/testing (default: all completed games)")
+    parser.add_argument("--year", type=int, default=SEASON, help="season to ingest (default 2026)")
     args = parser.parse_args()
+    set_season(args.year)
+    print(f"Season: {SEASON}")
 
     print("Fetching schedule ..." if not args.offline else "Loading cached schedule (--offline) ...")
     try:
@@ -409,12 +455,12 @@ def main():
         print(f"  of the processed games: {unchanged_ct} identical to cache, {len(changed_games)} had at least one changed endpoint")
     if changed_games:
         print(f"Games with CHANGED content vs. prior snapshot: {[c['slug'] for c in changed_games]}")
-        diff_path = REPO_ROOT / "data" / "raw" / "2026" / "_schedule" / "refresh_diff.json"
+        diff_path = SCHEDULE_PATH.parent / "refresh_diff.json"
         atomic_write_json(diff_path, {"generated_at": utc_now_iso(), "changed_games": changed_games})
         print(f"Saved diff detail to {diff_path.relative_to(REPO_ROOT)}")
     if failures:
         print("Games with unresolved issues:", [f["slug"] for f in failures])
-        fail_path = REPO_ROOT / "data" / "raw" / "2026" / "_schedule" / "ingest_failures.json"
+        fail_path = SCHEDULE_PATH.parent / "ingest_failures.json"
         atomic_write_json(fail_path, {"generated_at": utc_now_iso(), "failures": failures})
         print(f"Saved failure details to {fail_path.relative_to(REPO_ROOT)}")
         sys.exit(1)

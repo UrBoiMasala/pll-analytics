@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5,
+      "awayWinProbability": 0.5
+    },
+    "id": 354,
+    "slugname": "2025_all_star_game",
+    "eventId": "2025_all_star_game",
+    "league": "PLL",
+    "seasonSegment": "allstar",
+    "startTime": "1751734800",
+    "venue": "CPKC Stadium",
+    "venueLocation": null,
+    "location": "Kansas City, MO",
+    "year": 2025,
+    "week": 6,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/45448242-353b-4a23-b343-95b8586f2668#bucketId=2",
+    "broadcaster": [
+      "ESPN",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 13,
+    "homeScore": 15,
+    "homePeriodScores": [
+      4,
+      8,
+      2,
+      1
+    ],
+    "visitorPeriodScores": [
+      2,
+      1,
+      5,
+      5
+    ],
+    "homeTeam": {
+      "officialId": "ASW",
+      "year": 2025,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2025/06/pll_asg_west.png",
+      "fullName": "West",
+      "location": "WEST",
+      "locationCode": "WEST",
+      "league": "PLL",
+      "conference": null,
+      "teamColor": null,
+      "backgroundColor": null,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ASE",
+      "year": 2025,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2025/06/pll_asg_east.png",
+      "fullName": "East",
+      "location": "EAST",
+      "locationCode": "EAST",
+      "league": "PLL",
+      "conference": null,
+      "teamColor": null,
+      "backgroundColor": null,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    },
+    "description": "Lexus All-Star Game",
+    "snl": false,
+    "polymarketId": null
+  }
+}

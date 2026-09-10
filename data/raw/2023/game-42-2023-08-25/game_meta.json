@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.46619034001277343,
+      "awayWinProbability": 0.5338096599872266
+    },
+    "id": 222,
+    "slugname": "game-42-2023-08-25",
+    "eventId": "2023_ev42",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1693099800",
+    "venue": "Zions Bank Stadium",
+    "venueLocation": null,
+    "location": "Salt Lake City, UT",
+    "year": 2023,
+    "week": 11,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/4704f308-a6d7-43eb-b54c-fef0866d3999",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 2,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 13,
+    "homeScore": 7,
+    "homePeriodScores": [
+      2,
+      0,
+      4,
+      1
+    ],
+    "visitorPeriodScores": [
+      3,
+      4,
+      2,
+      4
+    ],
+    "homeTeam": {
+      "officialId": "CHR",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Chrome.png",
+      "fullName": "Chrome",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#ea5f9a",
+      "backgroundColor": "#95D6DB",
+      "wins": 1,
+      "losses": 9,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CHA",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Chaos.png",
+      "fullName": "Chaos",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#000000",
+      "backgroundColor": "#EF484B",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

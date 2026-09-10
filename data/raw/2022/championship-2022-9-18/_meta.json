@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "retrieved_at": "2026-09-08T20-28-29Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/championship-2022-9-18/play-by-plays",
+    "content_hash": "85ea89f85df484019d2f1d299a67279fe6e12729abc5edc7a07c4157a0bca6f7"
+  },
+  "game_meta": {
+    "retrieved_at": "2026-09-08T20-28-30Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/championship-2022-9-18",
+    "content_hash": "5a5e725c69556100617bc46457f4216d33386141588d40748c81ee929232a140"
+  },
+  "players_stats": {
+    "retrieved_at": "2026-09-08T20-28-30Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/championship-2022-9-18/players/stats",
+    "content_hash": "bafb49f0037943450343a14b9bd480be1e70cb4a9fe423a8aa578568f91f396c"
+  },
+  "teams_stats": {
+    "retrieved_at": "2026-09-08T20-28-31Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/championship-2022-9-18/teams/stats",
+    "content_hash": "113d81cb12ddb4f8cf51949265a9076e7342bedfd153cce1239fa0f482ffeae0"
+  }
+}

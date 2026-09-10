@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.4545,
+      "awayWinProbability": 0.5455
+    },
+    "id": 244,
+    "slugname": "2024_game_2",
+    "eventId": "2024_ev2",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1717270200",
+    "venue": "Casey Stadium at UAlbany",
+    "venueLocation": null,
+    "location": "Albany, NY",
+    "year": 2024,
+    "week": 1,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/dc9863bd-59e2-440a-b6f0-a9462fa633de",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 12,
+    "homeScore": 19,
+    "homePeriodScores": [
+      6,
+      3,
+      7,
+      3
+    ],
+    "visitorPeriodScores": [
+      5,
+      3,
+      3,
+      1
+    ],
+    "homeTeam": {
+      "officialId": "ATL",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_atlas_primary_color.png",
+      "fullName": "Atlas",
+      "location": "New York",
+      "locationCode": "NYA",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#00B1FF",
+      "backgroundColor": "#011E41",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CAN",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_cannons_primary_color.png",
+      "fullName": "Cannons",
+      "location": "Boston",
+      "locationCode": "BOS",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#B0B6BB",
+      "backgroundColor": "#C52032",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "description": "New York Atlas Homecoming Weekend",
+    "snl": false,
+    "polymarketId": null
+  }
+}

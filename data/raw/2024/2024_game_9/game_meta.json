@@ -1,0 +1,78 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.3961,
+      "awayWinProbability": 0.6039
+    },
+    "id": 251,
+    "slugname": "2024_game_9",
+    "eventId": "2024_ev9",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1718469000",
+    "venue": "Villanova Stadium",
+    "venueLocation": null,
+    "location": "Philadelphia, PA",
+    "year": 2024,
+    "week": 3,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/bbc8d49c-42c9-4c1f-9829-5f069ed50438",
+    "broadcaster": [
+      "ABC",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 5,
+    "clockMinutes": 11,
+    "clockSeconds": 55,
+    "gameStatus": null,
+    "visitorScore": 12,
+    "homeScore": 11,
+    "homePeriodScores": [
+      3,
+      2,
+      5,
+      1,
+      0
+    ],
+    "visitorPeriodScores": [
+      3,
+      5,
+      2,
+      1,
+      1
+    ],
+    "homeTeam": {
+      "officialId": "WAT",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_waterdogs_primary_color.png",
+      "fullName": "Waterdogs",
+      "location": "Philadelphia",
+      "locationCode": "PHI",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#6C20C4",
+      "backgroundColor": "#99A4AD",
+      "wins": 2,
+      "losses": 8,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CAN",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_cannons_primary_color.png",
+      "fullName": "Cannons",
+      "location": "Boston",
+      "locationCode": "BOS",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#B0B6BB",
+      "backgroundColor": "#C52032",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "description": "Philadelphia Waterdogs Homecoming Weekend",
+    "snl": false,
+    "polymarketId": null
+  }
+}

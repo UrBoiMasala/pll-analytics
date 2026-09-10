@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "retrieved_at": "2026-09-08T20-28-18Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/playoffs-quarterfinal-2-2022-9-3/play-by-plays",
+    "content_hash": "e1e0ee41599ed86ff541dd6a775288b52056c0f5fbe85aac06b26ecc6897201b"
+  },
+  "game_meta": {
+    "retrieved_at": "2026-09-08T20-28-18Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/playoffs-quarterfinal-2-2022-9-3",
+    "content_hash": "9a7fd108525202a57a270c155e4c518b5d47c92f474e346bfa64e6c6dd10fc27"
+  },
+  "players_stats": {
+    "retrieved_at": "2026-09-08T20-28-19Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/playoffs-quarterfinal-2-2022-9-3/players/stats",
+    "content_hash": "60d7f03138b4b20722de04052f3c9754d97de197df4cbf0bfe0b0cf4166e5460"
+  },
+  "teams_stats": {
+    "retrieved_at": "2026-09-08T20-28-20Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/playoffs-quarterfinal-2-2022-9-3/teams/stats",
+    "content_hash": "dea8c03902d2c15c7fc1a96e086a70d04c5cabca267803dde4d142f575f1786b"
+  }
+}

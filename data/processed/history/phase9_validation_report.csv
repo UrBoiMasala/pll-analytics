@@ -1,0 +1,23 @@
+check_id,check_name,status,n_failures,detail
+1,every_completed_competitive_game_accounted_for,PASS,0,248 scheduled games across 5 seasons re-derived from the raw schedule JSON; 232 admitted. no silent gaps
+2,unique_game_identity,PASS,0,game_id and game_slug unique in all 5 seasons. no duplicates
+3,unique_event_identity,PASS,0,"(game_id, event_id) unique in every season. no duplicates"
+4,team_ids_resolve_in_eligible_games,PASS,0,"every team referenced by an analytics-eligible game exists in teams.csv, in all five seasons. [""2023: ['ASA', 'ASH'] appear only in excluded games (expected)"", ""2024: ['ASA', 'ASH'] appear only in excluded games (expected)""]"
+5,player_ids_resolve_in_eligible_games,PASS,0,"every player_id is a 6-digit officialId, and every id referenced by an analytics-eligible game resolves, in all five seasons. ['2022: 11 id(s) appear only in excluded (preseason/all-star) games, as expected']"
+6,cross_season_identity_mappings,PASS,0,423 officialIds; 266 appear in more than one season; 0 are not safe to pool. Identity is the id -- no name-based merge exists. audit agrees with the season tables
+7,score_reconciliation_recomputed_from_events,PASS,0,"PLL points re-derived from valid goal events for every eligible team-game in five seasons. 2 residual(s), of which 2 are documented exceptions in historical_analytics_exclusions.csv. no undocumented residual"
+8,one_and_two_point_scoring,PASS,0,"every valid goal in five seasons carries a known point class, and 1PT+2PT reconstructs goals and points at team level. exact"
+9,possession_invariants,PASS,0,"possession ids unique, offence != defence, no null offence, no negative duration, every eligible game covered. all hold"
+10,goal_to_possession_mapping,PASS,0,"every valid goal and every PLL point lands in exactly one possession, in all five seasons. exact"
+11,no_all_star_preseason_or_incomplete_contamination,PASS,0,"the eligible set in every season excludes all-star, preseason and not-yet-played games, and no all-star franchise reaches the stat layer. 2022's 4 preseason scrimmages are excluded by segment. clean"
+12,phase8_2026_outputs_unchanged,PASS,0,"all 19 Phase 8 2026 artifacts present and every headline 2026 total still equals the figure Phase 8 published ({'teams': 8, 'players': 228, 'league_points': 1190, 'shots': 4106, 'two_point_attempts': 536, 'two_point_goals': 72}). unchanged"
+13,metric_bounds_every_season,PASS,0,"9 bounded proportions checked in all five seasons, plus finiteness of every numeric team column. all in range"
+14,denominators_and_qualification_every_season,PASS,0,"every leaderboard row in five seasons carries a denominator, a qualification reason and a non-null value; QUALIFIED is a subset of ALL; no season publishes a qualified two-point ability board. clean"
+15,raw_and_shrunk_separate_every_season,PASS,0,"3 raw/shrunk pairs confirmed distinct in all five seasons, and two-point shrinkage is fully collapsed in all five. held"
+16,pooled_equals_union_of_seasons,PASS,0,"4 pooled files verified as exactly the concatenation of their season files, each carrying `season`, each keyed uniquely. exact"
+17,season_partition_correctness,PASS,0,every season directory carries its own six canonical outputs and no game from another season. partitioned correctly
+18,analysis_layer_rebuild_is_deterministic,PASS,0,7 multi-season analysis outputs recomputed and compared by SHA-256; every stochastic step is seeded. identical
+19,no_mvp_tewaaraton_or_composite_in_phase9,PASS,0,"2446 column and metric names scanned across 65 Phase 9 surfaces for 8 forbidden patterns. no composite, award score, WAR or replacement level"
+20,no_implementation_bug_flags_remain,PASS,0,"49 multi-season flags by class {'D': 24, 'B': 24, 'A': 1}. Only class E is a defect. No E flags."
+21,no_ingested_season_is_schema_incompatible,PASS,0,"92 audited aspects across 4 seasons; statuses {'IDENTICAL': 76, 'COMPATIBLE_TRANSFORMATION': 8, 'SEASON_SPECIFIC': 8}. no ingested season carries an INCOMPATIBLE aspect. 2021 was tested and excluded before ingestion."
+22,two_point_identification_verdict_is_consistent,PASS,0,"identification tested in every season and pooled two ways. identifiable=[False, False, False, False, False, False, False]. consistent"

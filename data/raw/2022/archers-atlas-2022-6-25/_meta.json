@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "retrieved_at": "2026-09-08T20-27-03Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/archers-atlas-2022-6-25/play-by-plays",
+    "content_hash": "c3f694b9781cfd64154b1ab6db1e449a69c3c7301fa00d6da96e095cb1e21214"
+  },
+  "game_meta": {
+    "retrieved_at": "2026-09-08T20-27-03Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/archers-atlas-2022-6-25",
+    "content_hash": "f6ee2cb2d3198ee987947df5f1ec970a2a9a57911253c8124758c495e8314502"
+  },
+  "players_stats": {
+    "retrieved_at": "2026-09-08T20-27-04Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/archers-atlas-2022-6-25/players/stats",
+    "content_hash": "498954559e6546332559d86decaa38bf76b9a5be16ede20ba0ba5e3ca207e4d5"
+  },
+  "teams_stats": {
+    "retrieved_at": "2026-09-08T20-27-04Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/archers-atlas-2022-6-25/teams/stats",
+    "content_hash": "e380cf165ed720048dc028eddc12497855470dc6a19825b59f1496bf05a3b4fd"
+  }
+}

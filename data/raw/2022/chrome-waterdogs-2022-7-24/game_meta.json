@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": null,
+    "id": 146,
+    "slugname": "chrome-waterdogs-2022-7-24",
+    "eventId": "2022_ev26",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1658694600",
+    "venue": "Rafferty Stadium",
+    "venueLocation": null,
+    "location": "Fairfield, CT",
+    "year": 2022,
+    "week": 7,
+    "urlStreaming": "https://es.pn/3u7BkKT",
+    "broadcaster": [
+      "ESPN2",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 5,
+    "clockMinutes": 9,
+    "clockSeconds": 53,
+    "gameStatus": null,
+    "visitorScore": 10,
+    "homeScore": 11,
+    "homePeriodScores": [
+      4,
+      3,
+      2,
+      1,
+      1
+    ],
+    "visitorPeriodScores": [
+      2,
+      5,
+      1,
+      2,
+      0
+    ],
+    "homeTeam": {
+      "officialId": "WAT",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Waterdogs.png",
+      "fullName": "Waterdogs",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#907fe2",
+      "backgroundColor": "#000000",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CHR",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Chrome.png",
+      "fullName": "Chrome",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#ea5f9a",
+      "backgroundColor": "#95D6DB",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

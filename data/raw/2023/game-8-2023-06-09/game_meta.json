@@ -1,0 +1,77 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5891097118133903,
+      "awayWinProbability": 0.41089028818660966
+    },
+    "id": 188,
+    "slugname": "game-8-2023-06-09",
+    "eventId": "2023_ev8",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1686432600",
+    "venue": "American Legion Memorial Stadium",
+    "venueLocation": null,
+    "location": "Charlotte, NC",
+    "year": 2023,
+    "week": 2,
+    "urlStreaming": "http://es.pn/3oNh1Tr",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 5,
+    "clockMinutes": 11,
+    "clockSeconds": 27,
+    "gameStatus": null,
+    "visitorScore": 14,
+    "homeScore": 13,
+    "homePeriodScores": [
+      1,
+      4,
+      4,
+      4,
+      0
+    ],
+    "visitorPeriodScores": [
+      5,
+      1,
+      6,
+      1,
+      1
+    ],
+    "homeTeam": {
+      "officialId": "CAN",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Cannons.png",
+      "fullName": "Cannons",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#002244",
+      "backgroundColor": "#B0B7BC",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CHA",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Chaos.png",
+      "fullName": "Chaos",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#000000",
+      "backgroundColor": "#EF484B",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

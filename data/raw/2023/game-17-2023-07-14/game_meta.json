@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.42726509010241015,
+      "awayWinProbability": 0.5727349098975898
+    },
+    "id": 197,
+    "slugname": "game-17-2023-07-14",
+    "eventId": "2023_ev17",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1689372000",
+    "venue": "Rafferty Stadium",
+    "venueLocation": null,
+    "location": "Fairfield, CT",
+    "year": 2023,
+    "week": 5,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/a7630e60-226e-4a31-b17e-ff2cf48a51f4",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 2,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 16,
+    "homeScore": 13,
+    "homePeriodScores": [
+      4,
+      2,
+      3,
+      4
+    ],
+    "visitorPeriodScores": [
+      1,
+      4,
+      5,
+      6
+    ],
+    "homeTeam": {
+      "officialId": "WHP",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Whipsnakes.png",
+      "fullName": "Whipsnakes",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#59c2b1",
+      "backgroundColor": "#E71C3F",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WAT",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Waterdogs.png",
+      "fullName": "Waterdogs",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#907fe2",
+      "backgroundColor": "#000000",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "data": {
+    "pregameWinProbability": null,
+    "id": 145,
+    "slugname": "archers-atlas-2022-7-30",
+    "eventId": "2022_ev27",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1659204000",
+    "venue": "Ford Center at The Star",
+    "venueLocation": null,
+    "location": "Dallas, TX",
+    "year": 2022,
+    "week": 8,
+    "urlStreaming": "https://es.pn/3xYl8N6",
+    "broadcaster": [
+      "ESPN",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 9,
+    "homeScore": 14,
+    "homePeriodScores": [
+      3,
+      3,
+      4,
+      4
+    ],
+    "visitorPeriodScores": [
+      3,
+      2,
+      3,
+      1
+    ],
+    "homeTeam": {
+      "officialId": "ATL",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Atlas.png",
+      "fullName": "Atlas",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#3ba9f6",
+      "backgroundColor": "#3BA9F6",
+      "wins": 6,
+      "losses": 4,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ARC",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Archers.png",
+      "fullName": "Archers",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#f2694c",
+      "backgroundColor": "#23427A",
+      "wins": 6,
+      "losses": 4,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

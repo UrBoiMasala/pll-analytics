@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "retrieved_at": "2026-09-08T20-34-59Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/2025_semifinal_2/play-by-plays",
+    "content_hash": "5022c1cec02232041ab2336c4339c78176c217e7f7d5db63a2f0821b7d6976ba"
+  },
+  "game_meta": {
+    "retrieved_at": "2026-09-08T20-35-00Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/2025_semifinal_2",
+    "content_hash": "8f1dd20cbd5afc503a2147742bb1f133f668c57a17a149b78e24d115e6ca2dea"
+  },
+  "players_stats": {
+    "retrieved_at": "2026-09-08T20-35-00Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/2025_semifinal_2/players/stats",
+    "content_hash": "66e91f867b8a2ba3338a5a74021e0b15a55ce34f0600a36433d90f7b243f1e49"
+  },
+  "teams_stats": {
+    "retrieved_at": "2026-09-08T20-35-01Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/2025_semifinal_2/teams/stats",
+    "content_hash": "6edccd18d2e60a4bb5fd6cba927f09a71925880502416bcdea999d9f4d0c1ece"
+  }
+}

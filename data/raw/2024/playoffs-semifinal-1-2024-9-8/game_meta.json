@@ -1,0 +1,77 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5941252378447326,
+      "awayWinProbability": 0.4058747621552674
+    },
+    "id": 294,
+    "slugname": "playoffs-semifinal-1-2024-9-8",
+    "eventId": "2024_ev44",
+    "league": "PLL",
+    "seasonSegment": "post",
+    "startTime": "1725742800",
+    "venue": "Shuart Stadium",
+    "venueLocation": null,
+    "location": "Long Island, NY",
+    "year": 2024,
+    "week": 13,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/1f39817b-65aa-4c2a-9f57-1191cb1198d9",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 5,
+    "clockMinutes": 4,
+    "clockSeconds": 54,
+    "gameStatus": null,
+    "visitorScore": 12,
+    "homeScore": 11,
+    "homePeriodScores": [
+      6,
+      2,
+      0,
+      3,
+      0
+    ],
+    "visitorPeriodScores": [
+      3,
+      2,
+      3,
+      3,
+      1
+    ],
+    "homeTeam": {
+      "officialId": "ATL",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_atlas_primary_color.png",
+      "fullName": "Atlas",
+      "location": "New York",
+      "locationCode": "NYA",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#00B1FF",
+      "backgroundColor": "#011E41",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WHP",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_whipsnakes_primary_color.png",
+      "fullName": "Whipsnakes",
+      "location": "Maryland",
+      "locationCode": "MDW",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#FF0000",
+      "backgroundColor": "#FFCE00",
+      "wins": 6,
+      "losses": 4,
+      "ties": 0
+    },
+    "description": "Semifinal",
+    "snl": false,
+    "polymarketId": null
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5150912660345167,
+      "awayWinProbability": 0.4849087339654833
+    },
+    "id": 276,
+    "slugname": "2024_game_34",
+    "eventId": "2024_ev34",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1723248000",
+    "venue": "Peter Barton Stadium",
+    "venueLocation": null,
+    "location": "Denver, CO",
+    "year": 2024,
+    "week": 10,
+    "urlStreaming": null,
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 16,
+    "homeScore": 9,
+    "homePeriodScores": [
+      3,
+      2,
+      3,
+      1
+    ],
+    "visitorPeriodScores": [
+      2,
+      4,
+      7,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "OUT",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_outlaws_primary_color.png",
+      "fullName": "Outlaws",
+      "location": "Denver",
+      "locationCode": "DEN",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#2E2E4D",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WHP",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_whipsnakes_primary_color.png",
+      "fullName": "Whipsnakes",
+      "location": "Maryland",
+      "locationCode": "MDW",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#FF0000",
+      "backgroundColor": "#FFCE00",
+      "wins": 6,
+      "losses": 4,
+      "ties": 0
+    },
+    "description": "Denver Outlaws Homecoming Weekend",
+    "snl": false,
+    "polymarketId": null
+  }
+}

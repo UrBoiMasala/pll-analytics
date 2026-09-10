@@ -1,0 +1,72 @@
+{
+  "data": {
+    "pregameWinProbability": null,
+    "id": 142,
+    "slugname": "redwoods-chaos-2022-7-31",
+    "eventId": "2022_ev30",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1659295800",
+    "venue": "Ford Center at The Star",
+    "venueLocation": null,
+    "location": "Dallas, TX",
+    "year": 2022,
+    "week": 8,
+    "urlStreaming": "https://es.pn/3y0q2Jx",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 12,
+    "homeScore": 14,
+    "homePeriodScores": [
+      4,
+      3,
+      4,
+      3
+    ],
+    "visitorPeriodScores": [
+      4,
+      3,
+      2,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "CHA",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Chaos.png",
+      "fullName": "Chaos",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#000000",
+      "backgroundColor": "#EF484B",
+      "wins": 2,
+      "losses": 8,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "RED",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Redwoods.png",
+      "fullName": "Redwoods",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#006F55",
+      "backgroundColor": "#006F55",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

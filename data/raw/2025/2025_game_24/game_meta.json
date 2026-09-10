@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5132869646872267,
+      "awayWinProbability": 0.4867130353127733
+    },
+    "id": 356,
+    "slugname": "2025_game_24",
+    "eventId": "2025_ev_24",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1752283800",
+    "venue": "Northwestern Medicine Field at Martin Stadium",
+    "venueLocation": null,
+    "location": "Chicago, IL",
+    "year": 2025,
+    "week": 7,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/f21aaa5a-f159-4bc1-bb8f-edba764c621a#bucketId=2",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 11,
+    "homeScore": 16,
+    "homePeriodScores": [
+      5,
+      6,
+      2,
+      3
+    ],
+    "visitorPeriodScores": [
+      2,
+      2,
+      5,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "WAT",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_waterdogs_primary_color.png",
+      "fullName": "Waterdogs",
+      "location": "Philadelphia",
+      "locationCode": "PHI",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#6C20C4",
+      "backgroundColor": "#99A4AD",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ARC",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_archers_primary_color.png",
+      "fullName": "Archers",
+      "location": "Utah",
+      "locationCode": "UTA",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#002244",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": "Throwback Weekend",
+    "snl": false,
+    "polymarketId": null
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-09-08T20-28-31Z",
+  "failures": [
+    {
+      "slug": "all-star-skills-2022-7-1",
+      "ok": false,
+      "endpoints": [
+        {
+          "endpoint": "play_by_play",
+          "outcome": "ok",
+          "detail": "",
+          "snapshot": null
+        },
+        {
+          "endpoint": "game_meta",
+          "outcome": "ok",
+          "detail": "",
+          "snapshot": null
+        },
+        {
+          "endpoint": "players_stats",
+          "outcome": "empty_feed",
+          "detail": "players_stats: 'data.items' is empty",
+          "snapshot": null
+        },
+        {
+          "endpoint": "teams_stats",
+          "outcome": "empty_feed",
+          "detail": "teams_stats: 'data.items' is empty",
+          "snapshot": null
+        }
+      ]
+    }
+  ]
+}

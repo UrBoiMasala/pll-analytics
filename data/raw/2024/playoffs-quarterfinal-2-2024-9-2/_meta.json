@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "retrieved_at": "2026-09-08T20-32-45Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/playoffs-quarterfinal-2-2024-9-2/play-by-plays",
+    "content_hash": "10dea9b4dd356c0bc139d89a9052b2f9c7eccb2457bf3415a6afec2d8a90d22b"
+  },
+  "game_meta": {
+    "retrieved_at": "2026-09-08T20-32-45Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/playoffs-quarterfinal-2-2024-9-2",
+    "content_hash": "287b5bba41c3736498ce3e11b95e0fd982d7433d9bde54d608b021604cb342f4"
+  },
+  "players_stats": {
+    "retrieved_at": "2026-09-08T20-32-46Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/playoffs-quarterfinal-2-2024-9-2/players/stats",
+    "content_hash": "b56cbce9591ccd63bcb7091cbe66c9c7ef0873e161bb79271e380c843fdbc3d9"
+  },
+  "teams_stats": {
+    "retrieved_at": "2026-09-08T20-32-47Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/playoffs-quarterfinal-2-2024-9-2/teams/stats",
+    "content_hash": "c3d7c291b7cab8fee44ee1447713ec04f0de79b5239ce293d5cccefb5be5ac12"
+  }
+}

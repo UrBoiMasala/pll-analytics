@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.49198839538452366,
+      "awayWinProbability": 0.5080116046154763
+    },
+    "id": 225,
+    "slugname": "playoffs-quarterfinal-3-2023-9-1",
+    "eventId": "2023_ev45",
+    "league": "PLL",
+    "seasonSegment": "post",
+    "startTime": "1693842300",
+    "venue": "Gillette Stadium",
+    "venueLocation": null,
+    "location": "Boston, MA",
+    "year": 2023,
+    "week": 12,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/6ec97387-e81c-4a6d-bbfd-e655dce573f9",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 9,
+    "homeScore": 15,
+    "homePeriodScores": [
+      5,
+      8,
+      1,
+      1
+    ],
+    "visitorPeriodScores": [
+      2,
+      1,
+      3,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "RED",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Redwoods.png",
+      "fullName": "Redwoods",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#006F55",
+      "backgroundColor": "#006F55",
+      "wins": 6,
+      "losses": 4,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CHA",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Chaos.png",
+      "fullName": "Chaos",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#000000",
+      "backgroundColor": "#EF484B",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "description": "Quarterfinal",
+    "snl": false,
+    "polymarketId": null
+  }
+}

@@ -1,0 +1,7 @@
+rate,min_trials,n_pairs,n_players,median_trials_t,observed_r,observed_spearman,boot_ci_low,boot_ci_high,mean_reliability_t,disattenuated_r_MODELED,note
+shooting_pct,20,177,86.0,52.0,0.35049083271158205,0.32355059414052073,0.20244467056217272,0.4868655642105089,0.26157793730056184,1.0,OBSERVED r is attenuated by measurement error; the disattenuated figure is MODELED and is an upper bound
+one_point_pct,20,161,80.0,48.0,0.29257944674256947,0.255670550812685,0.12585187104672924,0.44401305178344813,0.23671607944639436,1.0,OBSERVED r is attenuated by measurement error; the disattenuated figure is MODELED and is an upper bound
+two_point_pct,20,4,,,,,,,,,too few paired seasons
+save_pct,20,36,16.0,220.5,0.1615777087757716,0.26425537611108757,-0.13239723054956729,0.48103952545741524,0.3483199056318422,0.4616246410707125,OBSERVED r is attenuated by measurement error; the disattenuated figure is MODELED and is an upper bound
+faceoff_win_pct,20,30,16.0,251.0,0.28933472444338065,0.40671932613451656,-0.07867917434213327,0.690122296692632,0.9367528668713796,0.3128721469355488,OBSERVED r is attenuated by measurement error; the disattenuated figure is MODELED and is an upper bound
+turnovers_per_touch,20,481,227.0,107.0,0.36790419085510495,0.3508021561736969,0.2629501873604357,0.4780053602377749,0.4860230385368721,0.7686080973663495,OBSERVED r is attenuated by measurement error; the disattenuated figure is MODELED and is an upper bound

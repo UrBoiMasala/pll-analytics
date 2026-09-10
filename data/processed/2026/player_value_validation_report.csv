@@ -1,0 +1,25 @@
+check_id,check_name,status,n_failures,detail
+1,player_ids_resolve_to_roster,PASS,0,228 players in player_value_components; 0 not in players.csv
+2,team_ids_resolve,PASS,0,unresolved team ids: []
+3,one_row_per_player_season,PASS,0,0 duplicate player_id rows. The season key is player_id alone; 5 players changed team mid-season and are documented by n_teams>1 with primary_team_id set to the team they played most games for
+4,player_totals_reconcile_to_official_box_score,PASS,0,16 columns x 228 players compared against a direct groupby of player_game_stats.csv. all agree
+5,team_sum_of_player_shots_matches_team_box_score,PASS,0,"100 team-games joined on (game_id, team); 0 unmatched, shots differ in 0"
+6,team_sum_of_player_goals_matches_team_box_score,PASS,0,goals/onePointGoals/twoPointGoals across 100 team-games; 0 cell mismatches
+7,one_and_two_point_shot_accounting,PASS,0,one_point_attempts + two_point_attempts == shots; one+two point goals == goals; goals never exceed attempts within a class
+8,two_point_goal_is_one_goal_and_two_points,PASS,0,pll_points == one_point_goals + 2*two_point_goals on every row; league total 1190 vs official final-score total 1190
+9,no_impossible_shooting_rates,PASS,0,"shooting/one-point/two-point rates in [0,1]"
+10,no_impossible_faceoff_rates,PASS,0,"faceoff_win_pct in [0,1] and wins never exceed faceoffs contested"
+11,no_impossible_save_rates,PASS,0,"save_pct in [0,1]; saves never exceed shots on goal faced (a 1-save tolerance absorbs the known unresolved 2026-ev-8 residual)"
+12,no_infinite_values,PASS,0,every rate in the SQL layer wraps its denominator in NULLIF
+13,unsupported_components_are_null_not_zero,PASS,0,"ground_ball_value and assist_value are NULL for all 228 players (deferred, not measured-zero); faceoff_value is NULL exactly for players with 0 faceoffs; goalie_value NULL exactly for players facing 0 shots on goal"
+14,league_shooting_value_sums_to_zero,PASS,0,"sum = -0.0000000000. Exact by construction: every attempt contributes its own shot class's league mean to the expectation, so observed and expected points sum equal"
+15,league_faceoff_value_sums_to_zero,PASS,0,"sum = +0.0000000000 using the empirical league win probability 0.49656 (not an assumed 0.5 -- 18 draws have no recorded winner, and an assumed 0.5 would leave a nonzero residual)"
+16,other_residual_components_sum_to_zero,PASS,0,turnover_value=+0.0000000000; caused_turnover_value=+0.0000000000; goalie_value=+0.0000000000; total_player_value=-0.0000000000
+17,shrunk_rates_within_probability_bounds,PASS,0,"5 shrunk rate columns checked. all within [0,1]"
+18,raw_and_shrunk_estimates_both_published_and_distinct,PASS,0,"shooting_pct: prior 70.8 trials, raw sd 0.1919 -> shrunk sd 0.0237; one_point_pct: prior 75.3 trials, raw sd 0.2050 -> shrunk sd 0.0232; two_point_pct: prior 1000000.0 trials, raw sd 0.1996 -> shrunk sd 0.0000; faceoff_win_pct: prior 15.9 trials, raw sd 0.2715 -> shrunk sd 0.0920; save_pct: prior 300.3 trials, raw sd 0.1525 -> shrunk sd 0.0165"
+19,sql_components_match_independent_python_recomputation,PASS,0,all 6 components rebuilt with separate pandas arithmetic over 228 players. none disagree
+20,all_star_excluded,PASS,0,"all-star game_ids [494] and teams ['ASE', 'ASW'] absent; 38 all-star player-game rows excluded from every opportunity count"
+21,rerun_produces_identical_output,PASS,0,rebuilt 7 outputs into a scratch directory and compared SHA-256; changed: none
+22,no_value_from_untraceable_opportunities,PASS,0,"no component is denominated in possessions (the feed has no lineup data, so possession participation is unknowable); a player with zero opportunities of a class carries no value for it. Offending columns: none"
+23,documented_data_limitations_not_bypassed,PASS,0,shotAssistId unused in the value layer; caused turnovers sourced from the official box score (741 season-wide); 3 deferred/unsupported metrics emit no values. all clear
+24,every_value_component_is_documented,PASS,0,14 value columns checked against player_value_metric_definitions.csv; undocumented: none

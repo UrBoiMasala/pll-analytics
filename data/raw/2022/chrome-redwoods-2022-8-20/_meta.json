@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "retrieved_at": "2026-09-08T20-28-04Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/chrome-redwoods-2022-8-20/play-by-plays",
+    "content_hash": "44e1c4bec0f8e8e8b39fad0e30995a0cd60dcd46f6dcb26725cb7aef76dc51d8"
+  },
+  "game_meta": {
+    "retrieved_at": "2026-09-08T20-28-05Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/chrome-redwoods-2022-8-20",
+    "content_hash": "e2c3d760db161558c5b6ae587e35e3015a49c77f86a7dde9e0e5a6959818dcc6"
+  },
+  "players_stats": {
+    "retrieved_at": "2026-09-08T20-28-06Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/chrome-redwoods-2022-8-20/players/stats",
+    "content_hash": "71b2bb155aae17e27ded47772370eb9d92a3729d29d79e6f78dc6f6601e152cd"
+  },
+  "teams_stats": {
+    "retrieved_at": "2026-09-08T20-28-06Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/chrome-redwoods-2022-8-20/teams/stats",
+    "content_hash": "cfd8303f016425fc3c60381a23befa93df9b9e90c7bf54177186a7fddb0c008a"
+  }
+}

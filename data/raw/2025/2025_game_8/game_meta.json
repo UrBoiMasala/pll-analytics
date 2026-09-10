@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.496845511798931,
+      "awayWinProbability": 0.503154488201069
+    },
+    "id": 340,
+    "slugname": "2025_game_8",
+    "eventId": "2025_ev_8",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1749337200",
+    "venue": "American Legion Memorial Stadium",
+    "venueLocation": null,
+    "location": "Charlotte, NC",
+    "year": 2025,
+    "week": 2,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/4c2f0524-5d9b-4105-b447-2e24ace02faf#bucketId=2",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 16,
+    "homeScore": 10,
+    "homePeriodScores": [
+      4,
+      1,
+      1,
+      4
+    ],
+    "visitorPeriodScores": [
+      0,
+      9,
+      5,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "CHA",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_chaos_primary_color.png",
+      "fullName": "Chaos",
+      "location": "Carolina",
+      "locationCode": "CAR",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF0E11",
+      "backgroundColor": "#000",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "RED",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "description": null,
+    "snl": true,
+    "polymarketId": null
+  }
+}

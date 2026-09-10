@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "retrieved_at": "2026-09-08T20-28-01Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/cannons-chrome-2022-8-13/play-by-plays",
+    "content_hash": "7e08238afc27719aab8a645bc1331f4181b98d16dd83c6dbab23054d9a1877f3"
+  },
+  "game_meta": {
+    "retrieved_at": "2026-09-08T20-28-02Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/cannons-chrome-2022-8-13",
+    "content_hash": "6e1c59812f1129e46f339612075e7c61ce016e15ab3d5961eac69867c316cddc"
+  },
+  "players_stats": {
+    "retrieved_at": "2026-09-08T20-28-03Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/cannons-chrome-2022-8-13/players/stats",
+    "content_hash": "87651427edf1bb93a573bdc18ca5f266681caf3656c3e7c6b8e46531d27c3afb"
+  },
+  "teams_stats": {
+    "retrieved_at": "2026-09-08T20-28-04Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/cannons-chrome-2022-8-13/teams/stats",
+    "content_hash": "3e703deba72fb78546b08de575156bd39294f41629cd648abff2dd1fc5b965ec"
+  }
+}

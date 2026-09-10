@@ -34,6 +34,12 @@ import pandas as pd
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_ROOT / "data" / "processed" / "2026"
 
+
+def set_season(year: int) -> None:
+    """Phase 9: point this validator at a season. Default stays 2026."""
+    global DATA_DIR
+    DATA_DIR = REPO_ROOT / "data" / "processed" / str(year)
+
 # Metrics with a DOCUMENTED, evidence-based dedup/validity mechanism (see
 # FULL_SEASON_ANOMALIES.md), each with a magnitude cap drawn from what was
 # actually observed and investigated. This cap is a SAFETY CEILING, not by

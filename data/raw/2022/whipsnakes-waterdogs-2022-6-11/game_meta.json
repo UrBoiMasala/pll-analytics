@@ -1,0 +1,74 @@
+{
+  "data": {
+    "pregameWinProbability": null,
+    "id": 116,
+    "slugname": "whipsnakes-waterdogs-2022-6-11",
+    "eventId": "2022_ev8",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1654994700",
+    "venue": "American Legion Memorial Stadium",
+    "venueLocation": null,
+    "location": "Charlotte, NC",
+    "year": 2022,
+    "week": 2,
+    "urlStreaming": "https://es.pn/3NY5Fmw",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 5,
+    "clockMinutes": 7,
+    "clockSeconds": 15,
+    "gameStatus": null,
+    "visitorScore": 12,
+    "homeScore": 11,
+    "homePeriodScores": [
+      2,
+      4,
+      3,
+      2,
+      0
+    ],
+    "visitorPeriodScores": [
+      0,
+      3,
+      2,
+      6,
+      1
+    ],
+    "homeTeam": {
+      "officialId": "WAT",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Waterdogs.png",
+      "fullName": "Waterdogs",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#907fe2",
+      "backgroundColor": "#000000",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WHP",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Whipsnakes.png",
+      "fullName": "Whipsnakes",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#59c2b1",
+      "backgroundColor": "#E71C3F",
+      "wins": 9,
+      "losses": 1,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

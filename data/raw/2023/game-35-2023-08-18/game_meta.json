@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.43103573931545724,
+      "awayWinProbability": 0.5689642606845428
+    },
+    "id": 215,
+    "slugname": "game-35-2023-08-18",
+    "eventId": "2023_ev35",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1692406800",
+    "venue": "Cheney Stadium",
+    "venueLocation": null,
+    "location": "Seattle, WA",
+    "year": 2023,
+    "week": 10,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/fd1799be-d5ed-4754-ad4b-65049828fbf4",
+    "broadcaster": [
+      "ESPN2",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 16,
+    "homeScore": 11,
+    "homePeriodScores": [
+      2,
+      0,
+      5,
+      4
+    ],
+    "visitorPeriodScores": [
+      6,
+      4,
+      4,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "WHP",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Whipsnakes.png",
+      "fullName": "Whipsnakes",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#59c2b1",
+      "backgroundColor": "#E71C3F",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ARC",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Archers.png",
+      "fullName": "Archers",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#f2694c",
+      "backgroundColor": "#23427A",
+      "wins": 8,
+      "losses": 2,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

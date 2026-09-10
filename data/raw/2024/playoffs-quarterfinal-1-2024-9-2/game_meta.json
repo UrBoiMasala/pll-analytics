@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.549932392588001,
+      "awayWinProbability": 0.450067607411999
+    },
+    "id": 285,
+    "slugname": "playoffs-quarterfinal-1-2024-9-2",
+    "eventId": "2024_ev42",
+    "league": "PLL",
+    "seasonSegment": "post",
+    "startTime": "1725307200",
+    "venue": "Gillette Stadium",
+    "venueLocation": null,
+    "location": "Boston, MA",
+    "year": 2024,
+    "week": 12,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/f0eedf0c-40cb-4e06-b1cf-bfac32674eb1",
+    "broadcaster": [
+      "ESPN2",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 8,
+    "homeScore": 4,
+    "homePeriodScores": [
+      1,
+      2,
+      0,
+      1
+    ],
+    "visitorPeriodScores": [
+      2,
+      2,
+      3,
+      1
+    ],
+    "homeTeam": {
+      "officialId": "CAN",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_cannons_primary_color.png",
+      "fullName": "Cannons",
+      "location": "Boston",
+      "locationCode": "BOS",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#B0B6BB",
+      "backgroundColor": "#C52032",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CHA",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_chaos_primary_color.png",
+      "fullName": "Chaos",
+      "location": "Carolina",
+      "locationCode": "CAR",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF0E11",
+      "backgroundColor": "#000",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": "Quarterfinal",
+    "snl": false,
+    "polymarketId": null
+  }
+}

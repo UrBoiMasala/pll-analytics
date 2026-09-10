@@ -1,0 +1,181 @@
+board,rank,player_id,player_name,team_id,canonical_position,value_role,games_played,metric,value,sample_size_metric,sample_size,role_filter,eligibility_gate,reliability,small_sample
+highest_raw_EPA_points,1,003264,Sean Byrne,WAT,goalie,goalie,7.0,EPA_points_raw,13.63708613544862,games_played,7.0,none,none,0.3148238518071751,True
+highest_raw_EPA_points,2,000216,Marcus Holman,CAN,attack,offensive_field,13.0,EPA_points_raw,13.030951069110506,games_played,13.0,none,none,0.5397236645805273,False
+highest_raw_EPA_points,3,002015,Logan Wisnauskas,OUT,attack,offensive_field,13.0,EPA_points_raw,12.555279904272664,games_played,13.0,none,none,0.3779143376593127,True
+highest_raw_EPA_points,4,002026,Brett Dobson,ARC,goalie,goalie,10.0,EPA_points_raw,11.845589771069951,games_played,10.0,none,none,0.4250102380102331,True
+highest_raw_EPA_points,5,003159,CJ Kirst,WAT,attack,offensive_field,10.0,EPA_points_raw,10.842443842147189,games_played,10.0,none,none,0.542697364032416,False
+highest_raw_EPA_points,6,001812,TD Ierlan,RED,faceoff,faceoff,13.0,EPA_points_raw,10.69733702769505,games_played,13.0,none,none,0.9568899925064208,False
+highest_raw_EPA_points,7,003100,Adam Poitras,WHP,midfield,offensive_field,13.0,EPA_points_raw,10.388036137649037,games_played,13.0,none,none,0.4327533400675907,True
+highest_raw_EPA_points,8,003176,Emmet Carroll,WHP,goalie,goalie,13.0,EPA_points_raw,9.52836199251328,games_played,13.0,none,none,0.5071057509897693,False
+highest_raw_EPA_points,9,003145,JC Higginbotham,CAN,goalie,goalie,7.0,EPA_points_raw,8.165622995742947,games_played,7.0,none,none,0.2344902787990707,True
+highest_raw_EPA_points,10,003275,Andrew McMeekin,CAN,faceoff,faceoff,10.0,EPA_points_raw,8.080734571703672,games_played,10.0,none,none,0.9399651803745191,False
+highest_offensive_play_share,1,003075,Brennan O'Neill,OUT,attack,offensive_field,12.0,offensive_play_share,0.1836115326251896,recorded_offensive_opportunities,121.0,none,none,0.5651716678119464,False
+highest_offensive_play_share,2,003159,CJ Kirst,WAT,attack,offensive_field,10.0,offensive_play_share,0.1835205992509363,recorded_offensive_opportunities,98.0,none,none,0.542697364032416,False
+highest_offensive_play_share,3,001001,Dylan Molloy,RED,attack,offensive_field,13.0,offensive_play_share,0.1710875331564986,recorded_offensive_opportunities,129.0,none,none,0.580629262956704,False
+highest_offensive_play_share,4,003280,Chad Palumbo,CHA,midfield,offensive_field,10.0,offensive_play_share,0.1622641509433962,recorded_offensive_opportunities,86.0,none,none,0.4748394480196699,True
+highest_offensive_play_share,5,003164,Matt Traynor,ATL,midfield,offensive_field,11.0,offensive_play_share,0.160958904109589,recorded_offensive_opportunities,94.0,none,none,0.4972212466793088,True
+highest_offensive_play_share,6,003268,Jack Taylor,CHA,midfield,offensive_field,1.0,offensive_play_share,0.16,recorded_offensive_opportunities,8.0,none,none,0.0781429086472307,True
+highest_offensive_play_share,7,000262,Connor Fields,ARC,attack,offensive_field,12.0,offensive_play_share,0.1583710407239819,recorded_offensive_opportunities,105.0,none,none,0.5210363376119749,False
+highest_offensive_play_share,8,003162,Coulter Mackesy,CAN,attack,offensive_field,13.0,offensive_play_share,0.1572413793103448,recorded_offensive_opportunities,114.0,none,none,0.5756003061931505,False
+highest_offensive_play_share,9,001810,Michael Sowers,WAT,attack,offensive_field,12.0,offensive_play_share,0.15600624024961,recorded_offensive_opportunities,100.0,none,none,0.5242555602164436,False
+highest_offensive_play_share,10,003174,Sam King,ARC,midfield,offensive_field,12.0,offensive_play_share,0.1538461538461538,recorded_offensive_opportunities,102.0,none,none,0.5242555602164436,False
+highest_EPA_per_recorded_opportunity_adequately_sampled,1,000216,Marcus Holman,CAN,attack,offensive_field,13.0,EPA_per_recorded_opportunity,0.1288934029590559,recorded_offensive_opportunities,98.0,none,offensive_rate_ranking_eligible,0.5397236645805273,False
+highest_EPA_per_recorded_opportunity_adequately_sampled,2,003159,CJ Kirst,WAT,attack,offensive_field,10.0,EPA_per_recorded_opportunity,0.1056140296660076,recorded_offensive_opportunities,98.0,none,offensive_rate_ranking_eligible,0.542697364032416,False
+highest_EPA_per_recorded_opportunity_adequately_sampled,3,003165,Aidan Carroll,WHP,midfield,offensive_field,13.0,EPA_per_recorded_opportunity,0.0708446086106812,recorded_offensive_opportunities,96.0,none,offensive_rate_ranking_eligible,0.5336587145192048,False
+highest_EPA_per_recorded_opportunity_adequately_sampled,4,001810,Michael Sowers,WAT,attack,offensive_field,12.0,EPA_per_recorded_opportunity,0.0651481497395996,recorded_offensive_opportunities,100.0,none,offensive_rate_ranking_eligible,0.5242555602164436,False
+highest_EPA_per_recorded_opportunity_adequately_sampled,5,003168,Chris Kavanagh,RED,attack,offensive_field,11.0,EPA_per_recorded_opportunity,0.0471791909131689,recorded_offensive_opportunities,94.0,none,offensive_rate_ranking_eligible,0.5210363376119749,False
+highest_EPA_per_recorded_opportunity_adequately_sampled,6,003048,TJ Malone,WHP,attack,offensive_field,13.0,EPA_per_recorded_opportunity,0.0125331375852999,recorded_offensive_opportunities,97.0,none,offensive_rate_ranking_eligible,0.536711037876952,False
+highest_EPA_per_recorded_opportunity_adequately_sampled,7,001001,Dylan Molloy,RED,attack,offensive_field,13.0,EPA_per_recorded_opportunity,-0.0019115242873751,recorded_offensive_opportunities,129.0,none,offensive_rate_ranking_eligible,0.580629262956704,False
+highest_EPA_per_recorded_opportunity_adequately_sampled,8,000262,Connor Fields,ARC,attack,offensive_field,12.0,EPA_per_recorded_opportunity,-0.0034821421853962,recorded_offensive_opportunities,105.0,none,offensive_rate_ranking_eligible,0.5210363376119749,False
+highest_EPA_per_recorded_opportunity_adequately_sampled,9,003174,Sam King,ARC,midfield,offensive_field,12.0,EPA_per_recorded_opportunity,-0.0037689881596853,recorded_offensive_opportunities,102.0,none,offensive_rate_ranking_eligible,0.5242555602164436,False
+highest_EPA_per_recorded_opportunity_adequately_sampled,10,003162,Coulter Mackesy,CAN,attack,offensive_field,13.0,EPA_per_recorded_opportunity,-0.0074959075850933,recorded_offensive_opportunities,114.0,none,offensive_rate_ranking_eligible,0.5756003061931505,False
+highest_usage_adjusted_EPA_vs_expectation,1,002015,Logan Wisnauskas,OUT,attack,offensive_field,13.0,EPA_vs_usage_expectation,12.870790630888012,recorded_offensive_opportunities,57.0,none,none,0.3779143376593127,True
+highest_usage_adjusted_EPA_vs_expectation,2,000216,Marcus Holman,CAN,attack,offensive_field,13.0,EPA_vs_usage_expectation,12.544621674996025,recorded_offensive_opportunities,98.0,none,none,0.5397236645805273,False
+highest_usage_adjusted_EPA_vs_expectation,3,003100,Adam Poitras,WHP,midfield,offensive_field,13.0,EPA_vs_usage_expectation,10.302626803899468,recorded_offensive_opportunities,59.0,none,none,0.4327533400675907,True
+highest_usage_adjusted_EPA_vs_expectation,4,003159,CJ Kirst,WAT,attack,offensive_field,10.0,EPA_vs_usage_expectation,10.263243092277287,recorded_offensive_opportunities,98.0,none,none,0.542697364032416,False
+highest_usage_adjusted_EPA_vs_expectation,5,003195,Brian Kelly,CAN,attack,offensive_field,12.0,EPA_vs_usage_expectation,6.768437114856683,recorded_offensive_opportunities,80.0,none,none,0.4372630859772697,True
+highest_usage_adjusted_EPA_vs_expectation,6,003165,Aidan Carroll,WHP,midfield,offensive_field,13.0,EPA_vs_usage_expectation,6.714150611633937,recorded_offensive_opportunities,96.0,none,none,0.5336587145192048,False
+highest_usage_adjusted_EPA_vs_expectation,7,001810,Michael Sowers,WAT,attack,offensive_field,12.0,EPA_vs_usage_expectation,6.427883158968502,recorded_offensive_opportunities,100.0,none,none,0.5242555602164436,False
+highest_usage_adjusted_EPA_vs_expectation,8,001821,Tre Leclaire,ARC,midfield,offensive_field,10.0,EPA_vs_usage_expectation,6.377130556897944,recorded_offensive_opportunities,55.0,none,none,0.4041002737474631,True
+highest_usage_adjusted_EPA_vs_expectation,9,001814,Mac O'Keefe,ARC,attack,offensive_field,12.0,EPA_vs_usage_expectation,5.932195606816608,recorded_offensive_opportunities,81.0,none,none,0.4936243792876141,True
+highest_usage_adjusted_EPA_vs_expectation,10,000395,Bryan Costabile,ATL,midfield,offensive_field,11.0,EPA_vs_usage_expectation,5.550156811763371,recorded_offensive_opportunities,83.0,none,none,0.4669293551840481,True
+strongest_positive_EPA_vs_usage_residual,1,002015,Logan Wisnauskas,OUT,attack,offensive_field,13.0,EPA_vs_usage_expectation_z,4.111613443213002,recorded_offensive_opportunities,57.0,none,none,0.3779143376593127,True
+strongest_positive_EPA_vs_usage_residual,2,003100,Adam Poitras,WHP,midfield,offensive_field,13.0,EPA_vs_usage_expectation_z,2.968009439792043,recorded_offensive_opportunities,59.0,none,none,0.4327533400675907,True
+strongest_positive_EPA_vs_usage_residual,3,003298,Finn Thomson,RED,attack,offensive_field,5.0,EPA_vs_usage_expectation_z,2.6818194805407525,recorded_offensive_opportunities,20.0,none,none,0.1936606901929268,True
+strongest_positive_EPA_vs_usage_residual,4,000216,Marcus Holman,CAN,attack,offensive_field,13.0,EPA_vs_usage_expectation_z,2.5526145860186853,recorded_offensive_opportunities,98.0,none,none,0.5397236645805273,False
+strongest_positive_EPA_vs_usage_residual,5,003159,CJ Kirst,WAT,attack,offensive_field,10.0,EPA_vs_usage_expectation_z,2.394638067287151,recorded_offensive_opportunities,98.0,none,none,0.542697364032416,False
+strongest_positive_EPA_vs_usage_residual,6,003292,Henry Bard,CHA,defense,defensive_field,5.0,EPA_vs_usage_expectation_z,2.127624287456921,recorded_offensive_opportunities,3.0,none,none,0.0139309916119536,True
+strongest_positive_EPA_vs_usage_residual,7,003006,Piper Bond,ARC,short_stick_defensive_midfield,defensive_field,12.0,EPA_vs_usage_expectation_z,2.0167465282456427,recorded_offensive_opportunities,11.0,none,none,0.1015455239946252,True
+strongest_positive_EPA_vs_usage_residual,8,003195,Brian Kelly,CAN,attack,offensive_field,12.0,EPA_vs_usage_expectation_z,1.9219278553678096,recorded_offensive_opportunities,80.0,none,none,0.4372630859772697,True
+strongest_positive_EPA_vs_usage_residual,9,003232,Casey Wilson,WAT,midfield,offensive_field,4.0,EPA_vs_usage_expectation_z,1.7612203521658198,recorded_offensive_opportunities,4.0,none,none,0.02747917112151,True
+strongest_positive_EPA_vs_usage_residual,10,003273,Matt Collison,WAT,midfield,offensive_field,8.0,EPA_vs_usage_expectation_z,1.7389028212628836,recorded_offensive_opportunities,36.0,none,none,0.2906324187062253,True
+strongest_negative_EPA_vs_usage_residual,1,003276,Richard Checo,CHA,long_stick_midfield,defensive_field,6.0,EPA_vs_usage_expectation_z,-4.253573219350821,recorded_offensive_opportunities,4.0,none,none,,True
+strongest_negative_EPA_vs_usage_residual,2,003206,Greg Langermeier,CHA,short_stick_defensive_midfield,defensive_field,2.0,EPA_vs_usage_expectation_z,-3.0967018947865745,recorded_offensive_opportunities,2.0,none,none,,True
+strongest_negative_EPA_vs_usage_residual,3,003111,AJ Mercurio,WHP,defense,defensive_field,1.0,EPA_vs_usage_expectation_z,-2.8834274425873354,recorded_offensive_opportunities,1.0,none,none,,True
+strongest_negative_EPA_vs_usage_residual,4,003270,Evan Plunkett,OUT,midfield,offensive_field,9.0,EPA_vs_usage_expectation_z,-2.6840140690416767,recorded_offensive_opportunities,45.0,none,none,0.3432842495875608,True
+strongest_negative_EPA_vs_usage_residual,5,003303,Leif Hagerup,CHA,short_stick_defensive_midfield,defensive_field,2.0,EPA_vs_usage_expectation_z,-2.4779925041213144,recorded_offensive_opportunities,1.0,none,none,,True
+strongest_negative_EPA_vs_usage_residual,6,002024,Asher Nolting,CAN,attack,offensive_field,1.0,EPA_vs_usage_expectation_z,-2.465699685013672,recorded_offensive_opportunities,5.0,none,none,,True
+strongest_negative_EPA_vs_usage_residual,7,000221,Ryan Ambler,ARC,midfield,offensive_field,12.0,EPA_vs_usage_expectation_z,-2.1857970503291457,recorded_offensive_opportunities,46.0,none,none,0.2834513055967354,True
+strongest_negative_EPA_vs_usage_residual,8,003293,Hunter Drouin,ATL,attack,offensive_field,2.0,EPA_vs_usage_expectation_z,-2.004109184975762,recorded_offensive_opportunities,9.0,none,none,0.0534885219941074,True
+strongest_negative_EPA_vs_usage_residual,9,003290,John Dunphey,OUT,midfield,offensive_field,4.0,EPA_vs_usage_expectation_z,-1.9871039080363464,recorded_offensive_opportunities,16.0,none,none,0.0781429086472307,True
+strongest_negative_EPA_vs_usage_residual,10,003156,Aidan Danenza,RED,midfield,offensive_field,13.0,EPA_vs_usage_expectation_z,-1.9448345814076455,recorded_offensive_opportunities,69.0,none,none,0.4417016903729681,True
+highest_positional_EPA_percentile,1,003009,Brett Makar,ATL,defense,defensive_field,12.0,EPA_position_percentile,99.47916666666666,games_played,12.0,none,none,0.1015455239946252,True
+highest_positional_EPA_percentile,2,003100,Adam Poitras,WHP,midfield,offensive_field,13.0,EPA_position_percentile,99.20634920634922,games_played,13.0,none,none,0.4327533400675907,True
+highest_positional_EPA_percentile,3,000216,Marcus Holman,CAN,attack,offensive_field,13.0,EPA_position_percentile,98.64864864864865,games_played,13.0,none,none,0.5397236645805273,False
+highest_positional_EPA_percentile,4,003024,Brian Tevlin,RED,short_stick_defensive_midfield,defensive_field,13.0,EPA_position_percentile,98.4375,games_played,13.0,none,none,0.2027428879913279,True
+highest_positional_EPA_percentile,5,003165,Aidan Carroll,WHP,midfield,offensive_field,13.0,EPA_position_percentile,97.61904761904762,games_played,13.0,none,none,0.5336587145192048,False
+highest_positional_EPA_percentile,6,003083,Jake Piseno,OUT,long_stick_midfield,defensive_field,13.0,EPA_position_percentile,97.39583333333331,games_played,13.0,none,none,0.2027428879913279,True
+highest_positional_EPA_percentile,7,003264,Sean Byrne,WAT,goalie,goalie,7.0,EPA_position_percentile,97.05882352941175,games_played,7.0,none,none,0.3148238518071751,True
+highest_positional_EPA_percentile,8,003077,Ajax Zappitello,WHP,defense,defensive_field,13.0,EPA_position_percentile,96.35416666666666,games_played,13.0,none,none,0.0899946527667867,True
+highest_positional_EPA_percentile,9,001812,TD Ierlan,RED,faceoff,faceoff,13.0,EPA_position_percentile,96.15384615384616,games_played,13.0,none,none,0.9568899925064208,False
+highest_positional_EPA_percentile,10,001821,Tre Leclaire,ARC,midfield,offensive_field,10.0,EPA_position_percentile,96.03174603174604,games_played,10.0,none,none,0.4041002737474631,True
+top_faceoff_positional_value,1,001812,TD Ierlan,RED,faceoff,faceoff,13.0,faceoff_value_raw,10.640023900436054,faceoffs,353.0,faceoff,none,0.9568899925064208,False
+top_faceoff_positional_value,2,003275,Andrew McMeekin,CAN,faceoff,faceoff,10.0,faceoff_value_raw,10.16973929017153,faceoffs,249.0,faceoff,none,0.9399651803745191,False
+top_faceoff_positional_value,3,003004,Mike Sisselberger,ARC,faceoff,faceoff,12.0,faceoff_value_raw,8.979868942535465,faceoffs,268.0,faceoff,none,0.9439829605557256,False
+top_faceoff_positional_value,4,003119,Alec Stathakis,WAT,faceoff,faceoff,7.0,faceoff_value_raw,4.71316748688851,faceoffs,176.0,faceoff,none,0.9171279552063718,False
+top_faceoff_positional_value,5,000254,Trevor Baptiste,ATL,faceoff,faceoff,7.0,faceoff_value_raw,2.1161484207513364,faceoffs,177.0,faceoff,none,0.9175575589980668,False
+top_faceoff_positional_value,6,003098,Luke Wierman,OUT,faceoff,faceoff,13.0,faceoff_value_raw,1.245976333779051,faceoffs,319.0,faceoff,none,0.9525133868190256,False
+top_faceoff_positional_value,7,003246,Nathan Kapp,WHP,faceoff,faceoff,2.0,faceoff_value_raw,0.5708519439170379,faceoffs,43.0,faceoff,none,0.7300084270299633,False
+top_faceoff_positional_value,8,002067,Zac Tucci,CAN,faceoff,faceoff,4.0,faceoff_value_raw,-0.4112674644631786,faceoffs,91.0,faceoff,none,0.851235552756615,False
+top_faceoff_positional_value,9,003032,Petey LaSalla,WHP,faceoff,faceoff,10.0,faceoff_value_raw,-0.5814379790383547,faceoffs,239.0,faceoff,none,0.9376099817914272,False
+top_faceoff_positional_value,10,000366,Connor Farrell,WAT,faceoff,faceoff,5.0,faceoff_value_raw,-0.7243494531761396,faceoffs,119.0,faceoff,none,0.8821124884631338,False
+top_faceoff_positional_percentile,1,001812,TD Ierlan,RED,faceoff,faceoff,13.0,EPA_position_percentile,96.15384615384616,faceoffs,353.0,faceoff,none,0.9568899925064208,False
+top_faceoff_positional_percentile,2,003275,Andrew McMeekin,CAN,faceoff,faceoff,10.0,EPA_position_percentile,88.46153846153845,faceoffs,249.0,faceoff,none,0.9399651803745191,False
+top_faceoff_positional_percentile,3,003004,Mike Sisselberger,ARC,faceoff,faceoff,12.0,EPA_position_percentile,80.76923076923077,faceoffs,268.0,faceoff,none,0.9439829605557256,False
+top_faceoff_positional_percentile,4,003119,Alec Stathakis,WAT,faceoff,faceoff,7.0,EPA_position_percentile,73.07692307692307,faceoffs,176.0,faceoff,none,0.9171279552063718,False
+top_faceoff_positional_percentile,5,003032,Petey LaSalla,WHP,faceoff,faceoff,10.0,EPA_position_percentile,65.38461538461539,faceoffs,239.0,faceoff,none,0.9376099817914272,False
+top_faceoff_positional_percentile,6,002067,Zac Tucci,CAN,faceoff,faceoff,4.0,EPA_position_percentile,57.692307692307686,faceoffs,91.0,faceoff,none,0.851235552756615,False
+top_faceoff_positional_percentile,7,003246,Nathan Kapp,WHP,faceoff,faceoff,2.0,EPA_position_percentile,49.99999999999999,faceoffs,43.0,faceoff,none,0.7300084270299633,False
+top_faceoff_positional_percentile,8,000254,Trevor Baptiste,ATL,faceoff,faceoff,7.0,EPA_position_percentile,42.307692307692314,faceoffs,177.0,faceoff,none,0.9175575589980668,False
+top_faceoff_positional_percentile,9,003098,Luke Wierman,OUT,faceoff,faceoff,13.0,EPA_position_percentile,34.61538461538461,faceoffs,319.0,faceoff,none,0.9525133868190256,False
+top_faceoff_positional_percentile,10,000366,Connor Farrell,WAT,faceoff,faceoff,5.0,EPA_position_percentile,26.923076923076923,faceoffs,119.0,faceoff,none,0.8821124884631338,False
+top_goalie_positional_value,1,003264,Sean Byrne,WAT,goalie,goalie,7.0,goalie_value_raw,13.551226014994128,shots_on_goal_faced,152.0,goalie,none,0.3148238518071751,True
+top_goalie_positional_value,2,002026,Brett Dobson,ARC,goalie,goalie,10.0,goalie_value_raw,12.512410563135193,shots_on_goal_faced,234.0,goalie,none,0.4250102380102331,True
+top_goalie_positional_value,3,003176,Emmet Carroll,WHP,goalie,goalie,13.0,goalie_value_raw,9.893595937074195,shots_on_goal_faced,332.0,goalie,none,0.5071057509897693,False
+top_goalie_positional_value,4,003145,JC Higginbotham,CAN,goalie,goalie,7.0,goalie_value_raw,8.86681354072659,shots_on_goal_faced,101.0,goalie,none,0.2344902787990707,True
+top_goalie_positional_value,5,000258,Blaze Riorden,CHA,goalie,goalie,11.0,goalie_value_raw,5.388720780025125,shots_on_goal_faced,284.0,goalie,none,0.4668580834460897,True
+top_goalie_positional_value,6,001773,Nick Washuta,ARC,goalie,goalie,3.0,goalie_value_raw,3.9376227637097223,shots_on_goal_faced,45.0,goalie,none,0.1226849215487051,True
+top_goalie_positional_value,7,003108,Will Mark,ATL,goalie,goalie,2.0,goalie_value_raw,2.0731922398589067,shots_on_goal_faced,11.0,goalie,none,0.0322226862630399,True
+top_goalie_positional_value,8,002039,Owen McElroy,OUT,goalie,goalie,4.0,goalie_value_raw,1.8352061250611984,shots_on_goal_faced,60.0,goalie,none,0.1595117894672145,True
+top_goalie_positional_value,9,003291,Ryan Croddick,RED,goalie,goalie,5.0,goalie_value_raw,-0.6011779417576513,shots_on_goal_faced,46.0,goalie,none,0.13281732520825,True
+top_goalie_positional_value,10,000408,Matt DeLuca,WAT,goalie,goalie,9.0,goalie_value_raw,-0.971577804911135,shots_on_goal_faced,166.0,goalie,none,0.3447219891104771,True
+top_goalie_positional_percentile,1,003264,Sean Byrne,WAT,goalie,goalie,7.0,EPA_position_percentile,97.05882352941175,shots_on_goal_faced,152.0,goalie,none,0.3148238518071751,True
+top_goalie_positional_percentile,2,002026,Brett Dobson,ARC,goalie,goalie,10.0,EPA_position_percentile,91.17647058823528,shots_on_goal_faced,234.0,goalie,none,0.4250102380102331,True
+top_goalie_positional_percentile,3,003176,Emmet Carroll,WHP,goalie,goalie,13.0,EPA_position_percentile,85.29411764705883,shots_on_goal_faced,332.0,goalie,none,0.5071057509897693,False
+top_goalie_positional_percentile,4,003145,JC Higginbotham,CAN,goalie,goalie,7.0,EPA_position_percentile,79.41176470588235,shots_on_goal_faced,101.0,goalie,none,0.2344902787990707,True
+top_goalie_positional_percentile,5,000258,Blaze Riorden,CHA,goalie,goalie,11.0,EPA_position_percentile,73.52941176470587,shots_on_goal_faced,284.0,goalie,none,0.4668580834460897,True
+top_goalie_positional_percentile,6,001773,Nick Washuta,ARC,goalie,goalie,3.0,EPA_position_percentile,67.64705882352942,shots_on_goal_faced,45.0,goalie,none,0.1226849215487051,True
+top_goalie_positional_percentile,7,003108,Will Mark,ATL,goalie,goalie,2.0,EPA_position_percentile,61.76470588235294,shots_on_goal_faced,11.0,goalie,none,0.0322226862630399,True
+top_goalie_positional_percentile,8,002039,Owen McElroy,OUT,goalie,goalie,4.0,EPA_position_percentile,55.88235294117647,shots_on_goal_faced,60.0,goalie,none,0.1595117894672145,True
+top_goalie_positional_percentile,9,003125,Matt Knote,WHP,goalie,goalie,1.0,EPA_position_percentile,49.99999999999999,shots_on_goal_faced,0.0,goalie,none,,True
+top_goalie_positional_percentile,10,003291,Ryan Croddick,RED,goalie,goalie,5.0,EPA_position_percentile,44.117647058823536,shots_on_goal_faced,46.0,goalie,none,0.13281732520825,True
+top_partial_defensive_value,1,003009,Brett Makar,ATL,defense,defensive_field,12.0,defensive_value_partial_raw,3.102168585892884,games_played,12.0,defensive_field,none,0.1015455239946252,True
+top_partial_defensive_value,2,003077,Ajax Zappitello,WHP,defense,defensive_field,13.0,defensive_value_partial_raw,2.3583824838050025,games_played,13.0,defensive_field,none,0.0899946527667867,True
+top_partial_defensive_value,3,001397,Michael Rexrode,ATL,defense,defensive_field,12.0,defensive_value_partial_raw,1.4984883444332229,games_played,12.0,defensive_field,none,0.02747917112151,True
+top_partial_defensive_value,4,003041,Ethan Rall,CAN,long_stick_midfield,defensive_field,13.0,defensive_value_partial_raw,1.3560823328927143,games_played,13.0,defensive_field,none,0.0899946527667867,True
+top_partial_defensive_value,5,003083,Jake Piseno,OUT,long_stick_midfield,defensive_field,13.0,defensive_value_partial_raw,1.3560823328927143,games_played,13.0,defensive_field,none,0.2027428879913279,True
+top_partial_defensive_value,6,003163,Brendan Lavelle,ARC,defense,defensive_field,12.0,defensive_value_partial_raw,1.2980283142507651,games_played,12.0,defensive_field,none,0.02747917112151,True
+top_partial_defensive_value,7,001817,Jack Kielty,CAN,defense,defensive_field,13.0,defensive_value_partial_raw,1.155622302710257,games_played,13.0,defensive_field,none,,True
+top_partial_defensive_value,8,001406,Ben Randall,OUT,defense,defensive_field,11.0,defensive_value_partial_raw,1.0395142654263585,games_played,11.0,defensive_field,none,0.0139309916119536,True
+top_partial_defensive_value,9,003296,Cullen Brown,RED,defense,defensive_field,11.0,defensive_value_partial_raw,1.0395142654263585,games_played,11.0,defensive_field,none,0.0534885219941074,True
+top_partial_defensive_value,10,003286,Will Donovan,CAN,defense,defensive_field,10.0,defensive_value_partial_raw,0.9814602467844088,games_played,10.0,defensive_field,none,0.0139309916119536,True
+least_reliable_apparent_high_performers,1,003264,Sean Byrne,WAT,goalie,goalie,7.0,EPA_points_raw,13.63708613544862,recorded_offensive_opportunities,3.0,none,not:rate_ranking_eligible,0.3148238518071751,True
+least_reliable_apparent_high_performers,2,002015,Logan Wisnauskas,OUT,attack,offensive_field,13.0,EPA_points_raw,12.555279904272664,recorded_offensive_opportunities,57.0,none,not:rate_ranking_eligible,0.3779143376593127,True
+least_reliable_apparent_high_performers,3,002026,Brett Dobson,ARC,goalie,goalie,10.0,EPA_points_raw,11.845589771069951,recorded_offensive_opportunities,8.0,none,not:rate_ranking_eligible,0.4250102380102331,True
+least_reliable_apparent_high_performers,4,003100,Adam Poitras,WHP,midfield,offensive_field,13.0,EPA_points_raw,10.388036137649037,recorded_offensive_opportunities,59.0,none,not:rate_ranking_eligible,0.4327533400675907,True
+least_reliable_apparent_high_performers,5,003145,JC Higginbotham,CAN,goalie,goalie,7.0,EPA_points_raw,8.165622995742947,recorded_offensive_opportunities,3.0,none,not:rate_ranking_eligible,0.2344902787990707,True
+least_reliable_apparent_high_performers,6,003195,Brian Kelly,CAN,attack,offensive_field,12.0,EPA_points_raw,6.684343537008931,recorded_offensive_opportunities,80.0,none,not:rate_ranking_eligible,0.4372630859772697,True
+least_reliable_apparent_high_performers,7,000258,Blaze Riorden,CHA,goalie,goalie,11.0,EPA_points_raw,6.160145501229972,recorded_offensive_opportunities,4.0,none,not:rate_ranking_eligible,0.4668580834460897,True
+least_reliable_apparent_high_performers,8,001821,Tre Leclaire,ARC,midfield,offensive_field,10.0,EPA_points_raw,6.154491186038012,recorded_offensive_opportunities,55.0,none,not:rate_ranking_eligible,0.4041002737474631,True
+least_reliable_apparent_high_performers,9,001814,Mac O'Keefe,ARC,attack,offensive_field,12.0,EPA_points_raw,6.048562059151313,recorded_offensive_opportunities,81.0,none,not:rate_ranking_eligible,0.4936243792876141,True
+least_reliable_apparent_high_performers,10,000395,Bryan Costabile,ATL,midfield,offensive_field,11.0,EPA_points_raw,5.525457311961808,recorded_offensive_opportunities,83.0,none,not:rate_ranking_eligible,0.4669293551840481,True
+highest_value_whose_chance_spread_covers_the_peer_group,1,000216,Marcus Holman,CAN,attack,offensive_field,13.0,EPA_points_raw,13.030951069110506,recorded_offensive_opportunities,98.0,none,chance_variation_exceeds_peer_spread,0.5397236645805273,False
+highest_value_whose_chance_spread_covers_the_peer_group,2,003100,Adam Poitras,WHP,midfield,offensive_field,13.0,EPA_points_raw,10.388036137649037,recorded_offensive_opportunities,59.0,none,chance_variation_exceeds_peer_spread,0.4327533400675907,True
+highest_value_whose_chance_spread_covers_the_peer_group,3,003176,Emmet Carroll,WHP,goalie,goalie,13.0,EPA_points_raw,9.52836199251328,recorded_offensive_opportunities,7.0,none,chance_variation_exceeds_peer_spread,0.5071057509897693,False
+highest_value_whose_chance_spread_covers_the_peer_group,4,003165,Aidan Carroll,WHP,midfield,offensive_field,13.0,EPA_points_raw,6.599099915201045,recorded_offensive_opportunities,96.0,none,chance_variation_exceeds_peer_spread,0.5336587145192048,False
+highest_value_whose_chance_spread_covers_the_peer_group,5,001821,Tre Leclaire,ARC,midfield,offensive_field,10.0,EPA_points_raw,6.154491186038012,recorded_offensive_opportunities,55.0,none,chance_variation_exceeds_peer_spread,0.4041002737474631,True
+highest_value_whose_chance_spread_covers_the_peer_group,6,000395,Bryan Costabile,ATL,midfield,offensive_field,11.0,EPA_points_raw,5.525457311961808,recorded_offensive_opportunities,83.0,none,chance_variation_exceeds_peer_spread,0.4669293551840481,True
+highest_value_whose_chance_spread_covers_the_peer_group,7,003009,Brett Makar,ATL,defense,defensive_field,12.0,EPA_points_raw,4.051066456430304,recorded_offensive_opportunities,20.0,none,chance_variation_exceeds_peer_spread,0.1015455239946252,True
+highest_value_whose_chance_spread_covers_the_peer_group,8,003085,Graham Bundy,OUT,midfield,offensive_field,13.0,EPA_points_raw,3.705496919394285,recorded_offensive_opportunities,51.0,none,chance_variation_exceeds_peer_spread,0.3779143376593127,True
+highest_value_whose_chance_spread_covers_the_peer_group,9,003024,Brian Tevlin,RED,short_stick_defensive_midfield,defensive_field,13.0,EPA_points_raw,2.8452440095736327,recorded_offensive_opportunities,24.0,none,chance_variation_exceeds_peer_spread,0.2027428879913279,True
+highest_value_whose_chance_spread_covers_the_peer_group,10,003083,Jake Piseno,OUT,long_stick_midfield,defensive_field,13.0,EPA_points_raw,2.5008957407180823,recorded_offensive_opportunities,23.0,none,chance_variation_exceeds_peer_spread,0.2027428879913279,True
+most_affected_by_shrinkage_rank_change,1,003273,Matt Collison,WAT,,offensive_field,,shooting_value_raw,153.0,sensitivity sample,29.0,none,none,,
+most_affected_by_shrinkage_rank_change,2,003085,Graham Bundy,OUT,,offensive_field,,shooting_value_raw,153.0,sensitivity sample,43.0,none,none,,
+most_affected_by_shrinkage_rank_change,3,003192,Jackson Eicher,CHA,,offensive_field,,shooting_value_raw,128.0,sensitivity sample,64.0,none,none,,
+most_affected_by_shrinkage_rank_change,4,003288,Josh Yago,WAT,,offensive_field,,shooting_value_raw,108.0,sensitivity sample,35.0,none,none,,
+most_affected_by_shrinkage_rank_change,5,003094,Levi Anderson,ATL,,offensive_field,,shooting_value_raw,104.0,sensitivity sample,35.0,none,none,,
+most_affected_by_shrinkage_rank_change,6,001813,Jared Conners,RED,,defensive_field,,shooting_value_raw,102.0,sensitivity sample,20.0,none,none,,
+most_affected_by_shrinkage_rank_change,7,001820,Ryan Terefenko,OUT,,defensive_field,,shooting_value_raw,99.0,sensitivity sample,15.0,none,none,,
+most_affected_by_shrinkage_rank_change,8,003023,Owen Grant,CAN,,defensive_field,,shooting_value_raw,98.0,sensitivity sample,11.0,none,none,,
+most_affected_by_shrinkage_rank_change,9,003300,Ty English,CHA,,offensive_field,,shooting_value_raw,92.0,sensitivity sample,10.0,none,none,,
+most_affected_by_shrinkage_rank_change,10,000419,Zed Williams,WAT,,offensive_field,,shooting_value_raw,87.0,sensitivity sample,5.0,none,none,,
+most_affected_by_positional_normalization_rank_change,1,002067,Zac Tucci,CAN,,faceoff,,EPA_position_z,78.0,sensitivity sample,4.0,none,none,,
+most_affected_by_positional_normalization_rank_change,2,003246,Nathan Kapp,WHP,,faceoff,,EPA_position_z,72.0,sensitivity sample,2.0,none,none,,
+most_affected_by_positional_normalization_rank_change,3,002023,Brendan Nichtern,CHA,,offensive_field,,EPA_position_z,58.0,sensitivity sample,6.0,none,none,,
+most_affected_by_positional_normalization_rank_change,4,003277,Joey Spallina,WHP,,offensive_field,,EPA_position_z,57.0,sensitivity sample,11.0,none,none,,
+most_affected_by_positional_normalization_rank_change,5,003010,Xander Dickson,ATL,,offensive_field,,EPA_position_z,55.0,sensitivity sample,12.0,none,none,,
+most_affected_by_positional_normalization_rank_change,6,003032,Petey LaSalla,WHP,,faceoff,,EPA_position_z,54.0,sensitivity sample,10.0,none,none,,
+most_affected_by_positional_normalization_rank_change,7,002006,Reid Bowering,ATL,,offensive_field,,EPA_position_z,54.0,sensitivity sample,11.0,none,none,,
+most_affected_by_positional_normalization_rank_change,8,003048,TJ Malone,WHP,,offensive_field,,EPA_position_z,54.0,sensitivity sample,13.0,none,none,,
+most_affected_by_positional_normalization_rank_change,9,001001,Dylan Molloy,RED,,offensive_field,,EPA_position_z,54.0,sensitivity sample,13.0,none,none,,
+most_affected_by_positional_normalization_rank_change,10,000815,Austin Kaut,CHA,,goalie,,EPA_position_z,53.0,sensitivity sample,4.0,none,none,,
+most_affected_by_usage_definition_rank_change,1,003018,Nick Rowlett,CHA,,faceoff,,offensive_play_share,200.0,sensitivity sample,0.0,none,none,,
+most_affected_by_usage_definition_rank_change,2,001773,Nick Washuta,ARC,,goalie,,offensive_play_share,192.0,sensitivity sample,0.0,none,none,,
+most_affected_by_usage_definition_rank_change,3,000258,Blaze Riorden,CHA,,goalie,,offensive_play_share,189.0,sensitivity sample,4.0,none,none,,
+most_affected_by_usage_definition_rank_change,4,000418,Dillon Ward,RED,,goalie,,offensive_play_share,185.0,sensitivity sample,4.0,none,none,,
+most_affected_by_usage_definition_rank_change,5,003079,Liam Entenmann,ATL,,goalie,,offensive_play_share,174.0,sensitivity sample,6.0,none,none,,
+most_affected_by_usage_definition_rank_change,6,003176,Emmet Carroll,WHP,,goalie,,offensive_play_share,171.0,sensitivity sample,7.0,none,none,,
+most_affected_by_usage_definition_rank_change,7,003264,Sean Byrne,WAT,,goalie,,offensive_play_share,167.0,sensitivity sample,3.0,none,none,,
+most_affected_by_usage_definition_rank_change,8,003145,JC Higginbotham,CAN,,goalie,,offensive_play_share,163.0,sensitivity sample,3.0,none,none,,
+most_affected_by_usage_definition_rank_change,9,003108,Will Mark,ATL,,goalie,,offensive_play_share,160.0,sensitivity sample,0.0,none,none,,
+most_affected_by_usage_definition_rank_change,10,002038,Colin Kirst,CAN,,goalie,,offensive_play_share,154.0,sensitivity sample,6.0,none,none,,
+conclusion_changes_most_under_positional_normalization,1,002039,Owen McElroy,OUT,goalie,goalie,4.0,EPA_position_percentile - league_percentile,-24.600103199174406,recorded_offensive_opportunities,2.0,none,none,0.1595117894672145,True
+conclusion_changes_most_under_positional_normalization,2,003108,Will Mark,ATL,goalie,goalie,2.0,EPA_position_percentile - league_percentile,-21.787925696594428,recorded_offensive_opportunities,0.0,none,none,0.0322226862630399,True
+conclusion_changes_most_under_positional_normalization,3,003233,Christian Fournier,CAN,unknown,unclassified_field,2.0,EPA_position_percentile - league_percentile,-21.710526315789473,recorded_offensive_opportunities,2.0,none,none,,True
+conclusion_changes_most_under_positional_normalization,4,001773,Nick Washuta,ARC,goalie,goalie,3.0,EPA_position_percentile - league_percentile,-21.607327141382868,recorded_offensive_opportunities,0.0,none,none,0.1226849215487051,True
+conclusion_changes_most_under_positional_normalization,5,000258,Blaze Riorden,CHA,goalie,goalie,11.0,EPA_position_percentile - league_percentile,-20.110939112487117,recorded_offensive_opportunities,4.0,none,none,0.4668580834460897,True
+conclusion_changes_most_under_positional_normalization,6,003291,Ryan Croddick,RED,goalie,goalie,5.0,EPA_position_percentile - league_percentile,18.45975232198143,recorded_offensive_opportunities,4.0,none,none,0.13281732520825,True
+conclusion_changes_most_under_positional_normalization,7,000418,Dillon Ward,RED,goalie,goalie,13.0,EPA_position_percentile - league_percentile,17.737358101135197,recorded_offensive_opportunities,4.0,none,none,0.4815821925863756,True
+conclusion_changes_most_under_positional_normalization,8,003032,Petey LaSalla,WHP,faceoff,faceoff,10.0,EPA_position_percentile - league_percentile,-17.729419703103915,recorded_offensive_opportunities,20.0,none,none,0.9376099817914272,False
+conclusion_changes_most_under_positional_normalization,9,000370,Tim Troutner,WAT,goalie,goalie,2.0,EPA_position_percentile - league_percentile,16.963364293085647,recorded_offensive_opportunities,0.0,none,none,0.0033185067067294,True
+conclusion_changes_most_under_positional_normalization,10,003145,JC Higginbotham,CAN,goalie,goalie,7.0,EPA_position_percentile - league_percentile,-16.860165118679063,recorded_offensive_opportunities,3.0,none,none,0.2344902787990707,True

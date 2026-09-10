@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5071852906204797,
+      "awayWinProbability": 0.4928147093795203
+    },
+    "id": 213,
+    "slugname": "game-33-2023-08-11",
+    "eventId": "2023_ev33",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1691881200",
+    "venue": "Barton Stadium",
+    "venueLocation": null,
+    "location": "Denver, CO",
+    "year": 2023,
+    "week": 9,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/333e3ac8-b5c0-4680-a2a3-98a6d2a23cc7",
+    "broadcaster": [
+      "ESPN2",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 11,
+    "homeScore": 14,
+    "homePeriodScores": [
+      6,
+      3,
+      0,
+      5
+    ],
+    "visitorPeriodScores": [
+      3,
+      3,
+      2,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "WAT",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Waterdogs.png",
+      "fullName": "Waterdogs",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#907fe2",
+      "backgroundColor": "#000000",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ATL",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Atlas.png",
+      "fullName": "Atlas",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#3ba9f6",
+      "backgroundColor": "#3BA9F6",
+      "wins": 2,
+      "losses": 8,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

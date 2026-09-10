@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.6528,
+      "awayWinProbability": 0.3472
+    },
+    "id": 253,
+    "slugname": "2024_game_11",
+    "eventId": "2024_ev11",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1718555400",
+    "venue": "Villanova Stadium",
+    "venueLocation": null,
+    "location": "Philadelphia, PA",
+    "year": 2024,
+    "week": 3,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/3ebe9bf1-920e-4d60-bbbf-d0f763ef9edd#bucketId=1",
+    "broadcaster": [
+      "ABC",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 15,
+    "homeScore": 20,
+    "homePeriodScores": [
+      3,
+      5,
+      6,
+      6
+    ],
+    "visitorPeriodScores": [
+      5,
+      3,
+      2,
+      5
+    ],
+    "homeTeam": {
+      "officialId": "ATL",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_atlas_primary_color.png",
+      "fullName": "Atlas",
+      "location": "New York",
+      "locationCode": "NYA",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#00B1FF",
+      "backgroundColor": "#011E41",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "RED",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 3,
+      "losses": 7,
+      "ties": 0
+    },
+    "description": "Philadelphia Waterdogs Homecoming Weekend",
+    "snl": false,
+    "polymarketId": null
+  }
+}

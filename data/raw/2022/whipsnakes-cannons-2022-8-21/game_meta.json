@@ -1,0 +1,72 @@
+{
+  "data": {
+    "pregameWinProbability": null,
+    "id": 131,
+    "slugname": "whipsnakes-cannons-2022-8-21",
+    "eventId": "2022_ev41",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1661108400",
+    "venue": "Tacoma Dome",
+    "venueLocation": null,
+    "location": "Seattle, WA",
+    "year": 2022,
+    "week": 11,
+    "urlStreaming": "http://es.pn/3QCVohd",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 11,
+    "homeScore": 9,
+    "homePeriodScores": [
+      2,
+      4,
+      2,
+      1
+    ],
+    "visitorPeriodScores": [
+      0,
+      5,
+      6,
+      0
+    ],
+    "homeTeam": {
+      "officialId": "CAN",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Cannons.png",
+      "fullName": "Cannons",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#002244",
+      "backgroundColor": "#B0B7BC",
+      "wins": 1,
+      "losses": 9,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WHP",
+      "year": 2022,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Whipsnakes.png",
+      "fullName": "Whipsnakes",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#59c2b1",
+      "backgroundColor": "#E71C3F",
+      "wins": 9,
+      "losses": 1,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.51829829922371,
+      "awayWinProbability": 0.48170170077629004
+    },
+    "id": 295,
+    "slugname": "playoffs-semifinal-2-2024-9-8",
+    "eventId": "2024_ev45",
+    "league": "PLL",
+    "seasonSegment": "post",
+    "startTime": "1725751800",
+    "venue": "Shuart Stadium",
+    "venueLocation": null,
+    "location": "Long Island, NY",
+    "year": 2024,
+    "week": 13,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/8b86344e-ad4e-4932-87a0-0254af4e6013",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 1,
+    "homeScore": 10,
+    "homePeriodScores": [
+      4,
+      5,
+      0,
+      1
+    ],
+    "visitorPeriodScores": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "homeTeam": {
+      "officialId": "ARC",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_archers_primary_color.png",
+      "fullName": "Archers",
+      "location": "Utah",
+      "locationCode": "UTA",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#002244",
+      "wins": 6,
+      "losses": 4,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CHA",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_chaos_primary_color.png",
+      "fullName": "Chaos",
+      "location": "Carolina",
+      "locationCode": "CAR",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF0E11",
+      "backgroundColor": "#000",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": "Semifinal",
+    "snl": false,
+    "polymarketId": null
+  }
+}

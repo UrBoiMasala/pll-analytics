@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "retrieved_at": "2026-09-08T20-26-14Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/scrimmage-2-2022-5-31/play-by-plays",
+    "content_hash": "82524cb3d77cd668fc515ed9fe00b4c054e8f02418be986b88ffce9f2b01e332"
+  },
+  "game_meta": {
+    "retrieved_at": "2026-09-08T20-26-15Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/scrimmage-2-2022-5-31",
+    "content_hash": "d6d5cb5d5314cd708b5c1cf3e2ce422d02bc00249501d17a94dfba69aee82367"
+  },
+  "players_stats": {
+    "retrieved_at": "2026-09-08T20-26-15Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/scrimmage-2-2022-5-31/players/stats",
+    "content_hash": "90edc1b20b95b12e568e6fc51ce22dbf9e1507826a7ee71d44a1153924f48681"
+  },
+  "teams_stats": {
+    "retrieved_at": "2026-09-08T20-26-16Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/scrimmage-2-2022-5-31/teams/stats",
+    "content_hash": "e41e4bf86db163bbea6b47e9d27981c5c299c51f34af64008f4ba868d75695f8"
+  }
+}

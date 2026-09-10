@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.4883058888655898,
+      "awayWinProbability": 0.5116941111344102
+    },
+    "id": 336,
+    "slugname": "2025_game_4",
+    "eventId": "2025_ev_4",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1748732400",
+    "venue": "Casey Stadium at UAlbany",
+    "venueLocation": null,
+    "location": "Albany, NY",
+    "year": 2025,
+    "week": 1,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/d07efe49-4e9e-415b-847b-ec86e58f47f2#bucketId=2",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 16,
+    "homeScore": 12,
+    "homePeriodScores": [
+      2,
+      2,
+      3,
+      5
+    ],
+    "visitorPeriodScores": [
+      2,
+      2,
+      8,
+      4
+    ],
+    "homeTeam": {
+      "officialId": "ATL",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_atlas_primary_color.png",
+      "fullName": "Atlas",
+      "location": "New York",
+      "locationCode": "NYA",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#00B1FF",
+      "backgroundColor": "#011E41",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CAN",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_cannons_primary_color.png",
+      "fullName": "Cannons",
+      "location": "Boston",
+      "locationCode": "BOS",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#B0B6BB",
+      "backgroundColor": "#C52032",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": null,
+    "snl": true,
+    "polymarketId": null
+  }
+}

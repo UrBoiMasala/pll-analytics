@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "retrieved_at": "2026-09-08T20-27-53Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/atlas-whipsnakes-2022-8-12/play-by-plays",
+    "content_hash": "f8c81fe7691a8078f30ca9ae177d7d29240cb529a71a5b10c686f1d32c3fcaa8"
+  },
+  "game_meta": {
+    "retrieved_at": "2026-09-08T20-27-54Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/atlas-whipsnakes-2022-8-12",
+    "content_hash": "c8f9398de89b57ca6b40fe95642cb40c1a209e33ecb45b32e42c34e8b6cff5b2"
+  },
+  "players_stats": {
+    "retrieved_at": "2026-09-08T20-27-55Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/atlas-whipsnakes-2022-8-12/players/stats",
+    "content_hash": "94cdecd47ac16bc893bbc4d18eebf0c1364a82e654149275ea4535094de2b5a2"
+  },
+  "teams_stats": {
+    "retrieved_at": "2026-09-08T20-27-55Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/atlas-whipsnakes-2022-8-12/teams/stats",
+    "content_hash": "1a634e604eeb8456df9157d42ed44f0a8825470824b565f6df04a97645444c6a"
+  }
+}

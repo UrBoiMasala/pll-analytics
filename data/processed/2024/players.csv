@@ -1,0 +1,200 @@
+player_id,name,first_name,last_name,team_id,position,position_name,jersey_num,slug,profile_url
+000211,Ian MacKay,Ian,MacKay,CHA,SSDM,Defensive Midfield,55.0,ian-mackay,https://img.premierlacrosseleague.com/Players/2024/ian-mackay?v=2
+000216,Marcus Holman,Marcus,Holman,CAN,A,Attack,1.0,marcus-holman,https://img.premierlacrosseleague.com/Players/2026/marcus-holman.webp
+000221,Ryan Ambler,Ryan,Ambler,ARC,M,Midfield,13.0,ryan-ambler,https://img.premierlacrosseleague.com/Players/2026/ryan-ambler.webp
+000225,Tom Schreiber,Tom,Schreiber,ARC,M,Midfield,26.0,tom-schreiber,https://img.premierlacrosseleague.com/Players/2026/tom-schreiber.webp?v=4
+000234,Eric Law,Eric,Law,OUT,A,Attack,15.0,eric-law,https://img.premierlacrosseleague.com/Players/2025/eric-law.png?v=3
+000235,Jake Richard,Jake,Richard,WAT,SSDM,Defensive Midfield,10.0,jake-richard,https://img.premierlacrosseleague.com/Players/2024/jake-richard?v=2
+000240,Kieran McArdle,Kieran,McArdle,WAT,A,Attack,6.0,kieran-mcardle,https://img.premierlacrosseleague.com/Players/2026/kieran-mcardle.webp
+000254,Trevor Baptiste,Trevor,Baptiste,ATL,FO,Faceoff,9.0,trevor-baptiste,https://img.premierlacrosseleague.com/Players/2026/trevor-baptiste.webp?v=4
+000258,Blaze Riorden,Blaze,Riorden,CHA,G,Goalie,0.0,blaze-riorden,https://img.premierlacrosseleague.com/Players/2026/blaze-riorden.webp?v=4
+000262,Connor Fields,Connor,Fields,ARC,A,Attack,5.0,connor-fields,https://img.premierlacrosseleague.com/Players/2026/connor-fields.webp?v=4
+000269,Jarrod Neumann,Jarrod,Neumann,CHA,D,Defense,88.0,jarrod-neumann,https://img.premierlacrosseleague.com/Players/2026/jarrod-neumann.webp
+000272,Josh Byrne,Josh,Byrne,CHA,A,Attack,22.0,josh-byrne,https://img.premierlacrosseleague.com/Players/2024/josh-byrne?v=2
+000275,Mark Glicini,Mark,Glicini,CHA,SSDM,Defensive Midfield,16.0,mark-glicini,https://img.premierlacrosseleague.com/Players/2026/mark-glicini.webp
+000278,Myles Jones,Myles,Jones,ATL,M,Midfield,8.0,myles-jones,https://img.premierlacrosseleague.com/Players/2026/myles-jones.webp
+000279,Patrick Resch,Patrick,Resch,CHA,SSDM,Defensive Midfield,34.0,patrick-resch,https://img.premierlacrosseleague.com/Players/2025/patrick-resch.png?v=3
+000281,Troy Reh,Troy,Reh,CHA,LSM,Long Stick Midfield,10.0,troy-reh,https://img.premierlacrosseleague.com/Players/2026/troy-reh.webp?v=4
+000302,Michael Manley,Michael,Manley,OUT,D,Defense,5.0,michael-manley,https://img.premierlacrosseleague.com/Players/2026/michael-manley.webp?v=3
+000305,Romar Dennis,Romar,Dennis,RED,M,Midfield,5.0,romar-dennis,https://img.premierlacrosseleague.com/Players/2026/romar-dennis.webp
+000308,Will Haus,Will,Haus,OUT,SSDM,Defensive Midfield,18.0,will-haus,https://img.premierlacrosseleague.com/Players/2024/will-haus?v=2
+000315,Garrett Epple,Garrett,Epple,CAN,D,Defense,52.0,garrett-epple,https://img.premierlacrosseleague.com/Players/2025/garrett-epple.png?v=3
+000318,Jack Kelly,Jack,Kelly,RED,G,Goalie,94.0,jack-kelly,https://img.premierlacrosseleague.com/Players/2024/jack-kelly?v=2
+000327,Matt Kavanagh,Matt,Kavanagh,CAN,A,Attack,50.0,matt-kavanagh,https://img.premierlacrosseleague.com/Players/2024/matt-kavanagh?v=2
+000333,Sergio Perkovic,Sergio,Perkovic,CHA,M,Midfield,30.0,sergio-perkovic,https://img.premierlacrosseleague.com/Players/2026/sergio-perkovic.png
+000337,Bryce Young,Bryce,Young,CAN,D,Defense,41.0,bryce-young,https://img.premierlacrosseleague.com/Players/2025/bryce-young.png?v=3
+000339,Connor Kelly,Connor,Kelly,WAT,M,Midfield,40.0,connor-kelly,https://img.premierlacrosseleague.com/Players/2026/connor-kelly.webp
+000345,Jake Bernhardt,Jake,Bernhardt,WHP,SSDM,Defensive Midfield,83.0,jake-bernhardt,https://img.premierlacrosseleague.com/Players/2026/jake-bernhardt.webp?v=4
+000350,Joseph Nardella,Joseph,Nardella,WHP,FO,Faceoff,91.0,joseph-nardella,https://img.premierlacrosseleague.com/Players/2025/joseph-nardella.png?v=3
+000351,Jules Heningburg,Jules,Heningburg,CHA,A,Attack,8.0,jules-heningburg,https://img.premierlacrosseleague.com/Players/2025/jules-heningburg.png?v=3
+000353,Kyle Bernlohr,Kyle,Bernlohr,WHP,G,Goalie,35.0,kyle-bernlohr,https://img.premierlacrosseleague.com/Players/2024/kyle-bernlohr?v=3
+000354,Matt Rambo,Matt,Rambo,WHP,A,Attack,9.0,matt-rambo,https://img.premierlacrosseleague.com/Players/2026/matt-rambo.webp?v=2
+000355,Matthew Dunn,Matthew,Dunn,WHP,D,Defense,33.0,matthew-dunn,https://img.premierlacrosseleague.com/Players/2026/matthew-dunn.webp?v=4
+000357,Mike Chanenchuk,Mike,Chanenchuk,WHP,M,Midfield,1.0,mike-chanenchuk,https://img.premierlacrosseleague.com/Players/2024/mike-chanenchuk?v=2
+000358,Ryan Drenner,Ryan,Drenner,CAN,M,Midfield,22.0,ryan-drenner,https://img.premierlacrosseleague.com/Players/2025/ryan-drenner.png?v=4
+000359,Tim Muller,Tim,Muller,WHP,D,Defense,14.0,tim-muller,https://img.premierlacrosseleague.com/Players/2026/tim-muller.webp
+000363,Ryan Conrad,Ryan,Conrad,WHP,M,Midfield,23.0,ryan-conrad,https://img.premierlacrosseleague.com/Players/2025/ryan-conrad?v=4
+000365,Jack Rowlett,Jack,Rowlett,CHA,D,Defense,99.0,jack-rowlett,https://img.premierlacrosseleague.com/Players/2026/jack-rowlett.webp?v=4
+000368,Chris Sabia,Chris,Sabia,WAT,LSM,Long Stick Midfield,16.0,chris-sabia,https://img.premierlacrosseleague.com/Players/2024/chris-sabia?v=2
+000370,Tim Troutner,Tim,Troutner,ATL,G,Goalie,42.0,tim-troutner,https://img.premierlacrosseleague.com/Players/2026/tim-troutner.webp?v=3
+000373,Ryder Garnsey,Ryder,Garnsey,RED,A,Attack,50.0,ryder-garnsey,https://img.premierlacrosseleague.com/Players/2026/ryder-garnsey.webp?v=4
+000376,Cade van Raaphorst,Cade,van Raaphorst,CAN,D,Defense,77.0,cade-van-raaphorst,https://img.premierlacrosseleague.com/Players/2024/cade-van-raaphorst?v=4
+000385,Wes Berg,Wes,Berg,RED,A,Attack,14.0,wes-berg,https://img.premierlacrosseleague.com/Players/2024/wes-berg?v=2
+000391,Grant Ament,Grant,Ament,ARC,M,Midfield,16.0,grant-ament,https://img.premierlacrosseleague.com/Players/2026/grant-ament.webp
+000395,Bryan Costabile,Bryan,Costabile,ATL,M,Midfield,26.0,bryan-costabile,https://img.premierlacrosseleague.com/Players/2026/bryan-costabile.webp
+000405,Jesse Bernhardt,Jesse,Bernhardt,OUT,D,Defense,36.0,jesse-bernhardt,https://img.premierlacrosseleague.com/Players/2024/jesse-bernhardt?v=2
+000406,Craig Chick,Craig,Chick,CAN,LSM,Long Stick Midfield,13.0,craig-chick,https://img.premierlacrosseleague.com/Players/2024/craig-chick?v=2
+000408,Matt DeLuca,Matt,DeLuca,WAT,G,Goalie,1.0,matt-deluca,https://img.premierlacrosseleague.com/Players/2026/matt-deluca.webp
+000409,Zach Currier,Zach,Currier,WAT,M,Midfield,77.0,zach-currier,https://img.premierlacrosseleague.com/Players/2026/zach-currier.webp?v=4
+000410,Eli Gobrecht,Eli,Gobrecht,WAT,D,Defense,25.0,eli-gobrecht,https://img.premierlacrosseleague.com/Players/2026/eli-gobrecht.webp?v=4
+000414,Rob Pannell,Rob,Pannell,RED,A,Attack,3.0,rob-pannell,https://img.premierlacrosseleague.com/Players/2026/rob-pannell.webp
+000416,Ryland Rees,Ryland,Rees,WAT,LSM,Long Stick Midfield,17.0,ryland-rees,https://img.premierlacrosseleague.com/Players/2025/ryland-rees.png?v=3
+000418,Dillon Ward,Dillon,Ward,WAT,G,Goalie,37.0,dillon-ward,https://img.premierlacrosseleague.com/Players/2026/dillon-ward.webp?v=5
+000419,Zed Williams,Zed,Williams,WHP,A,Attack,36.0,zed-williams,https://img.premierlacrosseleague.com/Players/2026/zed-williams.webp
+000424,Jake Pulver,Jake,Pulver,CAN,D,Defense,12.0,jake-pulver,https://img.premierlacrosseleague.com/Players/2024/jake-pulver?v=2
+000727,CJ Costabile,CJ,Costabile,CHA,LSM,Long Stick Midfield,9.0,cj-costabile,https://img.premierlacrosseleague.com/Players/2026/cj-costabile.webp?v=4
+000815,Austin Kaut,Austin,Kaut,CHA,G,Goalie,14.0,austin-kaut,https://img.premierlacrosseleague.com/Players/2026/austin-kaut.webp
+000921,Challen Rogers,Challen,Rogers,ARC,M,Midfield,23.0,challen-rogers,https://img.premierlacrosseleague.com/Players/2024/challen-rogers?v=2
+000922,Graeme Hossack,Graeme,Hossack,ARC,D,Defense,81.0,graeme-hossack,https://img.premierlacrosseleague.com/Players/2025/graeme-hossack.png?v=3
+000925,Liam Byrnes,Liam,Byrnes,WAT,D,Defense,21.0,liam-byrnes,https://img.premierlacrosseleague.com/Players/2026/liam-byrnes.webp
+000978,Kyle Jackson,Kyle,Jackson,CHA,M,Midfield,1.0,kyle-jackson,https://img.premierlacrosseleague.com/Players/2026/kyle-jackson.webp
+001001,Dylan Molloy,Dylan,Molloy,ATL,M,Midfield,4.0,dylan-molloy,https://img.premierlacrosseleague.com/Players/2026/dylan-molloy.webp
+001009,Colin Heacock,Colin,Heacock,WHP,M,Midfield,10.0,colin-heacock,https://img.premierlacrosseleague.com/Players/2026/colin-heacock.webp
+001010,Isaiah Davis-Allen,Isaiah,Davis-Allen,RED,SSDM,Defensive Midfield,26.0,isaiah-davis-allen,https://img.premierlacrosseleague.com/Players/2024/isaiah-davis-allen?v=2
+001020,Mike Messenger,Mike,Messenger,OUT,SSDM,Defensive Midfield,0.0,mike-messenger,https://img.premierlacrosseleague.com/Players/2024/mike-messenger?v=2
+001391,Mikie Schlosser,Mikie,Schlosser,WAT,M,Midfield,59.0,mikie-schlosser,https://img.premierlacrosseleague.com/Players/2026/mikie-schlosser.webp?v=4
+001397,Michael Rexrode,Michael,Rexrode,ATL,D,Defense,22.0,michael-rexrode,https://img.premierlacrosseleague.com/Players/2026/michael-rexrode.webp
+001406,Ben Randall,Ben,Randall,WAT,D,Defense,44.0,ben-randall,https://img.premierlacrosseleague.com/Players/2026/ben-randall.webp
+001415,Greg Weyl,Greg,Weyl,OUT,D,Defense,57.0,greg-weyl,https://img.premierlacrosseleague.com/Players/2026/greg-weyl.webp
+001661,Warren Jeffrey,Warren,Jeffrey,ARC,D,Defense,27.0,warren-jeffrey,https://img.premierlacrosseleague.com/Players/2026/warren-jeffrey.webp?v=4
+001671,Zach Goodrich,Zach,Goodrich,CAN,SSDM,Defensive Midfield,14.0,zach-goodrich,https://img.premierlacrosseleague.com/Players/2026/zach-goodrich.webp?v=4
+001707,Matt Whitcher,Matt,Whitcher,WAT,SSDM,Defensive Midfield,33.0,matt-whitcher,https://img.premierlacrosseleague.com/Players/2026/matt-whitcher.webp?v=5
+001724,Sean Sconone,Sean,Sconone,OUT,G,Goalie,31.0,sean-sconone,https://img.premierlacrosseleague.com/Players/2024/sean-sconone?v=2
+001729,Chris Aslanian,Chris,Aslanian,CAN,M,Midfield,3.0,chris-aslanian,https://img.premierlacrosseleague.com/Players/2026/chris-aslanian.webp
+001733,Charlie Hayes,Charlie,Hayes,WAT,SSDM,Defensive Midfield,23.0,charlie-hayes,https://img.premierlacrosseleague.com/Players/2026/charlie-hayes.webp?v=4
+001760,Pat Aslanian,Pat,Aslanian,CAN,SSDM,Defensive Midfield,9.0,pat-aslanian,https://img.premierlacrosseleague.com/Players/2024/pat-aslanian?v=2
+001766,Holden Garlent,Holden,Garlent,RED,D,Defense,70.0,holden-garlent,https://img.premierlacrosseleague.com/Players/2024/holden-garlent?v=2
+001795,Christian Scarpello,Christian,Scarpello,WAT,SSDM,Defensive Midfield,50.0,christian-scarpello,https://img.premierlacrosseleague.com/Players/2026/christian-scarpello.webp?v=1
+001809,Jeff Teat,Jeff,Teat,ATL,A,Attack,7.0,jeff-teat,https://img.premierlacrosseleague.com/Players/2025/jeff-teat.png?v=3
+001810,Michael Sowers,Michael,Sowers,WAT,A,Attack,22.0,michael-sowers,https://img.premierlacrosseleague.com/Players/2026/michael-sowers.webp
+001811,JT Giles-Harris,JT,Giles-Harris,OUT,D,Defense,1.0,jt-giles-harris,https://img.premierlacrosseleague.com/Players/2026/jt-giles-harris.webp?v=5
+001812,TD Ierlan,TD,Ierlan,RED,FO,Faceoff,6.0,td-ierlan,https://img.premierlacrosseleague.com/Players/2026/td-ierlan.webp
+001813,Jared Conners,Jared,Conners,RED,LSM,Long Stick Midfield,28.0,jared-conners,https://img.premierlacrosseleague.com/Players/2026/jared-conners.webp?v=6
+001814,Mac O'Keefe,Mac,O'Keefe,ARC,A,Attack,7.0,mac-o-keefe,https://img.premierlacrosseleague.com/Players/2026/mac-okeefe.webp?v=11
+001815,Connor Kirst,Connor,Kirst,CAN,M,Midfield,34.0,connor-kirst,https://img.premierlacrosseleague.com/Players/2026/connor-kirst.webp
+001816,Dox Aitken,Dox,Aitken,ATL,M,Midfield,6.0,dox-aitken,https://img.premierlacrosseleague.com/Players/2026/dox-aitken.webp?v=4
+001818,Jake Carraway,Jake,Carraway,WAT,M,Midfield,19.0,jake-carraway,https://img.premierlacrosseleague.com/Players/2024/jake-carraway?v=2
+001819,Danny Logan,Danny,Logan,ATL,SSDM,Defensive Midfield,91.0,danny-logan,https://img.premierlacrosseleague.com/Players/2026/danny-logan.webp?v=4
+001820,Ryan Terefenko,Ryan,Terefenko,OUT,SSDM,Defensive Midfield,34.0,ryan-terefenko,https://img.premierlacrosseleague.com/Players/2026/ryan-terefenko.webp?v=4
+001821,Tre Leclaire,Tre,Leclaire,ARC,M,Midfield,44.0,tre-leclaire,https://img.premierlacrosseleague.com/Players/2026/tre-leclaire.webp?v=3
+001824,Ryan Tierney,Ryan,Tierney,RED,M,Midfield,13.0,ryan-tierney,https://img.premierlacrosseleague.com/Players/2026/ryan-tierney.png
+001826,Jeff Trainor,Jeff,Trainor,CAN,SSDM,Defensive Midfield,43.0,jeff-trainor,https://img.premierlacrosseleague.com/Players/2026/jeff-trainor.webp?v=5
+001828,Justin Anderson,Justin,Anderson,OUT,M,Midfield,21.0,justin-anderson,https://img.premierlacrosseleague.com/Players/2026/justin-anderson.webp
+001831,Colin Squires,Colin,Squires,WHP,LSM,Long Stick Midfield,39.0,colin-squires,https://img.premierlacrosseleague.com/Players/2025/colin-squires.png?v=4
+001832,Charlie Bertrand,Charlie,Bertrand,RED,M,Midfield,41.0,charlie-bertrand,https://img.premierlacrosseleague.com/Players/2026/charlie-bertrand.png
+001835,Ethan Walker,Ethan,Walker,WAT,A,Attack,57.0,ethan-walker,https://img.premierlacrosseleague.com/Players/2024/ethan-walker?v=2
+001836,Jackson Morrill,Jackson,Morrill,WHP,A,Attack,3.0,jackson-morrill,https://img.premierlacrosseleague.com/Players/2025/jackson-morrill.png?v=6
+001839,Nick Grill,Nick,Grill,OUT,LSM,Long Stick Midfield,8.0,nick-grill,https://img.premierlacrosseleague.com/Players/2026/nick-grill.webp
+002006,Reid Bowering,Reid,Bowering,ATL,M,Midfield,98.0,reid-bowering,https://img.premierlacrosseleague.com/Players/2026/reid-bowering.webp?v=4
+002015,Logan Wisnauskas,Logan,Wisnauskas,OUT,A,Attack,12.0,logan-wisnauskas,https://img.premierlacrosseleague.com/Players/2026/logan-wisnauskas.webp?v=4
+002016,Chris Gray,Chris,Gray,RED,A,Attack,4.0,chris-gray,https://img.premierlacrosseleague.com/Players/2024/chris-gray?v=2
+002017,Arden Cohen,Arden,Cohen,RED,D,Defense,40.0,arden-cohen,https://img.premierlacrosseleague.com/Players/2026/arden-cohen.webp
+002018,Matt Moore,Matt,Moore,ARC,A,Attack,11.0,matt-moore,https://img.premierlacrosseleague.com/Players/2025/matt-moore.png?v=4
+002019,Koby Smith,Koby,Smith,ATL,LSM,Long Stick Midfield,0.0,koby-smith,https://img.premierlacrosseleague.com/Players/2025/koby-smith.png?v=4
+002020,Brett Kennedy,Brett,Kennedy,WHP,LSM,Long Stick Midfield,11.0,brett-kennedy,https://img.premierlacrosseleague.com/Players/2024/brett-kennedy?v=2
+002021,Roman Puglise,Roman,Puglise,WHP,SSDM,Defensive Midfield,8.0,roman-puglise,https://img.premierlacrosseleague.com/Players/2025/roman-puglise.png?v=4
+002022,Zach Geddes,Zach,Geddes,CHA,SSDM,Defensive Midfield,13.0,zach-geddes,https://img.premierlacrosseleague.com/Players/2026/zach-geddes.webp
+002024,Asher Nolting,Asher,Nolting,CAN,A,Attack,32.0,asher-nolting,https://img.premierlacrosseleague.com/Players/2026/asher-nolting.webp
+002025,Bubba Fairman,Bubba,Fairman,CAN,SSDM,Defensive Midfield,2.0,bubba-fairman,https://img.premierlacrosseleague.com/Players/2025/bubba-fairman?v=3
+002026,Brett Dobson,Brett,Dobson,ARC,G,Goalie,45.0,brett-dobson,https://img.premierlacrosseleague.com/Players/2026/brett-dobson.webp?v=4
+002028,Jack Hannah,Jack,Hannah,WAT,M,Midfield,3.0,jack-hannah,https://img.premierlacrosseleague.com/Players/2026/jack-hannah.webp?v=4
+002029,Wheaton Jackoboice,Wheaton,Jackoboice,WHP,SSDM,Defensive Midfield,55.0,wheaton-jackoboice,https://img.premierlacrosseleague.com/Players/2025/wheaton-jackoboice?v=3
+002030,Jonathan Donville,Jonathan,Donville,CAN,M,Midfield,33.0,jonathan-donville,https://img.premierlacrosseleague.com/Players/2026/jonathon-donville.webp
+002031,Ryan McNulty,Ryan,McNulty,CHA,LSM,Long Stick Midfield,5.0,ryan-mcnulty,https://img.premierlacrosseleague.com/Players/2025/ryan-mcnulty.png?v=3
+002033,Nakeie Montgomery,Nakeie,Montgomery,RED,M,Midfield,1.0,nakeie-montgomery,https://img.premierlacrosseleague.com/Players/2026/nakeie-montgomery.webp
+002034,Keegan Khan,Keegan,Khan,WHP,M,Midfield,76.0,keegan-khan,https://img.premierlacrosseleague.com/Players/2024/keegan-khan?v=2
+002038,Colin Kirst,Colin,Kirst,CAN,G,Goalie,5.0,colin-kirst,https://img.premierlacrosseleague.com/Players/2026/colin-kirst.webp
+002039,Owen McElroy,Owen,McElroy,OUT,G,Goalie,24.0,owen-mcelroy,https://img.premierlacrosseleague.com/Players/2026/owen-mcelroy.webp
+002042,Jon Robbins,Jon,Robbins,ARC,LSM,Long Stick Midfield,41.0,jon-robbins,https://img.premierlacrosseleague.com/Players/2026/jon-robbins.webp
+002043,Ryan Aughavin,Ryan,Aughavin,ARC,M,Midfield,42.0,ryan-aughavin,https://img.premierlacrosseleague.com/Players/2025/ryan-aughavin.png?v=6
+002054,Chris Merle,Chris,Merle,RED,SSDM,Defensive Midfield,23.0,chris-merle,https://img.premierlacrosseleague.com/Players/2026/chris-merle.webp
+002059,Brendan Krebs,Brendan,Krebs,WHP,G,Goalie,0.0,brendan-krebs,https://img.premierlacrosseleague.com/Players/2025/brendan-krebs.png?v=4
+002063,Ryan Kennedy,Ryan,Kennedy,RED,LSM,Long Stick Midfield,35.0,ryan-kennedy,https://img.premierlacrosseleague.com/Players/2024/ryan-kennedy?v=2
+002067,Zac Tucci,Zac,Tucci,CAN,FO,Faceoff,4.0,zac-tucci,https://img.premierlacrosseleague.com/Players/2026/zac-tucci.webp?v=1
+002074,Alexander Smith,Alexander,Smith,OUT,SSDM,Defensive Midfield,39.0,alexander-smith,https://img.premierlacrosseleague.com/Players/2026/alex-smith.webp
+003004,Mike Sisselberger,Mike,Sisselberger,ARC,FO,Faceoff,99.0,mike-sisselberger,https://img.premierlacrosseleague.com/Players/2026/mike-sisselberger.webp
+003005,Connor Maher,Connor,Maher,ARC,SSDM,Defensive Midfield,31.0,connor-maher,https://img.premierlacrosseleague.com/Players/2026/connor-maher.webp
+003006,Piper Bond,Piper,Bond,ARC,SSDM,Defensive Midfield,54.0,piper-bond,https://img.premierlacrosseleague.com/Players/2026/piper-bond.webp
+003007,Cam Wyers,Cam,Wyers,ARC,D,Defense,20.0,cam-wyers,https://img.premierlacrosseleague.com/Players/2026/cam-wyers.webp?v=4
+003008,Gavin Adler,Gavin,Adler,ATL,D,Defense,77.0,gavin-adler,https://img.premierlacrosseleague.com/Players/2026/gavin-adler.webp
+003009,Brett Makar,Brett,Makar,ATL,D,Defense,43.0,brett-makar,https://img.premierlacrosseleague.com/Players/2026/brett-makar.webp
+003010,Xander Dickson,Xander,Dickson,ATL,A,Attack,10.0,xander-dickson,https://img.premierlacrosseleague.com/Players/2026/xander-dickson.webp
+003011,Payton Rezanka,Payton,Rezanka,ATL,SSDM,Defensive Midfield,34.0,payton-rezanka,https://img.premierlacrosseleague.com/Players/2026/payton-rezanka.webp
+003013,Matt Campbell,Matt,Campbell,CAN,M,Midfield,20.0,matt-campbell,https://img.premierlacrosseleague.com/Players/2026/matt-campbell.webp
+003015,Will Bowen,Will,Bowen,CHA,D,Defense,24.0,will-bowen,https://img.premierlacrosseleague.com/Players/2024/will-bowen?v=2
+003016,Brian Minicus,Brian,Minicus,CHA,M,Midfield,7.0,brian-minicus,https://img.premierlacrosseleague.com/Players/2024/brian-minicus?v=2
+003017,Tye Kurtz,Tye,Kurtz,CHA,A,Attack,82.0,tye-kurtz,https://img.premierlacrosseleague.com/Players/2026/tye-kurtz.webp
+003018,Nick Rowlett,Nick,Rowlett,CHA,FO,Faceoff,73.0,nick-rowlett,https://img.premierlacrosseleague.com/Players/2025/nick-rowlett.png?v=3
+003019,Sam Handley,Sam,Handley,OUT,M,Midfield,26.0,sam-handley,https://img.premierlacrosseleague.com/Players/2025/sam-handley.png?v=3
+003020,Troy Hettinger,Troy,Hettinger,ARC,,,,troy-hettinger,https://img.premierlacrosseleague.com/Players/2024/troy-hettinger?v=2
+003021,Jack Myers,Jack,Myers,OUT,A,Attack,2.0,jack-myers,https://img.premierlacrosseleague.com/Players/2025/jack-myers.png?v=3
+003022,Cross Ferrara,Cross,Ferrara,OUT,M,Midfield,22.0,cross-ferrara,https://img.premierlacrosseleague.com/Players/2025/cross-ferrara.png?v=3
+003024,Brian Tevlin,Brian,Tevlin,RED,SSDM,Defensive Midfield,12.0,brian-tevlin,https://img.premierlacrosseleague.com/Players/2026/brian-tevlin.webp
+003025,Cole Kirst,Cole,Kirst,RED,M,Midfield,47.0,cole-kirst,https://img.premierlacrosseleague.com/Players/2025/cole-kirst.png?v=3
+003027,Thomas McConvey,Thomas,McConvey,WAT,M,Midfield,12.0,thomas-mcconvey,https://img.premierlacrosseleague.com/Players/2026/thomas-mcconvey.webp
+003028,Alex Mazzone,Alex,Mazzone,WHP,LSM,Long Stick Midfield,6.0,alex-mazzone,https://img.premierlacrosseleague.com/Players/2025/alex-mazzone.png?v=4
+003029,Chris Fake,Chris,Fake,RED,D,Defense,31.0,chris-fake,https://img.premierlacrosseleague.com/Players/2026/chris-fake.webp
+003030,James Reilly,James,Reilly,CHA,FO,Faceoff,33.0,james-reilly,https://img.premierlacrosseleague.com/Players/2024/james-reilly?v=2
+003031,Tucker Dordevic,Tucker,Dordevic,WHP,M,Midfield,2.0,tucker-dordevic,https://img.premierlacrosseleague.com/Players/2024/tucker-dordevic?v=3
+003032,Petey LaSalla,Petey,LaSalla,WHP,FO,Faceoff,22.0,petey-lasalla,https://img.premierlacrosseleague.com/Players/2026/petey-lasalla.webp
+003033,Garrett Leadmon,Garrett,Leadmon,WHP,M,Midfield,40.0,garrett-leadmon,https://img.premierlacrosseleague.com/Players/2024/garrett-leadmon?v=2
+003039,Chet Comizio,Chet,Comizio,ATL,SSDM,Defensive Midfield,57.0,chet-comizio,https://img.premierlacrosseleague.com/Players/2026/chet-comizio.webp
+003041,Ethan Rall,Ethan,Rall,CAN,LSM,Long Stick Midfield,35.0,ethan-rall,https://img.premierlacrosseleague.com/Players/2026/ethan-rall.webp
+003045,Alex Simmons,Alex,Simmons,RED,A,Attack,9.0,alex-simmons,https://img.premierlacrosseleague.com/Players/2024/alex-simmons?v=2
+003048,TJ Malone,TJ,Malone,WHP,A,Attack,7.0,tj-malone,https://img.premierlacrosseleague.com/Players/2026/tj-malone.webp?v=6
+003059,BJ Farrare,BJ,Farrare,RED,LSM,Long Stick Midfield,70.0,bj-farrare,https://img.premierlacrosseleague.com/Players/2026/bj-farrare.webp
+003068,Dylan Gergar,Dylan,Gergar,OUT,M,Midfield,40.0,dylan-gergar,https://img.premierlacrosseleague.com/Players/2026/dylan-gergar.png
+003069,Ricky Miezan,Ricky,Miezan,RED,SSDM,Defensive Midfield,45.0,ricky-miezan,https://img.premierlacrosseleague.com/Players/2024/ricky-miezan?v=1
+003070,Ronan Jacoby,Ronan,Jacoby,ATL,M,Midfield,88.0,ronan-jacoby,https://img.premierlacrosseleague.com/Players/2025/ronan-jacoby?v=2
+003072,Kevin Winkoff,Kevin,Winkoff,WHP,M,Midfield,48.0,kevin-winkoff,https://img.premierlacrosseleague.com/Players/2024/kevin-winkoff?v=1
+003073,Ron John,Ron,John,RED,SSDM,Defensive Midfield,33.0,ron-john,https://img.premierlacrosseleague.com/Players/2024/ron-john?v=1
+003075,Brennan O'Neill,Brennan,O'Neill,OUT,A,Attack,42.0,brennan-o-neill,https://img.premierlacrosseleague.com/Players/2026/brennan-o-neill.webp?v=5
+003076,Connor Shellenberger,Connor,Shellenberger,ATL,A,Attack,1.0,connor-shellenberger,https://img.premierlacrosseleague.com/Players/2026/connor-shellenberger.webp?v=4
+003077,Ajax Zappitello,Ajax,Zappitello,WHP,D,Defense,5.0,ajax-zappitello,https://img.premierlacrosseleague.com/Players/2026/ajax-zappitello.webp?v=4
+003078,Shane Knobloch,Shane,Knobloch,CHA,M,Midfield,27.0,shane-knobloch,https://img.premierlacrosseleague.com/Players/2026/shane-knobloch.webp
+003079,Liam Entenmann,Liam,Entenmann,ATL,G,Goalie,44.0,liam-entenmann,https://img.premierlacrosseleague.com/Players/2026/liam-entenmann.webp?v=5
+003080,Pat Kavanagh,Pat,Kavanagh,CAN,A,Attack,51.0,pat-kavanagh,https://img.premierlacrosseleague.com/Players/2026/pat-kavanagh.webp?v=4
+003081,Matt Brandau,Matt,Brandau,WAT,A,Attack,36.0,matt-brandau,https://img.premierlacrosseleague.com/Players/2026/matt-brandau.webp
+003082,Mason Woodward,Mason,Woodward,ARC,D,Defense,77.0,mason-woodward,https://img.premierlacrosseleague.com/Players/2026/mason-woodward.webp?v=5
+003083,Jake Piseno,Jake,Piseno,OUT,LSM,Long Stick Midfield,88.0,jake-piseno,https://img.premierlacrosseleague.com/Players/2026/jake-piseno.webp
+003084,Jake Stevens,Jake,Stevens,ATL,M,Midfield,14.0,jake-stevens,https://img.premierlacrosseleague.com/Players/2026/jake-stevens.webp
+003085,Graham Bundy,Graham,Bundy,OUT,M,Midfield,7.0,graham-bundy-jr,https://img.premierlacrosseleague.com/Players/2026/graham-bundy-jr.webp
+003086,Eric Dobson,Eric,Dobson,CHA,M,Midfield,66.0,eric-dobson,https://img.premierlacrosseleague.com/Players/2025/eric-dobson.png?v=3
+003087,Beau Pederson,Beau,Pederson,ARC,SSDM,Defensive Midfield,89.0,beau-pederson,https://img.premierlacrosseleague.com/Players/2026/beau-pederson.webp
+003088,Alexander Vardaro,Alexander,Vardaro,CAN,M,Midfield,19.0,alexander-vardaro,https://img.premierlacrosseleague.com/Players/2026/alexander-vardaro.webp?v=6
+003090,Dyson Williams,Dyson,Williams,ARC,M,Midfield,51.0,dyson-williams,https://img.premierlacrosseleague.com/Players/2026/dyson-williams.webp?v=6
+003091,Garrett Degnon,Garrett,Degnon,RED,M,Midfield,44.0,garrett-degnon,https://img.premierlacrosseleague.com/Players/2026/garrett-degnon.webp
+003092,Josh Zawada,Josh,Zawada,OUT,M,Midfield,79.0,josh-zawada,https://img.premierlacrosseleague.com/Players/2025/josh-zawada.png?v=3
+003093,Ross Scott,Ross,Scott,CHA,A,Attack,15.0,ross-scott,https://img.premierlacrosseleague.com/Players/2026/ross-scott.webp
+003094,Levi Anderson,Levi,Anderson,WHP,M,Midfield,24.0,levi-anderson,https://img.premierlacrosseleague.com/Players/2026/levi-anderson.webp?v=8
+003095,Stephen Zupicich,Stephen,Zupicich,WHP,LSM,Long Stick Midfield,77.0,stephen-zupicich,https://img.premierlacrosseleague.com/Players/2026/stephen-zupicich.webp
+003096,Marcus Hudgins,Marcus,Hudgins,WAT,D,Defense,11.0,marcus-hudgins,https://img.premierlacrosseleague.com/Players/2026/marcus-hudgins.webp
+003097,Colby Barsz,Colby,Barsz,ARC,D,Defense,24.0,colby-barsz,https://img.premierlacrosseleague.com/Players/2025/colby-barsz.png?v=3
+003098,Luke Wierman,Luke,Wierman,OUT,FO,Faceoff,52.0,luke-wierman,https://img.premierlacrosseleague.com/Players/2026/luke-wierman.webp
+003099,Tyler Carpenter,Tyler,Carpenter,ATL,LSM,Long Stick Midfield,5.0,tyler-carpenter,https://img.premierlacrosseleague.com/Players/2026/tyler-carpenter.webp
+003100,Adam Poitras,Adam,Poitras,WHP,M,Midfield,51.0,adam-poitras,https://img.premierlacrosseleague.com/Players/2026/adam-poitras.webp?v=4
+003102,Chayse Ierlan,Chayse,Ierlan,RED,G,Goalie,22.0,chayse-ierlan,https://img.premierlacrosseleague.com/Players/2025/chayse-ierlan.png?v=3
+003104,Michael Boehm,Michael,Boehm,WAT,A,Attack,91.0,michael-boehm,https://img.premierlacrosseleague.com/Players/2026/michael-boehm.webp?v=2
+003106,Dalton Young,Dalton,Young,OUT,M,Midfield,11.0,dalton-young,https://img.premierlacrosseleague.com/Players/2026/dalton-young.webp
+003109,Chris Conlin,Chris,Conlin,RED,D,Defense,20.0,chris-conlin,https://img.premierlacrosseleague.com/Players/2026/chris-conlin.webp
+003111,AJ Mercurio,AJ,Mercurio,WAT,D,Defense,13.0,aj-mercurio,https://img.premierlacrosseleague.com/Players/2026/aj-mercurio.webp
+003112,Jack DiBenedetto,Jack,DiBenedetto,ARC,D,Defense,6.0,jack-dibenedetto,https://img.premierlacrosseleague.com/Players/2026/jack-dibenedetto.webp?v=4
+003114,Saam Olexo,Saam,Olexo,OUT,LSM,Long Stick Midfield,48.0,saam-olexo,https://img.premierlacrosseleague.com/Players/2024/saam-olexo?v=2
+003115,Payton Cormier,Payton,Cormier,ATL,A,Attack,24.0,payton-cormier,https://img.premierlacrosseleague.com/Players/2025/payton-cormier.png?v=3
+003119,Alec Stathakis,Alec,Stathakis,WAT,FO,Faceoff,73.0,alec-stathakis,https://img.premierlacrosseleague.com/Players/2026/alec-stathakis.webp?v=4
+003120,Jack VanOverbeke,Jack,VanOverbeke,ARC,M,Midfield,8.0,jack-vanoverbeke,https://img.premierlacrosseleague.com/Players/2026/jack-vanoverbeke.webp?v=2
+003121,Brayden Mayea,Brayden,Mayea,CHA,A,Attack,50.0,brayden-mayea,https://img.premierlacrosseleague.com/Players/2026/brayden-mayea.webp
+003126,Mike Robinson,Mike,Robinson,CAN,A,Attack,29.0,mike-robinson,https://img.premierlacrosseleague.com/Players/2024/mike-robinson?v=2
+003128,Jack Posey,Jack,Posey,CHA,D,Defense,43.0,jack-posey,https://img.premierlacrosseleague.com/Players/2026/jack-posey.webp?v=4
+003142,Jack Koras,Jack,Koras,WHP,M,Midfield,15.0,jack-koras,https://img.premierlacrosseleague.com/Players/2026/jack-koras.png
+003143,Logan McGovern,Logan,McGovern,ATL,M,Midfield,11.0,logan-mcgovern,https://img.premierlacrosseleague.com/Players/2024/logan-mcgovern?v=2

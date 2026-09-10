@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "retrieved_at": "2026-09-08T20-34-35Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/2025_game_36/play-by-plays",
+    "content_hash": "8ad910ed3b11f661b2538fdd997a082a42b0a7e171e0e33adea04c8676c0e043"
+  },
+  "game_meta": {
+    "retrieved_at": "2026-09-08T20-34-36Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/2025_game_36",
+    "content_hash": "14635e85bc3fbff974bd3797d4f61249b26441859def7e57c29ac345bfc4a116"
+  },
+  "players_stats": {
+    "retrieved_at": "2026-09-08T20-34-36Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/2025_game_36/players/stats",
+    "content_hash": "fdb97841d5a694c61e1fd558c500583e11dadd39e39ed4ce3834e95e06df5284"
+  },
+  "teams_stats": {
+    "retrieved_at": "2026-09-08T20-34-37Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/2025_game_36/teams/stats",
+    "content_hash": "7dbdb96b9ea1822dbc7e2bf3ee233d280f6575d42aac6f893f04ab320044ea8f"
+  }
+}

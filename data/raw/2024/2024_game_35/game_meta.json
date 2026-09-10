@@ -1,0 +1,77 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.49985546995078634,
+      "awayWinProbability": 0.5001445300492137
+    },
+    "id": 277,
+    "slugname": "2024_game_35",
+    "eventId": "2024_ev35",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1723257000",
+    "venue": "Peter Barton Stadium",
+    "venueLocation": null,
+    "location": "Denver, CO",
+    "year": 2024,
+    "week": 10,
+    "urlStreaming": null,
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 5,
+    "clockMinutes": 3,
+    "clockSeconds": 46,
+    "gameStatus": null,
+    "visitorScore": 12,
+    "homeScore": 13,
+    "homePeriodScores": [
+      3,
+      4,
+      2,
+      3,
+      1
+    ],
+    "visitorPeriodScores": [
+      4,
+      3,
+      4,
+      1,
+      0
+    ],
+    "homeTeam": {
+      "officialId": "RED",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 3,
+      "losses": 7,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WAT",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_waterdogs_primary_color.png",
+      "fullName": "Waterdogs",
+      "location": "Philadelphia",
+      "locationCode": "PHI",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#6C20C4",
+      "backgroundColor": "#99A4AD",
+      "wins": 2,
+      "losses": 8,
+      "ties": 0
+    },
+    "description": "Denver Outlaws Homecoming Weekend",
+    "snl": false,
+    "polymarketId": null
+  }
+}

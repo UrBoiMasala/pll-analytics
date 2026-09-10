@@ -1,0 +1,137 @@
+{
+  "canonical_version": "v1.0.0-phase11",
+  "created_at_utc": "2026-09-10T01:19:05+00:00",
+  "seasons": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "definition": "The canonical 2022-2026 historical PLL dataset is the output of the Phase 1-11 pipeline (ingestion -> pll_pbp_clean.clean() -> pll_duplicate_faceoff.flag_duplicate_faceoffs() -> pll_chronology_repair.repair_game_chronology() -> pll_build_possessions -> Phase 5-10 statistical layers), run against the raw JSON hashed below, with zero manual edits to any derived file. 'Canonical' means: this is the ONE possession/event layer per season; there is no competing 'repaired' vs 'original' file distinction for chronology any more (possessions_repaired.csv is retained only as Phase 10's original sensitivity-analysis artifact, superseded by canonical possessions.csv for anything downstream).",
+  "raw_data": {
+    "2022": {
+      "n_games": 52,
+      "n_raw_endpoint_files": 206,
+      "raw_manifest_hash": "ed288ea1ef1f241f347ba71fbc967a2d13f1ff56f6397cedf472de6d33f36253"
+    },
+    "2023": {
+      "n_games": 48,
+      "n_raw_endpoint_files": 189,
+      "raw_manifest_hash": "471586a57eede5872c519c57eca78f225417f47c903c5f456a1fd5ce40cb2834"
+    },
+    "2024": {
+      "n_games": 47,
+      "n_raw_endpoint_files": 185,
+      "raw_manifest_hash": "97e7860526737cbfde964896e532b6e97762a1726ca613e57c2c4257f75fa6b5"
+    },
+    "2025": {
+      "n_games": 47,
+      "n_raw_endpoint_files": 186,
+      "raw_manifest_hash": "0aff17168cfc87da8bc85dfb6f4f1b9defe688b2b37a019069b826e06e01288e"
+    },
+    "2026": {
+      "n_games": 51,
+      "n_raw_endpoint_files": 204,
+      "raw_manifest_hash": "5001a51745ee23ad1c4daaac9e336abc58dec324fde169d583250bd5ad14a18c"
+    }
+  },
+  "transformation_rule_versions": {
+    "chronology_repair": "phase11_chronology_v1",
+    "duplicate_faceoff": "phase11_duplicate_faceoff_v1",
+    "possession_state_machine": "phase4_unmodified",
+    "event_cleaning": "phase3_5_unmodified"
+  },
+  "corrections_applied_this_freeze": [
+    {
+      "scope": "2023",
+      "type": "chronology_reorder",
+      "n_sequences": 256,
+      "detail": "199 DIRECT + 57 DIRECT_TIMING, possessions.csv 4460 -> 4204"
+    },
+    {
+      "scope": "2024",
+      "type": "chronology_reorder",
+      "n_sequences": 1,
+      "detail": "1 DIRECT"
+    },
+    {
+      "scope": "2024",
+      "type": "duplicate_faceoff_exclusion",
+      "n_sequences": 36,
+      "detail": "36 confirmed duplicate faceoffs across 3 games (2024_game_10, 2024_game_12, 2024_game_31), possessions.csv 4047 -> 4001 combined with the chronology reorder above"
+    }
+  ],
+  "known_source_limitations": [
+    "2023 playoffs-quarterfinal-1-2023-9-1: 13-goal faceoff shortfall, genuinely missing raw events, not recoverable by reordering (classified UNRESOLVED_MISSING_FACEOFF_EVENTS)",
+    "2023: 91 of 1047 goals (8.7%) still have no faceoff logged after them post-repair, vs 3.5% in 2026 -- residual, not fully resolved",
+    "archers-cannons-2022-6-18: goal-count reconciliation gap (6 vs 1) against official scoring, isolated to this one game"
+  ],
+  "known_unresolved_anomalies": [
+    "9 STRONGLY_INFERRED and 9 UNRESOLVED 2023 sequences, and the equivalent per-season counts in 2022/2025/2026, are classified but deliberately never repaired (evidence insufficient or contradictory) -- see docs/PHASE11_CHRONOLOGY_REPAIR.md",
+    "2022's 82.5 possessions/game is a documented GENUINE_HISTORICAL_DIFFERENCE (docs/PHASE11_2022_POSSESSION_INVESTIGATION.md), not a defect, and is NOT repaired"
+  ],
+  "explicitly_out_of_scope": [
+    "No MVP score, Statistical Tewaaraton, award ranking, WAR, replacement level, cross-position composite, or fantasy-like scoring system exists anywhere in this dataset (verified by pll_validate_phase10.py check 22 and pll_metric_catalog.FORBIDDEN_IN_PUBLISHED)."
+  ],
+  "validation_status": {
+    "phase8": {
+      "n_checks": 24,
+      "n_pass": 24,
+      "n_fail": 0
+    },
+    "phase9": {
+      "n_checks": 22,
+      "n_pass": 22,
+      "n_fail": 0
+    },
+    "phase10": {
+      "n_checks": 24,
+      "n_pass": 24,
+      "n_fail": 0
+    },
+    "phase11": {
+      "n_checks": 20,
+      "n_pass": 20,
+      "n_fail": 0
+    }
+  },
+  "artifact_hashes": {
+    "2022/games.csv": "4fd2f5c4bf898ccdbc1de9be05f19f2da2428fe62d782bbb64de3f059200f157",
+    "2022/teams.csv": "cedbf0b992679ea3b58e75ebf2258413299290399ee813a4951c72e543757210",
+    "2022/players.csv": "bfb3e59b61cf1de5de16c09055b18307024d5d79003c1e92d1e837b94e30ef6d",
+    "2022/events.csv": "686dec64a3b077911314dfe30698c81050f25cdcc8410ca1481b108d0e433842",
+    "2022/possessions.csv": "cbe738cbe18b463fef590ea1d29f8e9d69e9d52c3febdbfda33488d0b28c6d32",
+    "2023/games.csv": "bf8fe85e20feffc4194e0ae8654a4476fb7f7aafab5ec0eb55980a3adc7ccfa6",
+    "2023/teams.csv": "7b897a5b76b8af8e4d3e8ab0516077e388ddce85399720b0a448c889f010fd85",
+    "2023/players.csv": "8bce3587c7a7c6d5929e54a047f9dafe5cfb1418ed8b9397e6e4fad0e0f0ebc5",
+    "2023/events.csv": "9be004470d36dcc762fd23ef27305b73df7e5c74e2b581a4206af9233f1b3c94",
+    "2023/possessions.csv": "ca24a6109bfe34da14e16605cba295a6e8240be607e246c95e75393a4b20c83d",
+    "2024/games.csv": "8d761049bc0648dabba4c2ff23bd16166bbf0ff9751b89b53754ccd2eef25733",
+    "2024/teams.csv": "24bbc038831476d9d3a0c8f4e2f800d69d88ea8ddb25826a048301bf2479c351",
+    "2024/players.csv": "3a0c3503797b4ad01b939910c6013ed6ce2c4368613d912fa6e199e746f3574f",
+    "2024/events.csv": "14f45d4c6a44a3622e23b6508474fa0fa703589c3420bd1b22b0b73974e075fc",
+    "2024/possessions.csv": "58a67b3cf9ca17970133a8b06720b875aa821d4c47222ce32f411c6f1243109d",
+    "2025/games.csv": "a2ad5c7fcac27f6272695604980465a2bea6f03288831d77cc8826be51d61bb2",
+    "2025/teams.csv": "fe28996b9a9a43bdc9823d51c1f95284ea6982a667738d74392206268573003c",
+    "2025/players.csv": "986d014bd42195d9629f051bb692c5de443dd8da21a06e9b4f686d584a75425b",
+    "2025/events.csv": "17c69c40d597e753846fc88d04ec88404c68b8015d8f68554e9f2075dde7d03a",
+    "2025/possessions.csv": "8fe82d21f5bd492da3dd51ffa57a2ce33cde21970820241c2156ef8d53be3259",
+    "2026/games.csv": "17c0ac18a3b52b81c96e50093ea1457243f1846e25a30b38901e3864b7fb5c05",
+    "2026/teams.csv": "3b9e13d64b9ee67291fd628c36ac4ea8a272775e6622ff37e9790bb098074e98",
+    "2026/players.csv": "b41a520bb4e98c67ba77ebf70647cf012768ac552aa07e051b03798e971df9f7",
+    "2026/events.csv": "7e15ea345c61b19f0154dd89c8d0ff2ed2a3d951179882a9484d209dcef597c9",
+    "2026/possessions.csv": "6e4c07664107b7196676105b4b64abebe412213344b946df55dcb6f0c8fb0fcb",
+    "history/possession_repair_evidence_2022_2026.csv": "776c73e226cf20bd08d9a258f0e48ce147af058dc0a971c5851d8d877ff34bd4",
+    "history/2023_possession_repair_audit.csv": "853e5e4e22364980cafc0aaa3a9be40f4856c9f4b3758fec9614dd7cbc2946d1",
+    "history/possession_stats_original_vs_repaired.csv": "d35ec7bdc7550e8f3b7e33d4df9a129bb2363fcd2a2eabc14b790e6b79eb84e4",
+    "history/possession_team_rank_stability.csv": "56773c47d326cf075609c763db80e5cea2b8ddcdf22c95427c1852e4f028da2e",
+    "history/possession_repair_residual_by_game.csv": "6fce2023c6d31aff29d04f58e1a2c07fb0c6ee19c597f93f0900516fcb1b3905",
+    "history/phase11_before_after_audit.csv": "154c5e7278576425aff6eb00da22cba481dce750b8564f36eb6c6b1a5142246d",
+    "history/phase11_validation_report.csv": "b1144a6473625f794d297c56f7145d9a9c97cfa540602dca013e652bfbcc79fc",
+    "history/phase10_validation_report.csv": "8c32194f6c1154331bd5a8dc5356abd24373a0b530bb82267b6a28da9a8a469d",
+    "history/phase9_validation_report.csv": "093b3b90f29effffb87be9ac80ff0e6f5165b05a88291d80484dbf7a8a59acf3",
+    "history/historical_game_inventory.csv": "b8ac914c4ae9aa1315765be17def6af5c3351ab27027df0b7d8718b1d6c2c1f1",
+    "history/historical_ingestion_report.csv": "05f5a2903941b05000962d52e568dec39f54dbe1935bc3b8cbd4a35e7a435e02"
+  }
+}

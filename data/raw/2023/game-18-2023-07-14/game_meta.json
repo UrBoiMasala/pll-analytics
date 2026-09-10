@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.4460444613416191,
+      "awayWinProbability": 0.5539555386583809
+    },
+    "id": 198,
+    "slugname": "game-18-2023-07-14",
+    "eventId": "2023_ev18",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1689381000",
+    "venue": "Rafferty Stadium",
+    "venueLocation": null,
+    "location": "Fairfield, CT",
+    "year": 2023,
+    "week": 5,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/a5db39b7-080c-49b5-9d61-0352e325efc9",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 10,
+    "homeScore": 3,
+    "homePeriodScores": [
+      2,
+      1,
+      0,
+      0
+    ],
+    "visitorPeriodScores": [
+      3,
+      2,
+      2,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "RED",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Redwoods.png",
+      "fullName": "Redwoods",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#006F55",
+      "backgroundColor": "#006F55",
+      "wins": 6,
+      "losses": 4,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ARC",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Archers.png",
+      "fullName": "Archers",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#f2694c",
+      "backgroundColor": "#23427A",
+      "wins": 8,
+      "losses": 2,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5482,
+      "awayWinProbability": 0.4518
+    },
+    "id": 249,
+    "slugname": "2024_game_7",
+    "eventId": "2024_ev7",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1717889400",
+    "venue": "American Legion Memorial Stadium",
+    "venueLocation": null,
+    "location": "Charlotte, NC",
+    "year": 2024,
+    "week": 2,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/d4bcc5d7-e6b2-45ce-af22-e8a03f9e8c62",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 9,
+    "homeScore": 13,
+    "homePeriodScores": [
+      3,
+      1,
+      5,
+      4
+    ],
+    "visitorPeriodScores": [
+      2,
+      4,
+      0,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "CAN",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_cannons_primary_color.png",
+      "fullName": "Cannons",
+      "location": "Boston",
+      "locationCode": "BOS",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#B0B6BB",
+      "backgroundColor": "#C52032",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WHP",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_whipsnakes_primary_color.png",
+      "fullName": "Whipsnakes",
+      "location": "Maryland",
+      "locationCode": "MDW",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#FF0000",
+      "backgroundColor": "#FFCE00",
+      "wins": 6,
+      "losses": 4,
+      "ties": 0
+    },
+    "description": "Carolina Chaos Homecoming Weekend",
+    "snl": false,
+    "polymarketId": null
+  }
+}

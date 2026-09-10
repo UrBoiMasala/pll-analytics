@@ -1,0 +1,6 @@
+season,games,team_games,score_rows_exact,score_rows_total,score_exact_pct,league_points_official,league_points_reconstructed,league_points_residual,goals_net_residual,shots_net_residual,saves_net_residual,faceoffs_net_residual,turnovers_net_residual,groundBalls_net_residual,numPenalties_net_residual,goals_pct_exact,shots_pct_exact,saves_pct_exact,faceoffs_pct_exact,turnovers_pct_exact,groundBalls_pct_exact,numPenalties_pct_exact,goals_official_total,shots_official_total,saves_official_total,faceoffs_official_total,turnovers_official_total,groundBalls_official_total,numPenalties_official_total
+2022,46,92,90,92,97.83,1077,1070,-7,-6.0,-7.0,0.0,-12.0,-5.0,0.0,-1.0,97.8,96.7,97.8,89.1,94.6,100.0,98.9,1019.0,3559.0,1105.0,2398.0,1520.0,2791.0,222.0
+2023,46,92,92,92,100.0,1124,1124,0,0.0,0.0,0.0,-42.0,-14.0,-4.0,-8.0,100.0,100.0,93.5,80.4,88.0,95.7,95.7,1047.0,3845.0,1229.0,2460.0,1664.0,3136.0,227.0
+2024,45,90,90,90,100.0,1060,1060,0,0.0,0.0,0.0,70.0,48.0,-4.0,-58.0,100.0,100.0,100.0,71.1,47.8,95.6,72.2,981.0,3765.0,1173.0,2316.0,1595.0,2886.0,243.0
+2025,45,90,90,90,100.0,1094,1094,0,0.0,0.0,0.0,-18.0,23.0,23.0,-1.0,100.0,100.0,97.8,80.0,70.0,73.3,98.9,1020.0,3760.0,1197.0,2382.0,1577.0,2736.0,239.0
+2026,50,100,100,100,100.0,1190,1190,0,0.0,0.0,1.0,-16.0,22.0,16.0,5.0,100.0,100.0,99.0,82.0,67.0,79.0,97.0,1118.0,4106.0,1294.0,2618.0,1699.0,3075.0,276.0

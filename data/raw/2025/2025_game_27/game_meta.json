@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.48306735601837125,
+      "awayWinProbability": 0.5169326439816287
+    },
+    "id": 359,
+    "slugname": "2025_game_27",
+    "eventId": "2025_ev_27",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1752877800",
+    "venue": "Rafferty Stadium",
+    "venueLocation": null,
+    "location": "Fairfield, CT",
+    "year": 2025,
+    "week": 8,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/07278861-a9f2-4f01-8683-ab82f9f45ca4#bucketId=2",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 16,
+    "homeScore": 12,
+    "homePeriodScores": [
+      5,
+      5,
+      1,
+      1
+    ],
+    "visitorPeriodScores": [
+      3,
+      7,
+      2,
+      4
+    ],
+    "homeTeam": {
+      "officialId": "RED",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ATL",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_atlas_primary_color.png",
+      "fullName": "Atlas",
+      "location": "New York",
+      "locationCode": "NYA",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#00B1FF",
+      "backgroundColor": "#011E41",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "description": "Indigenous Heritage Weekend",
+    "snl": false,
+    "polymarketId": null
+  }
+}

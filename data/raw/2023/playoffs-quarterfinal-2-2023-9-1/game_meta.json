@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5735817063108009,
+      "awayWinProbability": 0.42641829368919915
+    },
+    "id": 224,
+    "slugname": "playoffs-quarterfinal-2-2023-9-1",
+    "eventId": "2023_ev44",
+    "league": "PLL",
+    "seasonSegment": "post",
+    "startTime": "1693851600",
+    "venue": "Gillette Stadium",
+    "venueLocation": null,
+    "location": "Boston, MA",
+    "year": 2023,
+    "week": 12,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/bceafa1c-0946-43fb-9258-0b854ef459b5",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 2,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 12,
+    "homeScore": 15,
+    "homePeriodScores": [
+      5,
+      5,
+      3,
+      2
+    ],
+    "visitorPeriodScores": [
+      5,
+      4,
+      1,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "WAT",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Waterdogs.png",
+      "fullName": "Waterdogs",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#907fe2",
+      "backgroundColor": "#000000",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WHP",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Whipsnakes.png",
+      "fullName": "Whipsnakes",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#59c2b1",
+      "backgroundColor": "#E71C3F",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": "Quarterfinal",
+    "snl": false,
+    "polymarketId": null
+  }
+}

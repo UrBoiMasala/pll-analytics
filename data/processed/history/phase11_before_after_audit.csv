@@ -1,0 +1,25 @@
+season,metric,before,after,delta,cause,note
+2022,n_events_total,10431,10431,0,UNCHANGED,row count never changes (repair never fabricates/deletes an event); only event_number/seconds_passed/is_duplicate_event/chronology_* columns change
+2022,n_possessions,3795,3795,0,UNCHANGED,no repairable candidates
+2022,total_points_scored,1070,1070,0,UNCHANGED,"chronology repair only reorders/retimes; duplicate exclusion removes a faceoff (never a goal), so points must be invariant"
+2022,total_goals,1013,1013,0,UNCHANGED,same invariant as points
+2023,n_events_total,10486,10486,0,UNCHANGED,row count never changes (repair never fabricates/deletes an event); only event_number/seconds_passed/is_duplicate_event/chronology_* columns change
+2023,n_possessions,4460,4204,-256,EXPECTED_CORRECTION,chronology repair (199 DIRECT + 57 DIRECT_TIMING applied) and/or duplicate-faceoff exclusion (0 confirmed) changed possession boundaries
+2023,total_points_scored,1124,1124,0,UNCHANGED,"chronology repair only reorders/retimes; duplicate exclusion removes a faceoff (never a goal), so points must be invariant"
+2023,total_goals,1047,1047,0,UNCHANGED,same invariant as points
+2024,n_events_total,10129,10129,0,UNCHANGED,row count never changes (repair never fabricates/deletes an event); only event_number/seconds_passed/is_duplicate_event/chronology_* columns change
+2024,n_possessions,4047,4001,-46,EXPECTED_CORRECTION,chronology repair (1 DIRECT + 0 DIRECT_TIMING applied) and/or duplicate-faceoff exclusion (36 confirmed) changed possession boundaries
+2024,total_points_scored,1060,1060,0,UNCHANGED,"chronology repair only reorders/retimes; duplicate exclusion removes a faceoff (never a goal), so points must be invariant"
+2024,total_goals,981,981,0,UNCHANGED,same invariant as points
+2025,n_events_total,10321,10321,0,UNCHANGED,row count never changes (repair never fabricates/deletes an event); only event_number/seconds_passed/is_duplicate_event/chronology_* columns change
+2025,n_possessions,4009,4009,0,UNCHANGED,no repairable candidates
+2025,total_points_scored,1094,1094,0,UNCHANGED,"chronology repair only reorders/retimes; duplicate exclusion removes a faceoff (never a goal), so points must be invariant"
+2025,total_goals,1020,1020,0,UNCHANGED,same invariant as points
+2026,n_events_total,11254,11254,0,UNCHANGED,row count never changes (repair never fabricates/deletes an event); only event_number/seconds_passed/is_duplicate_event/chronology_* columns change
+2026,n_possessions,4388,4388,0,UNCHANGED,no repairable candidates
+2026,total_points_scored,1190,1190,0,UNCHANGED,"chronology repair only reorders/retimes; duplicate exclusion removes a faceoff (never a goal), so points must be invariant"
+2026,total_goals,1118,1118,0,UNCHANGED,same invariant as points
+ALL,team_offensive_efficiency_rank_changes,0,0,0,UNCHANGED,0 of 40 team-seasons changed offensive-efficiency rank under the canonical repair (possession_team_rank_stability.csv)
+"2023,2024",team_season_advanced_possession_denominated_columns,pre-repair,post-repair,n/a,EXPECTED_DOWNSTREAM_EFFECT,"pace, points/possession, shots/possession, turnovers/possession, and every other possession-denominated column in team_game_advanced.csv/team_season_advanced.csv/team_stats_{2023,2024}.csv changed proportionally to the possession-count change; no non-possession column (goals, shots, faceoff win %, turnovers) changed"
+"2022,2025,2026",all_downstream_layers,frozen,frozen,0,UNCHANGED,"zero repairable chronology candidates and zero confirmed duplicate faceoffs in these seasons (2026 carries one PRE-EXISTING Phase 3.5 faceoff duplicate, unrelated to Phase 11 and unchanged by it); every downstream table is byte-identical to its pre-Phase-11 output"
+2022,possession_rate_anomaly_82_5_per_game,unexplained,unexplained (investigated),n/a,GENUINE_HISTORICAL_DIFFERENCE,"Section D investigation (docs/PHASE11_2022_POSSESSION_INVESTIGATION.md): official-stat reconciliation and possession-ambiguity rate for 2022 are AS GOOD OR BETTER than later seasons; the gap is explained by fewer shot-clock expirations/game (4.28 vs 6.96-8.38) and fewer turnovers/game, i.e. genuinely longer average possessions -- not repaired, per the brief"

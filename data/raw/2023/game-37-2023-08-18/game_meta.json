@@ -1,0 +1,77 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5139785323764041,
+      "awayWinProbability": 0.4860214676235959
+    },
+    "id": 217,
+    "slugname": "game-37-2023-08-18",
+    "eventId": "2023_ev37",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1692489600",
+    "venue": "Cheney Stadium",
+    "venueLocation": null,
+    "location": "Seattle, WA",
+    "year": 2023,
+    "week": 10,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/990b1164-c7c3-4124-af24-cd0fae2c231c",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 5,
+    "clockMinutes": 11,
+    "clockSeconds": 16,
+    "gameStatus": null,
+    "visitorScore": 10,
+    "homeScore": 11,
+    "homePeriodScores": [
+      4,
+      0,
+      6,
+      0,
+      1
+    ],
+    "visitorPeriodScores": [
+      3,
+      0,
+      4,
+      3,
+      0
+    ],
+    "homeTeam": {
+      "officialId": "RED",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Redwoods.png",
+      "fullName": "Redwoods",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#006F55",
+      "backgroundColor": "#006F55",
+      "wins": 6,
+      "losses": 4,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CHR",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Chrome.png",
+      "fullName": "Chrome",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#ea5f9a",
+      "backgroundColor": "#95D6DB",
+      "wins": 1,
+      "losses": 9,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}

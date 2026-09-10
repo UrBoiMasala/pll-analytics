@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "retrieved_at": "2026-09-08T20-27-43Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/cannons-redwoods-2022-8-5/play-by-plays",
+    "content_hash": "a7ec4307c52cc9793cc2c879a16fdd28327c2f84542561c75f24112bdc4168ad"
+  },
+  "game_meta": {
+    "retrieved_at": "2026-09-08T20-27-43Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/cannons-redwoods-2022-8-5",
+    "content_hash": "120acb9acf44467dea08d95925c5922f7c347e495653dafd785902a53a3d3d8c"
+  },
+  "players_stats": {
+    "retrieved_at": "2026-09-08T20-27-44Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/cannons-redwoods-2022-8-5/players/stats",
+    "content_hash": "485b89b902148970e5855ac09ce612a51af2629c7db4f24c69faf4813686c59a"
+  },
+  "teams_stats": {
+    "retrieved_at": "2026-09-08T20-27-45Z",
+    "url": "https://stats.premierlacrosseleague.com/api/v4/games/cannons-redwoods-2022-8-5/teams/stats",
+    "content_hash": "6a322ec3e1d6978a3ce75bd76bd83360fb9ea5a65148ef0ed8cef032488ffe6e"
+  }
+}

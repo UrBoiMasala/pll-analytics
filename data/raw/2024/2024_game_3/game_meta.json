@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.4892,
+      "awayWinProbability": 0.5109
+    },
+    "id": 245,
+    "slugname": "2024_game_3",
+    "eventId": "2024_ev3",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1717347600",
+    "venue": "Casey Stadium at UAlbany",
+    "venueLocation": null,
+    "location": "Albany, NY",
+    "year": 2024,
+    "week": 1,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/8f5d5f21-2221-4651-838e-dab6cc2a4582",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 16,
+    "homeScore": 11,
+    "homePeriodScores": [
+      2,
+      2,
+      6,
+      1
+    ],
+    "visitorPeriodScores": [
+      2,
+      5,
+      2,
+      7
+    ],
+    "homeTeam": {
+      "officialId": "OUT",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_outlaws_primary_color.png",
+      "fullName": "Outlaws",
+      "location": "Denver",
+      "locationCode": "DEN",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#2E2E4D",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CHA",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_chaos_primary_color.png",
+      "fullName": "Chaos",
+      "location": "Carolina",
+      "locationCode": "CAR",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF0E11",
+      "backgroundColor": "#000",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": "New York Atlas Homecoming Weekend",
+    "snl": false,
+    "polymarketId": null
+  }
+}

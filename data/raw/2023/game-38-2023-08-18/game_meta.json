@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.495291293602544,
+      "awayWinProbability": 0.504708706397456
+    },
+    "id": 218,
+    "slugname": "game-38-2023-08-18",
+    "eventId": "2023_ev38",
+    "league": "PLL",
+    "seasonSegment": "regular",
+    "startTime": "1692498600",
+    "venue": "Cheney Stadium",
+    "venueLocation": null,
+    "location": "Seattle, WA",
+    "year": 2023,
+    "week": 10,
+    "urlStreaming": "https://www.espn.com/espnplus/player/_/id/2d5b59fb-ace1-4b84-b2f2-673cdadc8d48",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 8,
+    "homeScore": 13,
+    "homePeriodScores": [
+      5,
+      3,
+      2,
+      3
+    ],
+    "visitorPeriodScores": [
+      0,
+      6,
+      1,
+      1
+    ],
+    "homeTeam": {
+      "officialId": "WAT",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Waterdogs.png",
+      "fullName": "Waterdogs",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#907fe2",
+      "backgroundColor": "#000000",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CHA",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Chaos.png",
+      "fullName": "Chaos",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#000000",
+      "backgroundColor": "#EF484B",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0
+    },
+    "description": null,
+    "snl": false,
+    "polymarketId": null
+  }
+}
