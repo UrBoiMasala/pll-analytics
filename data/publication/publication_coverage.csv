@@ -1,0 +1,6 @@
+season,eligible_games,latest_game_start_utc,frozen_partial_season,eligible_shots,unattributed_shots,unattributed_goalie_sog,eligible_possessions,ambiguous_possessions,measurable_possessions,scoring_gap,excluded_touch_records,excluded_touch_turnovers
+2022,46,2022-09-18 19:00:00+00:00,False,3552,4,0,3795,1211,2196,-7,15,0
+2023,46,2023-09-24 19:00:00+00:00,False,3845,0,0,4204,1473,2296,0,19,0
+2024,45,2024-09-15 19:00:00+00:00,False,3765,1,0,4001,1318,2215,0,10,0
+2025,45,2025-09-14 16:30:00+00:00,False,3760,0,0,4009,1439,2100,0,8,0
+2026,50,2026-08-30 00:30:00+00:00,True,4106,0,0,4388,1589,2306,0,10,0

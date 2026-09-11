@@ -1,121 +1,76 @@
-# Proposed final metric catalog
+# Final core metric catalog
 
-29 core metrics; box-score context is additional and is not marketed as advanced analytics. Metrics are proposed here, not a claim that the final SQL layer is implemented.
+35 core metrics. Definitions are implemented in [publication SQL](../sql/publication.sql).
+The [machine-readable dictionary](../data/publication/metric_dictionary.csv) records formulas, units, source populations, coverage and NULL policies.
+The earlier 29-row file under `data/processed/history/` is the preserved refocus proposal, not the active catalog.
 
-All ratios are stored as proportions; display percentages multiply by 100. All zero denominators return NULL. Opportunity-based surplus metrics also return NULL at zero exposure and are excluded from corresponding leaderboards. No universal score and no offensive composite are proposed. ORIGINAL_PLL_METRIC means a PLL-specific adaptation in this project, not a claim of first invention.
+All ratios are proportions; multiply by 100 only for percentage displays. Efficiency is already per 100 possessions.
+Player outputs contain `aggregation_level=SEASON` (team_id=ALL) and `STINT` (actual team). Never sum both levels together.
+The season key is always part of the identity. Counts and denominators are provided, not inferred reliability qualifications.
 
-## Shared definitions
-
-Scope: completed regular-season and playoff games in each frozen season; all-star/exhibition games excluded. 2026 is a partial snapshot through the last included completed game, not a full season. League rates use the same season and eligibility scope; they include the focal player. These are retrospective descriptive baselines, never forward prediction. Default historical comparisons must disclose postseason inclusion.
-
-GP = appearances (players) or eligible games (teams); P/P_def = reconstructed offensive/defensive possessions; Q = possession PLL scoring points; A1/A2 = eligible one-/two-point attempts; G1/G2 = valid goals in those classes; A=A1+A2; SOG includes goal, saved and on_goal_no_save. C = eligible shotclockexpired event count. M = unambiguous, nontruncated possession with distinct start/end event IDs.
-
-T/U = recorded player touches/turnovers; u_s = sum(U)/sum(T) across all eligible player-game records with positive T in season s. Report excluded zero/missing-T turnover records separately; never silently assign them an exposure. No position-specific baseline. W/F = recorded wins/attempts; f_s = sum(W)/sum(F) over all league takers with F>0. Actual baseline is preferred over 50% because feed attempts and assigned wins can differ; expose the league baseline as context, not a second near-identical leaderboard.
-
-SV/GA = box-score saves/goals allowed, with each goal counted once regardless of PLL point value. s_s = sum(SV)/sum(SV+GA) over goalies with resolved shots. Event class SV1/GA1 and SV2/GA2 require an attributed goalie and a resolved saved/goal outcome; unresolved on-goal events are excluded and counted explicitly. Class coverage versus box totals must accompany these optional class-rate columns.
-
-p1_s=sum(G1)/sum(A1); p2_s=sum(G2)/sum(A2), using all eligible league shot events in season s. Publish baseline attempts and goals. Rates are weighted by attempts, never averages of player percentages. CT/GB/PEN = official caused turnovers/ground balls/penalty counts.
-
-Transferred players: sum numerator and denominator by actual (season, game, team, player). Season totals combine stints; team displays retain stints. Team workload shares use only player appearances and the actual team in each appearance; they are not season availability shares.
-
-Historical exception: the known 2022 Archers–Cannons scoring gap is flagged, not imputed. Team Q uses reconstructed scoring; official scoreboard totals are separate context. Show reconciliation status and offer exclusion of the affected game for comparisons.
-
-## TEAM
-
-| Metric | Formula | Units | Classification |
+| Category | Metric | Formula | Unit |
 |---|---|---|---|
-| possessions_per_game | `P / GP` | possessions/game | DERIVED_ADVANCED |
-| offensive_efficiency | `100 * Q / P` | PLL points/100 possessions | DERIVED_ADVANCED |
-| defensive_efficiency | `100 * Q_allowed / P_def` | PLL points/100 possessions | DERIVED_ADVANCED |
-| net_efficiency | `offensive_efficiency - defensive_efficiency` | PLL points/100 possessions | DERIVED_ADVANCED |
-| shots_per_possession | `A / P` | attempts/possession | DERIVED_ADVANCED |
-| turnovers_per_possession | `U_team / P` | turnovers/possession | DERIVED_ADVANCED |
-| shot_clock_expirations_per_possession | `C / P` | expirations/possession | DERIVED_ADVANCED |
-| mean_possession_span | `mean(duration_seconds where M)` | seconds | DERIVED_ADVANCED |
-| median_possession_span | `median(duration_seconds where M)` | seconds | DERIVED_ADVANCED |
+| TEAM | `possessions_per_game` | `(possessions) / (games_played)` | possessions/game |
+| TEAM | `offensive_efficiency` | `(100 * points) / (possessions)` | PLL points/100 possessions |
+| TEAM | `defensive_efficiency` | `(100 * points_allowed) / (defensive_possessions)` | PLL points/100 possessions |
+| TEAM | `net_efficiency` | `offensive_efficiency - defensive_efficiency` | PLL points/100 possessions |
+| TEAM | `shots_per_possession` | `(shots) / (possessions)` | attempts/possession |
+| TEAM | `turnovers_per_possession` | `(official_turnovers) / (possessions)` | turnovers/possession |
+| TEAM | `shot_clock_expirations_per_possession` | `(shot_clock_events) / (possessions)` | expirations/possession |
+| TEAM | `offensive_pace_seconds` | `(measurable_possession_seconds) / (measurable_possessions)` | seconds |
+| TEAM | `median_possession_span` | `median duration_seconds over measurable possessions` | seconds |
+| OFFENSE | `shooting_pct` | `(g1 + g2) / (shots)` | proportion |
+| OFFENSE | `shots_on_goal_pct` | `(sog) / (shots)` | proportion |
+| OFFENSE | `scoring_points_per_shot` | `(g1 + 2*g2) / (shots)` | PLL scoring points/attempt |
+| OFFENSE | `turnovers_per_touch` | `(turnovers) / (touches)` | turnovers/touch proxy |
+| OFFENSE | `turnovers_below_expected` | `touches * league_turnover_per_touch - turnovers` | turnover events |
+| OFFENSE | `shooting_value_above_expected` | `g1 + 2*g2 - a1*p1 - 2*a2*p2` | PLL scoring points |
+| PLL_2PT | `two_point_attempt_rate` | `(a2) / (shots)` | proportion |
+| PLL_2PT | `two_point_conversion_pct` | `(g2) / (a2)` | proportion |
+| PLL_2PT | `two_point_shooting_value` | `2 * (g2 - a2*p2)` | PLL scoring points |
+| PLL_2PT | `team_two_point_attempt_share` | `(a2) / (team_a2_in_appearances)` | proportion |
+| FACEOFF | `faceoff_pct` | `(faceoff_wins) / (faceoffs)` | proportion |
+| FACEOFF | `draw_share` | `(faceoffs) / (team_faceoffs_in_appearances)` | proportion |
+| FACEOFF | `faceoff_wins_above_average` | `faceoff_wins - faceoffs*league_faceoff_rate` | faceoff wins |
+| GOALIE | `save_pct` | `(resolved_saves) / (resolved_shots_faced)` | proportion |
+| GOALIE | `one_point_save_pct` | `(sv1) / (sv1 + ga1)` | proportion |
+| GOALIE | `two_point_save_pct` | `(sv2) / (sv2 + ga2)` | proportion |
+| GOALIE | `saves_above_average` | `resolved_saves - resolved_shots_faced*league_save_rate` | saves |
+| DEFENSE | `caused_turnovers_per_game` | `(caused_turnovers) / (games_played)` | events/game |
+| DEFENSE | `ground_balls_per_game` | `(ground_balls) / (games_played)` | events/game |
+| DEFENSE | `penalties_per_game` | `(penalties) / (games_played)` | penalties/game |
+| TEAM | `shot_producing_possession_rate` | `(shot_producing_possessions) / (possessions)` | proportion |
+| TEAM | `multi_shot_possession_rate` | `(multi_shot_possessions) / (possessions)` | proportion |
+| TEAM | `team_assist_to_goal_ratio` | `(official_assists) / (official_goals)` | proportion |
+| TEAM | `time_of_possession_share` | `(measurable_possession_seconds) / (team plus opponent measurable seconds in eligible team games)` | proportion |
+| TEAM | `defensive_pace_seconds` | `(defensive_measurable_seconds) / (defensive_measurable_possessions)` | seconds |
+| USAGE | `shot_share` | `(shots) / (team_shots_in_appearances)` | proportion |
 
-- **possessions_per_game**: Reconstructed team pace; regulation and overtime combined. Source: possessions + games.
-- **offensive_efficiency**: Points produced on reconstructed offensive possessions. Source: possessions.
-- **defensive_efficiency**: Points allowed on reconstructed defensive possessions. Source: possessions.
-- **net_efficiency**: Difference between team scoring and conceding rates. Source: possessions.
-- **shots_per_possession**: Shot generation per reconstructed possession. Source: eligible events + possessions.
-- **turnovers_per_possession**: Official team turnovers per reconstructed possession, including team-only turnovers. Source: team_game_stats + possessions.
-- **shot_clock_expirations_per_possession**: Frequency of logged shot-clock expiration events. Source: eligible events + possessions.
-- **mean_possession_span**: Average observed span, restricted to measurable boundaries; not full possession duration. Source: possessions.
-- **median_possession_span**: Median observed span over the same subset; less sensitive to long spans. Source: possessions.
+## Source contracts
 
-## OFFENSE
+- Completed competitive games, including playoffs, are the default. 2026 is a frozen partial snapshot; latest included game starts 2026-08-30 00:30 UTC.
+- Team efficiency uses reconstructed PLL scoring, not silently substituted official scores. `score_residual`, `score_gap_games`, and the game table expose disagreement.
+- Team turnovers use official team totals, including team-only turnovers. Shot-clock expirations use eligible events.
+- Shooting uses eligible events. SOG includes `goal`, `saved`, and `on_goal_no_save`. Five historical shots have no player ID and remain in team and league denominators; see coverage output.
+- Player touches and turnovers use official box counts. The league touch rate pools rows with positive touches and nonmissing turnovers; excluded records/counts are exposed. Surplus is turnover events, not points.
+- Shooting baselines pool all same-season eligible attempts by class, including unattributed attempts. No future seasons. No position adjustment. Two-point value is part of total shooting value, never an additional component to add again.
+- Faceoff rates pool all eligible takers with positive attempts and observed wins. Draw shares use official team attempts in actual appearances.
+- All goalie rates and saves above average use resolved event saves/goals. This replaces the proposal's mixed box-score/event goalie sources. Unresolved on-goal events remain visible but excluded from resolved denominators. The optional two-point mix uses all event SOG, including unresolved outcomes.
+- Official assist-to-goal ratio does not use pre-shot pass IDs. A two-point goal counts once.
+- Duration uses unambiguous, nontruncated possessions with distinct boundary event IDs. Zero observed spans can qualify; single-event pseudo-spans cannot. Mean and median use the same population. TOP uses only measured seconds on both sides in actual eligible games.
+- Official missing counts propagate NULL, never zero. Zero event counts mean no qualifying event in the eligible feed, not assurance of source completeness. Zero denominator and zero-exposure surplus return NULL.
 
-| Metric | Formula | Units | Classification |
-|---|---|---|---|
-| shooting_pct | `(G1 + G2) / (A1 + A2)` | proportion | STANDARD |
-| shots_on_goal_pct | `SOG / A` | proportion | DERIVED_ADVANCED |
-| scoring_points_per_shot | `(G1 + 2*G2) / (A1 + A2)` | PLL scoring points/attempt | DERIVED_ADVANCED |
-| turnovers_per_touch | `U / T` | turnovers/touch proxy | DERIVED_ADVANCED |
-| turnovers_below_expected | `T * u_s - U` | turnover events | DERIVED_ADVANCED |
-| shooting_value_above_expected | `G1 + 2*G2 - A1*p1_s - 2*A2*p2_s` | PLL scoring points | ORIGINAL_PLL_METRIC |
+## Context and analysis-only fields
 
-- **shooting_pct**: Conversion of all logged attempts into goals, independent of point value. Source: eligible shot events.
-- **shots_on_goal_pct**: Share of logged attempts classified as on goal; retain unresolved on-goal class count. Source: eligible shot events.
-- **scoring_points_per_shot**: Scoring return on shots. Assists excluded; traditional player points are a separate context field. Source: eligible shot events.
-- **turnovers_per_touch**: Recorded ball security per feed touch count; not passing value. Source: player_game_stats.
-- **turnovers_below_expected**: Recorded turnovers avoided relative to a season league touch baseline; positive means fewer turnovers. Source: player_game_stats.
-- **shooting_value_above_expected**: Scoring above season-average conversion on the same 1PT/2PT shot mix; no total-offense claim. Source: eligible shot events.
+CONTEXT: raw counts and exposures, coverage, same-season baselines, scoring reconciliation, team two-point attempt rate/scoring share/return, goalie two-point mix faced, positions and actual-team stints.
 
-## PLL_2PT
+ANALYSIS_ONLY: possession-length splits, ambiguity sensitivity, league historical comparisons, diagnostic possession-count margins. Split columns are not additional core metrics.
 
-| Metric | Formula | Units | Classification |
-|---|---|---|---|
-| two_point_attempt_rate | `A2 / (A1 + A2)` | proportion | DERIVED_ADVANCED |
-| two_point_conversion_pct | `G2 / A2` | proportion | STANDARD |
-| two_point_shooting_value | `2 * (G2 - A2*p2_s)` | PLL scoring points | ORIGINAL_PLL_METRIC |
-| team_two_point_attempt_share | `sum_g A2_player_g / sum_g A2_team_g` | proportion | DERIVED_ADVANCED |
+## Decisions
 
-- **two_point_attempt_rate**: Shot selection: frequency of choosing the two-point shot. Source: eligible shot events.
-- **two_point_conversion_pct**: Observed two-point conversion; not persistent shooting ability. Source: eligible shot events.
-- **two_point_shooting_value**: The two-point component of shooting value; never add it again to total shooting value. Source: eligible shot events.
-- **team_two_point_attempt_share**: Share of team two-point attempts in the games the player appeared, respecting actual team in each game. Source: eligible events + player-game participation.
+- `mean_possession_span` and offensive pace are identical: publish only `offensive_pace_seconds`. The old name is a documentation alias, not a duplicate output column.
+- `possession_margin_per_game` is not mechanically zero. Absolute game count differences range 0–17; season mean absolute differences range 3.98–6.74. Removing ambiguous possessions changes margins by 1.28–1.76 possessions/game on average. These differences mix reconstruction boundaries and control allocation; do not market them as extra possessions won. Retain count differences only as diagnostic analysis, not a core metric or performance ranking.
+- Reject broad `offensive_play_share`: earlier log appearances include goalie/ground-ball/secondary roles and can count multiple roles from one event. Shots-plus-turnovers is a narrower existing opportunity proxy, not all offensive plays; adding assists conflates passer and shooter participation. Publish shot share and touches/turnovers instead.
+- Reject fast-break labels inferred from clock time, individual assisted-goal percentages without linkage, redundant conditional efficiency ratios, and all MVP/WAR/value composites.
 
-## FACEOFF
-
-| Metric | Formula | Units | Classification |
-|---|---|---|---|
-| faceoff_pct | `W / F` | proportion | STANDARD |
-| draw_share | `sum_g F_player_g / sum_g F_team_g` | proportion | DERIVED_ADVANCED |
-| faceoff_wins_above_average | `W - F*f_s` | faceoff wins | DERIVED_ADVANCED |
-
-- **faceoff_pct**: Observed faceoff success with attempts and unassigned outcomes visible. Source: player_game_stats.
-- **draw_share**: Draw workload in appearances, following actual game team for transfers. Source: player_game_stats + team_game_stats.
-- **faceoff_wins_above_average**: Additional wins relative to all recorded league faceoff takers in that season; no point conversion. Source: player_game_stats.
-
-## GOALIE
-
-| Metric | Formula | Units | Classification |
-|---|---|---|---|
-| save_pct | `SV / (SV + GA)` | proportion | STANDARD |
-| one_point_save_pct | `SV1 / (SV1 + GA1)` | proportion | DERIVED_ADVANCED |
-| two_point_save_pct | `SV2 / (SV2 + GA2)` | proportion | DERIVED_ADVANCED |
-| saves_above_average | `SV - (SV + GA)*s_s` | saves | DERIVED_ADVANCED |
-
-- **save_pct**: Observed saves among resolved saves and goals allowed; shots-faced denominator is explicitly resolved shots. Source: player_game_stats.
-- **one_point_save_pct**: Observed one-point stopping among resolved attributable events; show attribution coverage. Source: eligible saved/goal events with goalie_id.
-- **two_point_save_pct**: Observed two-point stopping among resolved attributable events; show coverage and small denominator. Source: eligible saved/goal events with goalie_id.
-- **saves_above_average**: Saves above season league stopping results at the same resolved workload; not shot-quality adjusted. Source: player_game_stats.
-
-## DEFENSE
-
-| Metric | Formula | Units | Classification |
-|---|---|---|---|
-| caused_turnovers_per_game | `CT / GP` | events/game | DERIVED_ADVANCED |
-| ground_balls_per_game | `GB / GP` | events/game | DERIVED_ADVANCED |
-| penalties_per_game | `PEN / GP` | penalties/game | DERIVED_ADVANCED |
-
-- **caused_turnovers_per_game**: Recorded disruption, without individual defensive exposure adjustment. Source: player_game_stats.
-- **ground_balls_per_game**: Recorded recoveries, including faceoff-related recoveries; no impact composite. Source: player_game_stats.
-- **penalties_per_game**: Penalty frequency per appearance, not per defensive possession or minute. Source: player_game_stats.
-
-## Context and filtering
-
-Context fields (STANDARD): games played, goals, 1PT/2PT goals, assists, traditional player points, attempts, shots on goal, touches, turnovers, faceoff attempts/wins/losses, saves, goals allowed, caused turnovers, ground balls and penalties. Keep PLL scoring points (=G1+2G2) distinct from traditional player points (=G1+2G2+assists). Two-point scoring points (=2G2) are context.
-
-No empirical-Bayes QUALIFIED label in the final product. Always show opportunities and let queries choose a stated minimum (for example 20 attempts). Such thresholds are usability filters, not reliability claims. A zero-opportunity player remains in the roster summary but has NULL rates and no corresponding rate rank. No estimated true two-point talent, rank probability, or predictive interval is published.
+See [publication methodology](PUBLICATION_METHODOLOGY.md) for reproducibility and display rules.

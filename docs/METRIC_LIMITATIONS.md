@@ -16,7 +16,7 @@ Unequal role variance and workload do not prove incompatible units. The reason t
 
 Algebraic reconciliation establishes an identity, not absence of double counting. A residual rate is not automatically skill. Squared rank correlation is not causal attribution. Empirical-Bayes reliability is not automatically calibrated certainty. Retrospective random-fold cross-validation is not forward prediction. Season totals reflect both workload and observed results; weak adjacent-season rank correlation alone cannot diagnose a broken model.
 
-Pooled or career estimates can be legitimate retrospective research if labeled accordingly. They are not used in the proposed final value-like metrics, whose baselines use the same season only. Earlier claims contrary to this document are superseded for presentation; earlier research is retained as historical evidence.
+Pooled or career estimates can be legitimate retrospective research if labeled accordingly. They are not used in the final descriptive surplus metrics, whose baselines use the same season only. Earlier claims contrary to this document are superseded for presentation; earlier research is retained as historical evidence.
 
 ## Measured source coverage for final-layer implementation
 

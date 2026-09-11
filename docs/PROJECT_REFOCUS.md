@@ -14,7 +14,7 @@ The final documentation hierarchy is README → DATA_PIPELINE, DATA_VALIDATION, 
 
 ## Safety checkpoint
 
-The user identified the relocated checkout at `/Users/siddharthalluri/CPFA_email_detector`. Its main branch began at `b79076f` (Phase 13). The sole dirty file differed only in test collection time, 0.30s versus 0.29s. That verified churn was removed before work. No legitimate prior change was discarded. The existing commit is the clean checkpoint; no redundant checkpoint commit was needed.
+The user identified the relocated checkout at the project root. Its main branch began at `b79076f` (Phase 13). The sole dirty file differed only in test collection time, 0.30s versus 0.29s. That verified churn was removed before work. No legitimate prior change was discarded. The existing commit is the clean checkpoint; no redundant checkpoint commit was needed.
 
 All 1,224 raw files were byte-hashed into `refocus_source_checkpoint.json`. All 36 v1 artifact hashes matched before work. The original v1 manifest remains byte-identical. The v1 artifacts remain recoverable at the checkpoint commit; canonical v2 intentionally replaces seven event/possession files in the working tree.
 

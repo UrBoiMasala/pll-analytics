@@ -1,0 +1,149 @@
+check,status
+2022: possession and scoring conservation,PASS
+2022: offensive and defensive formulas,PASS
+2022: shot event conservation,PASS
+2022: possession outcome bounds,PASS
+2022: duration eligibility,PASS
+2022: opponent pace attribution,PASS
+2022: bucket conservation,PASS
+2022: official assist source,PASS
+2022: goalie resolved population,PASS
+2022: player appearances,PASS
+2022: transfer conservation,PASS
+2023: possession and scoring conservation,PASS
+2023: offensive and defensive formulas,PASS
+2023: shot event conservation,PASS
+2023: possession outcome bounds,PASS
+2023: duration eligibility,PASS
+2023: opponent pace attribution,PASS
+2023: bucket conservation,PASS
+2023: official assist source,PASS
+2023: goalie resolved population,PASS
+2023: player appearances,PASS
+2023: transfer conservation,PASS
+2024: possession and scoring conservation,PASS
+2024: offensive and defensive formulas,PASS
+2024: shot event conservation,PASS
+2024: possession outcome bounds,PASS
+2024: duration eligibility,PASS
+2024: opponent pace attribution,PASS
+2024: bucket conservation,PASS
+2024: official assist source,PASS
+2024: goalie resolved population,PASS
+2024: player appearances,PASS
+2024: transfer conservation,PASS
+2025: possession and scoring conservation,PASS
+2025: offensive and defensive formulas,PASS
+2025: shot event conservation,PASS
+2025: possession outcome bounds,PASS
+2025: duration eligibility,PASS
+2025: opponent pace attribution,PASS
+2025: bucket conservation,PASS
+2025: official assist source,PASS
+2025: goalie resolved population,PASS
+2025: player appearances,PASS
+2025: transfer conservation,PASS
+2026: possession and scoring conservation,PASS
+2026: offensive and defensive formulas,PASS
+2026: shot event conservation,PASS
+2026: possession outcome bounds,PASS
+2026: duration eligibility,PASS
+2026: opponent pace attribution,PASS
+2026: bucket conservation,PASS
+2026: official assist source,PASS
+2026: goalie resolved population,PASS
+2026: player appearances,PASS
+2026: transfer conservation,PASS
+CSV agreement: pooled/team_advanced_stats,PASS
+CSV agreement: 2022/team_advanced_stats,PASS
+CSV agreement: 2023/team_advanced_stats,PASS
+CSV agreement: 2024/team_advanced_stats,PASS
+CSV agreement: 2025/team_advanced_stats,PASS
+CSV agreement: 2026/team_advanced_stats,PASS
+No infinity: team_advanced_stats,PASS
+CSV agreement: pooled/player_offensive_advanced,PASS
+CSV agreement: 2022/player_offensive_advanced,PASS
+CSV agreement: 2023/player_offensive_advanced,PASS
+CSV agreement: 2024/player_offensive_advanced,PASS
+CSV agreement: 2025/player_offensive_advanced,PASS
+CSV agreement: 2026/player_offensive_advanced,PASS
+No infinity: player_offensive_advanced,PASS
+CSV agreement: pooled/player_shooting_advanced,PASS
+CSV agreement: 2022/player_shooting_advanced,PASS
+CSV agreement: 2023/player_shooting_advanced,PASS
+CSV agreement: 2024/player_shooting_advanced,PASS
+CSV agreement: 2025/player_shooting_advanced,PASS
+CSV agreement: 2026/player_shooting_advanced,PASS
+No infinity: player_shooting_advanced,PASS
+CSV agreement: pooled/player_two_point_stats,PASS
+CSV agreement: 2022/player_two_point_stats,PASS
+CSV agreement: 2023/player_two_point_stats,PASS
+CSV agreement: 2024/player_two_point_stats,PASS
+CSV agreement: 2025/player_two_point_stats,PASS
+CSV agreement: 2026/player_two_point_stats,PASS
+No infinity: player_two_point_stats,PASS
+CSV agreement: pooled/faceoff_advanced,PASS
+CSV agreement: 2022/faceoff_advanced,PASS
+CSV agreement: 2023/faceoff_advanced,PASS
+CSV agreement: 2024/faceoff_advanced,PASS
+CSV agreement: 2025/faceoff_advanced,PASS
+CSV agreement: 2026/faceoff_advanced,PASS
+No infinity: faceoff_advanced,PASS
+CSV agreement: pooled/goalie_advanced,PASS
+CSV agreement: 2022/goalie_advanced,PASS
+CSV agreement: 2023/goalie_advanced,PASS
+CSV agreement: 2024/goalie_advanced,PASS
+CSV agreement: 2025/goalie_advanced,PASS
+CSV agreement: 2026/goalie_advanced,PASS
+No infinity: goalie_advanced,PASS
+CSV agreement: pooled/defensive_production,PASS
+CSV agreement: 2022/defensive_production,PASS
+CSV agreement: 2023/defensive_production,PASS
+CSV agreement: 2024/defensive_production,PASS
+CSV agreement: 2025/defensive_production,PASS
+CSV agreement: 2026/defensive_production,PASS
+No infinity: defensive_production,PASS
+CSV agreement: pooled/player_season_summary,PASS
+CSV agreement: 2022/player_season_summary,PASS
+CSV agreement: 2023/player_season_summary,PASS
+CSV agreement: 2024/player_season_summary,PASS
+CSV agreement: 2025/player_season_summary,PASS
+CSV agreement: 2026/player_season_summary,PASS
+No infinity: player_season_summary,PASS
+CSV agreement: pooled/possession_length_analysis,PASS
+CSV agreement: 2022/possession_length_analysis,PASS
+CSV agreement: 2023/possession_length_analysis,PASS
+CSV agreement: 2024/possession_length_analysis,PASS
+CSV agreement: 2025/possession_length_analysis,PASS
+CSV agreement: 2026/possession_length_analysis,PASS
+No infinity: possession_length_analysis,PASS
+CSV agreement: pooled/season_baselines,PASS
+CSV agreement: 2022/season_baselines,PASS
+CSV agreement: 2023/season_baselines,PASS
+CSV agreement: 2024/season_baselines,PASS
+CSV agreement: 2025/season_baselines,PASS
+CSV agreement: 2026/season_baselines,PASS
+No infinity: season_baselines,PASS
+CSV agreement: pooled/team_game_publication,PASS
+CSV agreement: 2022/team_game_publication,PASS
+CSV agreement: 2023/team_game_publication,PASS
+CSV agreement: 2024/team_game_publication,PASS
+CSV agreement: 2025/team_game_publication,PASS
+CSV agreement: 2026/team_game_publication,PASS
+No infinity: team_game_publication,PASS
+CSV agreement: pooled/publication_coverage,PASS
+CSV agreement: 2022/publication_coverage,PASS
+CSV agreement: 2023/publication_coverage,PASS
+CSV agreement: 2024/publication_coverage,PASS
+CSV agreement: 2025/publication_coverage,PASS
+CSV agreement: 2026/publication_coverage,PASS
+No infinity: publication_coverage,PASS
+CSV agreement: pooled/possession_sensitivity,PASS
+CSV agreement: 2022/possession_sensitivity,PASS
+CSV agreement: 2023/possession_sensitivity,PASS
+CSV agreement: 2024/possession_sensitivity,PASS
+CSV agreement: 2025/possession_sensitivity,PASS
+CSV agreement: 2026/possession_sensitivity,PASS
+No infinity: possession_sensitivity,PASS
+35 unique core definitions,PASS
+catalog columns exist,PASS
