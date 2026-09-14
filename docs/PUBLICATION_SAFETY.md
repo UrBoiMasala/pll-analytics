@@ -1,3 +1,7 @@
+# Publication authorization update — 2026-09-14
+
+The project owner reports obtaining permission for this personal learning project and explicitly authorizes publishing the complete repository, including data and existing history. This is an owner-reported authorization, not an independently reviewed license or a grant of reuse rights to others. Source attribution remains required. The earlier blocked assessment below is retained as historical context and is superseded for this authorized publication.
+
 # Public repository readiness
 
 Public GitHub publication is blocked pending source-data redistribution permission. Local implementation and validation can proceed.

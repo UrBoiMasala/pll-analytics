@@ -1,0 +1,1 @@
+{"name":"pll-stats-frontend","private":true,"type":"module","scripts":{"build":"python3 -B scripts/build.py","start":"python3 -m http.server 4173 --bind 127.0.0.1 --directory dist","test":"node --test tests/data.test.mjs","test:browser":"node --test tests/browser.test.mjs"},"devDependencies":{"playwright":"1.62.1"}}

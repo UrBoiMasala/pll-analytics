@@ -4,7 +4,7 @@ A five-season Premier Lacrosse League analytics pipeline that transforms play-by
 
 **35 interpretable core metrics, 2022–2026.** The 2026 data is a frozen partial-season snapshot: the latest included game starts **August 30, 2026 at 00:30 UTC**. Completed regular-season and playoff games are included; all-star, exhibition and incomplete games are excluded.
 
-Source statistics: [Premier Lacrosse League](https://premierlacrosseleague.com/). Independent research; not affiliated with or endorsed by the PLL. **Public data redistribution is not cleared:** see the [publication safety review](docs/PUBLICATION_SAFETY.md).
+Source statistics: [Premier Lacrosse League](https://premierlacrosseleague.com/). Independent research; not affiliated with or endorsed by the PLL. The project owner reports permission to publish this personal learning project; see the [publication authorization record](docs/PUBLICATION_SAFETY.md). No general license to reuse PLL data is implied.
 
 ## Objective
 
@@ -63,7 +63,7 @@ Player tables distinguish `SEASON` totals from actual-team `STINT` rows. Select 
 
 ## Repository map
 
-- `data/raw/`: frozen source payloads; redistribution restricted pending review.
+- `data/raw/`: frozen source payloads; source rights remain with PLL.
 - `data/processed/`: canonical v2 and preserved historical research outputs.
 - `data/publication/`: final pooled and season-specific CSV tables, dictionary and validation.
 - `scripts/`: ingestion, reconstruction, SQL orchestration and validation.
@@ -82,6 +82,10 @@ Possession ambiguity is visible rather than silently filtered. Pace and TOP desc
 
 ## Technology and research history
 
-Python, pandas, NumPy, DuckDB SQL, requests, pytest and Git. GitHub is the intended publication platform, subject to the source-data rights gate.
+Python, pandas, NumPy, DuckDB SQL, requests, pytest and Git. Published on GitHub with owner-reported permission for this personal learning project.
 
 Earlier player-value research is preserved for reproducibility and reference. It is not the final product. No MVP, WAR, cross-position composite, faceoff point conversion, bootstrap ranking or true-talent model enters these publication tables. The dashboard is the next phase.
+
+## Local statistics frontend
+
+The screenshot-based **PLL Stats** frontend is available locally. Run `python3 -B frontend/scripts/build.py`, then `python3 -m http.server 4173 --bind 127.0.0.1 --directory frontend/dist`. Open http://127.0.0.1:4173/. See the [frontend guide](frontend/README.md) for routes, data contracts and tests. This does not publish the data or change the publication-safety decision.
