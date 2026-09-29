@@ -1,0 +1,28 @@
+name: Bug report
+description: Report a reproducible problem in the pipeline, data views, or frontend.
+title: "[Bug] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the observed behavior and what you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps or command to reproduce
+      description: Include the command, page route, and relevant season or stable IDs. Remove credentials and private paths.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: OS, Python version, browser, and commit SHA
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Relevant error output or a small expected-versus-actual example.

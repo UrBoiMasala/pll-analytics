@@ -1,0 +1,25 @@
+name: Metric or data question
+description: Ask about a definition, source discrepancy, or analytical limitation.
+title: "[Data] "
+body:
+  - type: input
+    id: metric
+    attributes:
+      label: Metric or table
+      placeholder: offensive_efficiency in team_advanced_stats
+    validations:
+      required: true
+  - type: textarea
+    id: population
+    attributes:
+      label: Season and population
+      description: Include game/player IDs, team filters, and SEASON or STINT when relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question and evidence
+      description: State the observed value, comparison source, and what needs clarification.
+    validations:
+      required: true
