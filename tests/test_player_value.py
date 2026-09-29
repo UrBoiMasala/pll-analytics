@@ -4,7 +4,7 @@ Phase 6 tests for the player-value framework.
 Two kinds:
 
 1. Accounting tests on SYNTHETIC possessions. These are the double-counting
-   safeguards docs/PLAYER_VALUE_ACCOUNTING.md describes, executed rather than
+   safeguards docs/research/PLAYER_VALUE_ACCOUNTING.md describes, executed rather than
    asserted in prose. Each one constructs a single play, runs the published
    formulas over it, and checks that one point of team scoring never becomes
    more than one point of player value.
@@ -82,7 +82,7 @@ class TestPllTwoPointScoring(unittest.TestCase):
 
 
 class TestAccountingNoDoubleCounting(unittest.TestCase):
-    """The scenarios in docs/PLAYER_VALUE_ACCOUNTING.md, executed."""
+    """The scenarios in docs/research/PLAYER_VALUE_ACCOUNTING.md, executed."""
 
     def test_scenario_A_missed_shot_charges_only_the_shooter(self):
         shooter = shooting_value(1, 0, 0, 0)

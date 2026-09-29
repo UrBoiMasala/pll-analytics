@@ -58,10 +58,10 @@ PHASE13_HIST_OUTPUTS = [
     "phase13_sql_python_agreement.csv",
 ]
 PHASE13_DOCS = [
-    "PLAYER_VALUE_MODEL_V1.md", "OFFENSIVE_PLAYER_VALUE.md",
-    "FACEOFF_PLAYER_VALUE.md", "GOALIE_PLAYER_VALUE.md",
-    "DEFENSIVE_PRODUCTION_LIMITATIONS.md", "PLAYER_VALUE_UNCERTAINTY.md",
-    "PLAYER_VALUE_HISTORICAL_BACKTEST.md", "history/PHASE13_VALIDATION.md",
+    "research/PLAYER_VALUE_MODEL_V1.md", "research/OFFENSIVE_PLAYER_VALUE.md",
+    "research/FACEOFF_PLAYER_VALUE.md", "research/GOALIE_PLAYER_VALUE.md",
+    "research/DEFENSIVE_PRODUCTION_LIMITATIONS.md", "research/PLAYER_VALUE_UNCERTAINTY.md",
+    "research/PLAYER_VALUE_HISTORICAL_BACKTEST.md", "history/PHASE13_VALIDATION.md",
 ]
 PHASE12_OUTPUTS = [
     "player_value_signal_inventory.csv", "player_value_metric_dependency.csv",

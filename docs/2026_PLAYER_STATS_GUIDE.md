@@ -8,9 +8,9 @@ and `player_leaderboards_2026.csv` (12,788 rows). Definitions of record live in
 
 Upstream methodology: [`../PLAYER_VALUE_METHODOLOGY.md`](reference/PLAYER_VALUE_METHODOLOGY.md)
 (Phase 6), [`../PLAYER_ADJUSTED_VALUE_METHODOLOGY.md`](reference/PLAYER_ADJUSTED_VALUE_METHODOLOGY.md)
-(Phase 7), [`PLAYER_VALUE_ACCOUNTING.md`](PLAYER_VALUE_ACCOUNTING.md),
-[`SHRINKAGE_POLICY.md`](SHRINKAGE_POLICY.md),
-[`CROSS_POSITION_COMPARABILITY.md`](CROSS_POSITION_COMPARABILITY.md).
+(Phase 7), [`PLAYER_VALUE_ACCOUNTING.md`](research/PLAYER_VALUE_ACCOUNTING.md),
+[`SHRINKAGE_POLICY.md`](research/SHRINKAGE_POLICY.md),
+[`CROSS_POSITION_COMPARABILITY.md`](research/CROSS_POSITION_COMPARABILITY.md).
 Phase 8 re-derives none of it; validation check 16 compares 34 carried columns
 bit-for-bit against their Phase 6/7 sources.
 
@@ -337,7 +337,7 @@ Every one of these was traced to the underlying box score during the sanity
 audit and reconciles exactly. Several are real but heavily sample-dependent —
 Wisnauskas shot 25-for-43 (58.1%), the highest in the league on any meaningful
 volume, and his reliability is 0.378, below the ranking gate. See
-[`2026_METRIC_SANITY_AUDIT.md`](2026_METRIC_SANITY_AUDIT.md) §3 for each case.
+[`2026_METRIC_SANITY_AUDIT.md`](research/2026_METRIC_SANITY_AUDIT.md) §3 for each case.
 
 **A leader that is a role artifact, not a player finding:**
 `EPA_points_per_game`'s top five are all goalies. Games played is the weakest

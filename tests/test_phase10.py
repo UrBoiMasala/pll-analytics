@@ -251,7 +251,7 @@ class TestRepairOverTheCorpus(unittest.TestCase):
         kept the repair in a parallel possessions_repaired.csv (see the
         docstring of pll_phase10_possession_repair.py, "WHAT THIS MODULE DOES
         NOT DO"). Phase 11 adopted V2_direct_and_timing into the canonical
-        layer per docs/2023_POSSESSION_REPAIR.md Section 8's own
+        layer per docs/research/2023_POSSESSION_REPAIR.md Section 8's own
         recommendation (docs/PHASE11_CHRONOLOGY_REPAIR.md), so
         possessions.csv now HAS the repair: 4460 -> 4204 possessions. Points
         are exactly unchanged (the repair reorders/retimes events; it never
