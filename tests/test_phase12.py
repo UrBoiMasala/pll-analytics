@@ -293,9 +293,9 @@ class TestNoCompositeArtifactExists(unittest.TestCase):
         for docname in ("PLAYER_VALUE_DEFINITION.md", "PLAYER_VALUE_MODEL_RESEARCH.md",
                         "OFFENSIVE_VALUE_RESEARCH.md", "FACEOFF_VALUE_RESEARCH.md",
                         "GOALIE_VALUE_RESEARCH.md", "DEFENSIVE_VALUE_FEASIBILITY.md",
-                        "CROSS_POSITION_VALUE_PHASE12.md",
+                        "history/CROSS_POSITION_VALUE_PHASE12.md",
                         "STATISTICAL_TEWAARATON_SPECIFICATION.md",
-                        "PHASE12_VALIDATION.md"):
+                        "history/PHASE12_VALIDATION.md"):
             fp = docs_dir / docname
             self.assertTrue(fp.exists(), docname)
             text = fp.read_text().lower()

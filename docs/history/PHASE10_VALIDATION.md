@@ -1,4 +1,4 @@
-> Historical research/reference document. Final publication scope and corrected interpretations are defined in [PROJECT_REFOCUS](PROJECT_REFOCUS.md) and [METRIC_LIMITATIONS](METRIC_LIMITATIONS.md). Old production/qualification labels do not apply to the final product.
+> Historical research/reference document. Final publication scope and corrected interpretations are defined in [PROJECT_REFOCUS](../PROJECT_REFOCUS.md) and [METRIC_LIMITATIONS](../METRIC_LIMITATIONS.md). Old production/qualification labels do not apply to the final product.
 
 # Phase 10 Validation
 
@@ -133,7 +133,7 @@ Stated because a validation report that only lists passes is misleading:
 - **It does not prove the 2023 repair is right.** It proves the repair is
   evidence-bounded, reproducible, reconciling and confined. The argument that
   the transposition reflects what happened on the field is made in
-  [`2023_POSSESSION_REPAIR.md`](2023_POSSESSION_REPAIR.md) §2 and rests on the
+  [`2023_POSSESSION_REPAIR.md`](../2023_POSSESSION_REPAIR.md) §2 and rests on the
   `markerId` sequence and the faceoff/ground-ball atomicity — both strong, and
   both inference from a feed rather than observation of a game.
 - **It does not prove 2022's low possession count is fine.** Phase 9 flagged

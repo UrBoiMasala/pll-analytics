@@ -236,7 +236,7 @@ statistical technique. Entry points:
 [`docs/CROSS_POSITION_VALUE_RESEARCH.md`](../CROSS_POSITION_VALUE_RESEARCH.md) ·
 [`docs/CAREER_ABILITY_METHODOLOGY.md`](../CAREER_ABILITY_METHODOLOGY.md) ·
 [`docs/2023_POSSESSION_REPAIR.md`](../2023_POSSESSION_REPAIR.md) ·
-[`docs/PHASE10_VALIDATION.md`](../PHASE10_VALIDATION.md).
+[`docs/PHASE10_VALIDATION.md`](../history/PHASE10_VALIDATION.md).
 
 Phase 9's job was to build the empirical foundation that lets a **later** phase
 ask whether such a model is defensible. The most useful thing it establishes for
