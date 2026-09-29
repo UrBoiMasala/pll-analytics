@@ -11,3 +11,14 @@ venv/
 *.duckdb
 *.duckdb.wal
 *.tmp
+
+# Generated frontend and local development artifacts
+node_modules/
+frontend/dist/
+frontend/test-results/
+playwright-report/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+*.log
