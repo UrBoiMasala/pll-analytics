@@ -1,11 +1,46 @@
 # Data pipeline
 
-Raw PLL JSON → normalized games, teams, players and box scores → cleaned eligible events → duplicate-faceoff flags and supported chronology repairs → reconstructed possessions → SQL team analytics.
+```mermaid
+flowchart LR
+    A[Frozen PLL JSON] --> B[Normalized events and box scores]
+    B --> C[Reconstructed possessions]
+    B --> D[DuckDB publication views]
+    C --> D
+    D --> E[Publication CSVs]
+    E --> F[Local statistics frontend]
+```
 
-The current refocus entry point is `scripts/pll_refocus_foundation.py`. It reads local raw files only, rebuilds event/possession data, team analytics, corrected season-specific shot diagnostics and player-team stint counts. It writes canonical v2 and a before/after report. It deliberately does not rebuild the archived research layers.
+## Source and canonical layers
 
-Source payloads are preserved and byte-hashed. `refocus_source_checkpoint.json` covers every raw file, including schedules and metadata. `CANONICAL_MANIFEST_V1.json` is preserved; its files are verified at the checkpoint commit. `CANONICAL_MANIFEST_V2.json` describes current retained derived files. Never run the old v1 manifest writer to relabel changed data as the same freeze.
+`data/raw/` preserves downloaded payloads and metadata. The ingestion and cleaning
+scripts retain source anomalies and derive explicit eligibility flags. Canonical
+per-season tables under `data/processed/` include games, events, possessions, and
+player/team box scores.
 
-The final player metric layer is implemented in `sql/publication.sql`, with outputs under `data/publication/`. Its source keys are `(season, game_id, player_id, team_id)` and `(season, player_id, team_id)` for stints. IDs must be VARCHAR, preserving leading zeroes. Names are labels, never keys. Player-season totals combine stints without assigning all production to a modal team.
+`CANONICAL_MANIFEST_V1.json` describes the earlier checkpoint; v2 describes the
+current foundation. Historical source hashes and version boundaries must not be
+silently relabeled. The [audit archive](../archive/README.md) explains verification
+without the original Git history.
 
-No raw payload deletion, network refresh, dashboard work or Phase 14 implementation occurs in refocus.
+## Publication layer
+
+`scripts/pll_build_publication.py` loads frozen canonical inputs and executes
+`sql/publication.sql`. It exports 13 tables under `data/publication/`, both pooled
+and by season. Metric arithmetic lives in SQL. The builder does not fetch new games
+or rerun older player-value research.
+
+Keys include the season. Player IDs are strings so leading zeros survive. Actual-team
+stints and season totals have distinct aggregation levels; names are labels, not keys.
+
+## Presentation layer
+
+`frontend/scripts/build.py` copies publication metrics and prepares traditional
+box-score totals for the local interface. It writes only the ignored `frontend/dist/`
+directory and records source hashes with the bundle. It does not alter canonical data.
+
+## Historical rebuilds
+
+The older `pll_refocus_foundation.py` transformation can rebuild the foundation but
+still uses an original checkpoint commit for comparisons. It is not a first-run
+command for a downloaded source archive. Use the [setup guide](GETTING_STARTED.md)
+for the supported frozen-data workflow.
