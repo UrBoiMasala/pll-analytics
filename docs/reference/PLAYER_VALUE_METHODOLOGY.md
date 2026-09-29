@@ -36,7 +36,7 @@ margin in the 60 seconds *after* each event; under it a goal is worth about
 +0.02 because the goal itself falls outside the window. This metric estimates
 production versus expectation on the opportunity itself, so a one-point goal is
 worth +0.707. They are different estimands, not different scalings. Full
-side-by-side comparison in [`docs/EGA_REFERENCE_RESEARCH.md`](docs/EGA_REFERENCE_RESEARCH.md).
+side-by-side comparison in [`docs/EGA_REFERENCE_RESEARCH.md`](../EGA_REFERENCE_RESEARCH.md).
 
 ### Why points and not goals
 
@@ -220,7 +220,7 @@ turnover both the possession's expected value (0.271) *and* the transition cost
 (0.200). That would price the same lost opportunity twice. It cannot happen
 here because `shooting_value` never contains a possession-value term for the
 turnover charge to duplicate. See
-[`docs/PLAYER_VALUE_ACCOUNTING.md`](docs/PLAYER_VALUE_ACCOUNTING.md) scenario D.
+[`docs/PLAYER_VALUE_ACCOUNTING.md`](../PLAYER_VALUE_ACCOUNTING.md) scenario D.
 
 ## 6. Faceoff value
 
@@ -367,7 +367,7 @@ points are ever partitioned**, and:
 
 Verified to 10 decimal places for all five components and the total. Full
 scenario-by-scenario audit, with executed tests, in
-[`docs/PLAYER_VALUE_ACCOUNTING.md`](docs/PLAYER_VALUE_ACCOUNTING.md).
+[`docs/PLAYER_VALUE_ACCOUNTING.md`](../PLAYER_VALUE_ACCOUNTING.md).
 
 ## 13. Uncertainty and shrinkage
 

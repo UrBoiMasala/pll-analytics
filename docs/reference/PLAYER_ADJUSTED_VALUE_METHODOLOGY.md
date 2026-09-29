@@ -134,7 +134,7 @@ feed's turnover events name only a team.
 
 Swapping this project's usage measure for the Lacrosse Reference one moves 226
 of 228 usage ranks at a rank correlation of **0.556**. Full detail in
-[`docs/USAGE_ADJUSTMENT_REFERENCE_RESEARCH.md`](docs/USAGE_ADJUSTMENT_REFERENCE_RESEARCH.md).
+[`docs/USAGE_ADJUSTMENT_REFERENCE_RESEARCH.md`](../USAGE_ADJUSTMENT_REFERENCE_RESEARCH.md).
 
 ---
 
@@ -433,7 +433,7 @@ of 226 at 0.945.
 ## 10. Cross-position comparability
 
 Audited in full in
-[`docs/CROSS_POSITION_COMPARABILITY.md`](docs/CROSS_POSITION_COMPARABILITY.md).
+[`docs/CROSS_POSITION_COMPARABILITY.md`](../CROSS_POSITION_COMPARABILITY.md).
 The headline conclusions:
 
 - **`EPA_points_raw` is class C — not cross-position comparable.** A shared unit
@@ -455,7 +455,7 @@ The headline conclusions:
 
 ## 11. Shrinkage and reliability
 
-Policy in [`docs/SHRINKAGE_POLICY.md`](docs/SHRINKAGE_POLICY.md); the summary:
+Policy in [`docs/SHRINKAGE_POLICY.md`](../SHRINKAGE_POLICY.md); the summary:
 
 **Raw values describe 2026 and are never overwritten. Shrunk rates estimate
 ability and are published separately. Three concepts stay apart:**
@@ -651,7 +651,7 @@ any defensive column name.
 ## 16. Multi-season feasibility
 
 Investigated read-only, not ingested; full detail in
-[`docs/MULTI_SEASON_FEASIBILITY.md`](docs/MULTI_SEASON_FEASIBILITY.md).
+[`docs/MULTI_SEASON_FEASIBILITY.md`](../MULTI_SEASON_FEASIBILITY.md).
 
 **2022–2025 are structurally identical to 2026** — same nine event types, same
 shot-type tags including `2_PT` and `MU_2_PT`, same seven position labels,

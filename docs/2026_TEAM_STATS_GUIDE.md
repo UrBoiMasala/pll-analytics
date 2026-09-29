@@ -7,8 +7,8 @@ How to read `data/processed/2026/team_stats_2026.csv` (8 rows, 106 columns) and
 `metric_catalog_2026.csv`, one row per metric; this guide is the narrative that
 tells you which columns to reach for and which to leave alone.
 
-Upstream methodology: [`../TEAM_ADVANCED_METRICS.md`](../TEAM_ADVANCED_METRICS.md)
-(Phase 5) and [`../POSSESSION_METHODOLOGY.md`](../POSSESSION_METHODOLOGY.md)
+Upstream methodology: [`../TEAM_ADVANCED_METRICS.md`](reference/TEAM_ADVANCED_METRICS.md)
+(Phase 5) and [`../POSSESSION_METHODOLOGY.md`](reference/POSSESSION_METHODOLOGY.md)
 (Phase 4). Phase 8 re-derives none of it.
 
 ---

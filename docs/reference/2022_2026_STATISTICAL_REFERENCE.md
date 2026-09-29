@@ -29,7 +29,7 @@ after 2023, Outlaws enter in 2024).
 
 **2021 is excluded and was verified, not assumed** — its `2_PT` shot tag does
 not exist and 58 goals that moved the score by two are labelled `1_PT`. See
-[`docs/HISTORICAL_INGESTION_METHODOLOGY.md`](docs/HISTORICAL_INGESTION_METHODOLOGY.md) §6.
+[`docs/HISTORICAL_INGESTION_METHODOLOGY.md`](../HISTORICAL_INGESTION_METHODOLOGY.md) §6.
 
 ---
 
@@ -67,12 +67,12 @@ not exist and 58 goals that moved the score by two are labelled `1_PT`. See
 | `phase9_validation_report.csv` | 22 checks, all PASS |
 
 **Documentation:**
-[`HISTORICAL_INGESTION_METHODOLOGY.md`](docs/HISTORICAL_INGESTION_METHODOLOGY.md) ·
-[`MULTI_SEASON_VALIDATION.md`](docs/MULTI_SEASON_VALIDATION.md) ·
-[`PLAYER_IDENTITY_ACROSS_SEASONS.md`](docs/PLAYER_IDENTITY_ACROSS_SEASONS.md) ·
-[`MULTI_SEASON_RELIABILITY.md`](docs/MULTI_SEASON_RELIABILITY.md) ·
-[`TWO_POINT_HISTORICAL_ANALYSIS.md`](docs/TWO_POINT_HISTORICAL_ANALYSIS.md) ·
-[`OPPONENT_ADJUSTMENT_FEASIBILITY.md`](docs/OPPONENT_ADJUSTMENT_FEASIBILITY.md)
+[`HISTORICAL_INGESTION_METHODOLOGY.md`](../HISTORICAL_INGESTION_METHODOLOGY.md) ·
+[`MULTI_SEASON_VALIDATION.md`](../MULTI_SEASON_VALIDATION.md) ·
+[`PLAYER_IDENTITY_ACROSS_SEASONS.md`](../PLAYER_IDENTITY_ACROSS_SEASONS.md) ·
+[`MULTI_SEASON_RELIABILITY.md`](../MULTI_SEASON_RELIABILITY.md) ·
+[`TWO_POINT_HISTORICAL_ANALYSIS.md`](../TWO_POINT_HISTORICAL_ANALYSIS.md) ·
+[`OPPONENT_ADJUSTMENT_FEASIBILITY.md`](../OPPONENT_ADJUSTMENT_FEASIBILITY.md)
 
 ---
 
@@ -183,7 +183,7 @@ seasons; both cannot be true of the offence.
 > range, with **zero** team-ranking changes and 2022/2025/2026 left
 > bit-identical. The repaired layer is published as
 > `data/processed/<year>/possessions_repaired.csv`; `possessions.csv` is
-> unchanged. See [`docs/2023_POSSESSION_REPAIR.md`](docs/2023_POSSESSION_REPAIR.md).
+> unchanged. See [`docs/2023_POSSESSION_REPAIR.md`](../2023_POSSESSION_REPAIR.md).
 > **Any cross-season possession-denominated comparison must state which layer
 > it used.**
 
@@ -232,11 +232,11 @@ properties and counterfactual probes, and classified every candidate award
 input. Its answer is that a defensible award model is buildable **within a
 role** and not **across** roles, for reasons of measurement coverage rather than
 statistical technique. Entry points:
-[`docs/MVP_INPUT_READINESS.md`](docs/MVP_INPUT_READINESS.md) ·
-[`docs/CROSS_POSITION_VALUE_RESEARCH.md`](docs/CROSS_POSITION_VALUE_RESEARCH.md) ·
-[`docs/CAREER_ABILITY_METHODOLOGY.md`](docs/CAREER_ABILITY_METHODOLOGY.md) ·
-[`docs/2023_POSSESSION_REPAIR.md`](docs/2023_POSSESSION_REPAIR.md) ·
-[`docs/PHASE10_VALIDATION.md`](docs/PHASE10_VALIDATION.md).
+[`docs/MVP_INPUT_READINESS.md`](../MVP_INPUT_READINESS.md) ·
+[`docs/CROSS_POSITION_VALUE_RESEARCH.md`](../CROSS_POSITION_VALUE_RESEARCH.md) ·
+[`docs/CAREER_ABILITY_METHODOLOGY.md`](../CAREER_ABILITY_METHODOLOGY.md) ·
+[`docs/2023_POSSESSION_REPAIR.md`](../2023_POSSESSION_REPAIR.md) ·
+[`docs/PHASE10_VALIDATION.md`](../PHASE10_VALIDATION.md).
 
 Phase 9's job was to build the empirical foundation that lets a **later** phase
 ask whether such a model is defensible. The most useful thing it establishes for

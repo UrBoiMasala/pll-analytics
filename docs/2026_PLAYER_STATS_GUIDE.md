@@ -6,8 +6,8 @@ How to read `data/processed/2026/player_stats_2026.csv` (228 rows, 123 columns)
 and `player_leaderboards_2026.csv` (12,788 rows). Definitions of record live in
 `metric_catalog_2026.csv`; this guide is the narrative.
 
-Upstream methodology: [`../PLAYER_VALUE_METHODOLOGY.md`](../PLAYER_VALUE_METHODOLOGY.md)
-(Phase 6), [`../PLAYER_ADJUSTED_VALUE_METHODOLOGY.md`](../PLAYER_ADJUSTED_VALUE_METHODOLOGY.md)
+Upstream methodology: [`../PLAYER_VALUE_METHODOLOGY.md`](reference/PLAYER_VALUE_METHODOLOGY.md)
+(Phase 6), [`../PLAYER_ADJUSTED_VALUE_METHODOLOGY.md`](reference/PLAYER_ADJUSTED_VALUE_METHODOLOGY.md)
 (Phase 7), [`PLAYER_VALUE_ACCOUNTING.md`](PLAYER_VALUE_ACCOUNTING.md),
 [`SHRINKAGE_POLICY.md`](SHRINKAGE_POLICY.md),
 [`CROSS_POSITION_COMPARABILITY.md`](CROSS_POSITION_COMPARABILITY.md).
