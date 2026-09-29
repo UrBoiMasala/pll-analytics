@@ -24,6 +24,13 @@ The suite includes synthetic edge cases and checks on the frozen data. Historica
 validators may regenerate their own diagnostic outputs; inspect `git diff` afterward.
 Do not loosen a test or rewrite a checkpoint merely to make a mismatch disappear.
 
+CI runs the full historical suite on macOS with Apple Silicon and pinned dependencies,
+matching the archived research snapshot’s platform. The archived NumPy sorts do not
+define stable ordering for ties, so an Intel Linux rebuild can reorder tied rows and
+fail the byte-level archive check. This is a known portability limitation of the
+retired research outputs. CI separately validates the published tables, publication
+rebuild determinism, and frontend data on Linux.
+
 ## Check frontend data
 
 ```sh

@@ -15,8 +15,10 @@ concurrency:
 
 jobs:
   analytics:
-    name: Analytics and documentation
-    runs-on: ubuntu-24.04
+    name: Archive regressions and documentation
+    # Archived NumPy quicksort tie ordering is platform-dependent.
+    # Keep byte-for-byte research checks on the original Apple Silicon platform.
+    runs-on: macos-15
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -42,7 +44,7 @@ jobs:
           git diff --quiet -- data/
 
   frontend:
-    name: Frontend data contracts
+    name: Linux publication and frontend
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
@@ -55,9 +57,18 @@ jobs:
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: '22'
+      - name: Install pinned analytics dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Validate publication outputs on Linux
+        run: python -B scripts/pll_validate_publication.py
+      - name: Check publication rebuild determinism on Linux
+        run: python -B scripts/pll_check_publication_determinism.py
       - name: Build local frontend
         run: python -B frontend/scripts/build.py
       - name: Test interface data logic
         run: node --test frontend/tests/data.test.mjs
       - name: Compare bundle against source tables
         run: python -B frontend/tests/test_sources.py
+      - name: Verify Linux checks preserved frozen data
+        if: always()
+        run: git diff --exit-code -- data/
