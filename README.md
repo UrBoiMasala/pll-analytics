@@ -11,6 +11,10 @@ The pipeline preserves source records and exposes uncertainty instead of hiding 
 [Get started](docs/GETTING_STARTED.md) · [Documentation](docs/README.md) ·
 [Metric catalog](docs/FINAL_METRIC_CATALOG.md) · [SQL examples](sql/publication_examples.sql)
 
+![PLL Stats player table with season, team, position, and search controls](docs/assets/statistics-preview.png)
+
+*Local interface using the included partial-2026 snapshot.*
+
 ## What it does
 
 - Reconstructs possessions from event feeds and checks scoring against official records.
