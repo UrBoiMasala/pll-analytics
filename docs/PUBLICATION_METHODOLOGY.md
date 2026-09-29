@@ -32,4 +32,4 @@ NULL means undefined or unavailable; zero is an observed count/result. Missing o
 
 Rate leaders should always show denominator and games. Do not compare partial-2026 raw totals to completed seasons without labeling. Lower offensive pace means shorter observed spans; defensive pace is contextual, not defensive skill. Defensive production lacks minutes, shifts, lineups, matchups and on/off attribution.
 
-No dashboard is included. No universal player score, bootstrap rankings, pairwise probabilities, shrinkage or faceoff point conversion enters publication tables.
+A local statistics frontend reads these publication tables; it does not recompute advanced metrics. No universal player score, bootstrap rankings, pairwise probabilities, shrinkage or faceoff point conversion enters publication tables.
