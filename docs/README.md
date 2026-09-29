@@ -21,6 +21,7 @@ possession-based statistics, SQL views, and a local statistics browser.
 - [Team statistics guide](2026_TEAM_STATS_GUIDE.md)
 - [Unsupported metrics](2026_UNSUPPORTED_METRICS.md)
 - [Canonical dataset specification](CANONICAL_DATASET_V2.md)
+- [Troubleshooting](TROUBLESHOOTING.md)
 - [Frontend setup and behavior](../frontend/README.md)
 - [Detailed references](reference/README.md)
 - [Research archive](research/README.md)
