@@ -1,11 +1,56 @@
-# Data validation
+# Validation
 
-Run `python3 -B scripts/pll_validate_refocus.py`. It reads real input tables and checks raw byte hashes, both canonical versions, unique keys, competitive completed scope, possession boundary resolution, initiating ground-ball accounting, repair flags, event/possession point agreement, the exact known scoring exception, actual-team stint totals, season shot metadata, SQL/CSV agreement, shot-class residual accounting and catalog scope.
+Checks establish consistency with the recorded source and the declared formulas.
+They do not establish that the event feed captured every play or that a statistic
+isolates player skill.
 
-The known 2022 scoring discrepancy is an explicit seven-point exception for one named game, not a broad tolerance. Unexpected discrepancies fail. Numeric SQL comparisons use 1e-9 tolerances and normalize date representations to UTC.
+## Check the published tables
 
-Regression tests cover opening goals counted once, closing turnovers and redundant companion events, ground-ball changes, transferred-player team attribution, duplicate player-games, historical home-goal pre-shot scores and rejection of mismatched season metadata. Existing chronology tests now require both swapped rows to be flagged; the changed expected counts are documented, not loosened.
+```sh
+python -B scripts/pll_validate_publication.py
+```
 
-The first post-repair full run produced 420 passes and four failures because archived Phase 12/13 validators required current files to match v1. The validators now check v1 at its original Git commit and v2 on disk, preserving both version guarantees. Their remaining legacy research checks are regression checks, not scientific validity claims. Their test-count check is labeled as collection coverage rather than proof that tests were never weakened.
+This is read-only by default. It checks scoring and possession conservation, team
+and player attribution, transfer totals, goalie outcomes, duration eligibility,
+finite outputs, and agreement between SQL results and stored CSVs.
 
-See `REFOCUS_VALIDATION_RESULTS.md` for the final run and deterministic rebuild evidence. Do not infer statistical calibration from a passing suite.
+## Run regressions
+
+```sh
+python -B -m pytest tests/ -q -p no:cacheprovider
+```
+
+The suite includes synthetic edge cases and checks on the frozen data. Historical
+validators may regenerate their own diagnostic outputs; inspect `git diff` afterward.
+Do not loosen a test or rewrite a checkpoint merely to make a mismatch disappear.
+
+## Check frontend data
+
+```sh
+python -B frontend/scripts/build.py
+node --test frontend/tests/data.test.mjs
+python -B frontend/tests/test_sources.py
+```
+
+The Python source checks compare every exported advanced value and traditional
+player row against independent input files. Browser interaction tests are described
+in the [frontend guide](../frontend/README.md).
+
+## Check reproducibility
+
+```sh
+python -B scripts/pll_check_publication_determinism.py
+```
+
+This rebuilds CSVs into temporary directories and compares their bytes. It does not
+compare binary DuckDB files or replace the included publication checkpoint.
+
+## Historical evidence
+
+Raw files and canonical tables have separate hash manifests. A compact
+[checkpoint archive](../archive/README.md) preserves the historical v1 payloads;
+current v2 files are checked on disk. Both versions remain identifiable.
+
+Known gaps remain explicit, including the named 2022 seven-point source discrepancy.
+A passing check does not make an ambiguous possession certain. Read the
+[limitations](METRIC_LIMITATIONS.md) alongside any validation result.
