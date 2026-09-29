@@ -1,11 +1,26 @@
-"""Validate both the immutable v1 Git snapshot and the current v2 artifacts."""
+"""Validate the immutable v1 checkpoint and current v2 artifacts.
+
+Source distributions include the original checkpoint payloads in a portable
+archive. Every payload is checked against the unchanged v1 manifest below.
+Existing development checkouts can still use their original Git history.
+"""
 from pathlib import Path
 import hashlib
 import json
 import subprocess
+import zipfile
 ROOT = Path(__file__).resolve().parent.parent
 PROC = ROOT/'data/processed'
 HIST = PROC/'history'
+
+
+def checkpoint_payload(relative, commit):
+    archive = ROOT/'archive/canonical-v1.zip'
+    if archive.exists():
+        with zipfile.ZipFile(archive) as snapshot:
+            return snapshot.read('data/processed/' + relative)
+    return subprocess.check_output(
+        ['git', 'show', commit + ':data/processed/' + relative], cwd=ROOT)
 
 
 def manifest_failures():
@@ -17,7 +32,7 @@ def manifest_failures():
     for relative, expected in old['artifact_hashes'].items():
         if expected is None:
             continue
-        payload=subprocess.check_output(['git','show',checkpoint['checkpoint_commit']+':data/processed/'+relative],cwd=ROOT)
+        payload=checkpoint_payload(relative, checkpoint['checkpoint_commit'])
         if hashlib.sha256(payload).hexdigest()!=expected:
             failures.append('v1 checkpoint: '+relative)
     for relative, expected in new['artifact_hashes'].items():
