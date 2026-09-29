@@ -1,5 +1,7 @@
 # PLL Analytics
 
+[![Quality checks](https://github.com/UrBoiMasala/pll-analytics/actions/workflows/quality.yml/badge.svg)](https://github.com/UrBoiMasala/pll-analytics/actions/workflows/quality.yml)
+
 Possession-based lacrosse analytics built with **Python, DuckDB SQL, and a lightweight web interface**.
 
 Explore **35 core metrics across 2022–2026**: team efficiency and pace, player shooting,
