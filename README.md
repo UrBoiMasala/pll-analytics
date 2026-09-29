@@ -65,3 +65,8 @@ Source statistics: [Premier Lacrosse League](https://premierlacrosseleague.com/)
 Independent research, not affiliated with or endorsed by the PLL. The existing
 [publication record](docs/PUBLICATION_SAFETY.md) documents owner-reported permission;
 it does not grant others a general license to reuse PLL data.
+
+## Referencing this project
+
+Use the [citation metadata](CITATION.cff) and record the exact commit used in an analysis.
+Cite the PLL separately as the source of the underlying statistics.

@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this software in research, cite this repository and the exact commit used. Cite PLL separately for source statistics."
+type: software
+title: PLL Analytics
+authors:
+  - family-names: Alluri
+    given-names: Siddharth
+repository-code: "https://github.com/UrBoiMasala/pll-analytics"
+url: "https://github.com/UrBoiMasala/pll-analytics"
+abstract: "A reproducible Python and DuckDB SQL pipeline for possession-based Premier Lacrosse League statistics, with a local statistics frontend. Includes frozen 2022–2026 extracts; 2026 is partial."
+keywords:
+  - lacrosse
+  - sports analytics
+  - reproducible research
+  - SQL
