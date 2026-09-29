@@ -24,6 +24,7 @@ missing events or force agreement.
 ```sh
 python -B -m pytest tests/ -q -p no:cacheprovider
 python -B scripts/pll_validate_publication.py
+python -B scripts/check_documentation.py
 python -B frontend/scripts/build.py
 node --test frontend/tests/data.test.mjs
 python -B frontend/tests/test_sources.py
