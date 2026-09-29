@@ -1,22 +1,61 @@
-# Final SQL guide
+# Querying the statistics
 
-The final definitions live in `sql/publication.sql`. `scripts/pll_build_publication.py` loads the frozen canonical inputs with explicit string player IDs and season keys, then executes that SQL. Python performs no metric arithmetic in the builder.
+## Create a local database
+
+After installing the analytics dependencies:
 
 ```sh
-python3 -B scripts/pll_build_publication.py --database /tmp/pll-publication.duckdb
-python3 -B scripts/pll_query_publication.py
+python -B scripts/pll_build_publication.py --database /tmp/pll-publication.duckdb --output /tmp/pll-publication-check
 ```
 
-`sql/publication_examples.sql` contains 16 independently runnable statements against the resulting database. With a DuckDB CLI installed, run `duckdb /tmp/pll-publication.duckdb < sql/publication_examples.sql`.
+The database stores its inputs and SQL views. Rebuild it if canonical inputs change.
+The separate output directory avoids replacing the included CSV checkpoint.
 
-Primary views: `team_advanced_stats`, `player_offensive_advanced`, `player_shooting_advanced`, `player_two_point_stats`, `faceoff_advanced`, `goalie_advanced`, `defensive_production`, `player_season_summary`, `possession_length_analysis`.
+## Team efficiency
 
-Supporting exports: `season_baselines`, `team_game_publication`, `publication_coverage`, `possession_sensitivity`.
+```sql
+SELECT team_id, games_played, possessions, offensive_efficiency
+FROM team_advanced_stats
+WHERE season = 2026
+ORDER BY offensive_efficiency DESC NULLS LAST, team_id;
+```
 
-Team key: `(season,team_id)`. Player key: `(season,player_id,aggregation_level,team_id)`. `SEASON` has team_id `ALL`; `STINT` retains actual team. Never join on a name or sum both aggregation levels. Player IDs remain strings with leading zeros. Display names may change without changing the identity key; positions record observed position codes.
+Efficiency is PLL points per 100 reconstructed possessions. The 2026 population is
+partial; display that label with results.
 
-Team-game outputs enable known scoring-gap exclusions and explicit game selection. For alternative game populations, recompute numerators and baselines from the filtered canonical views; do not subtract games from a season percentage.
+## Player shooting
 
-Each CSV is ordered by all columns. Example rankings use stable IDs as tie-breakers and exclude undefined metric values. No arbitrary reliability qualification is implied by positive-exposure filters. CSV empty cells represent SQL NULL, not zero.
+```sql
+SELECT player_name, player_id, shots, scoring_points_per_shot
+FROM player_season_summary
+WHERE season = 2026
+  AND aggregation_level = 'SEASON'
+  AND shots > 0
+ORDER BY scoring_points_per_shot DESC NULLS LAST, player_id;
+```
 
-Historical SQL remains preserved outside this final layer. Do not combine archived player-value tables with publication views.
+The positive-shot filter prevents undefined rates. It is not a qualification rule:
+a one-shot player can lead this table. Always display exposure.
+
+## Tables and keys
+
+| Table group | Outputs |
+| --- | --- |
+| Team | `team_advanced_stats`, `team_game_publication` |
+| Player | `player_season_summary`, `player_offensive_advanced`, `player_shooting_advanced`, `player_two_point_stats` |
+| Roles | `faceoff_advanced`, `goalie_advanced`, `defensive_production` |
+| Context | `season_baselines`, `publication_coverage`, `possession_sensitivity`, `possession_length_analysis` |
+
+- Team key: `(season, team_id)`.
+- Player key: `(season, player_id, aggregation_level, team_id)`.
+- `SEASON` rows have `team_id = 'ALL'`; `STINT` rows preserve actual teams.
+- Never add both aggregation levels or join players by display name.
+- Empty CSV cells are SQL `NULL`, not zero. Preserve string IDs.
+
+The [example queries](../sql/publication_examples.sql) contain 16 analyses. With the
+DuckDB CLI installed, run `duckdb /tmp/pll-publication.duckdb < sql/publication_examples.sql`.
+The repository also includes `python -B scripts/pll_query_publication.py`.
+
+For alternative game populations, recompute numerators and baselines from filtered
+canonical inputs. Do not subtract excluded games from an already-computed percentage.
+See the [metric catalog](FINAL_METRIC_CATALOG.md) for exact source contracts.
