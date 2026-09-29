@@ -35,7 +35,11 @@ jobs:
       - name: Validate publication outputs
         run: python -B scripts/pll_validate_publication.py
       - name: Verify frozen data was not changed
-        run: git diff --exit-code -- data/
+        if: always()
+        run: |
+          git diff --stat -- data/
+          git diff -- data/ | head -n 120 || true
+          git diff --quiet -- data/
 
   frontend:
     name: Frontend data contracts
