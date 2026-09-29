@@ -1,9 +1,30 @@
 # Advanced metrics
 
-The authoritative proposed definitions are in [FINAL_METRIC_CATALOG.md](FINAL_METRIC_CATALOG.md), with machine-readable formulas in `data/processed/history/final_metric_catalog.csv`.
+The publication layer contains **35 core metrics**, defined by
+[publication.sql](../sql/publication.sql) and the
+[metric dictionary](../data/publication/metric_dictionary.csv).
+The [full catalog](FINAL_METRIC_CATALOG.md) lists formulas, units, and source rules.
 
-The 29 core statistics answer narrow questions about pace, scoring efficiency, shooting, ball security, two-point selection, draws, stopping and defensive production. They share a scope and source contract, not a universal scale.
+| Area | Examples | Interpretation |
+| --- | --- | --- |
+| Team | Offensive and defensive efficiency, possessions per game | Points per 100 possessions and team workload |
+| Shooting | Shooting percentage, points per shot, shooting value above expected | Observed conversion relative to a same-season shot-class baseline |
+| Two-point play | Attempt rate, conversion, two-point shooting value | PLL-specific selection and production |
+| Ball security | Turnovers per touch, turnovers below expected | Recorded turnover events relative to a touch proxy |
+| Faceoffs | Win rate, draw share, wins above average | Draw outcomes and participation |
+| Goalkeeping | Resolved save rate, saves above average | Outcomes among attributed, resolved shots |
+| Defense | Caused turnovers, ground balls, penalties per game | Recorded production, not comprehensive defensive value |
 
-Two original PLL-specific adaptations are proposed: shooting value above expected and its two-point component. Both measure scoring points above season-average conversion for the observed shot mix. The component is a breakdown, not additional value to add again.
+## Avoid double counting
 
-Ball security is measured in turnover events, faceoff surplus in wins, and goalie surplus in saves. These stay separate. No total-offense or cross-position sum is retained.
+- Select either `SEASON` totals or `STINT` rows for actual teams, never both.
+- Two-point shooting value is already a component of total shooting value.
+- Do not sum quantities with different units: saves, faceoff wins, turnovers, and points.
+
+A proportion of `0.25` displays as 25%. Efficiency is already expressed per 100
+possessions. Empty CSV cells represent unavailable or undefined values, not zero.
+Show denominators alongside rates. Positive exposure is not a reliability guarantee.
+
+The older 29-metric catalog in the historical outputs was a proposal. It is not the
+current publication dictionary. See [limitations](METRIC_LIMITATIONS.md) for source
+coverage and assumptions.
