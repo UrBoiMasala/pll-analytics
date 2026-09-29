@@ -1,0 +1,15 @@
+# Consistent source text without normalizing frozen data payloads.
+*.md text eol=lf
+*.py text eol=lf
+*.js text eol=lf
+*.mjs text eol=lf
+*.sql text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.cff text eol=lf
+
+# Preserve source and checkpoint bytes used by audit hashes.
+data/** -text
+*.zip binary
+*.png binary
+*.webp binary
