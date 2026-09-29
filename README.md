@@ -23,7 +23,7 @@ ADVANCED METRICS / SQL VIEWS
     ↓
 PUBLICATION TABLES
     ↓
-DASHBOARD — next phase, not built
+LOCAL STATISTICS FRONTEND
 ```
 
 ## Example metrics
@@ -70,7 +70,7 @@ Player tables distinguish `SEASON` totals from actual-team `STINT` rows. Select 
 - `sql/`: final publication definitions/examples plus preserved historical queries.
 - `tests/`: foundation, historical and publication regressions.
 - `docs/`: methodology, catalog, limitations and implementation report.
-- `archive/`: earlier research artifacts.
+- `archive/`: a compact historical audit checkpoint and legacy-output notes.
 
 Start with the [metric catalog](docs/FINAL_METRIC_CATALOG.md), [machine-readable dictionary](data/publication/metric_dictionary.csv), [publication methodology](docs/PUBLICATION_METHODOLOGY.md), and [SQL guide](docs/SQL_GUIDE.md).
 
@@ -84,8 +84,8 @@ Possession ambiguity is visible rather than silently filtered. Pace and TOP desc
 
 Python, pandas, NumPy, DuckDB SQL, requests, pytest and Git. Published on GitHub with owner-reported permission for this personal learning project.
 
-Earlier player-value research is preserved for reproducibility and reference. It is not the final product. No MVP, WAR, cross-position composite, faceoff point conversion, bootstrap ranking or true-talent model enters these publication tables. The dashboard is the next phase.
+Earlier player-value research is preserved for reproducibility and reference. It is not the final product. No MVP, WAR, cross-position composite, faceoff point conversion, bootstrap ranking or true-talent model enters these publication tables. A local statistics frontend presents the publication tables; see the setup below.
 
 ## Local statistics frontend
 
-The screenshot-based **PLL Stats** frontend is available locally. Run `python3 -B frontend/scripts/build.py`, then `python3 -m http.server 4173 --bind 127.0.0.1 --directory frontend/dist`. Open http://127.0.0.1:4173/. See the [frontend guide](frontend/README.md) for routes, data contracts and tests. This does not publish the data or change the publication-safety decision.
+The **PLL Stats** frontend provides searchable player and team tables across five seasons. Run `python3 -B frontend/scripts/build.py`, then `python3 -m http.server 4173 --bind 127.0.0.1 --directory frontend/dist`. Open http://127.0.0.1:4173/. See the [frontend guide](frontend/README.md) for routes, data contracts and tests. This does not publish the data or change the publication-safety decision.

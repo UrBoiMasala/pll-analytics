@@ -1,6 +1,6 @@
 # PLL Stats frontend
 
-Local-only presentation layer for the existing `pll-analytics` repository. No publishing, analytics rebuild or external data fetching is required. The approved screenshot supplies the visual design: black background, compact navigation and controls, yellow active states, dense tables, restrained metadata and typography.
+Local statistics interface for the `pll-analytics` repository, with player and team tables, season filters, and player detail pages. No analytics rebuild or external data fetching is required.
 
 ## Run locally
 
