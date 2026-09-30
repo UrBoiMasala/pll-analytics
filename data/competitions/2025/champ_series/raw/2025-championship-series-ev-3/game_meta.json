@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5665938473891114,
+      "awayWinProbability": 0.43340615261088855
+    },
+    "id": 312,
+    "slugname": "2025-championship-series-ev-3",
+    "eventId": "2025_cs_ev3",
+    "league": "PLL",
+    "seasonSegment": "champseries",
+    "startTime": "1739491200",
+    "venue": "The St. James",
+    "venueLocation": null,
+    "location": "Springfield, VA",
+    "year": 2025,
+    "week": 0,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/3f146f36-21ef-4100-81f8-522e1fc3dad6",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 21,
+    "homeScore": 34,
+    "homePeriodScores": [
+      5,
+      10,
+      10,
+      9
+    ],
+    "visitorPeriodScores": [
+      8,
+      7,
+      4,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "CAN",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_cannons_primary_color.png",
+      "fullName": "Cannons",
+      "location": "Boston",
+      "locationCode": "BOS",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#B0B6BB",
+      "backgroundColor": "#C52032",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WHP",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_whipsnakes_primary_color.png",
+      "fullName": "Whipsnakes",
+      "location": "Maryland",
+      "locationCode": "MDW",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#FF0000",
+      "backgroundColor": "#FFCE00",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": "Round Robin - PLL Gm 3",
+    "snl": false,
+    "polymarketId": null
+  }
+}
