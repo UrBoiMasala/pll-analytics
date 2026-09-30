@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.48966595152812686,
+      "awayWinProbability": 0.5103340484718731
+    },
+    "id": 529,
+    "slugname": "2026-championship-game",
+    "eventId": "2026_game_54",
+    "league": "PLL",
+    "seasonSegment": "post",
+    "startTime": "1789921800",
+    "venue": "Sports Illustrated Stadium",
+    "venueLocation": null,
+    "location": "New Jersey",
+    "year": 2026,
+    "week": 16,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/709f4151-39d7-4f92-a2cc-8d24e127b8eb",
+    "broadcaster": [
+      "ABC",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 4,
+    "homeScore": 14,
+    "homePeriodScores": [
+      7,
+      3,
+      1,
+      3
+    ],
+    "visitorPeriodScores": [
+      3,
+      1,
+      0,
+      0
+    ],
+    "homeTeam": {
+      "officialId": "WAT",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_waterdogs_primary_color.png",
+      "fullName": "Waterdogs",
+      "location": "Philadelphia",
+      "locationCode": "PHI",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#6C20C4",
+      "backgroundColor": "#99A4AD",
+      "wins": 9,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "OUT",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2026/Logo/outlaws-primary.webp",
+      "fullName": "Outlaws",
+      "location": "Denver",
+      "locationCode": "DEN",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FFD400",
+      "backgroundColor": "#B3B3B3",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": "U.S. Bank PLL Championship",
+    "snl": false,
+    "polymarketId": "pll-out-wat-2026-09-20"
+  }
+}
