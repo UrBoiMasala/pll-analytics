@@ -1,0 +1,73 @@
+{
+  "data": {
+    "pregameWinProbability": null,
+    "id": 236,
+    "slugname": "championship-series-1-2024-2-16",
+    "eventId": "2024_cs_ev3",
+    "league": "PLL",
+    "seasonSegment": "champseries",
+    "startTime": "1708122600",
+    "venue": "The St. James",
+    "venueLocation": null,
+    "location": "Springfield, VA",
+    "year": 2024,
+    "week": 0,
+    "urlStreaming": "https://www.espn.com/watch/player?id=bf044497-984e-4327-9b68-0092e78d68b7",
+    "broadcaster": [
+      "ESPN2",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 14,
+    "homeScore": 20,
+    "homePeriodScores": [
+      7,
+      6,
+      2,
+      5
+    ],
+    "visitorPeriodScores": [
+      3,
+      3,
+      3,
+      5
+    ],
+    "homeTeam": {
+      "officialId": "WAT",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_waterdogs_primary_color.png",
+      "fullName": "Waterdogs",
+      "location": "Philadelphia",
+      "locationCode": "PHI",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#6C20C4",
+      "backgroundColor": "#99A4AD",
+      "wins": 2,
+      "losses": 8,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "RED",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 3,
+      "losses": 7,
+      "ties": 0
+    },
+    "description": "Round Robin - Gm 3",
+    "snl": false,
+    "polymarketId": null
+  }
+}
