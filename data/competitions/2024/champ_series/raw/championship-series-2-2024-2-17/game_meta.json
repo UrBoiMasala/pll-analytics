@@ -1,0 +1,72 @@
+{
+  "data": {
+    "pregameWinProbability": null,
+    "id": 239,
+    "slugname": "championship-series-2-2024-2-17",
+    "eventId": "2024_cs_ev6",
+    "league": "PLL",
+    "seasonSegment": "champseries",
+    "startTime": "1708214400",
+    "venue": "The St. James",
+    "venueLocation": null,
+    "location": "Springfield, VA",
+    "year": 2024,
+    "week": 0,
+    "urlStreaming": "https://www.espn.com/watch/player?id=6db6944c-476d-4d98-a58c-8b965ef1b3ad",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 12,
+    "homeScore": 22,
+    "homePeriodScores": [
+      8,
+      2,
+      8,
+      4
+    ],
+    "visitorPeriodScores": [
+      2,
+      2,
+      2,
+      6
+    ],
+    "homeTeam": {
+      "officialId": "WAT",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_waterdogs_primary_color.png",
+      "fullName": "Waterdogs",
+      "location": "Philadelphia",
+      "locationCode": "PHI",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#6C20C4",
+      "backgroundColor": "#99A4AD",
+      "wins": 2,
+      "losses": 8,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CAN",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_cannons_primary_color.png",
+      "fullName": "Cannons",
+      "location": "Boston",
+      "locationCode": "BOS",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#B0B6BB",
+      "backgroundColor": "#C52032",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "description": "Round Robin - Gm 6",
+    "snl": false,
+    "polymarketId": null
+  }
+}
