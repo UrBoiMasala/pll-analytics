@@ -1,0 +1,11 @@
+season,game_id,team_id,opponent_team_id,possessions,points,defensive_possessions,points_allowed,shot_producing_possessions,multi_shot_possessions,ambiguous_possessions,measurable_possessions,measurable_seconds,defensive_measurable_possessions,defensive_measurable_seconds,official_points,score_residual,shots,a2,g2,shooting_points,official_turnovers,official_assists,official_goals,shot_clock_events
+2026,524,OUT,RED,47,15,49,14,30,8,20,21,452,27,666,15,0,41,5,1,15,21,7,14,2
+2026,524,RED,OUT,49,14,47,15,32,11,19,27,666,21,452,14,0,44,6,0,14,19,9,14,4
+2026,525,CAN,WHP,44,9,45,7,26,6,14,26,755,22,430,9,0,35,4,0,9,20,2,9,6
+2026,525,WHP,CAN,45,7,44,9,23,8,16,22,430,26,755,7,0,33,2,0,7,22,3,7,3
+2026,526,ARC,OUT,40,5,42,11,21,5,18,15,491,19,562,5,0,28,3,0,5,21,4,5,5
+2026,526,OUT,ARC,42,11,40,5,29,11,17,19,562,15,491,11,0,45,4,2,11,16,3,9,3
+2026,527,CAN,WAT,46,10,45,13,31,11,17,25,569,23,653,10,0,47,10,1,10,17,3,9,6
+2026,527,WAT,CAN,45,13,46,10,30,8,15,23,653,25,569,13,0,38,6,0,13,20,5,13,4
+2026,529,OUT,WAT,41,4,48,14,24,7,16,21,455,26,777,4,0,32,14,0,4,21,2,4,5
+2026,529,WAT,OUT,48,14,41,4,33,5,16,26,777,21,455,14,0,39,3,0,14,20,6,14,7
