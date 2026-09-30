@@ -1,0 +1,13 @@
+season,player_id,team_id,aggregation_level,player_name,positions,games_played,faceoffs,faceoff_wins,team_faceoffs_in_appearances,league_faceoff_rate,faceoff_pct,draw_share,faceoff_wins_above_average
+2026,000275,ALL,SEASON,Mark Glicini,F,5,20,12,21,0.5,0.6,0.952380952381,2
+2026,000275,CHA,STINT,Mark Glicini,F,5,20,12,21,0.5,0.6,0.952380952381,2
+2026,000978,ALL,SEASON,Kyle Jackson,F,3,1,1,13,0.5,1,0.0769230769231,0.5
+2026,000978,ATL,STINT,Kyle Jackson,F,3,1,1,13,0.5,1,0.0769230769231,0.5
+2026,001415,ALL,SEASON,Greg Weyl,F,4,16,6,16,0.5,0.375,1,-2
+2026,001415,OUT,STINT,Greg Weyl,F,4,16,6,16,0.5,0.375,1,-2
+2026,001795,ALL,SEASON,Christian Scarpello,F,5,1,0,21,0.5,0,0.047619047619,-0.5
+2026,001795,CHA,STINT,Christian Scarpello,F,5,1,0,21,0.5,0,0.047619047619,-0.5
+2026,003160,ALL,SEASON,Andrew McAdorey,F,4,18,5,18,0.5,0.277777777778,1,-4
+2026,003160,RED,STINT,Andrew McAdorey,F,4,18,5,18,0.5,0.277777777778,1,-4
+2026,003172,ALL,SEASON,Max Krevsky,F,3,12,10,13,0.5,0.833333333333,0.923076923077,4
+2026,003172,ATL,STINT,Max Krevsky,F,3,12,10,13,0.5,0.833333333333,0.923076923077,4

@@ -1,0 +1,17 @@
+season,game_id,team_id,opponent_team_id,possessions,points,defensive_possessions,points_allowed,shot_producing_possessions,multi_shot_possessions,ambiguous_possessions,measurable_possessions,measurable_seconds,defensive_measurable_possessions,defensive_measurable_seconds,official_points,score_residual,shots,a2,g2,shooting_points,official_turnovers,official_assists,official_goals,shot_clock_events
+2026,433,ATL,OUT,,,,,,,,,,,,22,,48,8,2,22,11,11,20,0
+2026,433,OUT,ATL,,,,,,,,,,,,32,,54,12,6,32,9,11,26,1
+2026,436,OUT,RED,,,,,,,,,,,,14,,42,11,2,14,17,5,12,1
+2026,436,RED,OUT,,,,,,,,,,,,26,,52,15,5,26,11,9,21,0
+2026,437,ATL,CHA,,,,,,,,,,,,25,,48,5,2,25,8,15,23,0
+2026,437,CHA,ATL,,,,,,,,,,,,24,,51,12,3,24,9,6,21,0
+2026,443,CHA,RED,,,,,,,,,,,,21,,56,14,3,21,10,7,18,2
+2026,443,RED,CHA,,,,,,,,,,,,23,,64,18,3,23,7,10,20,0
+2026,444,CHA,OUT,,,,,,,,,,,,26,,50,7,2,26,5,9,24,0
+2026,444,OUT,CHA,,,,,,,,,,,,18,,60,8,0,18,7,8,18,1
+2026,445,ATL,RED,,,,,,,,,,,,22,,50,7,1,22,19,8,21,5
+2026,445,RED,ATL,,,,,,,,,,,,23,,56,13,1,23,10,10,22,0
+2026,446,CHA,OUT,,,,,,,,,,,,23,,45,14,3,23,12,9,20,0
+2026,446,OUT,CHA,,,,,,,,,,,,22,,43,7,2,22,14,9,20,4
+2026,447,CHA,RED,,,,,,,,,,,,24,,48,13,4,24,9,7,20,1
+2026,447,RED,CHA,,,,,,,,,,,,16,,51,16,1,16,5,5,15,1
