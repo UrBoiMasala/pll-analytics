@@ -1,0 +1,74 @@
+{
+  "data": {
+    "pregameWinProbability": null,
+    "id": 238,
+    "slugname": "championship-series-1-2024-2-17",
+    "eventId": "2024_cs_ev5",
+    "league": "PLL",
+    "seasonSegment": "champseries",
+    "startTime": "1708207200",
+    "venue": "The St. James",
+    "venueLocation": null,
+    "location": "Springfield, VA",
+    "year": 2024,
+    "week": 0,
+    "urlStreaming": "https://www.espn.com/watch/player?id=e4facbfe-8d5c-4f1b-bfe6-849a7a8fb65d",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 5,
+    "clockMinutes": 3,
+    "clockSeconds": 34,
+    "gameStatus": null,
+    "visitorScore": 16,
+    "homeScore": 18,
+    "homePeriodScores": [
+      5,
+      2,
+      6,
+      3,
+      2
+    ],
+    "visitorPeriodScores": [
+      7,
+      3,
+      3,
+      3,
+      0
+    ],
+    "homeTeam": {
+      "officialId": "RED",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 3,
+      "losses": 7,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ARC",
+      "year": 2024,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_archers_primary_color.png",
+      "fullName": "Archers",
+      "location": "Utah",
+      "locationCode": "UTA",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#002244",
+      "wins": 6,
+      "losses": 4,
+      "ties": 0
+    },
+    "description": "Round Robin - Gm 5",
+    "snl": false,
+    "polymarketId": null
+  }
+}
