@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.4772210003264097,
+      "awayWinProbability": 0.5227789996735903
+    },
+    "id": 310,
+    "slugname": "2025-championship-series-ev-2",
+    "eventId": "2025_cs_ev2",
+    "league": "PLL",
+    "seasonSegment": "champseries",
+    "startTime": "1739404800",
+    "venue": "The St. James",
+    "venueLocation": null,
+    "location": "Springfield, VA",
+    "year": 2025,
+    "week": 0,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/6a3dd712-4d0d-4fff-9375-297719e0b1ba",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 21,
+    "homeScore": 29,
+    "homePeriodScores": [
+      10,
+      8,
+      6,
+      5
+    ],
+    "visitorPeriodScores": [
+      7,
+      5,
+      4,
+      5
+    ],
+    "homeTeam": {
+      "officialId": "ARC",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_archers_primary_color.png",
+      "fullName": "Archers",
+      "location": "Utah",
+      "locationCode": "UTA",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#002244",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CAN",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_cannons_primary_color.png",
+      "fullName": "Cannons",
+      "location": "Boston",
+      "locationCode": "BOS",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#B0B6BB",
+      "backgroundColor": "#C52032",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": "Round Robin - PLL Gm 2",
+    "snl": false,
+    "polymarketId": null
+  }
+}
