@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "source_url": "https://stats.premierlacrosseleague.com/api/v4/games/2025-championship-series-ev-5/play-by-plays",
+    "retrieved_at": "2026-09-30T07-06-32Z",
+    "sha256": "4c944ba2bd01b011e38678c46313ea98d271a05183e428a39d5b26e9ee436a4d"
+  },
+  "game_meta": {
+    "source_url": "https://stats.premierlacrosseleague.com/api/v4/games/2025-championship-series-ev-5",
+    "retrieved_at": "2026-09-30T07-06-32Z",
+    "sha256": "626c8f73373b50f8ac7b9175561891274f5c01166c41146e723de61d85c5d240"
+  },
+  "players_stats": {
+    "source_url": "https://stats.premierlacrosseleague.com/api/v4/games/2025-championship-series-ev-5/players/stats",
+    "retrieved_at": "2026-09-30T07-06-33Z",
+    "sha256": "1cc38e2545ca24e3febe83ca51fec8263af10257d31186d990bc3161c96e8b19"
+  },
+  "teams_stats": {
+    "source_url": "https://stats.premierlacrosseleague.com/api/v4/games/2025-championship-series-ev-5/teams/stats",
+    "retrieved_at": "2026-09-30T07-06-33Z",
+    "sha256": "beb7eb5dc7892feeca84d5e41c5b476e8165fbc70355064ad75a0a441c4f2bfc"
+  }
+}
