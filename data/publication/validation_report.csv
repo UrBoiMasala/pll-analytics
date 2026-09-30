@@ -147,3 +147,693 @@ CSV agreement: 2026/possession_sensitivity,PASS
 No infinity: possession_sensitivity,PASS
 35 unique core definitions,PASS
 catalog columns exist,PASS
+2023 champ_series: source file set and hashes,PASS
+"2023 champ_series: all scheduled PLL games, both box scores",PASS
+2023 champ_series: 172 all regulation periods,PASS
+2023 champ_series: 172 endpoint scores,PASS
+2023 champ_series: 172/WHP event scoring,PASS
+2023 champ_series: 172/ATL event scoring,PASS
+2023 champ_series: 173 all regulation periods,PASS
+2023 champ_series: 173 endpoint scores,PASS
+2023 champ_series: 173/CHR event scoring,PASS
+2023 champ_series: 173/ARC event scoring,PASS
+2023 champ_series: 174 all regulation periods,PASS
+2023 champ_series: 174 endpoint scores,PASS
+2023 champ_series: 174/ARC event scoring,PASS
+2023 champ_series: 174/WHP event scoring,PASS
+2023 champ_series: 175 all regulation periods,PASS
+2023 champ_series: 175 endpoint scores,PASS
+2023 champ_series: 175/CHR event scoring,PASS
+2023 champ_series: 175/ATL event scoring,PASS
+2023 champ_series: 176 all regulation periods,PASS
+2023 champ_series: 176 endpoint scores,PASS
+2023 champ_series: 176/ATL event scoring,PASS
+2023 champ_series: 176/ARC event scoring,PASS
+2023 champ_series: 177 all regulation periods,PASS
+2023 champ_series: 177 endpoint scores,PASS
+2023 champ_series: 177/WHP event scoring,PASS
+2023 champ_series: 177/CHR event scoring,PASS
+2023 champ_series: 178 all regulation periods,PASS
+2023 champ_series: 178 endpoint scores,PASS
+2023 champ_series: 178/ATL event scoring,PASS
+2023 champ_series: 178/WHP event scoring,PASS
+2023 champ_series: 179 all regulation periods,PASS
+2023 champ_series: 179 endpoint scores,PASS
+2023 champ_series: 179/ARC event scoring,PASS
+2023 champ_series: 179/CHR event scoring,PASS
+2023 champ_series: 180 all regulation periods,PASS
+2023 champ_series: 180 endpoint scores,PASS
+2023 champ_series: 180/ATL event scoring,PASS
+2023 champ_series: 180/CHR event scoring,PASS
+2023 champ_series: all player shots and goals match official game boxes,PASS
+2023 champ_series: all goalie saves and goals match official game boxes,PASS
+2023 champ_series: Sixes-only shooting baseline,PASS
+2023 champ_series: Sixes-only goalie/faceoff/turnover baselines,PASS
+2023 champ_series: pooled player shots,PASS
+2023 champ_series: pooled player g1,PASS
+2023 champ_series: pooled player g2,PASS
+2023 champ_series: pooled player turnovers,PASS
+2023 champ_series: pooled player touches,PASS
+2023 champ_series: pooled player faceoffs,PASS
+2023 champ_series: pooled player faceoff_wins,PASS
+2023 champ_series: appearance denominators,PASS
+2023 champ_series: possessions withheld as unknown,PASS
+2023 champ_series: stored CSV team_advanced_stats,PASS
+2023 champ_series: finite team_advanced_stats,PASS
+2023 champ_series: stored CSV player_offensive_advanced,PASS
+2023 champ_series: finite player_offensive_advanced,PASS
+2023 champ_series: stored CSV player_shooting_advanced,PASS
+2023 champ_series: finite player_shooting_advanced,PASS
+2023 champ_series: stored CSV player_two_point_stats,PASS
+2023 champ_series: finite player_two_point_stats,PASS
+2023 champ_series: stored CSV faceoff_advanced,PASS
+2023 champ_series: finite faceoff_advanced,PASS
+2023 champ_series: stored CSV goalie_advanced,PASS
+2023 champ_series: finite goalie_advanced,PASS
+2023 champ_series: stored CSV defensive_production,PASS
+2023 champ_series: finite defensive_production,PASS
+2023 champ_series: stored CSV player_season_summary,PASS
+2023 champ_series: finite player_season_summary,PASS
+2023 champ_series: stored CSV possession_length_analysis,PASS
+2023 champ_series: finite possession_length_analysis,PASS
+2023 champ_series: stored CSV season_baselines,PASS
+2023 champ_series: finite season_baselines,PASS
+2023 champ_series: stored CSV team_game_publication,PASS
+2023 champ_series: finite team_game_publication,PASS
+2023 champ_series: stored CSV publication_coverage,PASS
+2023 champ_series: finite publication_coverage,PASS
+2023 champ_series: stored CSV possession_sensitivity,PASS
+2023 champ_series: finite possession_sensitivity,PASS
+2024 champ_series: source file set and hashes,PASS
+"2024 champ_series: all scheduled PLL games, both box scores",PASS
+2024 champ_series: 234 all regulation periods,PASS
+2024 champ_series: 234 endpoint scores,PASS
+2024 champ_series: 234/CAN event scoring,PASS
+2024 champ_series: 234/RED event scoring,PASS
+2024 champ_series: 235 all regulation periods,PASS
+2024 champ_series: 235 endpoint scores,PASS
+2024 champ_series: 235/ARC event scoring,PASS
+2024 champ_series: 235/WAT event scoring,PASS
+2024 champ_series: 236 all regulation periods,PASS
+2024 champ_series: 236 endpoint scores,PASS
+2024 champ_series: 236/WAT event scoring,PASS
+2024 champ_series: 236/RED event scoring,PASS
+2024 champ_series: 237 all regulation periods,PASS
+2024 champ_series: 237 endpoint scores,PASS
+2024 champ_series: 237/ARC event scoring,PASS
+2024 champ_series: 237/CAN event scoring,PASS
+2024 champ_series: 238 all regulation periods,PASS
+2024 champ_series: 238 endpoint scores,PASS
+2024 champ_series: 238/RED event scoring,PASS
+2024 champ_series: 238/ARC event scoring,PASS
+2024 champ_series: 239 all regulation periods,PASS
+2024 champ_series: 239 endpoint scores,PASS
+2024 champ_series: 239/WAT event scoring,PASS
+2024 champ_series: 239/CAN event scoring,PASS
+2024 champ_series: 240 all regulation periods,PASS
+2024 champ_series: 240 endpoint scores,PASS
+2024 champ_series: 240/RED event scoring,PASS
+2024 champ_series: 240/CAN event scoring,PASS
+2024 champ_series: 241 all regulation periods,PASS
+2024 champ_series: 241 endpoint scores,PASS
+2024 champ_series: 241/WAT event scoring,PASS
+2024 champ_series: 241/ARC event scoring,PASS
+2024 champ_series: 242 all regulation periods,PASS
+2024 champ_series: 242 endpoint scores,PASS
+2024 champ_series: 242/WAT event scoring,PASS
+2024 champ_series: 242/CAN event scoring,PASS
+2024 champ_series: all player shots and goals match official game boxes,PASS
+2024 champ_series: all goalie saves and goals match official game boxes,PASS
+2024 champ_series: Sixes-only shooting baseline,PASS
+2024 champ_series: Sixes-only goalie/faceoff/turnover baselines,PASS
+2024 champ_series: pooled player shots,PASS
+2024 champ_series: pooled player g1,PASS
+2024 champ_series: pooled player g2,PASS
+2024 champ_series: pooled player turnovers,PASS
+2024 champ_series: pooled player touches,PASS
+2024 champ_series: pooled player faceoffs,PASS
+2024 champ_series: pooled player faceoff_wins,PASS
+2024 champ_series: appearance denominators,PASS
+2024 champ_series: possessions withheld as unknown,PASS
+2024 champ_series: stored CSV team_advanced_stats,PASS
+2024 champ_series: finite team_advanced_stats,PASS
+2024 champ_series: stored CSV player_offensive_advanced,PASS
+2024 champ_series: finite player_offensive_advanced,PASS
+2024 champ_series: stored CSV player_shooting_advanced,PASS
+2024 champ_series: finite player_shooting_advanced,PASS
+2024 champ_series: stored CSV player_two_point_stats,PASS
+2024 champ_series: finite player_two_point_stats,PASS
+2024 champ_series: stored CSV faceoff_advanced,PASS
+2024 champ_series: finite faceoff_advanced,PASS
+2024 champ_series: stored CSV goalie_advanced,PASS
+2024 champ_series: finite goalie_advanced,PASS
+2024 champ_series: stored CSV defensive_production,PASS
+2024 champ_series: finite defensive_production,PASS
+2024 champ_series: stored CSV player_season_summary,PASS
+2024 champ_series: finite player_season_summary,PASS
+2024 champ_series: stored CSV possession_length_analysis,PASS
+2024 champ_series: finite possession_length_analysis,PASS
+2024 champ_series: stored CSV season_baselines,PASS
+2024 champ_series: finite season_baselines,PASS
+2024 champ_series: stored CSV team_game_publication,PASS
+2024 champ_series: finite team_game_publication,PASS
+2024 champ_series: stored CSV publication_coverage,PASS
+2024 champ_series: finite publication_coverage,PASS
+2024 champ_series: stored CSV possession_sensitivity,PASS
+2024 champ_series: finite possession_sensitivity,PASS
+2025 champ_series: source file set and hashes,PASS
+"2025 champ_series: all scheduled PLL games, both box scores",PASS
+2025 champ_series: 309 all regulation periods,PASS
+2025 champ_series: 309 endpoint scores,PASS
+2025 champ_series: 309/ATL event scoring,PASS
+2025 champ_series: 309/WHP event scoring,PASS
+2025 champ_series: 310 all regulation periods,PASS
+2025 champ_series: 310 endpoint scores,PASS
+2025 champ_series: 310/ARC event scoring,PASS
+2025 champ_series: 310/CAN event scoring,PASS
+2025 champ_series: 312 all regulation periods,PASS
+2025 champ_series: 312 endpoint scores,PASS
+2025 champ_series: 312/CAN event scoring,PASS
+2025 champ_series: 312/WHP event scoring,PASS
+2025 champ_series: 314 all regulation periods,PASS
+2025 champ_series: 314 endpoint scores,PASS
+2025 champ_series: 314/ARC event scoring,PASS
+2025 champ_series: 314/ATL event scoring,PASS
+2025 champ_series: 318 all regulation periods,PASS
+2025 champ_series: 318 endpoint scores,PASS
+2025 champ_series: 318/CAN event scoring,PASS
+2025 champ_series: 318/ATL event scoring,PASS
+2025 champ_series: 319 all regulation periods,PASS
+2025 champ_series: 319 endpoint scores,PASS
+2025 champ_series: 319/ARC event scoring,PASS
+2025 champ_series: 319/WHP event scoring,PASS
+2025 champ_series: 321 all regulation periods,PASS
+2025 champ_series: 321 endpoint scores,PASS
+2025 champ_series: 321/CAN event scoring,PASS
+2025 champ_series: 321/ATL event scoring,PASS
+2025 champ_series: 323 all regulation periods,PASS
+2025 champ_series: 323 endpoint scores,PASS
+2025 champ_series: 323/ARC event scoring,PASS
+2025 champ_series: 323/CAN event scoring,PASS
+2025 champ_series: all player shots and goals match official game boxes,PASS
+2025 champ_series: all goalie saves and goals match official game boxes,PASS
+2025 champ_series: Sixes-only shooting baseline,PASS
+2025 champ_series: Sixes-only goalie/faceoff/turnover baselines,PASS
+2025 champ_series: pooled player shots,PASS
+2025 champ_series: pooled player g1,PASS
+2025 champ_series: pooled player g2,PASS
+2025 champ_series: pooled player turnovers,PASS
+2025 champ_series: pooled player touches,PASS
+2025 champ_series: pooled player faceoffs,PASS
+2025 champ_series: pooled player faceoff_wins,PASS
+2025 champ_series: appearance denominators,PASS
+2025 champ_series: possessions withheld as unknown,PASS
+2025 champ_series: stored CSV team_advanced_stats,PASS
+2025 champ_series: finite team_advanced_stats,PASS
+2025 champ_series: stored CSV player_offensive_advanced,PASS
+2025 champ_series: finite player_offensive_advanced,PASS
+2025 champ_series: stored CSV player_shooting_advanced,PASS
+2025 champ_series: finite player_shooting_advanced,PASS
+2025 champ_series: stored CSV player_two_point_stats,PASS
+2025 champ_series: finite player_two_point_stats,PASS
+2025 champ_series: stored CSV faceoff_advanced,PASS
+2025 champ_series: finite faceoff_advanced,PASS
+2025 champ_series: stored CSV goalie_advanced,PASS
+2025 champ_series: finite goalie_advanced,PASS
+2025 champ_series: stored CSV defensive_production,PASS
+2025 champ_series: finite defensive_production,PASS
+2025 champ_series: stored CSV player_season_summary,PASS
+2025 champ_series: finite player_season_summary,PASS
+2025 champ_series: stored CSV possession_length_analysis,PASS
+2025 champ_series: finite possession_length_analysis,PASS
+2025 champ_series: stored CSV season_baselines,PASS
+2025 champ_series: finite season_baselines,PASS
+2025 champ_series: stored CSV team_game_publication,PASS
+2025 champ_series: finite team_game_publication,PASS
+2025 champ_series: stored CSV publication_coverage,PASS
+2025 champ_series: finite publication_coverage,PASS
+2025 champ_series: stored CSV possession_sensitivity,PASS
+2025 champ_series: finite possession_sensitivity,PASS
+2026 champ_series: source file set and hashes,PASS
+"2026 champ_series: all scheduled PLL games, both box scores",PASS
+2026 champ_series: 433 all regulation periods,PASS
+2026 champ_series: 433 endpoint scores,PASS
+2026 champ_series: 433/OUT event scoring,PASS
+2026 champ_series: 433/ATL event scoring,PASS
+2026 champ_series: 436 all regulation periods,PASS
+2026 champ_series: 436 endpoint scores,PASS
+2026 champ_series: 436/RED event scoring,PASS
+2026 champ_series: 436/OUT event scoring,PASS
+2026 champ_series: 437 all regulation periods,PASS
+2026 champ_series: 437 endpoint scores,PASS
+2026 champ_series: 437/ATL event scoring,PASS
+2026 champ_series: 437/CHA event scoring,PASS
+2026 champ_series: 443 all regulation periods,PASS
+2026 champ_series: 443 endpoint scores,PASS
+2026 champ_series: 443/CHA event scoring,PASS
+2026 champ_series: 443/RED event scoring,PASS
+2026 champ_series: 444 all regulation periods,PASS
+2026 champ_series: 444 endpoint scores,PASS
+2026 champ_series: 444/OUT event scoring,PASS
+2026 champ_series: 444/CHA event scoring,PASS
+2026 champ_series: 445 all regulation periods,PASS
+2026 champ_series: 445 endpoint scores,PASS
+2026 champ_series: 445/RED event scoring,PASS
+2026 champ_series: 445/ATL event scoring,PASS
+2026 champ_series: 446 all regulation periods,PASS
+2026 champ_series: 446 endpoint scores,PASS
+2026 champ_series: 446/CHA event scoring,PASS
+2026 champ_series: 446/OUT event scoring,PASS
+2026 champ_series: 447 all regulation periods,PASS
+2026 champ_series: 447 endpoint scores,PASS
+2026 champ_series: 447/RED event scoring,PASS
+2026 champ_series: 447/CHA event scoring,PASS
+2026 champ_series: all player shots and goals match official game boxes,PASS
+2026 champ_series: all goalie saves and goals match official game boxes,PASS
+2026 champ_series: Sixes-only shooting baseline,PASS
+2026 champ_series: Sixes-only goalie/faceoff/turnover baselines,PASS
+2026 champ_series: pooled player shots,PASS
+2026 champ_series: pooled player g1,PASS
+2026 champ_series: pooled player g2,PASS
+2026 champ_series: pooled player turnovers,PASS
+2026 champ_series: pooled player touches,PASS
+2026 champ_series: pooled player faceoffs,PASS
+2026 champ_series: pooled player faceoff_wins,PASS
+2026 champ_series: appearance denominators,PASS
+2026 champ_series: possessions withheld as unknown,PASS
+2026 champ_series: stored CSV team_advanced_stats,PASS
+2026 champ_series: finite team_advanced_stats,PASS
+2026 champ_series: stored CSV player_offensive_advanced,PASS
+2026 champ_series: finite player_offensive_advanced,PASS
+2026 champ_series: stored CSV player_shooting_advanced,PASS
+2026 champ_series: finite player_shooting_advanced,PASS
+2026 champ_series: stored CSV player_two_point_stats,PASS
+2026 champ_series: finite player_two_point_stats,PASS
+2026 champ_series: stored CSV faceoff_advanced,PASS
+2026 champ_series: finite faceoff_advanced,PASS
+2026 champ_series: stored CSV goalie_advanced,PASS
+2026 champ_series: finite goalie_advanced,PASS
+2026 champ_series: stored CSV defensive_production,PASS
+2026 champ_series: finite defensive_production,PASS
+2026 champ_series: stored CSV player_season_summary,PASS
+2026 champ_series: finite player_season_summary,PASS
+2026 champ_series: stored CSV possession_length_analysis,PASS
+2026 champ_series: finite possession_length_analysis,PASS
+2026 champ_series: stored CSV season_baselines,PASS
+2026 champ_series: finite season_baselines,PASS
+2026 champ_series: stored CSV team_game_publication,PASS
+2026 champ_series: finite team_game_publication,PASS
+2026 champ_series: stored CSV publication_coverage,PASS
+2026 champ_series: finite publication_coverage,PASS
+2026 champ_series: stored CSV possession_sensitivity,PASS
+2026 champ_series: finite possession_sensitivity,PASS
+2022 regular: 2022: possession and scoring conservation,PASS
+2022 regular: 2022: offensive and defensive formulas,PASS
+2022 regular: 2022: shot event conservation,PASS
+2022 regular: 2022: possession outcome bounds,PASS
+2022 regular: 2022: duration eligibility,PASS
+2022 regular: 2022: opponent pace attribution,PASS
+2022 regular: 2022: bucket conservation,PASS
+2022 regular: 2022: official assist source,PASS
+2022 regular: 2022: goalie resolved population,PASS
+2022 regular: 2022: player appearances,PASS
+2022 regular: 2022: transfer conservation,PASS
+2022 regular: CSV agreement: 2022/team_advanced_stats,PASS
+2022 regular: No infinity: team_advanced_stats,PASS
+2022 regular: CSV agreement: 2022/player_offensive_advanced,PASS
+2022 regular: No infinity: player_offensive_advanced,PASS
+2022 regular: CSV agreement: 2022/player_shooting_advanced,PASS
+2022 regular: No infinity: player_shooting_advanced,PASS
+2022 regular: CSV agreement: 2022/player_two_point_stats,PASS
+2022 regular: No infinity: player_two_point_stats,PASS
+2022 regular: CSV agreement: 2022/faceoff_advanced,PASS
+2022 regular: No infinity: faceoff_advanced,PASS
+2022 regular: CSV agreement: 2022/goalie_advanced,PASS
+2022 regular: No infinity: goalie_advanced,PASS
+2022 regular: CSV agreement: 2022/defensive_production,PASS
+2022 regular: No infinity: defensive_production,PASS
+2022 regular: CSV agreement: 2022/player_season_summary,PASS
+2022 regular: No infinity: player_season_summary,PASS
+2022 regular: CSV agreement: 2022/possession_length_analysis,PASS
+2022 regular: No infinity: possession_length_analysis,PASS
+2022 regular: CSV agreement: 2022/season_baselines,PASS
+2022 regular: No infinity: season_baselines,PASS
+2022 regular: CSV agreement: 2022/team_game_publication,PASS
+2022 regular: No infinity: team_game_publication,PASS
+2022 regular: CSV agreement: 2022/publication_coverage,PASS
+2022 regular: No infinity: publication_coverage,PASS
+2022 regular: CSV agreement: 2022/possession_sensitivity,PASS
+2022 regular: No infinity: possession_sensitivity,PASS
+2022 regular: 35 unique core definitions,PASS
+2022 regular: catalog columns exist,PASS
+2022 post: 2022: possession and scoring conservation,PASS
+2022 post: 2022: offensive and defensive formulas,PASS
+2022 post: 2022: shot event conservation,PASS
+2022 post: 2022: possession outcome bounds,PASS
+2022 post: 2022: duration eligibility,PASS
+2022 post: 2022: opponent pace attribution,PASS
+2022 post: 2022: bucket conservation,PASS
+2022 post: 2022: official assist source,PASS
+2022 post: 2022: goalie resolved population,PASS
+2022 post: 2022: player appearances,PASS
+2022 post: 2022: transfer conservation,PASS
+2022 post: CSV agreement: 2022/team_advanced_stats,PASS
+2022 post: No infinity: team_advanced_stats,PASS
+2022 post: CSV agreement: 2022/player_offensive_advanced,PASS
+2022 post: No infinity: player_offensive_advanced,PASS
+2022 post: CSV agreement: 2022/player_shooting_advanced,PASS
+2022 post: No infinity: player_shooting_advanced,PASS
+2022 post: CSV agreement: 2022/player_two_point_stats,PASS
+2022 post: No infinity: player_two_point_stats,PASS
+2022 post: CSV agreement: 2022/faceoff_advanced,PASS
+2022 post: No infinity: faceoff_advanced,PASS
+2022 post: CSV agreement: 2022/goalie_advanced,PASS
+2022 post: No infinity: goalie_advanced,PASS
+2022 post: CSV agreement: 2022/defensive_production,PASS
+2022 post: No infinity: defensive_production,PASS
+2022 post: CSV agreement: 2022/player_season_summary,PASS
+2022 post: No infinity: player_season_summary,PASS
+2022 post: CSV agreement: 2022/possession_length_analysis,PASS
+2022 post: No infinity: possession_length_analysis,PASS
+2022 post: CSV agreement: 2022/season_baselines,PASS
+2022 post: No infinity: season_baselines,PASS
+2022 post: CSV agreement: 2022/team_game_publication,PASS
+2022 post: No infinity: team_game_publication,PASS
+2022 post: CSV agreement: 2022/publication_coverage,PASS
+2022 post: No infinity: publication_coverage,PASS
+2022 post: CSV agreement: 2022/possession_sensitivity,PASS
+2022 post: No infinity: possession_sensitivity,PASS
+2022 post: 35 unique core definitions,PASS
+2022 post: catalog columns exist,PASS
+2023 regular: 2023: possession and scoring conservation,PASS
+2023 regular: 2023: offensive and defensive formulas,PASS
+2023 regular: 2023: shot event conservation,PASS
+2023 regular: 2023: possession outcome bounds,PASS
+2023 regular: 2023: duration eligibility,PASS
+2023 regular: 2023: opponent pace attribution,PASS
+2023 regular: 2023: bucket conservation,PASS
+2023 regular: 2023: official assist source,PASS
+2023 regular: 2023: goalie resolved population,PASS
+2023 regular: 2023: player appearances,PASS
+2023 regular: 2023: transfer conservation,PASS
+2023 regular: CSV agreement: 2023/team_advanced_stats,PASS
+2023 regular: No infinity: team_advanced_stats,PASS
+2023 regular: CSV agreement: 2023/player_offensive_advanced,PASS
+2023 regular: No infinity: player_offensive_advanced,PASS
+2023 regular: CSV agreement: 2023/player_shooting_advanced,PASS
+2023 regular: No infinity: player_shooting_advanced,PASS
+2023 regular: CSV agreement: 2023/player_two_point_stats,PASS
+2023 regular: No infinity: player_two_point_stats,PASS
+2023 regular: CSV agreement: 2023/faceoff_advanced,PASS
+2023 regular: No infinity: faceoff_advanced,PASS
+2023 regular: CSV agreement: 2023/goalie_advanced,PASS
+2023 regular: No infinity: goalie_advanced,PASS
+2023 regular: CSV agreement: 2023/defensive_production,PASS
+2023 regular: No infinity: defensive_production,PASS
+2023 regular: CSV agreement: 2023/player_season_summary,PASS
+2023 regular: No infinity: player_season_summary,PASS
+2023 regular: CSV agreement: 2023/possession_length_analysis,PASS
+2023 regular: No infinity: possession_length_analysis,PASS
+2023 regular: CSV agreement: 2023/season_baselines,PASS
+2023 regular: No infinity: season_baselines,PASS
+2023 regular: CSV agreement: 2023/team_game_publication,PASS
+2023 regular: No infinity: team_game_publication,PASS
+2023 regular: CSV agreement: 2023/publication_coverage,PASS
+2023 regular: No infinity: publication_coverage,PASS
+2023 regular: CSV agreement: 2023/possession_sensitivity,PASS
+2023 regular: No infinity: possession_sensitivity,PASS
+2023 regular: 35 unique core definitions,PASS
+2023 regular: catalog columns exist,PASS
+2023 post: 2023: possession and scoring conservation,PASS
+2023 post: 2023: offensive and defensive formulas,PASS
+2023 post: 2023: shot event conservation,PASS
+2023 post: 2023: possession outcome bounds,PASS
+2023 post: 2023: duration eligibility,PASS
+2023 post: 2023: opponent pace attribution,PASS
+2023 post: 2023: bucket conservation,PASS
+2023 post: 2023: official assist source,PASS
+2023 post: 2023: goalie resolved population,PASS
+2023 post: 2023: player appearances,PASS
+2023 post: 2023: transfer conservation,PASS
+2023 post: CSV agreement: 2023/team_advanced_stats,PASS
+2023 post: No infinity: team_advanced_stats,PASS
+2023 post: CSV agreement: 2023/player_offensive_advanced,PASS
+2023 post: No infinity: player_offensive_advanced,PASS
+2023 post: CSV agreement: 2023/player_shooting_advanced,PASS
+2023 post: No infinity: player_shooting_advanced,PASS
+2023 post: CSV agreement: 2023/player_two_point_stats,PASS
+2023 post: No infinity: player_two_point_stats,PASS
+2023 post: CSV agreement: 2023/faceoff_advanced,PASS
+2023 post: No infinity: faceoff_advanced,PASS
+2023 post: CSV agreement: 2023/goalie_advanced,PASS
+2023 post: No infinity: goalie_advanced,PASS
+2023 post: CSV agreement: 2023/defensive_production,PASS
+2023 post: No infinity: defensive_production,PASS
+2023 post: CSV agreement: 2023/player_season_summary,PASS
+2023 post: No infinity: player_season_summary,PASS
+2023 post: CSV agreement: 2023/possession_length_analysis,PASS
+2023 post: No infinity: possession_length_analysis,PASS
+2023 post: CSV agreement: 2023/season_baselines,PASS
+2023 post: No infinity: season_baselines,PASS
+2023 post: CSV agreement: 2023/team_game_publication,PASS
+2023 post: No infinity: team_game_publication,PASS
+2023 post: CSV agreement: 2023/publication_coverage,PASS
+2023 post: No infinity: publication_coverage,PASS
+2023 post: CSV agreement: 2023/possession_sensitivity,PASS
+2023 post: No infinity: possession_sensitivity,PASS
+2023 post: 35 unique core definitions,PASS
+2023 post: catalog columns exist,PASS
+2024 regular: 2024: possession and scoring conservation,PASS
+2024 regular: 2024: offensive and defensive formulas,PASS
+2024 regular: 2024: shot event conservation,PASS
+2024 regular: 2024: possession outcome bounds,PASS
+2024 regular: 2024: duration eligibility,PASS
+2024 regular: 2024: opponent pace attribution,PASS
+2024 regular: 2024: bucket conservation,PASS
+2024 regular: 2024: official assist source,PASS
+2024 regular: 2024: goalie resolved population,PASS
+2024 regular: 2024: player appearances,PASS
+2024 regular: 2024: transfer conservation,PASS
+2024 regular: CSV agreement: 2024/team_advanced_stats,PASS
+2024 regular: No infinity: team_advanced_stats,PASS
+2024 regular: CSV agreement: 2024/player_offensive_advanced,PASS
+2024 regular: No infinity: player_offensive_advanced,PASS
+2024 regular: CSV agreement: 2024/player_shooting_advanced,PASS
+2024 regular: No infinity: player_shooting_advanced,PASS
+2024 regular: CSV agreement: 2024/player_two_point_stats,PASS
+2024 regular: No infinity: player_two_point_stats,PASS
+2024 regular: CSV agreement: 2024/faceoff_advanced,PASS
+2024 regular: No infinity: faceoff_advanced,PASS
+2024 regular: CSV agreement: 2024/goalie_advanced,PASS
+2024 regular: No infinity: goalie_advanced,PASS
+2024 regular: CSV agreement: 2024/defensive_production,PASS
+2024 regular: No infinity: defensive_production,PASS
+2024 regular: CSV agreement: 2024/player_season_summary,PASS
+2024 regular: No infinity: player_season_summary,PASS
+2024 regular: CSV agreement: 2024/possession_length_analysis,PASS
+2024 regular: No infinity: possession_length_analysis,PASS
+2024 regular: CSV agreement: 2024/season_baselines,PASS
+2024 regular: No infinity: season_baselines,PASS
+2024 regular: CSV agreement: 2024/team_game_publication,PASS
+2024 regular: No infinity: team_game_publication,PASS
+2024 regular: CSV agreement: 2024/publication_coverage,PASS
+2024 regular: No infinity: publication_coverage,PASS
+2024 regular: CSV agreement: 2024/possession_sensitivity,PASS
+2024 regular: No infinity: possession_sensitivity,PASS
+2024 regular: 35 unique core definitions,PASS
+2024 regular: catalog columns exist,PASS
+2024 post: 2024: possession and scoring conservation,PASS
+2024 post: 2024: offensive and defensive formulas,PASS
+2024 post: 2024: shot event conservation,PASS
+2024 post: 2024: possession outcome bounds,PASS
+2024 post: 2024: duration eligibility,PASS
+2024 post: 2024: opponent pace attribution,PASS
+2024 post: 2024: bucket conservation,PASS
+2024 post: 2024: official assist source,PASS
+2024 post: 2024: goalie resolved population,PASS
+2024 post: 2024: player appearances,PASS
+2024 post: 2024: transfer conservation,PASS
+2024 post: CSV agreement: 2024/team_advanced_stats,PASS
+2024 post: No infinity: team_advanced_stats,PASS
+2024 post: CSV agreement: 2024/player_offensive_advanced,PASS
+2024 post: No infinity: player_offensive_advanced,PASS
+2024 post: CSV agreement: 2024/player_shooting_advanced,PASS
+2024 post: No infinity: player_shooting_advanced,PASS
+2024 post: CSV agreement: 2024/player_two_point_stats,PASS
+2024 post: No infinity: player_two_point_stats,PASS
+2024 post: CSV agreement: 2024/faceoff_advanced,PASS
+2024 post: No infinity: faceoff_advanced,PASS
+2024 post: CSV agreement: 2024/goalie_advanced,PASS
+2024 post: No infinity: goalie_advanced,PASS
+2024 post: CSV agreement: 2024/defensive_production,PASS
+2024 post: No infinity: defensive_production,PASS
+2024 post: CSV agreement: 2024/player_season_summary,PASS
+2024 post: No infinity: player_season_summary,PASS
+2024 post: CSV agreement: 2024/possession_length_analysis,PASS
+2024 post: No infinity: possession_length_analysis,PASS
+2024 post: CSV agreement: 2024/season_baselines,PASS
+2024 post: No infinity: season_baselines,PASS
+2024 post: CSV agreement: 2024/team_game_publication,PASS
+2024 post: No infinity: team_game_publication,PASS
+2024 post: CSV agreement: 2024/publication_coverage,PASS
+2024 post: No infinity: publication_coverage,PASS
+2024 post: CSV agreement: 2024/possession_sensitivity,PASS
+2024 post: No infinity: possession_sensitivity,PASS
+2024 post: 35 unique core definitions,PASS
+2024 post: catalog columns exist,PASS
+2025 regular: 2025: possession and scoring conservation,PASS
+2025 regular: 2025: offensive and defensive formulas,PASS
+2025 regular: 2025: shot event conservation,PASS
+2025 regular: 2025: possession outcome bounds,PASS
+2025 regular: 2025: duration eligibility,PASS
+2025 regular: 2025: opponent pace attribution,PASS
+2025 regular: 2025: bucket conservation,PASS
+2025 regular: 2025: official assist source,PASS
+2025 regular: 2025: goalie resolved population,PASS
+2025 regular: 2025: player appearances,PASS
+2025 regular: 2025: transfer conservation,PASS
+2025 regular: CSV agreement: 2025/team_advanced_stats,PASS
+2025 regular: No infinity: team_advanced_stats,PASS
+2025 regular: CSV agreement: 2025/player_offensive_advanced,PASS
+2025 regular: No infinity: player_offensive_advanced,PASS
+2025 regular: CSV agreement: 2025/player_shooting_advanced,PASS
+2025 regular: No infinity: player_shooting_advanced,PASS
+2025 regular: CSV agreement: 2025/player_two_point_stats,PASS
+2025 regular: No infinity: player_two_point_stats,PASS
+2025 regular: CSV agreement: 2025/faceoff_advanced,PASS
+2025 regular: No infinity: faceoff_advanced,PASS
+2025 regular: CSV agreement: 2025/goalie_advanced,PASS
+2025 regular: No infinity: goalie_advanced,PASS
+2025 regular: CSV agreement: 2025/defensive_production,PASS
+2025 regular: No infinity: defensive_production,PASS
+2025 regular: CSV agreement: 2025/player_season_summary,PASS
+2025 regular: No infinity: player_season_summary,PASS
+2025 regular: CSV agreement: 2025/possession_length_analysis,PASS
+2025 regular: No infinity: possession_length_analysis,PASS
+2025 regular: CSV agreement: 2025/season_baselines,PASS
+2025 regular: No infinity: season_baselines,PASS
+2025 regular: CSV agreement: 2025/team_game_publication,PASS
+2025 regular: No infinity: team_game_publication,PASS
+2025 regular: CSV agreement: 2025/publication_coverage,PASS
+2025 regular: No infinity: publication_coverage,PASS
+2025 regular: CSV agreement: 2025/possession_sensitivity,PASS
+2025 regular: No infinity: possession_sensitivity,PASS
+2025 regular: 35 unique core definitions,PASS
+2025 regular: catalog columns exist,PASS
+2025 post: 2025: possession and scoring conservation,PASS
+2025 post: 2025: offensive and defensive formulas,PASS
+2025 post: 2025: shot event conservation,PASS
+2025 post: 2025: possession outcome bounds,PASS
+2025 post: 2025: duration eligibility,PASS
+2025 post: 2025: opponent pace attribution,PASS
+2025 post: 2025: bucket conservation,PASS
+2025 post: 2025: official assist source,PASS
+2025 post: 2025: goalie resolved population,PASS
+2025 post: 2025: player appearances,PASS
+2025 post: 2025: transfer conservation,PASS
+2025 post: CSV agreement: 2025/team_advanced_stats,PASS
+2025 post: No infinity: team_advanced_stats,PASS
+2025 post: CSV agreement: 2025/player_offensive_advanced,PASS
+2025 post: No infinity: player_offensive_advanced,PASS
+2025 post: CSV agreement: 2025/player_shooting_advanced,PASS
+2025 post: No infinity: player_shooting_advanced,PASS
+2025 post: CSV agreement: 2025/player_two_point_stats,PASS
+2025 post: No infinity: player_two_point_stats,PASS
+2025 post: CSV agreement: 2025/faceoff_advanced,PASS
+2025 post: No infinity: faceoff_advanced,PASS
+2025 post: CSV agreement: 2025/goalie_advanced,PASS
+2025 post: No infinity: goalie_advanced,PASS
+2025 post: CSV agreement: 2025/defensive_production,PASS
+2025 post: No infinity: defensive_production,PASS
+2025 post: CSV agreement: 2025/player_season_summary,PASS
+2025 post: No infinity: player_season_summary,PASS
+2025 post: CSV agreement: 2025/possession_length_analysis,PASS
+2025 post: No infinity: possession_length_analysis,PASS
+2025 post: CSV agreement: 2025/season_baselines,PASS
+2025 post: No infinity: season_baselines,PASS
+2025 post: CSV agreement: 2025/team_game_publication,PASS
+2025 post: No infinity: team_game_publication,PASS
+2025 post: CSV agreement: 2025/publication_coverage,PASS
+2025 post: No infinity: publication_coverage,PASS
+2025 post: CSV agreement: 2025/possession_sensitivity,PASS
+2025 post: No infinity: possession_sensitivity,PASS
+2025 post: 35 unique core definitions,PASS
+2025 post: catalog columns exist,PASS
+2026 regular: 2026: possession and scoring conservation,PASS
+2026 regular: 2026: offensive and defensive formulas,PASS
+2026 regular: 2026: shot event conservation,PASS
+2026 regular: 2026: possession outcome bounds,PASS
+2026 regular: 2026: duration eligibility,PASS
+2026 regular: 2026: opponent pace attribution,PASS
+2026 regular: 2026: bucket conservation,PASS
+2026 regular: 2026: official assist source,PASS
+2026 regular: 2026: goalie resolved population,PASS
+2026 regular: 2026: player appearances,PASS
+2026 regular: 2026: transfer conservation,PASS
+2026 regular: CSV agreement: 2026/team_advanced_stats,PASS
+2026 regular: No infinity: team_advanced_stats,PASS
+2026 regular: CSV agreement: 2026/player_offensive_advanced,PASS
+2026 regular: No infinity: player_offensive_advanced,PASS
+2026 regular: CSV agreement: 2026/player_shooting_advanced,PASS
+2026 regular: No infinity: player_shooting_advanced,PASS
+2026 regular: CSV agreement: 2026/player_two_point_stats,PASS
+2026 regular: No infinity: player_two_point_stats,PASS
+2026 regular: CSV agreement: 2026/faceoff_advanced,PASS
+2026 regular: No infinity: faceoff_advanced,PASS
+2026 regular: CSV agreement: 2026/goalie_advanced,PASS
+2026 regular: No infinity: goalie_advanced,PASS
+2026 regular: CSV agreement: 2026/defensive_production,PASS
+2026 regular: No infinity: defensive_production,PASS
+2026 regular: CSV agreement: 2026/player_season_summary,PASS
+2026 regular: No infinity: player_season_summary,PASS
+2026 regular: CSV agreement: 2026/possession_length_analysis,PASS
+2026 regular: No infinity: possession_length_analysis,PASS
+2026 regular: CSV agreement: 2026/season_baselines,PASS
+2026 regular: No infinity: season_baselines,PASS
+2026 regular: CSV agreement: 2026/team_game_publication,PASS
+2026 regular: No infinity: team_game_publication,PASS
+2026 regular: CSV agreement: 2026/publication_coverage,PASS
+2026 regular: No infinity: publication_coverage,PASS
+2026 regular: CSV agreement: 2026/possession_sensitivity,PASS
+2026 regular: No infinity: possession_sensitivity,PASS
+2026 regular: 35 unique core definitions,PASS
+2026 regular: catalog columns exist,PASS
+2026 post: 2026: possession and scoring conservation,PASS
+2026 post: 2026: offensive and defensive formulas,PASS
+2026 post: 2026: shot event conservation,PASS
+2026 post: 2026: possession outcome bounds,PASS
+2026 post: 2026: duration eligibility,PASS
+2026 post: 2026: opponent pace attribution,PASS
+2026 post: 2026: bucket conservation,PASS
+2026 post: 2026: official assist source,PASS
+2026 post: 2026: goalie resolved population,PASS
+2026 post: 2026: player appearances,PASS
+2026 post: 2026: transfer conservation,PASS
+2026 post: CSV agreement: 2026/team_advanced_stats,PASS
+2026 post: No infinity: team_advanced_stats,PASS
+2026 post: CSV agreement: 2026/player_offensive_advanced,PASS
+2026 post: No infinity: player_offensive_advanced,PASS
+2026 post: CSV agreement: 2026/player_shooting_advanced,PASS
+2026 post: No infinity: player_shooting_advanced,PASS
+2026 post: CSV agreement: 2026/player_two_point_stats,PASS
+2026 post: No infinity: player_two_point_stats,PASS
+2026 post: CSV agreement: 2026/faceoff_advanced,PASS
+2026 post: No infinity: faceoff_advanced,PASS
+2026 post: CSV agreement: 2026/goalie_advanced,PASS
+2026 post: No infinity: goalie_advanced,PASS
+2026 post: CSV agreement: 2026/defensive_production,PASS
+2026 post: No infinity: defensive_production,PASS
+2026 post: CSV agreement: 2026/player_season_summary,PASS
+2026 post: No infinity: player_season_summary,PASS
+2026 post: CSV agreement: 2026/possession_length_analysis,PASS
+2026 post: No infinity: possession_length_analysis,PASS
+2026 post: CSV agreement: 2026/season_baselines,PASS
+2026 post: No infinity: season_baselines,PASS
+2026 post: CSV agreement: 2026/team_game_publication,PASS
+2026 post: No infinity: team_game_publication,PASS
+2026 post: CSV agreement: 2026/publication_coverage,PASS
+2026 post: No infinity: publication_coverage,PASS
+2026 post: CSV agreement: 2026/possession_sensitivity,PASS
+2026 post: No infinity: possession_sensitivity,PASS
+2026 post: 35 unique core definitions,PASS
+2026 post: catalog columns exist,PASS
