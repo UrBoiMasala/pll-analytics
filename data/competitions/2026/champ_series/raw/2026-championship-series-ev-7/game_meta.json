@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5277467125558264,
+      "awayWinProbability": 0.4722532874441736
+    },
+    "id": 446,
+    "slugname": "2026-championship-series-ev-7",
+    "eventId": "2026_cs_ev7",
+    "league": "PLL",
+    "seasonSegment": "champseries",
+    "startTime": "1772926200",
+    "venue": "The St. James",
+    "venueLocation": null,
+    "location": "Springfield, VA",
+    "year": 2026,
+    "week": 0,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/e92cf777-d2bb-40d4-a7a5-f4c0b13e2058",
+    "broadcaster": [
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 22,
+    "homeScore": 23,
+    "homePeriodScores": [
+      4,
+      8,
+      4,
+      7
+    ],
+    "visitorPeriodScores": [
+      4,
+      6,
+      7,
+      5
+    ],
+    "homeTeam": {
+      "officialId": "CHA",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_chaos_primary_color.png",
+      "fullName": "Chaos",
+      "location": "Carolina",
+      "locationCode": "CAR",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF0E11",
+      "backgroundColor": "#000",
+      "wins": 5,
+      "losses": 7,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "OUT",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2026/Logo/outlaws-primary.webp",
+      "fullName": "Outlaws",
+      "location": "Denver",
+      "locationCode": "DEN",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FFD400",
+      "backgroundColor": "#B3B3B3",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": "Semifinal - PLL Gm 7",
+    "snl": false,
+    "polymarketId": null
+  }
+}
