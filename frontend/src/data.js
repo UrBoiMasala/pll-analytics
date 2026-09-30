@@ -3,15 +3,18 @@
 /** @typedef {'traditional'|'advanced'} View */
 /** @typedef {{id:string,name:string,team:string,teams:string[],position:string,level:string,season:number,traditional:Record<string,number|null>,advanced:Record<string,number|null>}} StatRecord */
 /** @typedef {{season:number,players:StatRecord[],teams:StatRecord[],partial:boolean,cutoff:string}} SeasonData */
-/** @typedef {{category:Category,view:View,season:number,team:string,position:string,search:string,sort:string,direction:string,player:string}} State */
+/** @typedef {{category:Category,view:View,season:number,segment:string,team:string,position:string,search:string,sort:string,direction:string,player:string}} State */
 export const seasons=[2026,2025,2024,2023,2022];
+export const splitSeasons=seasons;
 export const categories=['players','teams','goalies','faceoffs'];
 /** @returns {State} */
 export function readState(hash=''){
  const [path,query='']=hash.replace(/^#\/?/,'').split('?');const [cat,id='']=path.split('/');const q=new URLSearchParams(query);
- return {category:categories.includes(cat)?/** @type {Category} */(cat):'players',view:q.get('view')==='advanced'?'advanced':'traditional',season:seasons.includes(Number(q.get('season')))?Number(q.get('season')):2026,team:q.get('team')||'',position:q.get('position')||'',search:q.get('q')||'',sort:q.get('sort')||'',direction:q.get('dir')==='asc'?'asc':'desc',player:id};
+ const year=seasons.includes(Number(q.get('season')))?Number(q.get('season')):2026;
+ const segment=splitSeasons.includes(year)?(['regular','post','combined','champ_series'].includes(q.get('segment'))?q.get('segment'):'regular'):'combined';
+ return {segment,category:categories.includes(cat)?/** @type {Category} */(cat):'players',view:q.get('view')==='advanced'?'advanced':'traditional',season:seasons.includes(Number(q.get('season')))?Number(q.get('season')):2026,team:q.get('team')||'',position:q.get('position')||'',search:q.get('q')||'',sort:q.get('sort')||'',direction:q.get('dir')==='asc'?'asc':'desc',player:id};
 }
-export function route(s){const q=new URLSearchParams({season:String(s.season),view:s.view});for(const [key,val] of Object.entries({team:s.team,position:s.position,q:s.search,sort:s.sort,dir:s.sort?s.direction:''}))if(val)q.set(key,val);return `#/${s.category}${s.player?'/'+encodeURIComponent(s.player):''}?${q}`;}
+export function route(s){const q=new URLSearchParams({season:String(s.season),view:s.view});if(splitSeasons.includes(s.season))q.set('segment',s.segment||'regular');for(const [key,val] of Object.entries({team:s.team,position:s.position,q:s.search,sort:s.sort,dir:s.sort?s.direction:''}))if(val)q.set(key,val);return `#/${s.category}${s.player?'/'+encodeURIComponent(s.player):''}?${q}`;}
 export async function loadData(){
  const get=async path=>{const r=await fetch(path);if(!r.ok)throw new Error('Statistics could not be loaded.');return r.json();};
  const values=await Promise.all(seasons.map(y=>get(`./data/${y}.json`)));const metadata=await get('./data/metrics.json');
@@ -45,3 +48,5 @@ export function metricDescription(metadata) {
   seen.add(key);return true;
  }).map(sentence=>/[.!?]$/.test(sentence)?sentence:sentence+'.').join(' ');
 }
+
+export function seasonData(data,segment='combined'){return data.segments?.[segment]||data;}
