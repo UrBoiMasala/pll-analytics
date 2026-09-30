@@ -1,5 +1,5 @@
 import test from 'node:test';import assert from 'node:assert/strict';
-import {readState,route,selectRows,sortRows,format,defaultSort,playerSeason} from '../src/data.js';
+import {readState,route,selectRows,sortRows,format,defaultSort,playerSeason,seasonData} from '../src/data.js';
 import {columns,roleSections} from '../src/columns.js';
 const base={id:'001',name:'Player One',team:'ALL',teams:['A','B'],position:'A',season:2026,level:'SEASON',traditional:{points:12},advanced:{shooting_value_above_expected:1}};
 const stint={...base,team:'A',teams:['A'],level:'STINT',traditional:{points:4}};
@@ -23,4 +23,23 @@ test('metric descriptions deduplicate repeated explanations and keep distinct li
  const {metricDescription}=await import('../src/data.js');
  assert.equal(metricDescription({display_name:'Shot Share',interpretation:'Share of team attempts.',limitation_summary:'Share of team attempts. Actual appearances only.'}),'Shot Share. Share of team attempts. Actual appearances only.');
  assert.equal(metricDescription({display_name:'Save rate',interpretation:'Resolved outcomes only.',limitation_summary:'Shot difficulty is not observed.'}),'Save rate. Resolved outcomes only. Shot difficulty is not observed.');
+});
+
+test('all supported competition routes round trip',()=>{
+ for(const year of [2022,2023,2024,2025,2026])for(const segment of ['regular','post','combined','champ_series']){
+  const state=readState(`#/players?season=${year}&segment=${segment}`);
+  assert.equal(state.segment,segment);assert.deepEqual(readState(route(state)),state);
+ }
+ assert.equal(readState('#/players?season=2022').segment,'regular');
+ assert.equal(readState('#/players?season=2026&segment=post').segment,'post');
+ const fixture={players:[1],segments:{post:{players:[2]},champ_series:{players:[],status:'not_held'}}};
+ assert.deepEqual(seasonData(fixture,'post').players,[2]);
+ assert.equal(seasonData(fixture,'champ_series').status,'not_held');
+ assert.equal(seasonData(fixture,'combined'),fixture);
+});
+
+test('Sixes team view uses supported metrics and forward detail includes offense',()=>{
+ assert.equal(columns('teams','advanced','champ_series').some(c=>c.key==='offensive_efficiency'),false);
+ assert.equal(columns('teams','advanced','champ_series').some(c=>c.key==='team_two_point_attempt_rate'),true);
+ assert.equal(roleSections({...base,position:'F'})[0][0],'OFFENSE');
 });
