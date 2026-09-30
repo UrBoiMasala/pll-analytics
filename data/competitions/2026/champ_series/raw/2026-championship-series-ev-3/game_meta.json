@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5269333704814056,
+      "awayWinProbability": 0.47306662951859435
+    },
+    "id": 437,
+    "slugname": "2026-championship-series-ev-3",
+    "eventId": "2026_cs_ev3",
+    "league": "PLL",
+    "seasonSegment": "champseries",
+    "startTime": "1772328600",
+    "venue": "The St. James",
+    "venueLocation": null,
+    "location": "Springfield, VA",
+    "year": 2026,
+    "week": 0,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/7b5eadd1-f15f-47ad-b604-e0be017901dc",
+    "broadcaster": [
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 24,
+    "homeScore": 25,
+    "homePeriodScores": [
+      6,
+      4,
+      9,
+      6
+    ],
+    "visitorPeriodScores": [
+      8,
+      6,
+      6,
+      4
+    ],
+    "homeTeam": {
+      "officialId": "ATL",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_atlas_primary_color.png",
+      "fullName": "Atlas",
+      "location": "New York",
+      "locationCode": "NYA",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#00B1FF",
+      "backgroundColor": "#011E41",
+      "wins": 3,
+      "losses": 9,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CHA",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_chaos_primary_color.png",
+      "fullName": "Chaos",
+      "location": "Carolina",
+      "locationCode": "CAR",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF0E11",
+      "backgroundColor": "#000",
+      "wins": 5,
+      "losses": 7,
+      "ties": 0
+    },
+    "description": "Round Robin - PLL Gm 3",
+    "snl": false,
+    "polymarketId": null
+  }
+}
