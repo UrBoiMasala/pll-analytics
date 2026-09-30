@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "source_url": "https://stats.premierlacrosseleague.com/api/v4/games/2026-championship-series-ev-6/play-by-plays",
+    "retrieved_at": "2026-09-30T07-06-46Z",
+    "sha256": "a4298121331f6589e5b0ce2f1c986254e71d5460d866aad723620a3f79443628"
+  },
+  "game_meta": {
+    "source_url": "https://stats.premierlacrosseleague.com/api/v4/games/2026-championship-series-ev-6",
+    "retrieved_at": "2026-09-30T07-06-46Z",
+    "sha256": "574b9ddb64feee17f8534fde6efe03c6f587b4ab0a8265cd5eb3db2123119163"
+  },
+  "players_stats": {
+    "source_url": "https://stats.premierlacrosseleague.com/api/v4/games/2026-championship-series-ev-6/players/stats",
+    "retrieved_at": "2026-09-30T07-06-46Z",
+    "sha256": "69f2f123ce9be4b216461197f528da486953ea2f534abdea54a5321e03dde686"
+  },
+  "teams_stats": {
+    "source_url": "https://stats.premierlacrosseleague.com/api/v4/games/2026-championship-series-ev-6/teams/stats",
+    "retrieved_at": "2026-09-30T07-06-47Z",
+    "sha256": "bd45c28a4b9b7e92ed8759db8f2d73ab749f13d198f4148a05c93b4127c083f9"
+  }
+}

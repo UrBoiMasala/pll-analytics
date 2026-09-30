@@ -1,0 +1,77 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.4832816201855473,
+      "awayWinProbability": 0.5167183798144527
+    },
+    "id": 445,
+    "slugname": "2026-championship-series-ev-6",
+    "eventId": "2026_cs_ev6",
+    "league": "PLL",
+    "seasonSegment": "champseries",
+    "startTime": "1772845200",
+    "venue": "The St. James",
+    "venueLocation": null,
+    "location": "Springfield, VA",
+    "year": 2026,
+    "week": 0,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/1f448571-6c9f-4c7c-95fb-535f832d234b",
+    "broadcaster": [
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 5,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 22,
+    "homeScore": 23,
+    "homePeriodScores": [
+      3,
+      6,
+      4,
+      6,
+      4
+    ],
+    "visitorPeriodScores": [
+      5,
+      7,
+      3,
+      4,
+      3
+    ],
+    "homeTeam": {
+      "officialId": "RED",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ATL",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_atlas_primary_color.png",
+      "fullName": "Atlas",
+      "location": "New York",
+      "locationCode": "NYA",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#00B1FF",
+      "backgroundColor": "#011E41",
+      "wins": 3,
+      "losses": 9,
+      "ties": 0
+    },
+    "description": "Round Robin - PLL Gm 6",
+    "snl": false,
+    "polymarketId": null
+  }
+}
