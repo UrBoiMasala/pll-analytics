@@ -1,0 +1,73 @@
+{
+  "data": {
+    "pregameWinProbability": null,
+    "id": 172,
+    "slugname": "championship-series-1-2023-2-22",
+    "eventId": "2023_cs_ev1",
+    "league": "PLL",
+    "seasonSegment": "champseries",
+    "startTime": "1677105000",
+    "venue": "The St. James",
+    "venueLocation": null,
+    "location": "Springfield, VA",
+    "year": 2023,
+    "week": 0,
+    "urlStreaming": "https://www.espn.com/watch/player?id=04aee54d-3a22-4736-a8af-3e467f040984",
+    "broadcaster": [
+      "ESPN2",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 29,
+    "homeScore": 16,
+    "homePeriodScores": [
+      5,
+      4,
+      3,
+      4
+    ],
+    "visitorPeriodScores": [
+      8,
+      8,
+      5,
+      8
+    ],
+    "homeTeam": {
+      "officialId": "WHP",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Whipsnakes.png",
+      "fullName": "Whipsnakes",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#59c2b1",
+      "backgroundColor": "#E71C3F",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ATL",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Atlas.png",
+      "fullName": "Atlas",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#3ba9f6",
+      "backgroundColor": "#3BA9F6",
+      "wins": 2,
+      "losses": 8,
+      "ties": 0
+    },
+    "description": "Round Robin - Gm 1",
+    "snl": false,
+    "polymarketId": null
+  }
+}
