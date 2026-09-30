@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5277467125558264,
+      "awayWinProbability": 0.4722532874441736
+    },
+    "id": 444,
+    "slugname": "2026-championship-series-ev-5",
+    "eventId": "2026_cs_ev5",
+    "league": "PLL",
+    "seasonSegment": "champseries",
+    "startTime": "1772751600",
+    "venue": "The St. James",
+    "venueLocation": null,
+    "location": "Springfield, VA",
+    "year": 2026,
+    "week": 0,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/ea1c7798-677a-45ab-9b77-1c8c01d18cc3",
+    "broadcaster": [
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 26,
+    "homeScore": 18,
+    "homePeriodScores": [
+      5,
+      4,
+      2,
+      7
+    ],
+    "visitorPeriodScores": [
+      6,
+      6,
+      7,
+      7
+    ],
+    "homeTeam": {
+      "officialId": "OUT",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2026/Logo/outlaws-primary.webp",
+      "fullName": "Outlaws",
+      "location": "Denver",
+      "locationCode": "DEN",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FFD400",
+      "backgroundColor": "#B3B3B3",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CHA",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_chaos_primary_color.png",
+      "fullName": "Chaos",
+      "location": "Carolina",
+      "locationCode": "CAR",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF0E11",
+      "backgroundColor": "#000",
+      "wins": 5,
+      "losses": 7,
+      "ties": 0
+    },
+    "description": "Round Robin - PLL Gm 5",
+    "snl": false,
+    "polymarketId": null
+  }
+}
