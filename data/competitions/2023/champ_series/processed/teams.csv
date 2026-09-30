@@ -1,0 +1,5 @@
+team_id,full_name,location,location_code,conference,team_color,background_color,is_all_star_team
+ARC,Archers,,,,#f2694c,#23427A,False
+ATL,Atlas,,,,#3ba9f6,#3BA9F6,False
+CHR,Chrome,,,,#ea5f9a,#95D6DB,False
+WHP,Whipsnakes,,,,#59c2b1,#E71C3F,False
