@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5096704600070784,
+      "awayWinProbability": 0.4903295399929216
+    },
+    "id": 526,
+    "slugname": "2026-semifinal-1",
+    "eventId": "2026_game_51",
+    "league": "PLL",
+    "seasonSegment": "post",
+    "startTime": "1788807600",
+    "venue": "Zions Bank Stadium",
+    "venueLocation": null,
+    "location": "Salt Lake City, UT",
+    "year": 2026,
+    "week": 15,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/fe4da296-b7fc-4e44-9986-99d498c99feb",
+    "broadcaster": [
+      "ESPN2",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 11,
+    "homeScore": 5,
+    "homePeriodScores": [
+      1,
+      0,
+      4,
+      0
+    ],
+    "visitorPeriodScores": [
+      3,
+      6,
+      2,
+      0
+    ],
+    "homeTeam": {
+      "officialId": "ARC",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_archers_primary_color.png",
+      "fullName": "Archers",
+      "location": "Utah",
+      "locationCode": "UTA",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#002244",
+      "wins": 7,
+      "losses": 5,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "OUT",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2026/Logo/outlaws-primary.webp",
+      "fullName": "Outlaws",
+      "location": "Denver",
+      "locationCode": "DEN",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FFD400",
+      "backgroundColor": "#B3B3B3",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": "Semifinal 1",
+    "snl": false,
+    "polymarketId": "pll-out-arc-2026-09-07"
+  }
+}
