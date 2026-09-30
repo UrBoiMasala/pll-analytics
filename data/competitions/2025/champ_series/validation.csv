@@ -1,0 +1,9 @@
+game_id,events,score_reconciles,invalid_regulation_clocks,backwards_time_steps,possession_status
+309,165,True,0,0,withheld_unvalidated_sixes_model
+310,157,True,0,0,withheld_unvalidated_sixes_model
+312,159,True,0,0,withheld_unvalidated_sixes_model
+314,157,True,0,0,withheld_unvalidated_sixes_model
+318,162,True,0,0,withheld_unvalidated_sixes_model
+319,157,True,0,0,withheld_unvalidated_sixes_model
+321,183,True,0,0,withheld_unvalidated_sixes_model
+323,149,True,0,0,withheld_unvalidated_sixes_model

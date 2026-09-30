@@ -1,0 +1,5 @@
+team_id,full_name,location,location_code,conference,team_color,background_color,is_all_star_team
+ARC,Archers,Utah,UTA,western,#FF5216,#002244,False
+ATL,Atlas,New York,NYA,eastern,#00B1FF,#011E41,False
+CAN,Cannons,Boston,BOS,eastern,#B0B6BB,#C52032,False
+WHP,Whipsnakes,Maryland,MDW,eastern,#FF0000,#FFCE00,False
