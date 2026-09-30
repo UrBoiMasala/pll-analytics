@@ -13,7 +13,7 @@ The pipeline preserves source records and exposes uncertainty instead of hiding 
 
 ![PLL Stats player table with season, team, position, and search controls](docs/assets/statistics-preview.png)
 
-*Local interface using the included partial-2026 snapshot.*
+*Local statistics interface. The included 2026 data now covers the championship.*
 
 ## What it does
 
@@ -22,9 +22,13 @@ The pipeline preserves source records and exposes uncertainty instead of hiding 
 - Exports analysis-ready CSVs with coverage, source gaps, and missing values preserved.
 - Provides searchable tables and player pages in a local browser interface.
 
-**Coverage:** 2026 is a frozen partial-season snapshot. The latest included game starts
-**August 30, 2026 at 00:30 UTC**. Default outputs include completed regular-season and
-playoff games; All-Star and incomplete games are excluded.
+**Coverage:** 2026 includes all **53 competitive games**, through the championship on
+**September 20, 2026**. Every season from 2022–2026 offers regular-season, playoff, and combined
+views. Each 2023–2026 Championship Series has a separate Sixes view with verified shooting,
+goalie, faceoff, and box-score metrics; possession and pace metrics are withheld.
+Championship Series is marked “Not held” for 2022. Regular season is the default;
+choose Competition to switch to playoffs, Sixes, or combined field-season totals.
+All-Star and preseason games are excluded. See [competition splits](docs/COMPETITION_SPLITS.md).
 
 ## Run locally
 
