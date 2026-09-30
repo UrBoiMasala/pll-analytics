@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.5526414036330111,
+      "awayWinProbability": 0.44735859636698894
+    },
+    "id": 309,
+    "slugname": "2025-championship-series-ev-1",
+    "eventId": "2025_cs_ev1",
+    "league": "PLL",
+    "seasonSegment": "champseries",
+    "startTime": "1739325600",
+    "venue": "The St. James",
+    "venueLocation": null,
+    "location": "Springfield, VA",
+    "year": 2025,
+    "week": 0,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/d289178d-324d-4047-8eff-0168e7068bd6",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 13,
+    "homeScore": 25,
+    "homePeriodScores": [
+      10,
+      3,
+      9,
+      3
+    ],
+    "visitorPeriodScores": [
+      5,
+      4,
+      3,
+      1
+    ],
+    "homeTeam": {
+      "officialId": "ATL",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_atlas_primary_color.png",
+      "fullName": "Atlas",
+      "location": "New York",
+      "locationCode": "NYA",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#00B1FF",
+      "backgroundColor": "#011E41",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "WHP",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_whipsnakes_primary_color.png",
+      "fullName": "Whipsnakes",
+      "location": "Maryland",
+      "locationCode": "MDW",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#FF0000",
+      "backgroundColor": "#FFCE00",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": "Round Robin - PLL Gm 1",
+    "snl": false,
+    "polymarketId": null
+  }
+}
