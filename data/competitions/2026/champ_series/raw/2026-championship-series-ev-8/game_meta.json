@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.532892,
+      "awayWinProbability": 0.467108
+    },
+    "id": 447,
+    "slugname": "2026-championship-series-ev-8",
+    "eventId": "2026_cs_ev8",
+    "league": "PLL",
+    "seasonSegment": "champseries",
+    "startTime": "1772996400",
+    "venue": "The St. James",
+    "venueLocation": null,
+    "location": "Springfield, VA",
+    "year": 2026,
+    "week": 0,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/51907b20-7296-49bf-8e7d-eba8c667f9aa",
+    "broadcaster": [
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 24,
+    "homeScore": 16,
+    "homePeriodScores": [
+      4,
+      3,
+      5,
+      4
+    ],
+    "visitorPeriodScores": [
+      7,
+      8,
+      3,
+      6
+    ],
+    "homeTeam": {
+      "officialId": "RED",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CHA",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_chaos_primary_color.png",
+      "fullName": "Chaos",
+      "location": "Carolina",
+      "locationCode": "CAR",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF0E11",
+      "backgroundColor": "#000",
+      "wins": 5,
+      "losses": 7,
+      "ties": 0
+    },
+    "description": "Championship - PLL Gm 8",
+    "snl": false,
+    "polymarketId": null
+  }
+}
