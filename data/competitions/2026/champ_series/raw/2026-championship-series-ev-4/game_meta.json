@@ -1,0 +1,77 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.48966870939617857,
+      "awayWinProbability": 0.5103312906038214
+    },
+    "id": 443,
+    "slugname": "2026-championship-series-ev-4",
+    "eventId": "2026_cs_ev4",
+    "league": "PLL",
+    "seasonSegment": "champseries",
+    "startTime": "1772386200",
+    "venue": "The St. James",
+    "venueLocation": null,
+    "location": "Springfield, VA",
+    "year": 2026,
+    "week": 0,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/a2d06657-f63e-4c08-9f6b-10e22e4268dd",
+    "broadcaster": [
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 5,
+    "clockMinutes": 3,
+    "clockSeconds": 58,
+    "gameStatus": null,
+    "visitorScore": 23,
+    "homeScore": 21,
+    "homePeriodScores": [
+      5,
+      4,
+      6,
+      4,
+      2
+    ],
+    "visitorPeriodScores": [
+      7,
+      3,
+      4,
+      5,
+      4
+    ],
+    "homeTeam": {
+      "officialId": "CHA",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_chaos_primary_color.png",
+      "fullName": "Chaos",
+      "location": "Carolina",
+      "locationCode": "CAR",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF0E11",
+      "backgroundColor": "#000",
+      "wins": 5,
+      "losses": 7,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "RED",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_redwoods_primary_color.png",
+      "fullName": "Redwoods",
+      "location": "California",
+      "locationCode": "CAL",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#004B37",
+      "backgroundColor": "#FFD200",
+      "wins": 6,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": "Round Robin - PLL Gm 4",
+    "snl": false,
+    "polymarketId": null
+  }
+}
