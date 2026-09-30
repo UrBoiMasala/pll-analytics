@@ -1,0 +1,73 @@
+{
+  "data": {
+    "pregameWinProbability": null,
+    "id": 180,
+    "slugname": "championship-series-1-2023-2-26",
+    "eventId": "2023_cs_ev9",
+    "league": "PLL",
+    "seasonSegment": "champseries",
+    "startTime": "1677429000",
+    "venue": "The St. James",
+    "venueLocation": null,
+    "location": "Springfield, VA",
+    "year": 2023,
+    "week": 0,
+    "urlStreaming": "https://www.espn.com/watch/player?id=e20ecdc8-0a18-469f-a042-50c8a307d1f8",
+    "broadcaster": [
+      "ESPNU",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 4,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 24,
+    "homeScore": 23,
+    "homePeriodScores": [
+      9,
+      5,
+      2,
+      7
+    ],
+    "visitorPeriodScores": [
+      6,
+      7,
+      2,
+      9
+    ],
+    "homeTeam": {
+      "officialId": "ATL",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Atlas.png",
+      "fullName": "Atlas",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#3ba9f6",
+      "backgroundColor": "#3BA9F6",
+      "wins": 2,
+      "losses": 8,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CHR",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Chrome.png",
+      "fullName": "Chrome",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#ea5f9a",
+      "backgroundColor": "#95D6DB",
+      "wins": 1,
+      "losses": 9,
+      "ties": 0
+    },
+    "description": "Championship",
+    "snl": false,
+    "polymarketId": null
+  }
+}
