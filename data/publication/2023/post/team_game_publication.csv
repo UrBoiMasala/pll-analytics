@@ -1,0 +1,13 @@
+season,game_id,team_id,opponent_team_id,possessions,points,defensive_possessions,points_allowed,shot_producing_possessions,multi_shot_possessions,ambiguous_possessions,measurable_possessions,measurable_seconds,defensive_measurable_possessions,defensive_measurable_seconds,official_points,score_residual,shots,a2,g2,shooting_points,official_turnovers,official_assists,official_goals,shot_clock_events
+2023,223,ATL,CAN,53,11,42,20,33,9,20,27,663,24,754,11,0,44,5,0,11,27,7,11,3
+2023,223,CAN,ATL,42,20,53,11,32,8,8,24,754,27,663,20,0,44,5,1,20,12,8,19,2
+2023,224,WAT,WHP,43,15,46,12,31,9,15,24,839,24,588,15,0,44,2,0,15,18,9,15,7
+2023,224,WHP,WAT,46,12,43,15,36,4,18,24,588,24,839,12,0,41,9,0,12,13,2,12,3
+2023,225,CHA,RED,51,9,48,15,34,9,24,22,494,25,793,9,0,46,8,0,9,12,6,9,2
+2023,225,RED,CHA,48,15,51,9,34,8,20,25,793,22,494,15,0,46,6,1,15,17,9,14,6
+2023,226,CAN,WAT,44,6,51,17,24,9,20,21,452,24,540,6,0,36,8,1,6,23,3,5,4
+2023,226,WAT,CAN,51,17,44,6,34,7,20,24,540,21,452,17,0,45,3,1,17,19,9,16,3
+2023,227,ARC,RED,47,14,44,6,27,10,21,22,562,22,554,14,0,42,11,2,14,21,8,12,3
+2023,227,RED,ARC,44,6,47,14,33,10,20,22,554,22,562,6,0,45,9,1,6,15,2,5,2
+2023,228,ARC,WAT,53,15,48,14,30,6,21,31,629,24,569,15,0,37,6,1,15,25,8,14,6
+2023,228,WAT,ARC,48,14,53,15,33,7,20,24,569,31,629,14,0,45,9,1,14,11,7,13,3
