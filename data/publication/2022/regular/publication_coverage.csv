@@ -1,0 +1,2 @@
+season,eligible_games,latest_game_start_utc,frozen_partial_season,eligible_shots,unattributed_shots,unattributed_goalie_sog,eligible_possessions,ambiguous_possessions,measurable_possessions,scoring_gap,excluded_touch_records,excluded_touch_turnovers
+2022,40,2022-08-21 21:30:00+00:00,False,3089,4,0,3297,1042,1922,-7,14,0
