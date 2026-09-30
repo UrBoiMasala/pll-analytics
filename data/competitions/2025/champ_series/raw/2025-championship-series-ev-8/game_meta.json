@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.494270696780921,
+      "awayWinProbability": 0.505729303219079
+    },
+    "id": 323,
+    "slugname": "2025-championship-series-ev-8",
+    "eventId": "2025_cs_ev8",
+    "league": "PLL",
+    "seasonSegment": "champseries",
+    "startTime": "1739817000",
+    "venue": "The St. James",
+    "venueLocation": null,
+    "location": "Springfield, VA",
+    "year": 2025,
+    "week": 0,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/1cd922c6-f1d2-4a3a-98c2-a3e3de9116b5",
+    "broadcaster": [
+      "ESPN2",
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 21,
+    "homeScore": 14,
+    "homePeriodScores": [
+      4,
+      3,
+      4,
+      3
+    ],
+    "visitorPeriodScores": [
+      7,
+      6,
+      6,
+      2
+    ],
+    "homeTeam": {
+      "officialId": "ARC",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_archers_primary_color.png",
+      "fullName": "Archers",
+      "location": "Utah",
+      "locationCode": "UTA",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#002244",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CAN",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_cannons_primary_color.png",
+      "fullName": "Cannons",
+      "location": "Boston",
+      "locationCode": "BOS",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#B0B6BB",
+      "backgroundColor": "#C52032",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "description": "PLL Championship",
+    "snl": false,
+    "polymarketId": null
+  }
+}
