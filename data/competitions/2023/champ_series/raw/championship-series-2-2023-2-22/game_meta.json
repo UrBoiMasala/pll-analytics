@@ -1,0 +1,74 @@
+{
+  "data": {
+    "pregameWinProbability": null,
+    "id": 173,
+    "slugname": "championship-series-2-2023-2-22",
+    "eventId": "2023_cs_ev2",
+    "league": "PLL",
+    "seasonSegment": "champseries",
+    "startTime": "1677112200",
+    "venue": "The St. James",
+    "venueLocation": null,
+    "location": "Springfield, VA",
+    "year": 2023,
+    "week": 0,
+    "urlStreaming": "https://www.espn.com/watch/player?id=9c47a676-5db0-4ec2-8de9-e87dbf4f9d1c",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 5,
+    "clockMinutes": 3,
+    "clockSeconds": 6,
+    "gameStatus": null,
+    "visitorScore": 23,
+    "homeScore": 22,
+    "homePeriodScores": [
+      6,
+      6,
+      6,
+      4,
+      0
+    ],
+    "visitorPeriodScores": [
+      3,
+      3,
+      10,
+      6,
+      1
+    ],
+    "homeTeam": {
+      "officialId": "CHR",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Chrome.png",
+      "fullName": "Chrome",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#ea5f9a",
+      "backgroundColor": "#95D6DB",
+      "wins": 1,
+      "losses": 9,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ARC",
+      "year": 2023,
+      "urlLogo": "https://premierlacrosseleague.com/wp-content/uploads/2021/11/PLL_App_Icon_Archers.png",
+      "fullName": "Archers",
+      "location": null,
+      "locationCode": null,
+      "league": "PLL",
+      "conference": null,
+      "teamColor": "#f2694c",
+      "backgroundColor": "#23427A",
+      "wins": 8,
+      "losses": 2,
+      "ties": 0
+    },
+    "description": "Round Robin - Gm 2",
+    "snl": false,
+    "polymarketId": null
+  }
+}
