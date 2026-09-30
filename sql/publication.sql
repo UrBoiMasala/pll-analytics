@@ -190,7 +190,7 @@ CREATE OR REPLACE VIEW possession_length_analysis AS WITH bucketed AS (
 
 -- Explicit source coverage, including unattributed historical shots retained in league baselines.
 CREATE OR REPLACE VIEW publication_coverage AS SELECT g.season,count(*) eligible_games,
- max(start_date_utc) latest_game_start_utc,g.season=2026 frozen_partial_season,
+ max(start_date_utc) latest_game_start_utc,EXISTS (SELECT 1 FROM raw_games pending WHERE pending.season=g.season AND pending.include_in_league_analytics AND NOT pending.is_completed) frozen_partial_season,
  (SELECT count(*) FROM pub_shots s WHERE s.season=g.season) eligible_shots,
  (SELECT count(*) FROM pub_shots s WHERE s.season=g.season AND s.player_id IS NULL) unattributed_shots,
  (SELECT count(*) FROM pub_shots s WHERE s.season=g.season AND s.sog AND s.goalie_id IS NULL) unattributed_goalie_sog,
@@ -198,8 +198,8 @@ CREATE OR REPLACE VIEW publication_coverage AS SELECT g.season,count(*) eligible
  (SELECT count(*) FROM pub_possessions p WHERE p.season=g.season AND p.is_ambiguous) ambiguous_possessions,
  (SELECT count(*) FROM pub_possessions p WHERE p.season=g.season AND p.measurable) measurable_possessions,
  (SELECT sum(score_residual) FROM team_game_publication t WHERE t.season=g.season) scoring_gap,
- (SELECT sum(excluded_touch_records) FROM season_baselines b WHERE b.season=g.season) excluded_touch_records,
- (SELECT sum(excluded_touch_turnovers) FROM season_baselines b WHERE b.season=g.season) excluded_touch_turnovers
+ (SELECT count(*) FROM pub_player_games b WHERE b.season=g.season AND (touches IS NULL OR touches<=0 OR turnovers IS NULL)) excluded_touch_records,
+ (SELECT sum(turnovers) FROM pub_player_games b WHERE b.season=g.season AND (touches IS NULL OR touches<=0)) excluded_touch_turnovers
  FROM pub_games g GROUP BY g.season;
 CREATE OR REPLACE VIEW possession_sensitivity AS SELECT season,offense_team_id team_id,
  CASE WHEN grouping(is_ambiguous)=1 THEN 'ALL' WHEN is_ambiguous THEN 'AMBIGUOUS' ELSE 'UNAMBIGUOUS' END population,
