@@ -3,19 +3,22 @@ import argparse
 from pathlib import Path
 import numpy as np
 import pandas as pd
-from pll_build_publication import ROOT, TABLES, connect
+from pll_current_data import current_frame
+from pll_build_publication import ROOT, TABLES, SPLIT_YEARS, CHAMPIONSHIP_GAME_IDS, connect
 
-def validate(output=None):
-    output=Path(output or ROOT/'data/publication');c=connect();checks=[]
+def validate(output=None, segment=None, year=2022):
+    output=Path(output or ROOT/'data/publication');c=connect(segment=segment,year=year);checks=[]
+    split_year=year
     def check(name, ok):
-        checks.append(dict(check=name,status='PASS' if bool(ok) else 'FAIL'))
-    for year in range(2022,2027):
+        checks.append(dict(check=(str(split_year)+' '+segment+': ' if segment else '')+name,status='PASS' if bool(ok) else 'FAIL'))
+    for year in ([split_year] if segment else range(2022,2027)):
         d=ROOT/'data/processed'/str(year)
-        g=pd.read_csv(d/'games.csv');g=g[g.is_completed & g.include_in_league_analytics & ~g.is_all_star]
-        p=pd.read_csv(d/'possessions.csv');p=p[p.game_id.isin(g.game_id)]
-        e=pd.read_csv(d/'events.csv',dtype={'player_id':str,'goalie_id':str});e=e[e.game_id.isin(g.game_id)&e.is_analysis_eligible_event]
+        g=current_frame(year, 'games');g=g[g.is_completed & g.include_in_league_analytics & ~g.is_all_star]
+        if segment: g=g[g.season_segment==segment]
+        p=current_frame(year, 'possessions');p=p[p.game_id.isin(g.game_id)]
+        e=current_frame(year, 'events',dtype={'player_id':str,'goalie_id':str});e=e[e.game_id.isin(g.game_id)&e.is_analysis_eligible_event]
         shots=e[e.event_type.isin(['shot','goal']) & e.shot_outcome.notna()]
-        pg=pd.read_csv(d/'player_game_stats.csv',dtype={'officialId':str});pg=pg[pg.game_id.isin(g.game_id)]
+        pg=current_frame(year, 'player_game_stats',dtype={'officialId':str});pg=pg[pg.game_id.isin(g.game_id)]
         t=c.execute(f'SELECT * FROM team_advanced_stats WHERE season={year}').df()
         v=c.execute(f"SELECT * FROM player_season_summary WHERE season={year} AND aggregation_level='SEASON'").df()
         check(f'{year}: possession and scoring conservation',t.possessions.sum()==len(p) and t.points.sum()==p.points_scored.sum() and t.points_allowed.sum()==p.points_scored.sum())
@@ -31,7 +34,7 @@ def validate(output=None):
         check(f'{year}: opponent pace attribution',True)
         b=c.execute(f'SELECT * FROM possession_length_analysis WHERE season={year}').df()
         check(f'{year}: bucket conservation',b.possessions.sum()==len(m) and b.points.sum()==m.points_scored.sum() and b.shots.sum()==m.shot_attempts.sum() and b.turnovers.sum()==(m.end_reason=='turnover').sum())
-        official=pd.read_csv(d/'team_game_stats.csv');official=official[official.game_id.isin(g.game_id)]
+        official=current_frame(year, 'team_game_stats');official=official[official.game_id.isin(g.game_id)]
         check(f'{year}: official assist source',t.official_assists.sum()==official.assists.sum() and t.official_goals.sum()==official.goals.sum())
         resolved=shots[shots.shot_outcome.isin(['saved','goal']) & shots.goalie_id.notna()]
         check(f'{year}: goalie resolved population',v.resolved_shots_faced.sum()==len(resolved) and v.resolved_saves.sum()==(resolved.shot_outcome=='saved').sum())
@@ -41,8 +44,10 @@ def validate(output=None):
         check(f'{year}: transfer conservation',np.allclose(st.groupby('player_id')[counts].sum().sort_index(),v.set_index('player_id')[counts].sort_index(),equal_nan=True))
     for table in TABLES:
         actual=c.execute(f'SELECT * FROM {table} ORDER BY ALL').df()
-        for year in [None,*range(2022,2027)]:
-            path=output/(str(year) if year else '')/(table+'.csv')
+        for year in ([split_year] if segment else [None,*range(2022,2027)]):
+            path=output/(str(year) if year else '')
+            if segment: path=path/segment
+            path=path/(table+'.csv')
             stored=pd.read_csv(path,dtype={'player_id':str},keep_default_na=True)
             expected=actual if year is None else actual[actual.season==year].reset_index(drop=True)
             for col in expected:
@@ -62,7 +67,8 @@ def validate(output=None):
 
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--write-report',action='store_true');args=parser.parse_args()
-    report=validate();print(report.to_string(index=False))
+    from pll_validate_championship import validate as validate_championship
+    report=pd.concat([validate()]+[validate_championship(year=y) for y in CHAMPIONSHIP_GAME_IDS]+[validate(segment=segment,year=year) for year in SPLIT_YEARS for segment in ('regular','post')],ignore_index=True);print(report.to_string(index=False))
     if args.write_report: report.to_csv(ROOT/'data/publication/validation_report.csv',index=False)
     if (report.status!='PASS').any(): raise SystemExit(1)
 if __name__=='__main__':main()

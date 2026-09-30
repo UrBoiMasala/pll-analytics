@@ -4,14 +4,14 @@ import hashlib
 import tempfile
 from pathlib import Path
 import pandas as pd
-from pll_build_publication import ROOT,connect,export
+from pll_build_publication import ROOT,connect,export,export_splits
 from pll_publication_catalog import write_dictionary
 
 def verify():
     with tempfile.TemporaryDirectory(prefix='pll-publication-') as tmp:
         a,b=Path(tmp)/'a',Path(tmp)/'b'
         for out in [a,b]:
-            con=connect();export(con,out);write_dictionary(out);con.close()
+            con=connect();export(con,out);write_dictionary(out);con.close();export_splits(out)
         left={p.relative_to(a) for p in a.rglob('*.csv')};right={p.relative_to(b) for p in b.rglob('*.csv')}
         if left!=right: raise AssertionError('Rebuild file sets differ')
         rows=[]

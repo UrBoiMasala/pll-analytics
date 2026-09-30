@@ -69,6 +69,17 @@ jobs:
         run: node --test frontend/tests/data.test.mjs
       - name: Compare bundle against source tables
         run: python -B frontend/tests/test_sources.py
+      - name: Install browser test runner
+        working-directory: frontend
+        run: |
+          npm install --ignore-scripts --package-lock=false
+          npx playwright install --with-deps chromium
+      - name: Test competition filters and browser views
+        run: |
+          python -m http.server 4173 --bind 127.0.0.1 --directory frontend/dist > /tmp/pll-preview.log 2>&1 &
+          preview_pid=$!
+          trap 'kill "$preview_pid"' EXIT
+          node --test frontend/tests/browser.test.mjs
       - name: Verify Linux checks preserved frozen data
         if: always()
         run: git diff --exit-code -- data/
