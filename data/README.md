@@ -23,10 +23,17 @@ Pooled files already include every season-specific row. Do not concatenate poole
 files with their per-season copies. For players, choose `SEASON` or `STINT`, never both.
 Preserve leading zeros in IDs and distinguish empty values from observed zeros.
 
-The 2026 snapshot is partial through the game starting August 30, 2026 at 00:30 UTC.
+The current 2026 publication includes all 53 competitive games through September 20.
+`updates/2026/` adds the final three games without rewriting the frozen research inputs.
+Publication readers replace whole game partitions using this update.
 Source rights remain with the PLL; the repository's
 [publication record](../docs/PUBLICATION_SAFETY.md) is not a general redistribution license.
 
 Do not edit frozen inputs to force an expected result. Investigate discrepancies and
 record evidence. See [validation](../docs/DATA_VALIDATION.md) and
 [SQL usage](../docs/SQL_GUIDE.md).
+
+`competitions/{year}/champ_series/` contains separate Sixes snapshots for 2023–2026,
+source hashes, normalized inputs, and clock-quality audit. Its empty possessions
+CSV is a schema placeholder: no possession model is claimed. Publication coverage
+uses blank/null possession counts, not zero observed possessions.

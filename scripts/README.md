@@ -6,6 +6,10 @@ Run commands from the repository root, after installing `requirements.txt`.
 
 | Script | Purpose | Writes |
 | --- | --- | --- |
+| `pll_import_2026_playoffs.py` | Validate/rebuild the reviewed three-game update offline; `--fetch` acquires it once | `data/updates/2026/` |
+| `pll_current_data.py` | Read the frozen foundation plus reviewed game replacements | Nothing |
+| `pll_import_championship.py --year YEAR` | Validate/rebuild a separate 2023–2026 Sixes snapshot; old 2023 entry point remains compatible | `data/competitions/{year}/champ_series/` |
+| `pll_validate_championship.py` | Check Sixes source integrity, scoring and supported metrics | Console output |
 | `pll_build_publication.py` | Execute publication SQL and export tables | `data/publication/` by default; use `--output` for another location |
 | `pll_validate_publication.py` | Independently check stored outputs | Nothing unless `--write-report` is supplied |
 | `pll_check_publication_determinism.py` | Compare repeated builds with the frozen exports | Temporary directories |

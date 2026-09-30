@@ -48,7 +48,7 @@ The season key is always part of the identity. Counts and denominators are provi
 
 ## Source contracts
 
-- Completed competitive games, including playoffs, are the default. 2026 is a frozen partial snapshot; latest included game starts 2026-08-30 00:30 UTC.
+- Combined exports include completed regular-season and playoff games. 2026 now includes all 53 competitive games through September 20. The 2022 interface defaults to regular season and supports playoff/combined views; see [competition splits](COMPETITION_SPLITS.md).
 - Team efficiency uses reconstructed PLL scoring, not silently substituted official scores. `score_residual`, `score_gap_games`, and the game table expose disagreement.
 - Team turnovers use official team totals, including team-only turnovers. Shot-clock expirations use eligible events.
 - Shooting uses eligible events. SOG includes `goal`, `saved`, and `on_goal_no_save`. Five historical shots have no player ID and remain in team and league denominators; see coverage output.
