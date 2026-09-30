@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "source_url": "https://stats.premierlacrosseleague.com/api/v4/games/championship-series-1-2023-2-24/play-by-plays",
+    "retrieved_at": "2026-09-30T00-43-55Z",
+    "sha256": "fade3886959638c2061c687afd992d02e6baff72d362b05bed17464a6458cb6c"
+  },
+  "game_meta": {
+    "source_url": "https://stats.premierlacrosseleague.com/api/v4/games/championship-series-1-2023-2-24",
+    "retrieved_at": "2026-09-30T00-43-55Z",
+    "sha256": "94070dfdfeb0359e812a03405e34a941f9bca5c293034f925f575b1b42f8be7b"
+  },
+  "players_stats": {
+    "source_url": "https://stats.premierlacrosseleague.com/api/v4/games/championship-series-1-2023-2-24/players/stats",
+    "retrieved_at": "2026-09-30T00-43-55Z",
+    "sha256": "2cfcb76ffa8bff5cc344bad31306222f152c2ed3c8388239144bc01754103b02"
+  },
+  "teams_stats": {
+    "source_url": "https://stats.premierlacrosseleague.com/api/v4/games/championship-series-1-2023-2-24/teams/stats",
+    "retrieved_at": "2026-09-30T00-43-55Z",
+    "sha256": "2f7cb198c2ef05d8e83fb252d0c8035fdbca9a80769c2e2d6cf0f63da7765664"
+  }
+}
