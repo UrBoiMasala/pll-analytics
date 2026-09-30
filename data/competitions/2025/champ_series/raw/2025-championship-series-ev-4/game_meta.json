@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.49244792367389684,
+      "awayWinProbability": 0.5075520763261032
+    },
+    "id": 314,
+    "slugname": "2025-championship-series-ev-4",
+    "eventId": "2025_cs_ev4",
+    "league": "PLL",
+    "seasonSegment": "champseries",
+    "startTime": "1739581200",
+    "venue": "The St. James",
+    "venueLocation": null,
+    "location": "Springfield, VA",
+    "year": 2025,
+    "week": 0,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/67efb728-8c5b-4dd9-809a-974712acc298",
+    "broadcaster": [
+      "ESPN+"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 20,
+    "homeScore": 23,
+    "homePeriodScores": [
+      5,
+      11,
+      6,
+      1
+    ],
+    "visitorPeriodScores": [
+      5,
+      4,
+      7,
+      4
+    ],
+    "homeTeam": {
+      "officialId": "ARC",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_archers_primary_color.png",
+      "fullName": "Archers",
+      "location": "Utah",
+      "locationCode": "UTA",
+      "league": "PLL",
+      "conference": "western",
+      "teamColor": "#FF5216",
+      "backgroundColor": "#002244",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "ATL",
+      "year": 2025,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_atlas_primary_color.png",
+      "fullName": "Atlas",
+      "location": "New York",
+      "locationCode": "NYA",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#00B1FF",
+      "backgroundColor": "#011E41",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0
+    },
+    "description": "Round Robin - PLL Gm 4",
+    "snl": false,
+    "polymarketId": null
+  }
+}
