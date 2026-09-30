@@ -1,0 +1,22 @@
+{
+  "play_by_play": {
+    "source_url": "https://stats.premierlacrosseleague.com/api/v4/games/2026-semifinal-2/play-by-plays",
+    "retrieved_at": "2026-09-29T23-55-31Z",
+    "sha256": "b7499b4b2408ae8cdfcbd85208d09c99ce2ae2830e10cbd3443412b51df4be81"
+  },
+  "game_meta": {
+    "source_url": "https://stats.premierlacrosseleague.com/api/v4/games/2026-semifinal-2",
+    "retrieved_at": "2026-09-29T23-55-32Z",
+    "sha256": "df7b97ee163d2160e2a13b068fc89d89c9ee79b444206e6afd8aedae1ab220a6"
+  },
+  "players_stats": {
+    "source_url": "https://stats.premierlacrosseleague.com/api/v4/games/2026-semifinal-2/players/stats",
+    "retrieved_at": "2026-09-29T23-55-32Z",
+    "sha256": "79b32d394b0a27624a347c11bc264e1250786f4116a6c71164035069000c33d9"
+  },
+  "teams_stats": {
+    "source_url": "https://stats.premierlacrosseleague.com/api/v4/games/2026-semifinal-2/teams/stats",
+    "retrieved_at": "2026-09-29T23-55-32Z",
+    "sha256": "93bac871d1b4059afad88605e2647ff080df183a5805c0ab9b45dfc181b6b279"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "data": {
+    "pregameWinProbability": {
+      "homeWinProbability": 0.46340168413313215,
+      "awayWinProbability": 0.5365983158668679
+    },
+    "id": 527,
+    "slugname": "2026-semifinal-2",
+    "eventId": "2026_game_52",
+    "league": "PLL",
+    "seasonSegment": "post",
+    "startTime": "1788816600",
+    "venue": "Zions Bank Stadium",
+    "venueLocation": null,
+    "location": "Salt Lake City, UT",
+    "year": 2026,
+    "week": 15,
+    "urlStreaming": "https://www.espn.com/watch/player/_/id/3e62ba2f-d677-45f0-bb09-4bec1d575264",
+    "broadcaster": [
+      "ESPN+",
+      "ESPN App"
+    ],
+    "eventStatus": 3,
+    "period": 4,
+    "clockMinutes": 0,
+    "clockSeconds": 0,
+    "gameStatus": null,
+    "visitorScore": 10,
+    "homeScore": 13,
+    "homePeriodScores": [
+      4,
+      3,
+      3,
+      3
+    ],
+    "visitorPeriodScores": [
+      2,
+      1,
+      3,
+      4
+    ],
+    "homeTeam": {
+      "officialId": "WAT",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_waterdogs_primary_color.png",
+      "fullName": "Waterdogs",
+      "location": "Philadelphia",
+      "locationCode": "PHI",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#6C20C4",
+      "backgroundColor": "#99A4AD",
+      "wins": 9,
+      "losses": 3,
+      "ties": 0
+    },
+    "awayTeam": {
+      "officialId": "CAN",
+      "year": 2026,
+      "urlLogo": "https://img.premierlacrosseleague.com/Teams/2024/Logo/2024_cannons_primary_color.png",
+      "fullName": "Cannons",
+      "location": "Boston",
+      "locationCode": "BOS",
+      "league": "PLL",
+      "conference": "eastern",
+      "teamColor": "#B0B6BB",
+      "backgroundColor": "#C52032",
+      "wins": 7,
+      "losses": 5,
+      "ties": 0
+    },
+    "description": "Semifinal 2",
+    "snl": false,
+    "polymarketId": "pll-can-wat-2026-09-07"
+  }
+}
