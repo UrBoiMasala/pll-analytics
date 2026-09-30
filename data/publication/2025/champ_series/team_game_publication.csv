@@ -1,0 +1,17 @@
+season,game_id,team_id,opponent_team_id,possessions,points,defensive_possessions,points_allowed,shot_producing_possessions,multi_shot_possessions,ambiguous_possessions,measurable_possessions,measurable_seconds,defensive_measurable_possessions,defensive_measurable_seconds,official_points,score_residual,shots,a2,g2,shooting_points,official_turnovers,official_assists,official_goals,shot_clock_events
+2025,309,ATL,WHP,,,,,,,,,,,,25,,45,8,4,25,16,11,21,0
+2025,309,WHP,ATL,,,,,,,,,,,,13,,45,13,2,13,14,3,11,0
+2025,310,ARC,CAN,,,,,,,,,,,,29,,45,12,5,29,9,13,24,2
+2025,310,CAN,ARC,,,,,,,,,,,,21,,48,6,2,21,9,7,19,2
+2025,312,CAN,WHP,,,,,,,,,,,,34,,49,8,4,34,7,12,30,0
+2025,312,WHP,CAN,,,,,,,,,,,,21,,52,12,1,21,11,15,20,0
+2025,314,ARC,ATL,,,,,,,,,,,,23,,46,18,4,23,8,5,19,1
+2025,314,ATL,ARC,,,,,,,,,,,,20,,44,13,2,20,11,5,18,1
+2025,318,ATL,CAN,,,,,,,,,,,,15,,45,8,2,15,14,3,13,0
+2025,318,CAN,ATL,,,,,,,,,,,,23,,44,10,2,23,11,6,21,2
+2025,319,ARC,WHP,,,,,,,,,,,,29,,48,10,4,29,7,12,25,3
+2025,319,WHP,ARC,,,,,,,,,,,,25,,44,11,4,25,13,6,21,1
+2025,321,ATL,CAN,,,,,,,,,,,,23,,54,12,1,23,17,8,22,1
+2025,321,CAN,ATL,,,,,,,,,,,,24,,47,9,4,24,11,7,20,2
+2025,323,ARC,CAN,,,,,,,,,,,,14,,38,15,2,14,11,5,12,0
+2025,323,CAN,ARC,,,,,,,,,,,,21,,41,3,0,21,12,5,21,9
