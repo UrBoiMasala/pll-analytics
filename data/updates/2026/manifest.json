@@ -1,0 +1,34 @@
+{
+  "version": "2026-postseason-update-1",
+  "foundation": "canonical-v2",
+  "added_game_ids": [
+    526,
+    527,
+    529
+  ],
+  "artifact_sha256": {
+    "raw/2026-championship-game/_meta.json": "7f0ca88d274c3a8918005bcfed74ab596693d86cde0bc4ec7d0f3927bd1b130f",
+    "raw/2026-championship-game/game_meta.json": "13c65b8e31ae1e748dd627099dfafbe09b59716478b33a54c9a208d1d77aa143",
+    "raw/2026-championship-game/play_by_play.json": "19f63a4980999119988ee5a408f6e4dc59ae722f9d5153b17f9947e331f55ca0",
+    "raw/2026-championship-game/players_stats.json": "a82fd6f0b23b612d58ae6cd761c914f81b72674e6b5cdab44c81289871362ae2",
+    "raw/2026-championship-game/teams_stats.json": "d9021e9e08a4156ae8032d101da1c1a29d71db819bfb2dfc82d177327331e29b",
+    "raw/2026-semifinal-1/_meta.json": "8aacf156314915f48735edfb2c0d2232d87bfb4973ec980b19ce2441dd0ea5f3",
+    "raw/2026-semifinal-1/game_meta.json": "b34a7b626a5a65b84ea171cb9ec7f7adb45336ae4dd09f32027e4f5c861bf083",
+    "raw/2026-semifinal-1/play_by_play.json": "feafd15d86cdda3e40612be4af9797fda12f7dee97c2453a90524f86ff21f4bf",
+    "raw/2026-semifinal-1/players_stats.json": "a56e6c36048d092ecdf491de03f46997cffe12d81dab015f67cdf34d57608f46",
+    "raw/2026-semifinal-1/teams_stats.json": "92c77af1e153c75c13897e6430ab15e742982a2e7c313fc2092828ae2c0aa53f",
+    "raw/2026-semifinal-2/_meta.json": "fdab1985990740eb362f8d2588f806250389fae4086839d2c891b1c85f9a07b2",
+    "raw/2026-semifinal-2/game_meta.json": "df7b97ee163d2160e2a13b068fc89d89c9ee79b444206e6afd8aedae1ab220a6",
+    "raw/2026-semifinal-2/play_by_play.json": "b7499b4b2408ae8cdfcbd85208d09c99ce2ae2830e10cbd3443412b51df4be81",
+    "raw/2026-semifinal-2/players_stats.json": "79b32d394b0a27624a347c11bc264e1250786f4116a6c71164035069000c33d9",
+    "raw/2026-semifinal-2/teams_stats.json": "93bac871d1b4059afad88605e2647ff080df183a5805c0ab9b45dfc181b6b279",
+    "raw/_schedule/games_2026.json": "07798c746ba8cee1a2799685e00e0f2d95317ffa49aeea16b9c7f42c383d98cc",
+    "processed/events.csv": "d0397fb7b07319ba93600a8edc0e0f67d6b2bec1934b304c6937392330037eff",
+    "processed/games.csv": "96e85c337d4bb9f2902668a2d18149ee67758ff580eeec02bda249c7182948e1",
+    "processed/player_game_stats.csv": "a79f56482144d387b8c58ad9b5f5cd02851218a4c7b353b8e2b647bbffebb593",
+    "processed/possession_validation_report.csv": "bc3e96c1f2d0bb6fccacaa61732712aeed454fb3cdce4c059f1c18cf6fcd0e34",
+    "processed/possessions.csv": "d7d0aebb56231122891ebe05ef23c0e34ba166823205441eec342c47ad621e80",
+    "processed/team_game_stats.csv": "42044cb29b6f1eb277b935859868bf0764ba1c0997981b42538baf0701113edd",
+    "processed/teams.csv": "222be5a382f2d9d56e31c9fa7da81c1882cc8e188a7695097f211381f5f52447"
+  }
+}
