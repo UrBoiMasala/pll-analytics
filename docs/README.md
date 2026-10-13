@@ -32,7 +32,7 @@ The 2026 extract is **partial**, with the latest included game starting August 3
 coverage. Use the [coverage table](../data/publication/publication_coverage.csv)
 when presenting results.
 
-Source data belongs to the PLL. Read the existing
-[publication authorization record](PUBLICATION_SAFETY.md) before reusing data.
+Raw data source: [PLL statistics website](https://stats.premierlacrosseleague.com/).
+See the [source and permission note](PUBLICATION_SAFETY.md).
 
 [Competition splits and current 2026 coverage](COMPETITION_SPLITS.md) explains the 2022 pilot and versioned update.

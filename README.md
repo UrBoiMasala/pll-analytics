@@ -65,10 +65,10 @@ measurements. Goalie and defensive statistics do not isolate individual skill. T
 does not publish a universal player-value or MVP score. See the
 [metric limitations](docs/METRIC_LIMITATIONS.md) before comparing players or seasons.
 
-Source statistics: [Premier Lacrosse League](https://premierlacrosseleague.com/).
-Independent research, not affiliated with or endorsed by the PLL. The existing
-[publication record](docs/PUBLICATION_SAFETY.md) documents owner-reported permission;
-it does not grant others a general license to reuse PLL data.
+Raw data source: [Premier Lacrosse League (PLL) statistics website](https://stats.premierlacrosseleague.com/),
+provided by the [Premier Lacrosse League](https://premierlacrosseleague.com/).
+This is an independent, noncommercial learning project, not affiliated with or endorsed by the PLL.
+Permission is being sought; see the [source and permission note](docs/PUBLICATION_SAFETY.md).
 
 ## Referencing this project
 
